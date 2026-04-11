@@ -2,3 +2,6 @@
 /WWW/REFERENCIAS/*
 !/WWW/REFERENCIAS/readme.md
 !/WWW/REFERENCIAS/README.md
+
+# Dependências (não versionar)
+node_modules/

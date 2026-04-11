@@ -27,6 +27,7 @@
   - Este repositório já ignora `WWW/REFERENCIAS/*` (exceto este arquivo). Se algum diretório daqui já entrou no Git, remova do índice:
     - `git rm -r --cached WWW/REFERENCIAS/superpowers`
     - `git rm -r --cached WWW/REFERENCIAS/connect-ecommerce-develop`
+- **Dependências**: Evite versionar dependências instaladas (ex.: `node_modules/`). Prefira `package.json` + lockfile e restaure via gerenciador (ex.: `npm ci`).
 
 ## Arquivos-chave
 - `readme.md` (Este arquivo com as diretrizes de uso da pasta).
