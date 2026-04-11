@@ -1,0 +1,16 @@
+{
+  "tenantId": "mercearia-lopes",
+  "tenantName": "MERCEARIA LOPES",
+  "segment": "mercearia",
+  "vibe": "requintado",
+  "delivery": {
+    "cepUiMock": true
+  },
+  "priorities": {
+    "home": ["essenciais", "recompras", "promocoes", "categorias"],
+    "category": ["filtros", "ordenacao", "cta-adicionar"],
+    "product": ["preco", "unidade-peso", "cta-adicionar", "badges"],
+    "cart": ["quantidade", "subtotal", "cta-finalizar"]
+  }
+}
+

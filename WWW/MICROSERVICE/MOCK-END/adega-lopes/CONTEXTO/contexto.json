@@ -1,0 +1,16 @@
+{
+  "tenantId": "adega-lopes",
+  "tenantName": "ADEGA LOPES",
+  "segment": "adega",
+  "vibe": "jovem",
+  "delivery": {
+    "cepUiMock": true
+  },
+  "priorities": {
+    "home": ["promocoes", "combos", "mais-vendidos", "entrega-rapida"],
+    "category": ["filtros", "ordenacao", "cta-adicionar"],
+    "product": ["preco", "volume-pack", "cta-adicionar", "badges"],
+    "cart": ["quantidade", "subtotal", "cta-finalizar"]
+  }
+}
+

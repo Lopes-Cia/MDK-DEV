@@ -1,0 +1,65 @@
+{
+  "tenant": "mercearia-lopes",
+  "selected": "A",
+  "options": [
+    {
+      "id": "A",
+      "label": "A",
+      "direction": {
+        "mode": "light-first",
+        "temperature": "frio",
+        "vibe": "requintado"
+      },
+      "fonts": {
+        "display": "Lora",
+        "text": "Hind Madurai"
+      },
+      "palette": {
+        "background": "#fcfdfd",
+        "surface": "#ffffff",
+        "text": "#33344c",
+        "primary": "#2c694c",
+        "primaryForeground": "#fcfdfd",
+        "accent": "#d8874f",
+        "accentForeground": "#33344c",
+        "border": "#e6e8ea",
+        "muted": "#ecc7b9"
+      },
+      "ui": {
+        "radius": "10px",
+        "shadow": "0 10px 30px rgba(16, 24, 40, 0.12)"
+      },
+      "notes": "Paleta base (verde + neutros) gerada no Huemint (Website 2) e combinada com acento quente para promo. Fontes sugeridas no Fontjoy; validação no Realtime Colors priorizando preço/promo e CTA."
+    },
+    {
+      "id": "B",
+      "label": "B",
+      "direction": {
+        "mode": "light-first",
+        "temperature": "misto",
+        "vibe": "requintado"
+      },
+      "fonts": {
+        "display": "Montserrat",
+        "text": "Libre Franklin"
+      },
+      "palette": {
+        "background": "#e9d49b",
+        "surface": "#fcfdfd",
+        "text": "#33344c",
+        "primary": "#2c694c",
+        "primaryForeground": "#fcfdfd",
+        "accent": "#5fb5ce",
+        "accentForeground": "#33344c",
+        "border": "#d8c891",
+        "muted": "#ecc7b9"
+      },
+      "ui": {
+        "radius": "10px",
+        "shadow": "0 10px 30px rgba(16, 24, 40, 0.12)"
+      },
+      "notes": "Variação com fundo creme e acento frio. Paletas geradas no Huemint (Website 2) e fontes sugeridas no Fontjoy."
+    }
+  ]
+}
+

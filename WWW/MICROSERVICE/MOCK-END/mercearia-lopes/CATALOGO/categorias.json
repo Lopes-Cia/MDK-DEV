@@ -1,0 +1,314 @@
+[
+  {
+    "id": 10,
+    "name": "Alimentos",
+    "slug": "alimentos",
+    "parentId": 0,
+    "image": "/assets/categories/alimentos.webp",
+    "order": 10
+  },
+  {
+    "id": 20,
+    "name": "Essenciais",
+    "slug": "essenciais",
+    "parentId": 10,
+    "image": "/assets/categories/essenciais.webp",
+    "order": 20
+  },
+  {
+    "id": 30,
+    "name": "Arroz",
+    "slug": "arroz",
+    "parentId": 20,
+    "image": "/assets/categories/arroz.webp",
+    "order": 30
+  },
+  {
+    "id": 31,
+    "name": "Feijão",
+    "slug": "feijao",
+    "parentId": 20,
+    "image": "/assets/categories/feijao.webp",
+    "order": 31
+  },
+  {
+    "id": 32,
+    "name": "Açúcar",
+    "slug": "acucar",
+    "parentId": 20,
+    "image": "/assets/categories/acucar.webp",
+    "order": 32
+  },
+  {
+    "id": 33,
+    "name": "Óleo",
+    "slug": "oleo",
+    "parentId": 20,
+    "image": "/assets/categories/oleo.webp",
+    "order": 33
+  },
+  {
+    "id": 34,
+    "name": "Macarrão",
+    "slug": "macarrao",
+    "parentId": 20,
+    "image": "/assets/categories/macarrao.webp",
+    "order": 34
+  },
+  {
+    "id": 35,
+    "name": "Farinhas",
+    "slug": "farinhas",
+    "parentId": 20,
+    "image": "/assets/categories/farinhas.webp",
+    "order": 35
+  },
+  {
+    "id": 36,
+    "name": "Sal & Temperos",
+    "slug": "sal-e-temperos",
+    "parentId": 20,
+    "image": "/assets/categories/sal-e-temperos.webp",
+    "order": 36
+  },
+  {
+    "id": 40,
+    "name": "Café da manhã",
+    "slug": "cafe-da-manha",
+    "parentId": 10,
+    "image": "/assets/categories/cafe-da-manha.webp",
+    "order": 40
+  },
+  {
+    "id": 50,
+    "name": "Pães",
+    "slug": "paes",
+    "parentId": 40,
+    "image": "/assets/categories/paes.webp",
+    "order": 50
+  },
+  {
+    "id": 51,
+    "name": "Cafés",
+    "slug": "cafes",
+    "parentId": 40,
+    "image": "/assets/categories/cafes.webp",
+    "order": 51
+  },
+  {
+    "id": 52,
+    "name": "Achocolatados",
+    "slug": "achocolatados",
+    "parentId": 40,
+    "image": "/assets/categories/achocolatados.webp",
+    "order": 52
+  },
+  {
+    "id": 53,
+    "name": "Biscoitos",
+    "slug": "biscoitos",
+    "parentId": 40,
+    "image": "/assets/categories/biscoitos.webp",
+    "order": 53
+  },
+  {
+    "id": 54,
+    "name": "Cereais",
+    "slug": "cereais",
+    "parentId": 40,
+    "image": "/assets/categories/cereais.webp",
+    "order": 54
+  },
+  {
+    "id": 60,
+    "name": "Laticínios",
+    "slug": "laticinios",
+    "parentId": 10,
+    "image": "/assets/categories/laticinios.webp",
+    "order": 60
+  },
+  {
+    "id": 70,
+    "name": "Leites",
+    "slug": "leites",
+    "parentId": 60,
+    "image": "/assets/categories/leites.webp",
+    "order": 70
+  },
+  {
+    "id": 71,
+    "name": "Queijos",
+    "slug": "queijos",
+    "parentId": 60,
+    "image": "/assets/categories/queijos.webp",
+    "order": 71
+  },
+  {
+    "id": 72,
+    "name": "Iogurtes",
+    "slug": "iogurtes",
+    "parentId": 60,
+    "image": "/assets/categories/iogurtes.webp",
+    "order": 72
+  },
+  {
+    "id": 73,
+    "name": "Manteigas",
+    "slug": "manteigas",
+    "parentId": 60,
+    "image": "/assets/categories/manteigas.webp",
+    "order": 73
+  },
+  {
+    "id": 74,
+    "name": "Requeijão",
+    "slug": "requeijao",
+    "parentId": 60,
+    "image": "/assets/categories/requeijao.webp",
+    "order": 74
+  },
+  {
+    "id": 80,
+    "name": "Congelados",
+    "slug": "congelados",
+    "parentId": 10,
+    "image": "/assets/categories/congelados.webp",
+    "order": 80
+  },
+  {
+    "id": 90,
+    "name": "Prontos",
+    "slug": "prontos",
+    "parentId": 80,
+    "image": "/assets/categories/prontos.webp",
+    "order": 90
+  },
+  {
+    "id": 91,
+    "name": "Carnes",
+    "slug": "carnes",
+    "parentId": 80,
+    "image": "/assets/categories/carnes.webp",
+    "order": 91
+  },
+  {
+    "id": 92,
+    "name": "Pães de queijo",
+    "slug": "paes-de-queijo",
+    "parentId": 80,
+    "image": "/assets/categories/paes-de-queijo.webp",
+    "order": 92
+  },
+  {
+    "id": 93,
+    "name": "Batatas",
+    "slug": "batatas",
+    "parentId": 80,
+    "image": "/assets/categories/batatas.webp",
+    "order": 93
+  },
+  {
+    "id": 100,
+    "name": "Bebidas (não alcoólicas)",
+    "slug": "bebidas-nao-alcoolicas",
+    "parentId": 10,
+    "image": "/assets/categories/bebidas-nao-alcoolicas.webp",
+    "order": 100
+  },
+  {
+    "id": 110,
+    "name": "Águas",
+    "slug": "aguas",
+    "parentId": 100,
+    "image": "/assets/categories/aguas.webp",
+    "order": 110
+  },
+  {
+    "id": 111,
+    "name": "Sucos",
+    "slug": "sucos",
+    "parentId": 100,
+    "image": "/assets/categories/sucos.webp",
+    "order": 111
+  },
+  {
+    "id": 200,
+    "name": "Casa & Cuidados",
+    "slug": "casa-e-cuidados",
+    "parentId": 0,
+    "image": "/assets/categories/casa-e-cuidados.webp",
+    "order": 200
+  },
+  {
+    "id": 210,
+    "name": "Limpeza",
+    "slug": "limpeza",
+    "parentId": 200,
+    "image": "/assets/categories/limpeza.webp",
+    "order": 210
+  },
+  {
+    "id": 220,
+    "name": "Cozinha",
+    "slug": "cozinha",
+    "parentId": 210,
+    "image": "/assets/categories/cozinha.webp",
+    "order": 220
+  },
+  {
+    "id": 221,
+    "name": "Lavanderia",
+    "slug": "lavanderia",
+    "parentId": 210,
+    "image": "/assets/categories/lavanderia.webp",
+    "order": 221
+  },
+  {
+    "id": 230,
+    "name": "Higiene",
+    "slug": "higiene",
+    "parentId": 200,
+    "image": "/assets/categories/higiene.webp",
+    "order": 230
+  },
+  {
+    "id": 240,
+    "name": "Papel higiênico",
+    "slug": "papel-higienico",
+    "parentId": 230,
+    "image": "/assets/categories/papel-higienico.webp",
+    "order": 240
+  },
+  {
+    "id": 241,
+    "name": "Sabonetes",
+    "slug": "sabonetes",
+    "parentId": 230,
+    "image": "/assets/categories/sabonetes.webp",
+    "order": 241
+  },
+  {
+    "id": 242,
+    "name": "Shampoo",
+    "slug": "shampoo",
+    "parentId": 230,
+    "image": "/assets/categories/shampoo.webp",
+    "order": 242
+  },
+  {
+    "id": 243,
+    "name": "Creme dental",
+    "slug": "creme-dental",
+    "parentId": 230,
+    "image": "/assets/categories/creme-dental.webp",
+    "order": 243
+  },
+  {
+    "id": 244,
+    "name": "Desodorantes",
+    "slug": "desodorantes",
+    "parentId": 230,
+    "image": "/assets/categories/desodorantes.webp",
+    "order": 244
+  }
+]

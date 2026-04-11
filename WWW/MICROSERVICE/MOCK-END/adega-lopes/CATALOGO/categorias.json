@@ -1,0 +1,162 @@
+[
+  {
+    "id": 10,
+    "name": "Bebidas",
+    "slug": "bebidas",
+    "parentId": 0,
+    "image": "/assets/categories/bebidas.webp",
+    "order": 10
+  },
+  {
+    "id": 20,
+    "name": "Cervejas",
+    "slug": "cervejas",
+    "parentId": 10,
+    "image": "/assets/categories/cervejas.webp",
+    "order": 20
+  },
+  {
+    "id": 30,
+    "name": "Lager",
+    "slug": "lager",
+    "parentId": 20,
+    "image": "/assets/categories/lager.webp",
+    "order": 30
+  },
+  {
+    "id": 31,
+    "name": "IPA",
+    "slug": "ipa",
+    "parentId": 20,
+    "image": "/assets/categories/ipa.webp",
+    "order": 31
+  },
+  {
+    "id": 40,
+    "name": "Destilados",
+    "slug": "destilados",
+    "parentId": 10,
+    "image": "/assets/categories/destilados.webp",
+    "order": 40
+  },
+  {
+    "id": 50,
+    "name": "Vodka",
+    "slug": "vodka",
+    "parentId": 40,
+    "image": "/assets/categories/vodka.webp",
+    "order": 50
+  },
+  {
+    "id": 51,
+    "name": "Gin",
+    "slug": "gin",
+    "parentId": 40,
+    "image": "/assets/categories/gin.webp",
+    "order": 51
+  },
+  {
+    "id": 52,
+    "name": "Whisky",
+    "slug": "whisky",
+    "parentId": 40,
+    "image": "/assets/categories/whisky.webp",
+    "order": 52
+  },
+  {
+    "id": 60,
+    "name": "Vinhos",
+    "slug": "vinhos",
+    "parentId": 10,
+    "image": "/assets/categories/vinhos.webp",
+    "order": 60
+  },
+  {
+    "id": 70,
+    "name": "Tintos",
+    "slug": "tintos",
+    "parentId": 60,
+    "image": "/assets/categories/tintos.webp",
+    "order": 70
+  },
+  {
+    "id": 71,
+    "name": "Brancos",
+    "slug": "brancos",
+    "parentId": 60,
+    "image": "/assets/categories/brancos.webp",
+    "order": 71
+  },
+  {
+    "id": 80,
+    "name": "Não alcoólicas",
+    "slug": "nao-alcoolicas",
+    "parentId": 10,
+    "image": "/assets/categories/nao-alcoolicas.webp",
+    "order": 80
+  },
+  {
+    "id": 90,
+    "name": "Energéticos",
+    "slug": "energeticos",
+    "parentId": 80,
+    "image": "/assets/categories/energeticos.webp",
+    "order": 90
+  },
+  {
+    "id": 91,
+    "name": "Refrigerantes",
+    "slug": "refrigerantes",
+    "parentId": 80,
+    "image": "/assets/categories/refrigerantes.webp",
+    "order": 91
+  },
+  {
+    "id": 110,
+    "name": "Conveniência",
+    "slug": "conveniencia",
+    "parentId": 0,
+    "image": "/assets/categories/conveniencia.webp",
+    "order": 110
+  },
+  {
+    "id": 120,
+    "name": "Gelo",
+    "slug": "gelo",
+    "parentId": 110,
+    "image": "/assets/categories/gelo.webp",
+    "order": 120
+  },
+  {
+    "id": 130,
+    "name": "Saco 2kg",
+    "slug": "saco-2kg",
+    "parentId": 120,
+    "image": "/assets/categories/saco-2kg.webp",
+    "order": 130
+  },
+  {
+    "id": 140,
+    "name": "Snacks",
+    "slug": "snacks",
+    "parentId": 110,
+    "image": "/assets/categories/snacks.webp",
+    "order": 140
+  },
+  {
+    "id": 150,
+    "name": "Salgadinhos",
+    "slug": "salgadinhos",
+    "parentId": 140,
+    "image": "/assets/categories/salgadinhos.webp",
+    "order": 150
+  },
+  {
+    "id": 151,
+    "name": "Amendoim",
+    "slug": "amendoim",
+    "parentId": 140,
+    "image": "/assets/categories/amendoim.webp",
+    "order": 151
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "tenantId": "adega-lopes",
+  "pages": {
+    "home": {
+      "title": "ADEGA LOPES",
+      "subtitle": "Bebidas e conveniência para delivery",
+      "cepCta": "Informar CEP"
+    },
+    "category": {
+      "title": "Categoria",
+      "emptyState": "Nenhum produto encontrado"
+    },
+    "product": {
+      "addToCart": "Adicionar",
+      "outOfStock": "Indisponível"
+    },
+    "cart": {
+      "title": "Carrinho",
+      "continueShopping": "Continuar comprando",
+      "checkoutCta": "Finalizar"
+    }
+  },
+  "components": {
+    "search": {
+      "placeholder": "Buscar por marca, produto ou volume"
+    },
+    "filters": {
+      "title": "Filtros",
+      "apply": "Aplicar",
+      "clear": "Limpar"
+    },
+    "cepMock": {
+      "label": "CEP",
+      "placeholder": "00000-000",
+      "helper": "Somente UI (mock) na POC"
+    }
+  }
+}

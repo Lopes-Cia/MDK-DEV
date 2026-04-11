@@ -1,0 +1,27 @@
+{
+  "tenantId": "adega-lopes",
+  "presets": {
+    "/": [
+      "Hero",
+      "PromoBanner",
+      "ComboCarousel",
+      "ProductCarousel",
+      "CategoryGrid",
+      "CepMockForm",
+      "Footer"
+    ],
+    "/categoria/[slug]": [
+      "Breadcrumbs",
+      "SearchBar",
+      "FiltersPanel",
+      "ProductGrid"
+    ],
+    "/produto/[slug]": [
+      "Breadcrumbs",
+      "ProductCard"
+    ],
+    "/carrinho": [
+      "CartPage"
+    ]
+  }
+}

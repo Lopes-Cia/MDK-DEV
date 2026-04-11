@@ -1,0 +1,107 @@
+{
+  "tenantId": "mercearia-lopes",
+  "themeSelected": "A",
+  "copyRef": "mercearia-lopes",
+  "pages": [
+    {
+      "urlPath": "/",
+      "kind": "home",
+      "layout": [
+        {
+          "type": "Hero",
+          "props": {
+            "titleKey": "pages.home.title",
+            "subtitleKey": "pages.home.subtitle"
+          }
+        },
+        {
+          "type": "EssentialsShelf",
+          "props": {
+            "title": "Essenciais",
+            "source": "catalogo"
+          }
+        },
+        {
+          "type": "RebuyShelf",
+          "props": {
+            "title": "Recompras",
+            "source": "catalogo"
+          }
+        },
+        {
+          "type": "ProductGrid",
+          "props": {
+            "title": "Promoções",
+            "source": "catalogo"
+          }
+        },
+        {
+          "type": "CategoryGrid",
+          "props": {
+            "title": "Categorias",
+            "source": "catalogo"
+          }
+        },
+        {
+          "type": "CepMockForm",
+          "props": {
+            "labelKey": "components.cepMock.label"
+          }
+        }
+      ]
+    },
+    {
+      "urlPath": "/categoria/[slug]",
+      "kind": "category",
+      "layout": [
+        {
+          "type": "Breadcrumbs",
+          "props": {}
+        },
+        {
+          "type": "SearchBar",
+          "props": {
+            "placeholderKey": "components.search.placeholder"
+          }
+        },
+        {
+          "type": "FiltersPanel",
+          "props": {
+            "titleKey": "components.filters.title"
+          }
+        },
+        {
+          "type": "ProductGrid",
+          "props": {
+            "source": "catalogo"
+          }
+        }
+      ]
+    },
+    {
+      "urlPath": "/produto/[slug]",
+      "kind": "product",
+      "layout": [
+        {
+          "type": "ProductCard",
+          "props": {
+            "addToCartKey": "pages.product.addToCart"
+          }
+        }
+      ]
+    },
+    {
+      "urlPath": "/carrinho",
+      "kind": "cart",
+      "layout": [
+        {
+          "type": "CartPage",
+          "props": {
+            "titleKey": "pages.cart.title",
+            "checkoutKey": "pages.cart.checkoutCta"
+          }
+        }
+      ]
+    }
+  ]
+}

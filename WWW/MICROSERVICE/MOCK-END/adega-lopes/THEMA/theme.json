@@ -1,0 +1,65 @@
+{
+  "tenant": "adega-lopes",
+  "selected": "A",
+  "options": [
+    {
+      "id": "A",
+      "label": "A",
+      "direction": {
+        "mode": "dark-first",
+        "temperature": "frio",
+        "vibe": "jovem"
+      },
+      "fonts": {
+        "display": "Exo",
+        "text": "Libre Franklin"
+      },
+      "palette": {
+        "background": "#0b2744",
+        "surface": "#122f53",
+        "text": "#ffe9e8",
+        "primary": "#25bbcd",
+        "primaryForeground": "#0b2744",
+        "accent": "#ff356c",
+        "accentForeground": "#ffe9e8",
+        "border": "#1c3f68",
+        "muted": "#b3a0b9"
+      },
+      "ui": {
+        "radius": "12px",
+        "shadow": "0 8px 30px rgba(0, 0, 0, 0.35)"
+      },
+      "notes": "Paleta gerada no Huemint (Website 2). Fontes sugeridas no Fontjoy. Validação no Realtime Colors com foco em CTA e promo; superfície/borda foram ajustadas a partir do background para separar cards."
+    },
+    {
+      "id": "B",
+      "label": "B",
+      "direction": {
+        "mode": "dark-first",
+        "temperature": "misto",
+        "vibe": "jovem"
+      },
+      "fonts": {
+        "display": "Spinnaker",
+        "text": "Mukta Vaani"
+      },
+      "palette": {
+        "background": "#33344c",
+        "surface": "#3f405c",
+        "text": "#e9d49b",
+        "primary": "#5fb5ce",
+        "primaryForeground": "#33344c",
+        "accent": "#d8874f",
+        "accentForeground": "#33344c",
+        "border": "#4a4b68",
+        "muted": "#cbbd90"
+      },
+      "ui": {
+        "radius": "12px",
+        "shadow": "0 8px 30px rgba(0, 0, 0, 0.35)"
+      },
+      "notes": "Paleta gerada no Huemint (Website 2). Fontes sugeridas no Fontjoy. Base escura com creme e acentos azul/laranja; bom para legibilidade e contraste."
+    }
+  ]
+}
+

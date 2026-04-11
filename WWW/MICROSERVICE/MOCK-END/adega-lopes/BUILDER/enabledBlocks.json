@@ -1,0 +1,21 @@
+{
+  "tenantId": "adega-lopes",
+  "blocks": [
+    "Header",
+    "Footer",
+    "Hero",
+    "PromoBanner",
+    "CategoryGrid",
+    "ProductCard",
+    "ProductGrid",
+    "ProductCarousel",
+    "SearchBar",
+    "FiltersPanel",
+    "CepMockForm",
+    "Breadcrumbs",
+    "CartDrawer",
+    "CartPage",
+    "ComboCarousel",
+    "BadgesBar"
+  ]
+}

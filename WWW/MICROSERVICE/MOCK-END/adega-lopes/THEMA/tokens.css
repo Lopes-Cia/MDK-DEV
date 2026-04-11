@@ -1,0 +1,14 @@
+:root[data-tenant="adega-lopes"] {
+  --background: #0b2744;
+  --surface: #122f53;
+  --text: #ffe9e8;
+  --primary: #25bbcd;
+  --primary-foreground: #0b2744;
+  --accent: #ff356c;
+  --accent-foreground: #ffe9e8;
+  --border: #1c3f68;
+  --muted: #b3a0b9;
+  --radius: 12px;
+  --shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
+}
+

@@ -1,0 +1,27 @@
+{
+  "tenantId": "mercearia-lopes",
+  "presets": {
+    "/": [
+      "Hero",
+      "EssentialsShelf",
+      "RebuyShelf",
+      "ProductGrid",
+      "CategoryGrid",
+      "CepMockForm",
+      "Footer"
+    ],
+    "/categoria/[slug]": [
+      "Breadcrumbs",
+      "SearchBar",
+      "FiltersPanel",
+      "ProductGrid"
+    ],
+    "/produto/[slug]": [
+      "Breadcrumbs",
+      "ProductCard"
+    ],
+    "/carrinho": [
+      "CartPage"
+    ]
+  }
+}

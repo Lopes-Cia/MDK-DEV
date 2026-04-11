@@ -1,0 +1,14 @@
+:root[data-tenant="mercearia-lopes"] {
+  --background: #fcfdfd;
+  --surface: #ffffff;
+  --text: #33344c;
+  --primary: #2c694c;
+  --primary-foreground: #fcfdfd;
+  --accent: #d8874f;
+  --accent-foreground: #33344c;
+  --border: #e6e8ea;
+  --muted: #ecc7b9;
+  --radius: 10px;
+  --shadow: 0 10px 30px rgba(16, 24, 40, 0.12);
+}
+

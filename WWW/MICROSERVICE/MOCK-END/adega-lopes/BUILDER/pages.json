@@ -1,0 +1,112 @@
+{
+  "tenantId": "adega-lopes",
+  "themeSelected": "A",
+  "copyRef": "adega-lopes",
+  "pages": [
+    {
+      "urlPath": "/",
+      "kind": "home",
+      "layout": [
+        {
+          "id": "6ffe7841-511a-4755-aafb-8c4b0bd0e10d",
+          "type": "Hero",
+          "props": {
+            "title": "ADEGA LOPES",
+            "subtitle": "Bebidas e conveniência para delivery"
+          }
+        },
+        {
+          "id": "b22a3fbb-2454-498e-a996-10cb4d64967e",
+          "type": "PromoBanner",
+          "props": {
+            "variant": "hot"
+          }
+        },
+        {
+          "id": "18c97c6c-6b32-4022-a19c-b00c843149e9",
+          "type": "ComboCarousel",
+          "props": {
+            "title": "Combos",
+            "source": "catalogo"
+          }
+        },
+        {
+          "id": "6e306351-90c0-4395-bfcc-d4c44e3ce678",
+          "type": "ProductCarousel",
+          "props": {
+            "title": "Mais vendidos",
+            "source": "catalogo"
+          }
+        },
+        {
+          "id": "963bed2e-61ca-4704-a08d-c919f2b8ebce",
+          "type": "CategoryGrid",
+          "props": {
+            "title": "Categorias",
+            "source": "catalogo"
+          }
+        },
+        {
+          "id": "0c1df5f8-443f-4e8d-ac1a-d9df4aac06b0",
+          "type": "CepMockForm",
+          "props": {
+            "label": "CEP"
+          }
+        }
+      ]
+    },
+    {
+      "urlPath": "/categoria/[slug]",
+      "kind": "category",
+      "layout": [
+        {
+          "type": "Breadcrumbs",
+          "props": {}
+        },
+        {
+          "type": "SearchBar",
+          "props": {
+            "placeholderKey": "components.search.placeholder"
+          }
+        },
+        {
+          "type": "FiltersPanel",
+          "props": {
+            "titleKey": "components.filters.title"
+          }
+        },
+        {
+          "type": "ProductGrid",
+          "props": {
+            "source": "catalogo"
+          }
+        }
+      ]
+    },
+    {
+      "urlPath": "/produto/[slug]",
+      "kind": "product",
+      "layout": [
+        {
+          "type": "ProductCard",
+          "props": {
+            "addToCartKey": "pages.product.addToCart"
+          }
+        }
+      ]
+    },
+    {
+      "urlPath": "/carrinho",
+      "kind": "cart",
+      "layout": [
+        {
+          "type": "CartPage",
+          "props": {
+            "titleKey": "pages.cart.title",
+            "checkoutKey": "pages.cart.checkoutCta"
+          }
+        }
+      ]
+    }
+  ]
+}

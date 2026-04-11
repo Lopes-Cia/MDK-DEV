@@ -1,0 +1,38 @@
+{
+  "tenantId": "mercearia-lopes",
+  "pages": {
+    "home": {
+      "title": "MERCEARIA LOPES",
+      "subtitle": "Alimentos e utilidades para delivery",
+      "cepCta": "Informar CEP"
+    },
+    "category": {
+      "title": "Categoria",
+      "emptyState": "Nenhum produto encontrado"
+    },
+    "product": {
+      "addToCart": "Adicionar",
+      "outOfStock": "Indisponível"
+    },
+    "cart": {
+      "title": "Carrinho",
+      "continueShopping": "Continuar comprando",
+      "checkoutCta": "Finalizar"
+    }
+  },
+  "components": {
+    "search": {
+      "placeholder": "Buscar produtos e marcas"
+    },
+    "filters": {
+      "title": "Filtros",
+      "apply": "Aplicar",
+      "clear": "Limpar"
+    },
+    "cepMock": {
+      "label": "CEP",
+      "placeholder": "00000-000",
+      "helper": "Somente UI (mock) na POC"
+    }
+  }
+}

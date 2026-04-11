@@ -1,0 +1,17 @@
+{
+  "name": "mock-end",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node server.mjs",
+    "seed:catalog": "node scripts/generate-catalogs.mjs",
+    "extract:xlsx": "node scripts/extract-xlsx-to-ia-first.mjs",
+    "gen:blueprint": "node scripts/generate-blueprint-and-copy.mjs",
+    "gen:builder": "node scripts/generate-builder.mjs",
+    "verify": "node scripts/verify-themes.mjs && node scripts/verify-mockend.mjs"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
+
