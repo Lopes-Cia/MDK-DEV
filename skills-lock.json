@@ -1,6 +1,46 @@
 {
   "version": 1,
   "skills": {
+    "coss": {
+      "source": "cosscom/coss",
+      "sourceType": "github",
+      "computedHash": "c4dd795f361381196904e39863133427ddc663415ce6dd05cb13031a51d83579"
+    },
+    "coss-particles": {
+      "source": "cosscom/coss",
+      "sourceType": "github",
+      "computedHash": "19bab46c9f6ed458051ae940930bb6798a17f43b696b2496217d432006206f3a"
+    },
+    "nextjs": {
+      "source": "ovachiever/droid-tings",
+      "sourceType": "github",
+      "computedHash": "213e47477f13b08d10893ed75cffb928804ba1889934725a486d4a4a6068d517"
+    },
+    "nextjs-frontend-testing": {
+      "source": "henryxv/study-platform",
+      "sourceType": "github",
+      "computedHash": "112d12011911ebd636d0a2587bf8491609d6dcaf9736968bdb40cf08874f5250"
+    },
+    "nextjs-vitest": {
+      "source": "tenkoh/skills",
+      "sourceType": "github",
+      "computedHash": "50a780cf1fce936bad931c4bf85a6a6410f108e49953d0e2c332d08a20d19d4a"
+    },
+    "optimized-nextjs-typescript": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "computedHash": "d94268ecf8422b888b64b8db78894aad3bda5a3c750f06d540a5398d7b47863d"
+    },
+    "senior-frontend": {
+      "source": "sickn33/antigravity-awesome-skills",
+      "sourceType": "github",
+      "computedHash": "e75adda7df9fe2bc5e8a350efc5b99ffbeec9cec5e1aca6ae506dfb652781b79"
+    },
+    "testing-next-stack": {
+      "source": "hopeoverture/worldbuilding-app-skills",
+      "sourceType": "github",
+      "computedHash": "04aea550109e005d02e89bd11e855058f8173be22dd562f0be350534c281a652"
+    },
     "using-superpowers": {
       "source": "obra/superpowers",
       "sourceType": "github",

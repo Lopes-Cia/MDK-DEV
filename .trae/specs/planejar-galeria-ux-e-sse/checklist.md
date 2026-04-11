@@ -1,0 +1,4 @@
+- [ ] Os 2 próximos avanços estão explícitos: Galeria de UX e SSE
+- [ ] A Galeria de UX tem MVP definido (categorias + contrato dos itens + padrões iniciais)
+- [ ] Existem 2 referências salvas: coss/ui + 1 registry do shadcn directory (com critério e comandos)
+- [ ] O plano de SSE define: eventos mínimos, endpoints, store como cliente único e fallback para polling

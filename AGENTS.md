@@ -1,0 +1,1 @@
+Eu vou guiar correções, desabilita todo teste, so executa o que eu pedir . Qualquer ação deiferente , é obrigatorio me pergunta antes de executar.

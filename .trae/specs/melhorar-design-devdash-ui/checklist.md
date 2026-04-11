@@ -1,0 +1,8 @@
+- [ ] Pesquisa salva em `IA/` (referências + termos de busca + baseline de tokens + decisões/trade-offs) pronta para reaproveitar no ecommerce
+- [ ] UI kit (coss/ui) inicializado e componentes base instalados no DevDash
+- [ ] Home tem duas seções claras: Status (monitores) e Atalhos (cards-link)
+- [ ] Monitores não parecem “card-link” (affordance correta) e têm ações explícitas
+- [ ] Estado desejado (ON/OFF), estado real (UP/DOWN/UNKNOWN) e estado transitório (STARTING/STOPPING) são exibidos sem piscar confuso
+- [ ] Botões por ícone têm aria-label, foco visível e tooltip quando aplicável
+- [ ] App Shell com Sidebar desktop + Drawer mobile (sem overflow feio), com estado ativo evidente, TenantSelect no rodapé e logomarca aplicada
+- [ ] Layout geral consistente (gaps, alturas, tipografia, cores) e visual “premium”

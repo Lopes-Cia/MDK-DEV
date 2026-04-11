@@ -1,0 +1,5 @@
+- [ ] Spec define pelo menos 2 estratégias de scraping (A background + B Playwright) e fallback
+- [ ] Spec define contrato de paths/URLs e onde persistir imagens por tenant
+- [ ] Spec define atualização dos JSONs (produtos/categorias) sem quebrar schema
+- [ ] Spec inclui geração de assets por IA (banners/criativos) baseada em categorias (não produto)
+- [ ] Spec prevê rastreabilidade (origem/método/timestamp/hash) e dedupe

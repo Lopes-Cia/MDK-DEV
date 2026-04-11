@@ -4,6 +4,7 @@
   "type": "module",
   "scripts": {
     "dev": "node server.mjs",
+    "start": "node server.mjs",
     "seed:catalog": "node scripts/generate-catalogs.mjs",
     "extract:xlsx": "node scripts/extract-xlsx-to-ia-first.mjs",
     "gen:blueprint": "node scripts/generate-blueprint-and-copy.mjs",
