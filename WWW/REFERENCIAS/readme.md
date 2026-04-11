@@ -14,9 +14,19 @@
 - Explore os códigos localmente.
 - Caso encontre um componente, função ou padrão útil, **copie e adapte** para dentro de `src/` ou para a pasta adequada no projeto principal.
 
+## Repositórios (clonar aqui)
+- Entre na pasta:
+  - `cd WWW/REFERENCIAS`
+- Clone com o nome da pasta que você quer manter localmente:
+  - `git clone https://github.com/obra/superpowers.git superpowers`
+  - `git clone <URL-DO-REPO-CONNECT-ECOMMERCE> connect-ecommerce-develop`
+
 ## Regras locais
 - **Sem Imports**: É estritamente proibido importar código desta pasta para dentro do sistema.
 - **Git Ignore**: Recomenda-se adicionar `WWW/REFERENCIAS` ao arquivo `.gitignore` global do seu projeto, para evitar o aninhamento acidental de repositórios ou o aumento desnecessário do tamanho do repositório principal.
+  - Este repositório já ignora `WWW/REFERENCIAS/*` (exceto este arquivo). Se algum diretório daqui já entrou no Git, remova do índice:
+    - `git rm -r --cached WWW/REFERENCIAS/superpowers`
+    - `git rm -r --cached WWW/REFERENCIAS/connect-ecommerce-develop`
 
 ## Arquivos-chave
 - `readme.md` (Este arquivo com as diretrizes de uso da pasta).
