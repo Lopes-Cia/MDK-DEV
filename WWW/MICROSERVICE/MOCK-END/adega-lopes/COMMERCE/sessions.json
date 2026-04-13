@@ -16,6 +16,14 @@
       "token": "4960c5605dcf03f01b982eadf38121b309469891fb0cad5bf4cb333f2552d918",
       "createdAt": "2026-04-11T17:09:21.930Z",
       "expiresAt": "2026-05-11T17:09:21.930Z"
+    },
+    {
+      "id": "9a7ac47b-1350-4a05-9a1e-0f8cd0406d1b",
+      "tenant": "adega-lopes",
+      "userId": "6d2c42de-9e26-42db-8fd5-6be3cc471dd8",
+      "token": "2e51ddb0696da3e6d544e76db7554b755d5caf9189b5543ae3909c7f3983481d",
+      "createdAt": "2026-04-13T13:17:22.997Z",
+      "expiresAt": "2026-05-13T13:17:23.011Z"
     }
   ]
 }
