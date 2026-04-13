@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "sessions": [
+    {
+      "id": "380045da-cb52-43e8-b575-673a7bae3c68",
+      "tenant": "mercearia-lopes",
+      "userId": "0327567b-78bb-4186-b393-d9d2609baf1e",
+      "token": "936b52e5c37e42d7df8e18f56576c97fa56f602e89be6b2c0ad52fea2c73116c",
+      "createdAt": "2026-04-13T11:31:27.340Z",
+      "expiresAt": "2026-05-13T11:31:27.356Z"
+    }
+  ]
+}

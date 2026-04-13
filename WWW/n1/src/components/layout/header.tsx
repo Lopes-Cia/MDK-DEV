@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { headers } from "next/headers";
 
-import { Button } from "@/components/ui/button";
+import { AuthLinksClient } from "@/components/layout/auth-links-client";
 
 async function getBasePathFromRequest(tenant: string) {
   const host = (await headers()).get("host") ?? "";
@@ -13,51 +13,36 @@ async function getBasePathFromRequest(tenant: string) {
 export async function Header({
   tenant,
   title,
-  showDevShortcut = false,
 }: {
   tenant: string;
   title: string;
-  showDevShortcut?: boolean;
 }) {
   const basePath = await getBasePathFromRequest(tenant);
 
   return (
-    <header className="border-b border-border bg-background">
-      <div className="mx-auto flex h-14 max-w-5xl items-center justify-between gap-4 px-4">
-        <div className="flex items-center gap-4">
-          <Link href={`${basePath}/`} className="text-sm font-semibold tracking-tight">
+    <header className="sticky top-0 z-40 border-b border-border bg-surface/95 backdrop-blur supports-[backdrop-filter]:bg-surface/80">
+      <div className="mx-auto flex h-14 max-w-6xl items-center justify-between gap-4 px-4">
+        <div className="flex min-w-0 items-center gap-3">
+          <Link href={`${basePath}/`} className="truncate text-sm font-semibold tracking-tight">
             {title}
           </Link>
-          <nav className="hidden items-center gap-2 sm:flex">
-            <Link href={`${basePath}/`} className="text-sm text-muted-foreground hover:text-foreground">
+          <nav className="hidden items-center gap-1.5 sm:flex">
+            <Link
+              href={`${basePath}/`}
+              className="rounded-md px-2 py-1 text-sm text-muted-foreground hover:bg-accent hover:text-accent-foreground"
+            >
               Home
             </Link>
             <Link
               href={`${basePath}/carrinho`}
-              className="text-sm text-muted-foreground hover:text-foreground"
+              className="rounded-md px-2 py-1 text-sm text-muted-foreground hover:bg-accent hover:text-accent-foreground"
             >
               Carrinho
             </Link>
           </nav>
         </div>
 
-        <div className="flex items-center gap-2">
-          <Button variant="ghost" className="h-9 px-3">
-            Login
-          </Button>
-          <Button variant="outline" className="h-9 px-3">
-            Cadastro
-          </Button>
-          {showDevShortcut ? (
-            <Link
-              href={`${basePath}/dashboard/builder`}
-              className="inline-flex h-9 w-9 items-center justify-center rounded-md border border-input bg-background text-sm hover:bg-accent hover:text-accent-foreground"
-              aria-label="Modo dev"
-            >
-              Dev
-            </Link>
-          ) : null}
-        </div>
+        <AuthLinksClient tenant={tenant} basePath={basePath} />
       </div>
     </header>
   );

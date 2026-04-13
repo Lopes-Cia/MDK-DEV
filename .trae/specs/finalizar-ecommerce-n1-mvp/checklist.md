@@ -1,0 +1,13 @@
+- [x] `MOCK-END` permite ler/gravar JSON em `COMMERCE/*.json` via `/api/:tenant/json?path=...`
+- [x] Schemas (Zod) existem e são usados antes de persistir dados (usuário/sessão/pedido)
+- [x] Estrutura básica de `COMMERCE/{users,sessions,orders}.json` é criada automaticamente quando não existe
+- [x] Componentes/telas não chamam persistência de domínio direto; usam stores que chamam apenas `/api/commerce/...`
+- [x] `/{tenant}/login` cria sessão mock e redireciona corretamente
+- [x] `/{tenant}/cadastro` cria usuário + sessão e redireciona corretamente
+- [x] `/{tenant}/minha-conta` exige sessão e mostra dados do usuário
+- [x] `/{tenant}/checkout` cria pedido válido e limpa carrinho
+- [x] `/{tenant}/checkout/sucesso` mostra o `orderId` e link para detalhe do pedido
+- [x] `/{tenant}/pedidos` lista pedidos do usuário logado
+- [x] `/{tenant}/pedido/[orderId]` mostra detalhe e itens do pedido (somente para usuário logado)
+- [x] Páginas do MVP têm estados de loading/empty/error consistentes
+- [x] Navegação base (header/links) permite chegar nas páginas do MVP sem URL manual

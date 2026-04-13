@@ -1,4 +1,4 @@
-:root[data-tenant="mercearia-lopes"] {
+[data-tenant="mercearia-lopes"] {
   --background: #fcfdfd;
   --surface: #ffffff;
   --text: #33344c;
@@ -11,4 +11,3 @@
   --radius: 10px;
   --shadow: 0 10px 30px rgba(16, 24, 40, 0.12);
 }
-

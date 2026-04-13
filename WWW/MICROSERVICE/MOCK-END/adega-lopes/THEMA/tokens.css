@@ -1,4 +1,4 @@
-:root[data-tenant="adega-lopes"] {
+[data-tenant="adega-lopes"] {
   --background: #0b2744;
   --surface: #122f53;
   --text: #ffe9e8;
@@ -11,4 +11,3 @@
   --radius: 12px;
   --shadow: 0 8px 30px rgba(0, 0, 0, 0.35);
 }
-

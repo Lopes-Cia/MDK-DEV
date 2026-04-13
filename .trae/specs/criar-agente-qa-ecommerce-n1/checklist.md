@@ -1,0 +1,5 @@
+- [ ] Existe um spec claro para o Agente QA-Runner, com modos de execução e política de segurança
+- [ ] A tarefa “Coletar imagens” está especificada com critérios de validação (JSON + assets + metadados + fail-fast)
+- [ ] A revisão dos legados (IA/DESENHOS/LEGADO e .trae/documents/LEGADO) produz requisitos consolidados para o N1
+- [ ] O QA do `WWW/n1` define rotas críticas, estados e coleta de evidência (prints/logs)
+- [ ] Existe um plano de correção priorizado (P0/P1/P2) para aproximar o N1 do planejado e diferenciar os ecommerces

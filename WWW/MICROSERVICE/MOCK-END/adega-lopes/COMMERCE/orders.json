@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "orders": [
+    {
+      "id": "bc610d1a-2bc4-4c41-8a9d-ef9abb224b46",
+      "tenant": "adega-lopes",
+      "userId": "785e3c92-a161-40e3-8a11-7f82f08d19f7",
+      "status": "created",
+      "items": [
+        {
+          "id": "d0dd6195-985c-4e92-ba15-50015fd9575b",
+          "productId": 1,
+          "sku": null,
+          "name": "Produto Teste",
+          "quantity": 1,
+          "unitPrice": 10.5,
+          "lineTotal": 10.5
+        }
+      ],
+      "address": {
+        "fullName": "API Test",
+        "phone": "1199999999",
+        "zipCode": "01001000",
+        "street": "Rua Teste",
+        "number": "123",
+        "complement": null,
+        "neighborhood": "Centro",
+        "city": "Sao Paulo",
+        "state": "SP"
+      },
+      "payment": {
+        "method": "pix",
+        "status": "pending"
+      },
+      "totals": {
+        "itemsSubtotal": 10.5,
+        "shipping": 0,
+        "discount": 0,
+        "grandTotal": 10.5,
+        "currency": "BRL"
+      },
+      "createdAt": "2026-04-11T17:09:22.109Z",
+      "updatedAt": "2026-04-11T17:09:22.109Z"
+    }
+  ]
+}

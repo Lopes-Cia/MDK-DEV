@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "users": [
+    {
+      "id": "785e3c92-a161-40e3-8a11-7f82f08d19f7",
+      "email": "api-test-20260411170921630@example.com",
+      "name": "API Test",
+      "passwordHash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+      "createdAt": "2026-04-11T17:09:21.760Z",
+      "updatedAt": "2026-04-11T17:09:21.760Z"
+    }
+  ]
+}

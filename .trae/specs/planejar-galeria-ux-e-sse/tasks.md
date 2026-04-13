@@ -1,7 +1,7 @@
 # Tasks
 - [ ] Marcar “próximos avanços” no microservice (documental)
-  - [ ] Registrar no spec que os próximos avanços são: Galeria de UX e SSE
-  - [ ] Definir escopo mínimo (MVP) e fora de escopo para cada um
+  - [ ] Registrar no spec que o próximo avanço é: Galeria de UX
+  - [ ] Definir escopo mínimo (MVP) e fora de escopo
 
 - [ ] Galeria de UX — desenho do recurso
   - [ ] Definir taxonomia do catálogo (padrões por categoria: navegação, forms, feedback, dados)
@@ -13,12 +13,5 @@
   - [ ] Registrar 1–3 componentes alvo desse registry para validar valor (ex.: menu, table, drawer)
   - [ ] Documentar comando padrão do CLI para adicionar (`npx shadcn add @<registry>/<component>`)
 
-- [ ] SSE — desenho do recurso
-  - [ ] Definir eventos SSE mínimos (tipo, payload, frequência, reconexão)
-  - [ ] Definir endpoints SSE pro DevDash (por domínio: mockend, n1/tenant, jobs)
-  - [ ] Definir integração: store conecta no SSE e atualiza estado; UI só renderiza
-  - [ ] Definir fallback para polling e critérios de troca (SSE indisponível/erro)
-
 # Task Dependencies
 - Pesquisa de registry alternativo alimenta a Galeria de UX.
-- SSE depende do desenho do contrato de eventos (antes de qualquer implementação).

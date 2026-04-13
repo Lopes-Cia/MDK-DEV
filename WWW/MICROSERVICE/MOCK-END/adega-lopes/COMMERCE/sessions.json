@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "sessions": [
+    {
+      "id": "3558c418-74ae-4791-a5a8-14c76d980fa4",
+      "tenant": "adega-lopes",
+      "userId": "785e3c92-a161-40e3-8a11-7f82f08d19f7",
+      "token": "6e59c15a6a20e47eb7c78381128ad189c09977b646d3bf198cc67177a3d52ad0",
+      "createdAt": "2026-04-11T17:09:21.760Z",
+      "expiresAt": "2026-05-11T17:09:21.775Z"
+    },
+    {
+      "id": "8a417ed2-1078-4c8a-b410-89d592a66e72",
+      "tenant": "adega-lopes",
+      "userId": "785e3c92-a161-40e3-8a11-7f82f08d19f7",
+      "token": "4960c5605dcf03f01b982eadf38121b309469891fb0cad5bf4cb333f2552d918",
+      "createdAt": "2026-04-11T17:09:21.930Z",
+      "expiresAt": "2026-05-11T17:09:21.930Z"
+    }
+  ]
+}

@@ -1,23 +1,22 @@
-# Galeria de UX + SSE (Próximos Avanços) — Spec
+# Galeria de UX (Próximo Avanço) — Spec
 
 ## Why
-O microservice DEVDASH precisa evoluir de “painel funcional” para uma base reutilizável de UI e DX (developer experience) que acelere a construção da fábrica de ecommerce. Dois próximos avanços destravam isso: (1) uma Galeria de UX (biblioteca viva de padrões) e (2) SSE para eliminar “pisca/polling” nos monitores.
+O microservice DEVDASH precisa evoluir de “painel funcional” para uma base reutilizável de UI e DX (developer experience) que acelere a construção da fábrica de ecommerce. O próximo avanço é uma Galeria de UX (biblioteca viva de padrões) para reaproveitar UI com consistência.
 
 ## What Changes
-- Criar um plano em aberto para 2 novos recursos do microservice:
+- Criar um plano em aberto para um novo recurso do microservice:
   - **Galeria de UX**: uma área do DEVDASH para visualizar e reaproveitar padrões (cards, menus, dialogs, empty/error/loading, tabelas) com referências rastreáveis.
-  - **SSE (Server-Sent Events)**: streaming de eventos do backend para o frontend para reduzir polling e estabilizar estados (UP/DOWN/STARTING) sem flicker.
 - Salvar **2 referências** de bibliotecas/registries para UI:
   - **coss/ui** (skill já instalada): base em Base UI + Tailwind, filosofia copy/paste e catálogo de “particles”.
   - **Um registry alternativo via shadcn directory** (com critério e shortlist), usando o padrão do CLI `npx shadcn add @<registry>/<component>`.
-- Marcar ambos como **próximos avanços** do DEVDASH (sem implementação agora).
+- Marcar como **próximo avanço** do DEVDASH (sem implementação agora).
 
 ## Impact
 - Affected specs: evolução do DEVDASH como plataforma (UI, padrões, observabilidade UX).
 - Affected code (quando implementar):
   - `WWW/MICROSERVICE/devdash/src/app/**` (novas rotas/páginas)
-  - `WWW/MICROSERVICE/devdash/src/stores/**` (store será o único consumidor de `/api/*`, inclusive SSE)
-  - `WWW/MICROSERVICE/devdash/src/app/api/**/route.ts` (novas rotas SSE)
+  - `WWW/MICROSERVICE/devdash/src/stores/**` (padrões e wrappers de UI usam stores e não chamam API direto)
+  - `WWW/MICROSERVICE/devdash/src/app/_components/**` (components de galeria e páginas)
 
 ## Referências (salvar e reaproveitar)
 ### Referência 1 (confirmada): coss/ui
@@ -52,16 +51,6 @@ O sistema SHALL definir um plano para uma Galeria de UX no DEVDASH contendo:
 #### Scenario: Reaproveitar padrão no ecommerce
 - **WHEN** for necessário implementar um padrão (ex.: menu mobile, card de produto, tabela administrativa)
 - **THEN** o time encontra um exemplo pronto e replicável na Galeria, com referência de origem (coss/shadcn registry)
-
-### Requirement: SSE para monitores (plano)
-O sistema SHALL definir um plano para SSE no DEVDASH:
-- endpoint SSE em `/api/**` que emite eventos (status do MOCK-END, status do N1, etc.)
-- store como cliente único do SSE (UI consome estado do store)
-- fallback para polling (caso SSE não suporte o ambiente ou falhe)
-
-#### Scenario: Estado estável sem flicker
-- **WHEN** o serviço alternar estados (STARTING → UP, UP → DOWN)
-- **THEN** a UI atualiza com transições previsíveis e sem “piscar” por revalidação agressiva
 
 ## MODIFIED Requirements
 Nenhum.

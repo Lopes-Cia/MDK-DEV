@@ -35,12 +35,19 @@ export default async function TenantLayout({ children, params }: LayoutProps) {
 
   const tenantName = context?.tenantName ?? tenant;
   const title = copy?.pages?.home?.title ?? tenantName;
-  const showDevShortcut = process.env.NODE_ENV === "development";
 
   return (
-    <div className="min-h-full flex flex-col">
+    <div
+      data-tenant={tenant}
+      className="min-h-full flex flex-col bg-background text-foreground"
+      style={{
+        ["--foreground" as never]: "var(--text)",
+        backgroundColor: "var(--background)",
+        color: "var(--foreground)",
+      }}
+    >
       <style dangerouslySetInnerHTML={{ __html: tokensCss }} />
-      <Header tenant={tenant} title={title} showDevShortcut={showDevShortcut} />
+      <Header tenant={tenant} title={title} />
       {children}
       <Footer tenantName={tenantName} />
     </div>

@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "orders": [
+    {
+      "id": "9fc56653-e35b-42a6-8890-f32b9899d00d",
+      "tenant": "mercearia-lopes",
+      "userId": "0327567b-78bb-4186-b393-d9d2609baf1e",
+      "status": "created",
+      "items": [
+        {
+          "id": "bde67ce6-35d8-4150-89d5-054c3cfddf3c",
+          "productId": 2001,
+          "sku": null,
+          "name": "Arroz Tio João 1kg",
+          "quantity": 1,
+          "unitPrice": 8.9,
+          "lineTotal": 8.9
+        }
+      ],
+      "address": {
+        "fullName": "Cloveis Eduardo Soares",
+        "phone": "1699999999",
+        "zipCode": "14055567",
+        "street": "r talk",
+        "number": "445",
+        "complement": null,
+        "neighborhood": "ipiranga",
+        "city": "ribeirao preto",
+        "state": "SP"
+      },
+      "payment": {
+        "method": "pix",
+        "status": "pending",
+        "transactionId": null
+      },
+      "totals": {
+        "itemsSubtotal": 8.9,
+        "shipping": 0,
+        "discount": 0,
+        "grandTotal": 8.9,
+        "currency": "BRL"
+      },
+      "createdAt": "2026-04-13T11:33:00.509Z",
+      "updatedAt": "2026-04-13T11:33:00.509Z"
+    }
+  ]
+}

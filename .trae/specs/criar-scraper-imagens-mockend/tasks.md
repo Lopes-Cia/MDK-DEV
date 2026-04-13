@@ -1,30 +1,47 @@
 # Tasks
-- [ ] Pesquisa e desenho do pipeline (scraping + IA)
-  - [ ] Mapear fontes e restrições (API-first vs scraping) e registrar termos de busca e trade-offs
-  - [ ] Definir 2 estratégias mínimas (A: background HTTP; B: Playwright) e 1 opcional (C: OG/JSON-LD)
-  - [ ] Definir critérios de validação de imagem (MIME, dimensões mínimas, peso máximo, dedupe por hash)
 
-- [ ] Definir contrato de arquivos e caminhos
-  - [ ] Definir onde salvar imagens baixadas por tenant (ex.: `MOCK-END/<tenant>/THEMA/assets/...` ou equivalente)
-  - [ ] Definir como escrever o campo `image` no JSON (URL externa vs path local padronizado)
-  - [ ] Definir formato de metadados de rastreio (ex.: `imageMeta` ou arquivo auxiliar por tenant)
+- [x] Pesquisa (base) — antes de travar contratos
+  - [x] Mapear estratégias A/B/C, riscos e trade-offs (rascunho)
+  - [x] Pesquisar “fórmulas” mais maduras para cada estratégia (anti-bot, rate-limit, dedupe, validação) e consolidar em `IA/` (1 doc por assunto)
 
-- [ ] Implementar scripts (scraping)
-  - [ ] Script: iterar tenants e ler `CATALOGO/produtos.json` e `CATALOGO/categorias.json`
-  - [ ] Script: resolver query por item (produto/categoria) e coletar candidates por estratégia
-  - [ ] Script: baixar/normalizar imagem (extensão, nome, dedupe, overwrite controlado)
-  - [ ] Script: atualizar JSON (somente campos `image` e metadados definidos)
+- [ ] Contratos (Fechados/Obrigatórios antes de codar)
+  - [x] Definir storage físico por tenant (`THEMA/assets/images/produtos|categorias`)
+  - [x] Definir semântica do campo `image` e desafio do arquivo: slug + short-hash (`path estável`, ex: `produto-x-1a2b3c.webp`), e fallback opcional (URL externa)
+  - [x] Definir formato e local de metadados (arquivo auxiliar `CATALOGO/image-meta.json` por tenant)
 
-- [ ] Implementar scripts (IA para banners/criativos)
-  - [ ] Definir gerador de prompts baseado em categoria + contexto/branding (sem texto na imagem)
-  - [ ] Integrar geração por IA (via API) com chave em env (sem commitar)
-  - [ ] Salvar assets gerados e atualizar JSON alvo (definido no contrato)
+- [x] MOCK-END: CRUD controlado de JSON e upload de Assets (suporte)
+  - [x] Expor endpoints CRUD por tenant (ler/escrever/listar/remover) com allowlist e bloqueio de path traversal
+  - [x] Padronizar erros (`invalid_json`, `payload_too_large`, `invalid_path`) e métodos permitidos (GET/PUT/DELETE/OPTIONS)
+  - [x] **Novo Endpoint Assets**: Permitir upload/salvamento binário na pasta `THEMA/assets/images/` para suportar o scraper
 
-- [ ] Guardrails e validação manual
-  - [ ] Respeitar rate limit (delays/backoff), cache e poison-pill detection (403/429/captcha)
-  - [ ] Verificar que o MOCK-END continua consistente (JSON válido; nenhuma chave removida)
-  - [ ] Registrar relatório final em `IA/` (fontes, resultados, falhas, próximos passos)
+- [x] Microservice 1: `image-scraper` (scraping)
+  - [x] Criar estrutura em `WWW/MICROSERVICE/image-scraper` (package.json, scripts, README mínimo)
+  - [x] Implementar execução (CLI e/ou endpoint HTTP) + relatório de execução
+  - [x] Implementar config via env (URL do MOCK-END, limites, modo seguro 10%)
+  - [x] Implementar pipeline A/B (e C opcional): buscar candidates, validar, baixar/normalizar, dedupe
+  - [x] Atualizar JSON via CRUD do MOCK-END (somente `image` + metadados definidos)
+  - [x] Implementar placeholder por tenant quando falhar (A/B/C)
+  - [x] Implementar guardrails: amostragem 10%, fail-fast por item e cooldown por domínio
+
+- [x] Microservice 2: `ia-image-generator` (banners/criativos)
+  - [x] Criar estrutura em `WWW/MICROSERVICE/ia-image-generator` (package.json, scripts, README mínimo)
+  - [x] Implementar gerador de prompts baseado em categoria + contexto/branding (sem texto na imagem)
+  - [x] Gerar manifesto de prompts por tenant (mesmo sem chave)
+  - [x] Integrar geração por IA via API (chave em env; sem commitar segredo)
+  - [x] Salvar assets gerados e registrar no JSON alvo (conforme contrato)
+
+- [x] Microservice 3: `sse-hub` (SSE)
+  - [x] Criar estrutura em `WWW/MICROSERVICE/sse-hub` (package.json, scripts, README mínimo)
+  - [x] Definir contrato de eventos (tipos, payload mínimo, heartbeat, reconexão)
+  - [x] Implementar endpoint SSE (`GET /events`) com heartbeat e canais
+  - [x] Implementar endpoint de publish interno (`POST /publish`) ou integração equivalente
+  - [x] Planejar consumo no DevDash via store + fallback para polling
+
+- [x] Validação documental (sem testes automáticos)
+  - [x] Registrar pesquisa final em `IA/` (fontes, resultados, falhas, próximos passos)
+  - [x] Garantir que o spec e tasks não tenham duplicações/legado conflitante
 
 # Task Dependencies
-- Contrato de caminhos/metadados depende do desenho do pipeline.
-- IA depende de decidir o modelo/API e variáveis de ambiente.
+
+- Contratos de storage/path/metadados estão **fechados** (ver Tasks).
+- `sse-hub` depende do contrato de eventos e do plano de consumo no DevDash (store + fallback).

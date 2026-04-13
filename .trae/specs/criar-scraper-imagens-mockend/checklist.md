@@ -1,5 +1,10 @@
-- [ ] Spec define pelo menos 2 estratégias de scraping (A background + B Playwright) e fallback
-- [ ] Spec define contrato de paths/URLs e onde persistir imagens por tenant
-- [ ] Spec define atualização dos JSONs (produtos/categorias) sem quebrar schema
-- [ ] Spec inclui geração de assets por IA (banners/criativos) baseada em categorias (não produto)
-- [ ] Spec prevê rastreabilidade (origem/método/timestamp/hash) e dedupe
+- [x] Spec define pelo menos 2 estratégias de scraping (A background + B Playwright) e fallback
+- [x] Spec define 3 novos microservices: `image-scraper`, `ia-image-generator`, `sse-hub`
+- [x] Spec define contrato de paths/URLs e onde persistir imagens/banners por tenant
+- [x] Spec define atualização dos JSONs (produtos/categorias) sem quebrar schema
+- [x] Spec inclui geração de assets por IA (banners/criativos) baseada em categorias/branding (não produto)
+- [x] Spec inclui SSE (contrato de eventos + fallback para polling no DevDash via store)
+- [x] Spec prevê rastreabilidade (origem/método/timestamp/hash) e dedupe
+- [x] Spec inclui ferramenta CRUD de JSON e Upload de Imagens no MOCK-END (por tenant) para suportar update automatizado
+- [x] Spec inclui placeholder padronizado quando não houver imagem válida
+- [x] Spec define “modo seguro” (amostragem 10%) e regra de fail-fast (limite de tentativas/erros)

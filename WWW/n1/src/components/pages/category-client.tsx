@@ -65,7 +65,7 @@ export function CategoryClient({
 
   return (
     <main className="flex-1">
-      <div className="mx-auto max-w-5xl px-4 py-10">
+      <div className="mx-auto max-w-6xl px-4 py-10">
         <div className="space-y-1">
           <div className="text-sm text-muted-foreground">{title}</div>
           <h1 className="text-2xl font-semibold tracking-tight">{category?.name ?? slug}</h1>
@@ -79,7 +79,7 @@ export function CategoryClient({
           ) : !filtered || filtered.length === 0 ? (
             <div className="text-sm text-muted-foreground">{emptyState}</div>
           ) : (
-            <div className="grid gap-4 sm:grid-cols-2">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
               {filtered.map((p) => (
                 <ProductTile key={p.id} tenant={tenant} product={p} />
               ))}

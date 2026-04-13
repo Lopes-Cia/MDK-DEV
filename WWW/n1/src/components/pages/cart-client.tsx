@@ -1,9 +1,11 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 
 import { Button } from "@/components/ui/button";
 import { getCartSubtotal, useCartStore } from "@/lib/store/cart";
+import { resolveTenantAssetPath } from "@/lib/utils";
 
 export function CartClient({
   tenant,
@@ -45,14 +47,27 @@ export function CartClient({
                   key={item.productId}
                   className="flex items-center justify-between gap-4 rounded-lg border border-border bg-background p-4"
                 >
-                  <div className="min-w-0">
-                    <Link
-                      href={`/${tenant}/produto/${item.slug}`}
-                      className="block truncate font-medium hover:underline"
-                    >
-                      {item.name}
-                    </Link>
-                    <div className="mt-1 text-sm text-muted-foreground">R$ {item.price.toFixed(2)}</div>
+                  <div className="flex min-w-0 items-center gap-3">
+                    <div className="relative h-12 w-12 shrink-0 overflow-hidden rounded-md border border-border bg-muted">
+                      {resolveTenantAssetPath(tenant, item.image) ? (
+                        <Image
+                          src={resolveTenantAssetPath(tenant, item.image)!}
+                          alt={item.name}
+                          fill
+                          className="object-cover"
+                          sizes="48px"
+                        />
+                      ) : null}
+                    </div>
+                    <div className="min-w-0">
+                      <Link
+                        href={`/${tenant}/produto/${item.slug}`}
+                        className="block truncate font-medium hover:underline"
+                      >
+                        {item.name}
+                      </Link>
+                      <div className="mt-1 text-sm text-muted-foreground">R$ {item.price.toFixed(2)}</div>
+                    </div>
                   </div>
 
                   <div className="flex items-center gap-2">
@@ -78,9 +93,15 @@ export function CartClient({
               <span className="font-semibold">R$ {subtotal.toFixed(2)}</span>
             </div>
             <div className="mt-4 space-y-2">
-              <Button className="w-full" disabled={items.length === 0}>
-                {checkoutCta}
-              </Button>
+              {items.length === 0 ? (
+                <Button className="w-full" disabled>
+                  {checkoutCta}
+                </Button>
+              ) : (
+                <Button asChild className="w-full">
+                  <Link href={`/${tenant}/checkout`}>{checkoutCta}</Link>
+                </Button>
+              )}
               <Button asChild variant="outline" className="w-full">
                 <Link href={`/${tenant}/`}>{continueShopping}</Link>
               </Button>

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "users": [
+    {
+      "id": "0327567b-78bb-4186-b393-d9d2609baf1e",
+      "email": "eduardo.rezende@lopesecia.com.br",
+      "name": "Cloveis Eduardo Soares",
+      "passwordHash": "221b37fcdb52d0f7c39bbd0be211db0e1c00ca5fbecd5788780463026c6b964b",
+      "createdAt": "2026-04-13T11:31:27.340Z",
+      "updatedAt": "2026-04-13T11:31:27.340Z"
+    }
+  ]
+}

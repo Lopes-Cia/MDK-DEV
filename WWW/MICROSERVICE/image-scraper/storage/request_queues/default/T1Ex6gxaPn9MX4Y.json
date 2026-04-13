@@ -1,0 +1,9 @@
+{
+	"id": "T1Ex6gxaPn9MX4Y",
+	"json": "{\"id\":\"T1Ex6gxaPn9MX4Y\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"2100\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":2100,\"slug\":\"agua-mineral-crystal-1-5l\",\"title\":\"Água Mineral Crystal 1,5L\",\"query\":\"Água Mineral Crystal 1,5L Crystal\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-11T15:13:28.217Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "2100",
+	"url": "https://example.com/dummy"
+}
