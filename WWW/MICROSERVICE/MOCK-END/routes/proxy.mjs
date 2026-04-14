@@ -140,6 +140,17 @@ function matchProxyTarget(pathname) {
   return null;
 }
 
+function routeMatches(route, method, pathname) {
+  if (!route) return false;
+  if (String(route.method ?? "").toUpperCase() !== String(method ?? "").toUpperCase()) {
+    return false;
+  }
+  const uri = String(route.uri ?? "");
+  if (!uri) return false;
+  if (uri.endsWith("*")) return pathname.startsWith(uri.slice(0, -1));
+  return pathname === uri;
+}
+
 const HANDLER_MODULE_CACHE = new Map();
 
 function resolveHandlerPath(projectDir, handlerClass) {
@@ -163,17 +174,6 @@ async function loadHandlerModule(projectDir, handlerClass) {
   } catch {
     return null;
   }
-}
-
-function routeMatches(route, method, pathname) {
-  if (!route) return false;
-  if (String(route.method ?? "").toUpperCase() !== String(method ?? "").toUpperCase()) {
-    return false;
-  }
-  const uri = String(route.uri ?? "");
-  if (!uri) return false;
-  if (uri.endsWith("*")) return pathname.startsWith(uri.slice(0, -1));
-  return pathname === uri;
 }
 
 export async function handleProxy(req, res, ctx) {
@@ -212,6 +212,8 @@ export async function handleProxy(req, res, ctx) {
     return true;
   }
 
+  const targetUrl = normalizeJoin(upstreamBaseUrl, match.upstreamPath, url.search);
+
   if (match.envKey === "AUTH_BASE_URL") {
     // AUTH base usa o mesmo modelo claro de roteamento: routes.mjs + handlers.
     // O match é feito contra o "upstreamPath" (ex.: /tokenService).
@@ -248,7 +250,61 @@ export async function handleProxy(req, res, ctx) {
     return true;
   }
 
-  const targetUrl = normalizeJoin(upstreamBaseUrl, match.upstreamPath, url.search);
-  await proxyToUpstream(req, res, cors, targetUrl);
+  // INTEGRATION base ("/connect/*"):
+  // - Por padrão continua sendo proxy cego para o upstream (compatível com hoje).
+  // - Se existir rota declarada em PROJETOS/connect/routes.mjs para o upstreamPath,
+  //   usa o execution.mode para escolher entre handler original/mock/hybrid.
+  const isIntegrationPrefix = match.upstreamPath.startsWith("/Servidor/webservice/integration/");
+  const routes = Array.isArray(ctx.projectRoutes) ? ctx.projectRoutes : null;
+  const route =
+    isIntegrationPrefix && routes
+      ? routes.find((r) => routeMatches(r, req.method, match.upstreamPath)) ?? null
+      : null;
+
+  if (!route) {
+    await proxyToUpstream(req, res, cors, targetUrl);
+    return true;
+  }
+
+  const mode = String(route?.execution?.mode ?? "original");
+  const handlerClassBase = String(route?.handler_class ?? "");
+  const handlerFunction = String(route?.handler_function ?? "");
+  if (!handlerClassBase || !handlerFunction) {
+    json(res, 501, { success: false, message: "not_implemented" }, cors);
+    return true;
+  }
+
+  let handlerClassToUse = null;
+  if (mode === "original") {
+    handlerClassToUse = handlerClassBase;
+  } else if (mode === "mock" || mode === "hybrid") {
+    handlerClassToUse = `mock/${handlerClassBase}`;
+  } else {
+    json(res, 501, { success: false, message: "not_implemented" }, cors);
+    return true;
+  }
+
+  // Disponibiliza no ctx o targetUrl do upstream para o handler "original" (se usado).
+  ctx.projectEnv = env;
+  ctx.upstreamTargetUrl = targetUrl;
+
+  // Hybrid (por enquanto): dispara a chamada original (GET) em background e responde com o mock.
+  if (mode === "hybrid") {
+    const method = String(req.method ?? "GET").toUpperCase();
+    if (method === "GET") {
+      const headers = buildProxyRequestHeaders(req);
+      fetch(targetUrl, { method, headers, redirect: "follow" }).catch(() => null);
+    }
+  }
+
+  const mod = await loadHandlerModule(effectiveProjectDir, handlerClassToUse);
+  const handlers = mod?.handlers && typeof mod.handlers === "object" ? mod.handlers : null;
+  const fn = handlers?.[handlerFunction];
+  if (typeof fn !== "function") {
+    json(res, 501, { success: false, message: "not_implemented" }, cors);
+    return true;
+  }
+
+  await fn(req, res, ctx);
   return true;
 }

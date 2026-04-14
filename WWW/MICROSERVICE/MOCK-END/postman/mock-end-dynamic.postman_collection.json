@@ -1,0 +1,312 @@
+{
+  "info": {
+    "name": "MOCK-END - Projetos Dinâmicos",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:4000"
+    },
+    {
+      "key": "authorizationToken",
+      "value": "mock-integrator-token"
+    },
+    {
+      "key": "PRODUTO",
+      "value": "CONNECT"
+    },
+    {
+      "key": "EAN",
+      "value": 7890000002998
+    },
+    {
+      "key": "IDINTEGRADORA",
+      "value": 8
+    },
+    {
+      "key": "CODCLI",
+      "value": 1219
+    },
+    {
+      "key": "KEY",
+      "value": "ODtDT05ORUNUOzEyMTk="
+    },
+    {
+      "key": "codProd",
+      "value": 2001
+    }
+  ],
+  "item": [
+    {
+      "name": "Connect (Internos)",
+      "item": [
+        {
+          "name": "api/auth - register",
+          "description": "Execution mode: original\nAuth mode: none",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/auth/register",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"responsavel\": \"Operador Mock\",\n  \"cnpj\": \"00.000.000/0000-00\",\n  \"email\": \"operador@mock.local\",\n  \"whatsapp\": \"5511999999999\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "api/auth - send-token",
+          "description": "Execution mode: original\nAuth mode: none",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/auth/send-token",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"email\": \"operador@mock.local\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "api/auth - verify-token",
+          "description": "Execution mode: original\nAuth mode: none",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/auth/verify-token",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"token\": \"123456\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "api/auth - logout",
+          "description": "Execution mode: original\nAuth mode: none",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/auth/logout",
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "api/auth - me",
+          "description": "Execution mode: original\nAuth mode: required",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{authorizationToken}}"
+              }
+            ],
+            "url": "{{baseUrl}}/api/auth/me"
+          }
+        },
+        {
+          "name": "api/products - list",
+          "description": "Execution mode: mock\nAuth mode: none",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/products"
+          }
+        },
+        {
+          "name": "api/products - detail",
+          "description": "Execution mode: mock\nAuth mode: none",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/api/products/{{codProd}}"
+          }
+        }
+      ]
+    },
+    {
+      "name": "ApiLopes (Auth Base)",
+      "item": [
+        {
+          "name": "auth - tokenService",
+          "description": "Execution mode: original\nAuth mode: none",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "url": "{{baseUrl}}/ApiLopes/webservice/api/tokenService",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"produto\": \"{{PRODUTO}}\",\n  \"ean\": {{EAN}},\n  \"idIntegradora\": {{IDINTEGRADORA}},\n  \"codCli\": {{CODCLI}}\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "auth - postAutenteicaAplicativo",
+          "description": "Execution mode: original\nAuth mode: required",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{authorizationToken}}"
+              }
+            ],
+            "url": "{{baseUrl}}/ApiLopes/webservice/api/postAutenteicaAplicativo",
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"chaveAtivacao\": \"{{KEY}}\",\n  \"responsavel\": \"Operador Mock\",\n  \"cnpj\": \"00.000.000/0000-00\",\n  \"email\": \"operador@mock.local\",\n  \"whatsapp\": \"5511999999999\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "auth - enviarToken",
+          "description": "Execution mode: original\nAuth mode: required",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{authorizationToken}}"
+              }
+            ],
+            "url": "{{baseUrl}}/ApiLopes/webservice/api/enviarToken",
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "auth - verificarTokenSistema",
+          "description": "Execution mode: original\nAuth mode: required",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{authorizationToken}}"
+              }
+            ],
+            "url": "{{baseUrl}}/ApiLopes/webservice/api/verificarTokenSistema",
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "auth - getOperadorSistemaForId",
+          "description": "Execution mode: original\nAuth mode: required",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              },
+              {
+                "key": "Authorization",
+                "value": "{{authorizationToken}}"
+              }
+            ],
+            "url": "{{baseUrl}}/ApiLopes/webservice/api/getOperadorSistemaForId"
+          }
+        }
+      ]
+    }
+  ]
+}

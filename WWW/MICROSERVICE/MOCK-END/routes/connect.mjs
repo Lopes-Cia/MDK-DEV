@@ -84,16 +84,10 @@ export async function handleConnect(req, res, ctx) {
   if (!route) return false;
   ctx.routeParams = params;
 
-  // No momento só "original" é executado. "mock/hybrid" voltam 501.
   const mode = String(route?.execution?.mode ?? "original");
-  if (mode !== "original") {
-    await notImplemented(res, cors);
-    return true;
-  }
-
-  const handlerClass = String(route?.handler_class ?? "");
+  const handlerClassBase = String(route?.handler_class ?? "");
   const handlerFunction = String(route?.handler_function ?? "");
-  if (!handlerClass || !handlerFunction) {
+  if (!handlerClassBase || !handlerFunction) {
     await notImplemented(res, cors);
     return true;
   }
@@ -104,14 +98,34 @@ export async function handleConnect(req, res, ctx) {
     return true;
   }
 
-  const mod = await loadHandlerModule(projectDir, handlerClass);
-  const handlers = mod?.handlers && typeof mod.handlers === "object" ? mod.handlers : null;
-  const fn = handlers?.[handlerFunction];
-  if (typeof fn !== "function") {
+  // Define os paths das classes a carregar baseado no mode
+  let classesToLoad = [];
+  if (mode === "original") {
+    classesToLoad = [handlerClassBase];
+  } else if (mode === "mock") {
+    classesToLoad = [`mock/${handlerClassBase}`];
+  } else if (mode === "hybrid") {
+    classesToLoad = [handlerClassBase, `mock/${handlerClassBase}`];
+  } else {
     await notImplemented(res, cors);
     return true;
   }
 
-  await fn(req, res, ctx);
+  // Carrega e executa os handlers em ordem
+  let executedAny = false;
+  for (const hClass of classesToLoad) {
+    const mod = await loadHandlerModule(projectDir, hClass);
+    const handlers = mod?.handlers && typeof mod.handlers === "object" ? mod.handlers : null;
+    const fn = handlers?.[handlerFunction];
+    if (typeof fn === "function") {
+      await fn(req, res, ctx);
+      executedAny = true;
+    }
+  }
+
+  if (!executedAny) {
+    await notImplemented(res, cors);
+  }
+
   return true;
 }
