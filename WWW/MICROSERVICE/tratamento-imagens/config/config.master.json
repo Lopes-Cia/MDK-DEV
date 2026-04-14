@@ -1,0 +1,96 @@
+{
+  "config_master": {
+    "version": 1,
+    "tenant": "connect",
+    "modo_execucao": {
+      "tipo_default": "teste",
+      "teste": {
+        "source_json": "../../MOCK-END/PROJETOS/connect/handlers/mock/api/all_products.json",
+        "selecionar_produtos_aleatorios": 3,
+        "seed_opcional": 42
+      },
+      "full": {
+        "source_json": "../../MOCK-END/PROJETOS/connect/handlers/mock/api/all_products.json",
+        "processar_todos_produtos": true
+      }
+    },
+    "format": {
+      "output_ext": "webp",
+      "quality": 86
+    },
+    "background": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "ficha_tamanho": {
+      "version": 1,
+      "proporcao": {
+        "modo": "quadrado",
+        "ratio": "1:1"
+      },
+      "regra_resize": {
+        "fit": "contain",
+        "sem_upscale": true,
+        "origem_master": "full"
+      },
+      "acabamento": {
+        "sangria": {
+          "padrao_pct": 0.08
+        }
+      },
+      "tamanhos": [
+        { "chave": "thumbnail", "largura": 120, "altura": 120, "badge_permitido": false },
+        { "chave": "small", "largura": 240, "altura": 240, "badge_permitido": false },
+        { "chave": "medium", "largura": 400, "altura": 400, "badge_permitido": true },
+        { "chave": "large", "largura": 700, "altura": 700, "badge_permitido": true },
+        { "chave": "full", "largura": 1000, "altura": 1000, "badge_permitido": true }
+      ]
+    },
+    "trim_config": {
+      "version": 1,
+      "alpha": {
+        "pixel_vazio_ate": 10
+      },
+      "validacao": {
+        "min_lado_trim_px": 75,
+        "min_area_trim_px2": 20000,
+        "min_area_trim_pct_vs_original": 0.2,
+        "max_area_trim_pct_vs_original": 0.98
+      }
+    },
+    "badge_config": {
+      "version": 1,
+      "ativo": true,
+      "aplicar_em": {
+        "somente_imagem_indice_zero": true,
+        "tamanhos_permitidos": ["medium", "large", "full"]
+      },
+      "regra_orientacao": {
+        "se_trim_quadrado_ou_retrato": "vertical_esquerda",
+        "se_trim_paisagem": "horizontal_topo"
+      },
+      "variantes": {
+        "vertical_esquerda": { "largura_pct_canvas": 0.2 },
+        "horizontal_topo": { "altura_pct_canvas": 0.2 }
+      }
+    },
+    "fallback_imagem": {
+      "ativo": true,
+      "arquivo_fallback_local": "../../../../IA/ASSETS/semImagem.png",
+      "aplicar_quando": [
+        "download_timeout",
+        "download_dns_error",
+        "download_403",
+        "download_404",
+        "download_invalid_content_type",
+        "download_payload_too_large",
+        "trim_no_foreground_detected",
+        "quality_below_medium"
+      ],
+      "badge_permitido_no_fallback": false
+    },
+    "timeouts": {
+      "download_ms": 30000
+    }
+  }
+}

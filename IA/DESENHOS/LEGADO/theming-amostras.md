@@ -75,8 +75,8 @@ Objetivo: ter 1 categoria e 2 produtos “representativos” por tenant para col
 - contraste de badge e CTA
 
 Referência de onde o seed completo fica:
-- ADEGA: [categorias.json](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/adega-lopes/CATALOGO/categorias.json) e [produtos.json](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/adega-lopes/CATALOGO/produtos.json)
-- MERCEARIA: [categorias.json](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/mercearia-lopes/CATALOGO/categorias.json) e [produtos.json](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/mercearia-lopes/CATALOGO/produtos.json)
+- ADEGA: [categorias.json](../../../WWW/MICROSERVICE/MOCK-END/adega-lopes/CATALOGO/categorias.json) e [produtos.json](../../../WWW/MICROSERVICE/MOCK-END/adega-lopes/CATALOGO/produtos.json)
+- MERCEARIA: [categorias.json](../../../WWW/MICROSERVICE/MOCK-END/mercearia-lopes/CATALOGO/categorias.json) e [produtos.json](../../../WWW/MICROSERVICE/MOCK-END/mercearia-lopes/CATALOGO/produtos.json)
 
 ### ADEGA — exemplo
 Categoria:
@@ -231,3 +231,4 @@ Preencha 1 bloco por tenant quando escolher:
 **UI Tokens**
 - radius:
 - shadow (curta descrição):
+

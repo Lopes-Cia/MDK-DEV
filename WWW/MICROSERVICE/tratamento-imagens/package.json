@@ -1,0 +1,19 @@
+{
+  "name": "tratamento-imagens",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.mjs",
+    "clean": "node src/clean.mjs --all=1",
+    "clean:images": "node src/clean.mjs --images=1",
+    "clean:temp": "node src/clean.mjs --temp=1",
+    "clean:prune": "node src/clean.mjs --prune=1",
+    "clean:badge": "node src/clean.mjs --temp=1",
+    "run:teste": "node src/index.mjs --modo=teste",
+    "run:full": "node src/index.mjs --modo=full",
+    "run:badge": "npm run -s clean:badge && node src/index.mjs --modo=teste --only-badge=1 --count=10"
+  },
+  "dependencies": {
+    "sharp": "^0.34.4"
+  }
+}

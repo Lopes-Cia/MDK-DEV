@@ -1,0 +1,10 @@
+- [x] SPEC define `modo_execucao` com `teste` (3 aleatórios) e `full` (todos do JSON).
+- [x] SPEC define fallback local `semImagem.png` com processamento completo e sem badge.
+- [x] SPEC define thresholds finais de trim com valores numéricos objetivos.
+- [x] SPEC define `ficha_tamanho` com tamanhos e regras de badge por tamanho.
+- [x] SPEC define `badge_config` para vertical e horizontal com parâmetros de entrada.
+- [x] SPEC define `output_naming` híbrido (SEO + hash) e política de colisão.
+- [x] SPEC define estrutura de diretórios final incluindo árvore de fallback.
+- [x] SPEC define manifesto por produto com dual-write (`latest` + `runs`).
+- [x] SPEC define catálogo oficial de erros v1 e domínios de erro.
+- [x] Implementação respeita as decisões do SPEC sem introduzir campos ambíguos.

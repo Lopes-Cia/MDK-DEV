@@ -3,10 +3,10 @@
 Este desenho define a refatoração do microservice MOCK-END para suportar múltiplos “projetos” com `.env` por base, preservando compatibilidade com o connect-site e mantendo o comportamento de proxy para o backend original.
 
 Referências:
-- Contrato de endpoints do Connect: [ENDPOINTS.md](file:///c:/LOPES/www/MDK-DEV/IA/DESENHOS/ENDPOINTS.md)
-- Connect-site (espelho de chamadas): [connect-ecommerce-develop](file:///c:/LOPES/www/MDK-DEV/WWW/REFERENCIAS/connect-ecommerce-develop)
-- MOCK-END atual (entrypoint): [server.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/server.mjs)
-- Proxy atual: [routes/proxy.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/routes/proxy.mjs)
+- Contrato de endpoints do Connect: [ENDPOINTS.md](./ENDPOINTS.md)
+- Connect-site (espelho de chamadas): [connect-ecommerce-develop](../../WWW/REFERENCIAS/connect-ecommerce-develop)
+- MOCK-END atual (entrypoint): [server.mjs](../../WWW/MICROSERVICE/MOCK-END/server.mjs)
+- Proxy atual: [routes/proxy.mjs](../../WWW/MICROSERVICE/MOCK-END/routes/proxy.mjs)
 
 ## Objetivo
 
@@ -232,3 +232,4 @@ Tarefa adicional (higienização/legado):
 - `PROJETOS/` não é apenas “proposta”: os diretórios e arquivos `.env`/`routes.mjs` devem ser criados de forma explícita, pois o comportamento esperado depende deles.
 - Evitar confusão de roteamento: o comportamento do Connect deve ser descrito/dirigido a partir do modelo `PROJETOS/<base>/routes.mjs`.
   - O arquivo `WWW/MICROSERVICE/MOCK-END/routes/connect.mjs` (se existir) deve virar apenas um “dispatcher/loader” (ou ser removido) e não concentrar a definição das rotas do Connect.
+

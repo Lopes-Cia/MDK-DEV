@@ -5,6 +5,7 @@ import { pathToFileURL } from "node:url";
 import { json } from "../lib/response.mjs";
 import { handleProxy } from "./proxy.mjs";
 import { handleConnect } from "./connect.mjs";
+import { handleStorageImages } from "./storage-images.mjs";
 
 // Roteador principal do microservice.
 // - Define qual "projeto/base" está ativo (ctx.projectDir).
@@ -37,6 +38,11 @@ async function loadProjectRoutes(ctx) {
 
 export async function handleRoutes(req, res, ctx) {
   const { cors, pathname } = ctx;
+
+  // Storage seguro para assets de imagens (usado pelo TRATAMENTO-IMAGENS).
+  // Mantém acesso restrito por tenant e proteção contra traversal.
+  const handledStorage = await handleStorageImages(req, res, ctx);
+  if (handledStorage) return true;
 
   // Rotas internas do Connect são atendidas pelo projeto "connect".
   // As rotas são declaradas em PROJETOS/connect/routes.mjs e executadas via handlers.

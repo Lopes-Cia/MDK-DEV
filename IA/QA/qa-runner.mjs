@@ -2,6 +2,11 @@ import { spawn } from "node:child_process";
 import fs from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
+import { fileURLToPath } from "node:url";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const REPO_ROOT = path.resolve(__dirname, "..", "..");
 
 function argValue(name, fallback) {
   const idx = process.argv.indexOf(name);
@@ -147,7 +152,7 @@ async function main() {
   const tenants = tenantsArg.split(",").map((s) => s.trim()).filter(Boolean);
 
   const stamp = nowStamp();
-  const outDir = path.resolve("c:\\LOPES\\www\\MDK-DEV\\IA\\QA\\reports", stamp);
+  const outDir = path.resolve(REPO_ROOT, "IA", "QA", "reports", stamp);
   await ensureDir(outDir);
 
   const report = {
@@ -169,8 +174,8 @@ async function main() {
 
   if (mode === "imagens" || mode === "all") {
     const runSafe = !hasFlag("--no-safe");
-    const scraperDir = path.resolve("c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\image-scraper");
-    const iaDir = path.resolve("c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\ia-image-generator");
+    const scraperDir = path.resolve(REPO_ROOT, "WWW", "MICROSERVICE", "image-scraper");
+    const iaDir = path.resolve(REPO_ROOT, "WWW", "MICROSERVICE", "ia-image-generator");
 
     for (const tenant of tenants) {
       const args = ["src/index.js", "--tenant", tenant, "--mockend", mockendUrl];
@@ -237,4 +242,3 @@ main().catch((e) => {
   process.stderr.write(String(e) + "\n");
   process.exit(1);
 });
-

@@ -1,7 +1,7 @@
 # Relatório — Skills.sh para DEVDASH
 
 Data: 2026-04-11  
-Origem dos links: [MICROSERVICE-DEVDASH.md](file:///c:/LOPES/www/MDK-DEV/IA/DESENHOS/MICROSERVICE-DEVDASH.md#L14-L24)
+Origem dos links: [MICROSERVICE-DEVDASH.md](./MICROSERVICE-DEVDASH.md#L14-L24)
 
 ## Sumário executivo
 - O conjunto de links converge em 3 pilares úteis para o DEVDASH: (1) infraestrutura de testes (Vitest/RTL/Playwright), (2) padrões de qualidade e performance em Next.js, (3) boas práticas gerais de frontend sênior.
@@ -214,3 +214,4 @@ IDs citados no desenho base:
 - https://skills.sh/hopeoverture/worldbuilding-app-skills/testing-next-stack
 - https://skills.sh/henryxv/study-platform/nextjs-frontend-testing
 - https://skills.sh/mindrally/skills/nextjs-typescript-tailwindcss-supabase
+

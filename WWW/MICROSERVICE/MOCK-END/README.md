@@ -10,9 +10,9 @@ O MOCK-END atua como uma camada HTTP em `localhost:4000` para:
 
 ## Entrypoint
 
-- Servidor HTTP: [server.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/server.mjs)
+- Servidor HTTP: [server.mjs](./server.mjs)
 - Porta: `PORT` (padrão `4000`)
-- CORS: [cors.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/lib/cors.mjs)
+- CORS: [cors.mjs](./lib/cors.mjs)
 
 Fluxo por request (alto nível):
 
@@ -23,7 +23,7 @@ Fluxo por request (alto nível):
 5. Executa `routes/connect.mjs` (rotas internas `/api/*`).
 6. Fallback `404 not_found`.
 
-Roteador principal: [routes/index.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/routes/index.mjs)
+Roteador principal: [routes/index.mjs](./routes/index.mjs)
 
 ## Estrutura de diretórios
 
@@ -43,7 +43,7 @@ As bases oficiais suportadas hoje são:
 - INTEGRATION base: `/connect`
   - projeto: `PROJETOS/connect`
 
-Resolução de projeto por path: [project.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/lib/project.mjs)
+Resolução de projeto por path: [project.mjs](./lib/project.mjs)
 
 ### Artefatos obrigatórios por base
 
@@ -66,7 +66,7 @@ Exemplos:
 - Se o `.env` do projeto/base não existir, o proxy responde:
   - `500 { error: "proxy_not_configured", env: "<ENV_KEY>" }`
 
-Leitura de `.env` por projeto: [env.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/lib/env.mjs)
+Leitura de `.env` por projeto: [env.mjs](./lib/env.mjs)
 
 ## Rotas declarativas (modelo “classe + função”)
 
@@ -116,7 +116,7 @@ export const handlers = {
 
 ## Proxy (upstream)
 
-Arquivo: [routes/proxy.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/routes/proxy.mjs)
+Arquivo: [routes/proxy.mjs](./routes/proxy.mjs)
 
 Comportamento:
 
@@ -143,11 +143,11 @@ Essa base usa o mesmo modelo `routes.mjs + handlers` para clareza.
 
 Handlers dessa base:
 
-- [ApiLopes auth.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/PROJETOS/ApiLopes/webservice/api/handlers/auth.mjs)
+- [ApiLopes auth.mjs](./PROJETOS/ApiLopes/webservice/api/handlers/auth.mjs)
 
 ## Rotas internas do Connect (`/api/*`)
 
-Arquivo: [routes/connect.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/routes/connect.mjs)
+Arquivo: [routes/connect.mjs](./routes/connect.mjs)
 
 Esse arquivo é propositalmente um dispatcher:
 
@@ -158,14 +158,14 @@ Esse arquivo é propositalmente um dispatcher:
 
 Handlers do Connect:
 
-- [connect api/auth.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/PROJETOS/connect/handlers/api/auth.mjs)
-- [connect api/products.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/PROJETOS/connect/handlers/api/products.mjs)
+- [connect api/auth.mjs](./PROJETOS/connect/handlers/api/auth.mjs)
+- [connect api/products.mjs](./PROJETOS/connect/handlers/api/products.mjs)
 
 ## Respostas padrão
 
-- JSON helper: [response.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/lib/response.mjs)
-- Body JSON/Binary: [body.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/lib/body.mjs)
-- Cookies: [cookies.mjs](file:///c:/LOPES/www/MDK-DEV/WWW/MICROSERVICE/MOCK-END/lib/cookies.mjs)
+- JSON helper: [response.mjs](./lib/response.mjs)
+- Body JSON/Binary: [body.mjs](./lib/body.mjs)
+- Cookies: [cookies.mjs](./lib/cookies.mjs)
 
 ## LEGADO
 
@@ -204,4 +204,5 @@ Checklist rápido:
 ## Observação (Windows/casing)
 
 No Windows, manter consistência de casing nos paths do projeto ajuda a evitar diagnósticos do tipo “differs only in casing” (ex.: `WWW/` vs `www/`). O recomendado é sempre referenciar e navegar usando o caminho real `WWW/MICROSERVICE/MOCK-END/`.
+
 

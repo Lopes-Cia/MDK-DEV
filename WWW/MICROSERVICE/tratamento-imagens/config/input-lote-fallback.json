@@ -1,0 +1,37 @@
+{
+  "input_lote": {
+    "correlation_id": "manual-fallback",
+    "tenant": "connect",
+    "modo_execucao": "teste",
+    "produtos": [
+      {
+        "id_produto": "fallback-demo",
+        "descricao": "Produto fallback demo",
+        "imagem": "https://example.invalid/nao-existe.png",
+        "imagens": [],
+        "badge": {
+          "txt1": "NAO APLICAR",
+          "txt2": "0",
+          "txt3": "ml",
+          "cor1": "#000000",
+          "cor2": "#000000"
+        }
+      },
+      {
+        "skuId": "7891991015493",
+        "descricaoErp": "CERV ORIGINAL LT 350ML",
+        "descricaoEcomerce": "Cerveja Original Lata 350 ml",
+        "imagem": "https://www.paodeacucar.com/img/uploads/1/323/32934323.png",
+        "imagens": []
+      },
+      {
+        "skuId": "7891991014670",
+        "descricaoErp": "ANTARCTICA PILSEN LT 350ML SH C/18 MULT",
+        "descricaoEcomerce": "Cerveja Antarctica Pilsen Lata 350 ml Multipack, caixa com 18 unidades",
+        "imagem": "https://www.jauserve.com.br/dw/image/v2/BFJL_PRD/on/demandware.static/-/Sites-jauserve-master/default/dw09b3fc8f/7891991014670.png?sw=1800",
+        "imagens": []
+      }
+    ]
+  }
+}
+
