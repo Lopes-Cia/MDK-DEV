@@ -231,3 +231,4 @@ INTEGRATION_URL_API=http://localhost:4000
 e quero no momento que o mockend faça a mesma chamada no back usando esse [text](.env), pode incluir esse arquivo no mock end! Eu tenho um motivo para fazer isso... vai fazer sentido mais tarde. Porem eu quero isso o connect-site vai chamar o mock-end, e o mock chama o back original e retorna
 eu vou testar rodano o run dev no connect-site
 quero ver o mesmo que vejo usando o .env original
+

@@ -1,0 +1,6 @@
+- [x] Proxy continua com comportamento equivalente ao atual (status/body/headers e Set-Cookie preservados; hop-by-hop removidos)
+- [x] Resolução de base funciona para `/ApiLopes/webservice/api/*` e `/connect/*`
+- [x] `.env` por projeto é aplicado com precedência: `process.env` > `.env` do projeto > fallback global/atual
+- [x] Ausência de `PROJETOS/<base>/.env` não quebra o proxy (mantém comportamento atual)
+- [x] Presença de `PROJETOS/<base>/routes.mjs` não altera comportamento por default (modo `original`)
+- [x] Código legado fica isolado em `LEGADO/` e não é carregado no roteamento principal por default
