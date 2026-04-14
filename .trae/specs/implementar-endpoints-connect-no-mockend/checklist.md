@@ -1,0 +1,20 @@
+- [x] Rotas do Connect são resolvidas antes das rotas por tenant (sem `tenant_not_found` para `/api/auth/*` e `/api/products*`)
+- [x] CORS: preflight `OPTIONS` funciona para `POST` e permite `Authorization` e `Content-Type`
+- [x] Auth interno:
+  - [x] `POST /api/auth/register` retorna `{ success, data }` com validação mínima
+  - [x] `POST /api/auth/send-token` exige email ou whatsapp
+  - [x] `POST /api/auth/verify-token` retorna `{ success, data: { verification, operador } }` e seta cookie `session`
+  - [x] `GET /api/auth/me` retorna `401` sem cookie e retorna sessão com cookie
+  - [x] `POST /api/auth/logout` remove cookie `session`
+- [x] Produtos internos:
+  - [x] `GET /api/products` retorna `{ success, data, total }`
+  - [x] `GET /api/products/:codProd` retorna `404` quando não existe
+  - [x] Tenant fonte de catálogo resolve por query/header/env/fallback
+- [x] Externos AUTH_BASE_URL:
+  - [x] Todos (exceto `/tokenService`) exigem `Authorization` e aceitam `Bearer <token>`
+  - [x] `POST /tokenService` atende geração e refresh e retorna `{ hashToken, dtExpira, refreshToken? }`
+- [x] Externos INTEGRATION_URL_API:
+  - [x] `getIntegradora`, `getListProdutoLoja`, `getProdutoLoja` exigem `Authorization`
+  - [x] Listagem e item suportam formato tolerante (encapsulado ou direto)
+- [x] Rotas existentes do MOCK-END por tenant continuam funcionando (catalogo/json/assets)
+- [x] Collection do Postman (v2.1) é gerada, com variáveis e requests para todos os endpoints

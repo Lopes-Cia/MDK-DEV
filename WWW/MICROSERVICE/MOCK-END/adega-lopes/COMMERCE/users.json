@@ -16,6 +16,13 @@
       "passwordHash": "15e2b0d3c33891ebb0f1ef609ec419420c20e320ce94c65fbc8c3312448eb225",
       "createdAt": "2026-04-13T13:17:22.997Z",
       "updatedAt": "2026-04-13T13:17:22.997Z"
+    },
+    {
+      "id": 1,
+      "nome": "operador",
+      "email": "operador@mock.local",
+      "whatsapp": "",
+      "createdAt": "2026-04-14T05:35:45.281Z"
     }
   ]
 }
