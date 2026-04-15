@@ -5,3 +5,6 @@
 
 # Dependências (não versionar)
 node_modules/
+
+# Logs locais
+gcm-diagnose.log

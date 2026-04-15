@@ -1,0 +1,9 @@
+- [x] Endpoints externos do mock-end `/Servidor/webservice/integration/produtos/...` implementam os 5 cenários do spec
+- [x] Paginação do endpoint `by-categoria` funciona e respeita `page/pageSize` com limites
+- [x] Árvore de categorias é construída com ordenação estável (order ASC, id ASC)
+- [x] `ProdutosController` não depende de `req/res` e é instanciável por handler
+- [x] Util de proxy upstream foi extraído para `MOCK-END/lib/` e `handlers/api/products.mjs` continua funcionando
+- [x] `connect-ecommerce` possui rotas internas `app/api/produtosV2/*` chamando integração com token (server-only)
+- [x] Nenhum client component chama `/Servidor/webservice/...` diretamente (somente `/api/produtosV2/...`)
+- [x] Store `produtosV2` existe, consome `lib/api/produtosV2.ts` e está registrado no `control-store`
+- [x] Fluxo antigo (V1) continua funcionando durante migração (sem breaking)

@@ -14,6 +14,50 @@
 - Explore os códigos localmente.
 - Caso encontre um componente, função ou padrão útil, **copie e adapte** para dentro de `src/` ou para a pasta adequada no projeto principal.
 
+### Comandos rápidos (clone / branch / commit / push / pull)
+
+Sempre rode os comandos **dentro da pasta do repo clonado**, para não interferir no `MDK-DEV`:
+
+```bash
+cd WWW/REFERENCIAS/<nome-do-repo>
+```
+
+Ver status:
+
+```bash
+git status
+```
+
+Trocar de branch:
+
+```bash
+git fetch --all
+git branch -a
+git switch <branch>
+git pull
+```
+
+Commit + push:
+
+```bash
+git add -A
+git commit -m "sua mensagem"
+git push
+```
+
+Atualizar (pull) na branch atual:
+
+```bash
+git pull
+```
+
+Se der “Repository not found” em repo privado (GitHub):
+
+```bash
+git credential-manager github login
+git pull
+```
+
 ## Repositórios (clonar aqui)
 - Entre na pasta:
   - `cd WWW/REFERENCIAS`
