@@ -78,6 +78,17 @@ export const routes = [
   },
   {
     method: "GET",
+    uri: "/api/prod/categoria",
+    auth: {
+      mode: "none",
+      label: "Sem auth no mock-end; manter rótulo para futura auth seguindo o modelo original.",
+    },
+    execution: { mode: "mock" },
+    handler_class: "api/prod",
+    handler_function: "categoria",
+  },
+  {
+    method: "GET",
     uri: "/Servidor/webservice/integration/getListProdutoLoja",
     auth: {
       mode: "required",
