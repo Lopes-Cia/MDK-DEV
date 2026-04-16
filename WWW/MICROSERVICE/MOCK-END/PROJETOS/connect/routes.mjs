@@ -1,34 +1,6 @@
 export const routes = [
   // Storage JSON multi-tenant (COMMERCE allowlist)
-  {
-    method: "GET",
-    uri: "/api/:tenant/json",
-    execution: { mode: "mock" },
-    handler_class: "api/json",
-    handler_function: "getJson",
-  },
-  {
-    method: "PUT",
-    uri: "/api/:tenant/json",
-    execution: { mode: "mock" },
-    handler_class: "api/json",
-    handler_function: "putJson",
-  },
-  // CRUD mínimo em arrays por id (read-modify-write)
-  {
-    method: "POST",
-    uri: "/api/:tenant/json/array",
-    execution: { mode: "mock" },
-    handler_class: "api/json",
-    handler_function: "upsertArrayItem",
-  },
-  {
-    method: "DELETE",
-    uri: "/api/:tenant/json/array",
-    execution: { mode: "mock" },
-    handler_class: "api/json",
-    handler_function: "removeArrayItem",
-  },
+
 
   // Catálogo de categorias (árvore completa)
   {
@@ -137,29 +109,5 @@ export const routes = [
     execution: { mode: "mock" },
     handler_class: "api/home",
     handler_function: "home",
-  },
-  // Integração: listagem de produtos (legado)
-  {
-    method: "GET",
-    uri: "/Servidor/webservice/integration/getListProdutoLoja",
-    auth: {
-      mode: "required",
-      label: "Token da integradora (quando em modo original).",
-    },
-    execution: { mode: "mock" },
-    handler_class: "api/integration",
-    handler_function: "listProdutoLoja",
-  },
-  // Integração: produto loja (legado)
-  {
-    method: "GET",
-    uri: "/Servidor/webservice/integration/getProdutoLoja",
-    auth: {
-      mode: "required",
-      label: "Token da integradora (quando em modo original).",
-    },
-    execution: { mode: "mock" },
-    handler_class: "api/integration",
-    handler_function: "produtoLoja",
   },
 ];
