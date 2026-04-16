@@ -1,0 +1,7 @@
+- [ ] Escopo está explícito para `WWW/MICROSERVICE/MOCK-END`
+- [ ] Contratos de resposta de API foram padronizados
+- [ ] Endpoints de usuários cobrem cadastro, login, me, logout e update de perfil
+- [ ] Fluxo de esqueci senha (request + reset) está implementado e verificável
+- [ ] Carrinho persiste por usuário e participa do checkout
+- [ ] Checkout cria pedido e limpa carrinho
+- [ ] Persistência JSON por tenant está estável com criação lazy e erros consistentes

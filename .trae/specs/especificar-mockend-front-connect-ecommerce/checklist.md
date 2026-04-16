@@ -1,0 +1,8 @@
+- [ ] Escopo está explícito: implementação somente em `WWW/REFERENCIAS/connect-ecommerce`
+- [ ] Tarefas estão separadas por blocos: `MOCK-END`, `FRONT` e `Validação`
+- [ ] Está explícito que telas existentes (dashboard/login antigas) são apenas referência
+- [ ] Endpoints de usuários cobrem cadastro, login, me, update de perfil e logout
+- [ ] Fluxo de esqueci senha (request token + reset) está coberto e verificável
+- [ ] Carrinho está coberto com persistência e integração com checkout/pedido
+- [ ] Páginas do front (incluindo `meus-dados`) estão planejadas para criação do zero
+- [ ] Dependências entre tarefas estão explícitas para execução incremental
