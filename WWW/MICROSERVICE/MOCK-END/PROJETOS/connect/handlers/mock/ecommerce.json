@@ -1,0 +1,11 @@
+{
+  "meiosPagamentoDisponiveis": ["pix", "cartao", "boleto"],
+  "pedidoMinimo": 0,
+  "cepsAtendidos": [],
+  "vendaParaCpf": true,
+  "vendaParaCnpj": true,
+  "politicas": {
+    "pedidoMinimoAtivo": false,
+    "validarCepAtendido": false
+  }
+}
