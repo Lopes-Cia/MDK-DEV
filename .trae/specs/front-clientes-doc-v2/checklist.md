@@ -1,0 +1,4 @@
+- [ ] `IA/DESENHOS/FRONT-CLIENTES.md` referencia `FRONT-END-MODELO-FLUXO.md`, `ARQUITETURA-MOCK-FRONT-COMUNICACAO.md` e `MOCK-CLIENTES.md`.
+- [ ] `IA/DESENHOS/FRONT-CLIENTES.md` lista somente endpoints existentes no `MOCK-CLIENTES.md` (login/cadastro).
+- [ ] `IA/DESENHOS/FRONT-CLIENTES.md` contem Regra de Ouro explicita.
+- [ ] `IA/DESENHOS/FRONT-CLIENTES.md` contem DEV routes somente para endpoints existentes.
