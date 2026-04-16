@@ -1,0 +1,9 @@
+{
+	"id": "GmViWQ7xnRBF0Gx",
+	"json": "{\"id\":\"GmViWQ7xnRBF0Gx\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"50\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":50,\"slug\":\"rum\",\"title\":\"Rum\",\"query\":\"Rum Rum\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:25.629Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "50",
+	"url": "https://example.com/dummy"
+}

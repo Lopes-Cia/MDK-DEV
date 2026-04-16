@@ -1,0 +1,9 @@
+{
+	"id": "emG1NwGa4O7vuzH",
+	"json": "{\"id\":\"emG1NwGa4O7vuzH\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"37\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":37,\"slug\":\"reserva\",\"title\":\"Reserva\",\"query\":\"Reserva Reserva\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:31:51.484Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "37",
+	"url": "https://example.com/dummy"
+}

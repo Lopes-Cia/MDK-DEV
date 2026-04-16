@@ -1,0 +1,9 @@
+{
+	"id": "u7llqwyA1lOM8hh",
+	"json": "{\"id\":\"u7llqwyA1lOM8hh\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"83\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":83,\"slug\":\"saco-2kg\",\"title\":\"Saco 2kg\",\"query\":\"Saco 2kg Saco 2kg\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:34:50.921Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "83",
+	"url": "https://example.com/dummy"
+}

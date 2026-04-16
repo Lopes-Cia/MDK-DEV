@@ -1,0 +1,9 @@
+{
+	"id": "RSNUDxUEzRcQDEg",
+	"json": "{\"id\":\"RSNUDxUEzRcQDEg\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"17\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":17,\"slug\":\"drinks-prontos\",\"title\":\"Drinks prontos\",\"query\":\"Drinks prontos Drinks prontos\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:30:23.594Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "17",
+	"url": "https://example.com/dummy"
+}

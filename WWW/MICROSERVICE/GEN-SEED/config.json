@@ -1,0 +1,13 @@
+{
+  "outputDir": "./data",
+  "categories": {
+    "rootsMin": 5,
+    "childrenMin": 3,
+    "childrenMax": 5,
+    "grandchildrenMin": 2,
+    "grandchildrenMax": 4
+  },
+  "products": {
+    "minTotal": 120
+  }
+}

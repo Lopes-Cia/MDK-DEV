@@ -1,0 +1,9 @@
+{
+	"id": "i5QL5t4qqa2Vn3X",
+	"json": "{\"id\":\"i5QL5t4qqa2Vn3X\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"88\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":88,\"slug\":\"batata-chips\",\"title\":\"Batata chips\",\"query\":\"Batata chips Batata chips\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:35:07.379Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "88",
+	"url": "https://example.com/dummy"
+}

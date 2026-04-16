@@ -1,0 +1,9 @@
+{
+	"id": "wjVgaenR55ypJDe",
+	"json": "{\"id\":\"wjVgaenR55ypJDe\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"24\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":24,\"slug\":\"artesanal\",\"title\":\"Artesanal\",\"query\":\"Artesanal Artesanal\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:30:59.880Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "24",
+	"url": "https://example.com/dummy"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "gReGrRrnStdIN0D",
+	"json": "{\"id\":\"gReGrRrnStdIN0D\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"45\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":45,\"slug\":\"suave-45\",\"title\":\"Suave\",\"query\":\"Suave Suave\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:16.769Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "45",
+	"url": "https://example.com/dummy"
+}

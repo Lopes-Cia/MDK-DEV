@@ -7,9 +7,11 @@ const __dirname = path.dirname(__filename);
 
 const CATEGORIAS_FILE = path.resolve(__dirname, "..", "categorias.json");
 const PRODUTOS_FILE = path.resolve(__dirname, "..", "produtos.json");
+const BRANDS_FILE = path.resolve(__dirname, "..", "brands.json");
 
 let categoriasCache = null;
 let produtosCache = null;
+let brandsCache = null;
 
 async function readJsonFile(filePath, label) {
   let raw = "[]";
@@ -43,6 +45,13 @@ async function loadProdutos() {
   const parsed = await readJsonFile(PRODUTOS_FILE, "mock/produtos(produtos)");
   produtosCache = Array.isArray(parsed) ? parsed : [];
   return produtosCache;
+}
+
+async function loadBrands() {
+  if (brandsCache) return brandsCache;
+  const parsed = await readJsonFile(BRANDS_FILE, "mock/produtos(brands)");
+  brandsCache = Array.isArray(parsed) ? parsed : [];
+  return brandsCache;
 }
 
 function toInt(value) {
@@ -105,7 +114,8 @@ export class ProdutosController {
     const { byId, childrenByParent } = await this._categoriasIndex();
     const category = byId.get(id) ?? null;
     if (!category) return null;
-    return { category, children: childrenByParent.get(id) ?? [] };
+    const categoryTree = this._buildNode(category, childrenByParent);
+    return { category: categoryTree };
   }
 
   async _collectDescendantCategoryIds(rootId, childrenByParent) {
@@ -143,9 +153,11 @@ export class ProdutosController {
       ? await this._collectDescendantCategoryIds(id, childrenByParent)
       : new Set([id]);
 
-    const filtered = produtos.filter((produto) =>
-      validCategoryIds.has(toInt(produto?.categoryId) ?? -1)
-    );
+    const filtered = produtos.filter((produto) => {
+      const categoryId = toInt(produto?.category?.id);
+      if (categoryId == null) return false;
+      return validCategoryIds.has(categoryId);
+    });
     return paginate(filtered, { page: p, pageSize: ps });
   }
 
@@ -163,5 +175,29 @@ export class ProdutosController {
     return (
       produtos.find((p) => String(p?.slug ?? "").trim().toLowerCase() === key) ?? null
     );
+  }
+
+  async brands() {
+    const brands = await loadBrands();
+    return brands;
+  }
+
+  async brandById(idBrand, { page = 1, pageSize = 24 } = {}) {
+    const id = toInt(idBrand);
+    if (id == null) return null;
+    const p = Math.max(1, toInt(page) ?? 1);
+    const ps = Math.min(100, Math.max(1, toInt(pageSize) ?? 24));
+
+    const brands = await loadBrands();
+    const brand = brands.find((b) => toInt(b?.id) === id) ?? null;
+    if (!brand) return null;
+
+    const produtos = await loadProdutos();
+    const filtered = produtos.filter((produto) => {
+      const bid = toInt(produto?.brand?.id);
+      return bid === id;
+    });
+
+    return { brand, products: paginate(filtered, { page: p, pageSize: ps }) };
   }
 }

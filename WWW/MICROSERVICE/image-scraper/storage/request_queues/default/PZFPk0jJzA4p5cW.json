@@ -1,0 +1,9 @@
+{
+	"id": "PZFPk0jJzA4p5cW",
+	"json": "{\"id\":\"PZFPk0jJzA4p5cW\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"41\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":41,\"slug\":\"brut\",\"title\":\"Brut\",\"query\":\"Brut Brut\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:12.278Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "41",
+	"url": "https://example.com/dummy"
+}

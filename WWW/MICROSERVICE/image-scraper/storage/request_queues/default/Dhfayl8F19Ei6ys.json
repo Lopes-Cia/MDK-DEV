@@ -1,0 +1,9 @@
+{
+	"id": "Dhfayl8F19Ei6ys",
+	"json": "{\"id\":\"Dhfayl8F19Ei6ys\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"49\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":49,\"slug\":\"gin\",\"title\":\"Gin\",\"query\":\"Gin Gin\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:35.809Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "49",
+	"url": "https://example.com/dummy"
+}

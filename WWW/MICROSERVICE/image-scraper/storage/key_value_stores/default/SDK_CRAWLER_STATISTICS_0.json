@@ -1,29 +1,51 @@
 {
-  "requestsFinished": 1,
-  "requestsFailed": 0,
-  "requestsRetries": 0,
+  "requestsFinished": 84,
+  "requestsFailed": 1,
+  "requestsRetries": 2,
   "requestsFailedPerMinute": 0,
-  "requestsFinishedPerMinute": 24,
-  "requestMinDurationMillis": 1608,
-  "requestMaxDurationMillis": 1608,
-  "requestTotalFailedDurationMillis": 0,
-  "requestTotalFinishedDurationMillis": 1608,
-  "crawlerStartedAt": "2026-04-11T15:13:25.976Z",
-  "crawlerFinishedAt": "2026-04-11T15:13:28.301Z",
-  "statsPersistedAt": "2026-04-11T15:13:28.301Z",
-  "crawlerRuntimeMillis": 2519,
-  "crawlerLastStartTimestamp": 1775920405782,
+  "requestsFinishedPerMinute": 13,
+  "requestMinDurationMillis": 1690,
+  "requestMaxDurationMillis": 27394,
+  "requestTotalFailedDurationMillis": 30092,
+  "requestTotalFinishedDurationMillis": 618314,
+  "crawlerStartedAt": "2026-04-16T03:29:43.482Z",
+  "crawlerFinishedAt": "2026-04-16T03:36:02.104Z",
+  "statsPersistedAt": "2026-04-16T03:36:02.104Z",
+  "crawlerRuntimeMillis": 378964,
+  "crawlerLastStartTimestamp": 1776310183140,
   "requestRetryHistogram": [
+    83,
+    1,
     1
   ],
   "statsId": 0,
-  "requestAvgFailedDurationMillis": null,
-  "requestAvgFinishedDurationMillis": 1608,
-  "requestTotalDurationMillis": 1608,
-  "requestsTotal": 1,
+  "requestAvgFailedDurationMillis": 30092,
+  "requestAvgFinishedDurationMillis": 7361,
+  "requestTotalDurationMillis": 648406,
+  "requestsTotal": 85,
   "requestsWithStatusCode": {
-    "404": 1
+    "404": 88
   },
-  "errors": {},
-  "retryErrors": {}
+  "errors": {
+    "C:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\image-scraper\\node_modules\\@apify\\timeout\\cjs\\index.cjs:64:68": {
+      "missing error code": {
+        "Error": {
+          "requestHandler timed out after 30 seconds.": {
+            "count": 1
+          }
+        }
+      }
+    }
+  },
+  "retryErrors": {
+    "C:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\image-scraper\\node_modules\\@apify\\timeout\\cjs\\index.cjs:64:68": {
+      "missing error code": {
+        "Error": {
+          "requestHandler timed out after 30 seconds.": {
+            "count": 3
+          }
+        }
+      }
+    }
+  }
 }

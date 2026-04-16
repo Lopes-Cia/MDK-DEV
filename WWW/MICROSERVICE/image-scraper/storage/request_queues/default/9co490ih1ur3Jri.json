@@ -1,0 +1,9 @@
+{
+	"id": "9co490ih1ur3Jri",
+	"json": "{\"id\":\"9co490ih1ur3Jri\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"20\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":20,\"slug\":\"ipa\",\"title\":\"IPA\",\"query\":\"IPA IPA\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:30:32.880Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "20",
+	"url": "https://example.com/dummy"
+}

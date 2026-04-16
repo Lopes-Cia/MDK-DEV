@@ -1,0 +1,9 @@
+{
+	"id": "potBLEKCVV8VVGz",
+	"json": "{\"id\":\"potBLEKCVV8VVGz\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"64\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":64,\"slug\":\"refrigerantes\",\"title\":\"Refrigerantes\",\"query\":\"Refrigerantes Refrigerantes\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:33:21.999Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "64",
+	"url": "https://example.com/dummy"
+}

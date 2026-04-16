@@ -1,0 +1,9 @@
+{
+	"id": "ZwZxzZdAQVYiblB",
+	"json": "{\"id\":\"ZwZxzZdAQVYiblB\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"27\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":27,\"slug\":\"caipirinha\",\"title\":\"Caipirinha\",\"query\":\"Caipirinha Caipirinha\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:30:48.452Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "27",
+	"url": "https://example.com/dummy"
+}

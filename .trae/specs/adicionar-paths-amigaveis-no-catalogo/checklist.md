@@ -1,0 +1,8 @@
+- [x] Produtos retornam `path` (`/produtos/<slug>`) em todos endpoints relevantes (lista/by-id/by-slug/home)
+- [x] Categorias retornam `path` (`/categoria/<slug>`) na árvore, por id e na home
+- [x] Marcas retornam `path` (`/marca/<slug>`) na lista e no detalhe (brandById)
+- [x] `product.category.path` e `product.brand.path` existem quando objetos aninhados são retornados
+- [x] GEN-SEED gera JSONs já com `path` (produtos, categorias, brands, colections)
+- [x] JSONs do MOCK-END foram atualizados/copiados e refletem o novo contrato
+- [x] Front usa `path` para links (categoria e produto) sem regressão visual
+- [x] Validação manual no `/dev` confirma `path` presente e coerente

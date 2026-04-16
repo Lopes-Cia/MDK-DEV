@@ -1,0 +1,9 @@
+{
+	"id": "zXCoCP3UqBWSrtu",
+	"json": "{\"id\":\"zXCoCP3UqBWSrtu\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"89\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":89,\"slug\":\"copos\",\"title\":\"Copos\",\"query\":\"Copos Copos\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:35:09.973Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "89",
+	"url": "https://example.com/dummy"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "1Z7O0d7Qf4TBRVk",
+	"json": "{\"id\":\"1Z7O0d7Qf4TBRVk\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"40\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":40,\"slug\":\"frisante\",\"title\":\"Frisante\",\"query\":\"Frisante Frisante\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:31:58.355Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "40",
+	"url": "https://example.com/dummy"
+}

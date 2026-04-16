@@ -1,0 +1,9 @@
+{
+	"id": "0Cn6OpXhdKGZNIV",
+	"json": "{\"id\":\"0Cn6OpXhdKGZNIV\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"61\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":61,\"slug\":\"dourado\",\"title\":\"Dourado\",\"query\":\"Dourado Dourado\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:33:09.139Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "61",
+	"url": "https://example.com/dummy"
+}

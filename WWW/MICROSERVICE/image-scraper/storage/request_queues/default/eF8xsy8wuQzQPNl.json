@@ -1,0 +1,9 @@
+{
+	"id": "eF8xsy8wuQzQPNl",
+	"json": "{\"id\":\"eF8xsy8wuQzQPNl\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"22\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":22,\"slug\":\"pilsen-22\",\"title\":\"Pilsen\",\"query\":\"Pilsen Pilsen\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:30:38.783Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "22",
+	"url": "https://example.com/dummy"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "vdLTrzpaEhNJfU8",
+	"json": "{\"id\":\"vdLTrzpaEhNJfU8\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"87\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":87,\"slug\":\"amendoim\",\"title\":\"Amendoim\",\"query\":\"Amendoim Amendoim\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:35:04.654Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "87",
+	"url": "https://example.com/dummy"
+}

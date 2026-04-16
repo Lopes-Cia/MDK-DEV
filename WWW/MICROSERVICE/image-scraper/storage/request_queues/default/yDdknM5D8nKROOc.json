@@ -1,0 +1,9 @@
+{
+	"id": "yDdknM5D8nKROOc",
+	"json": "{\"id\":\"yDdknM5D8nKROOc\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"57\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":57,\"slug\":\"london-dry\",\"title\":\"London Dry\",\"query\":\"London Dry London Dry\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:33:06.581Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "57",
+	"url": "https://example.com/dummy"
+}

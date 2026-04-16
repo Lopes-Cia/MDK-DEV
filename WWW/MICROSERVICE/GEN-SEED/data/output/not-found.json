@@ -1,0 +1,65 @@
+[
+  {
+    "id": 13,
+    "targetType": "categoria",
+    "slug": "nao-alcoolicas",
+    "title": "Não alcoólicas",
+    "query": "Não alcoólicas Não alcoólicas",
+    "reason": "no_valid_image",
+    "ts": "2026-04-16T03:30:15.672Z"
+  },
+  {
+    "id": 28,
+    "targetType": "categoria",
+    "slug": "tradicional",
+    "title": "Tradicional",
+    "query": "Tradicional Tradicional",
+    "reason": "no_valid_image",
+    "ts": "2026-04-16T03:31:10.353Z"
+  },
+  {
+    "id": 51,
+    "targetType": "categoria",
+    "slug": "blended",
+    "title": "Blended",
+    "query": "Blended Blended",
+    "reason": "no_valid_image",
+    "ts": "2026-04-16T03:32:37.321Z"
+  },
+  {
+    "id": 54,
+    "targetType": "categoria",
+    "slug": "tradicional-54",
+    "title": "Tradicional",
+    "query": "Tradicional Tradicional",
+    "reason": "no_valid_image",
+    "ts": "2026-04-16T03:32:58.509Z"
+  },
+  {
+    "id": 67,
+    "targetType": "categoria",
+    "slug": "tradicional-67",
+    "title": "Tradicional",
+    "query": "Tradicional Tradicional",
+    "reason": "no_valid_image",
+    "ts": "2026-04-16T03:33:54.352Z"
+  },
+  {
+    "id": 62,
+    "targetType": "categoria",
+    "slug": "envelhecido",
+    "title": "Envelhecido",
+    "query": "Envelhecido Envelhecido",
+    "reason": "no_valid_image",
+    "ts": "2026-04-16T03:34:49.830Z"
+  },
+  {
+    "id": 62,
+    "targetType": "categoria",
+    "slug": "envelhecido",
+    "title": "Envelhecido",
+    "query": "Envelhecido Envelhecido",
+    "reason": "no_valid_image",
+    "ts": "2026-04-16T03:34:53.807Z"
+  }
+]

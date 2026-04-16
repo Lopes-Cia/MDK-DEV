@@ -1,0 +1,9 @@
+{
+	"id": "EIyZW5U8ijVWEQP",
+	"json": "{\"id\":\"EIyZW5U8ijVWEQP\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"65\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":65,\"slug\":\"aguas-isotonicos\",\"title\":\"Águas & Isotônicos\",\"query\":\"Águas & Isotônicos Águas & Isotônicos\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:33:24.223Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "65",
+	"url": "https://example.com/dummy"
+}

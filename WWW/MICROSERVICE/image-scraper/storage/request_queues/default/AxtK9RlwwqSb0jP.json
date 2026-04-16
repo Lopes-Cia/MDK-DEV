@@ -1,0 +1,9 @@
+{
+	"id": "AxtK9RlwwqSb0jP",
+	"json": "{\"id\":\"AxtK9RlwwqSb0jP\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"51\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":51,\"slug\":\"blended\",\"title\":\"Blended\",\"query\":\"Blended Blended\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:37.322Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "51",
+	"url": "https://example.com/dummy"
+}

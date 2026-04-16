@@ -1,0 +1,9 @@
+{
+	"id": "SESaFKTfXm7ehtv",
+	"json": "{\"id\":\"SESaFKTfXm7ehtv\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"80\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":2,\"errorMessages\":[\"Error: requestHandler timed out after 30 seconds.\\n    at Timeout._onTimeout (C:\\\\LOPES\\\\www\\\\MDK-DEV\\\\WWW\\\\MICROSERVICE\\\\image-scraper\\\\node_modules\\\\@apify\\\\timeout\\\\cjs\\\\index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: requestHandler timed out after 30 seconds.\\n    at Timeout._onTimeout (C:\\\\LOPES\\\\www\\\\MDK-DEV\\\\WWW\\\\MICROSERVICE\\\\image-scraper\\\\node_modules\\\\@apify\\\\timeout\\\\cjs\\\\index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\",\"Error: requestHandler timed out after 30 seconds.\\n    at Timeout._onTimeout (C:\\\\LOPES\\\\www\\\\MDK-DEV\\\\WWW\\\\MICROSERVICE\\\\image-scraper\\\\node_modules\\\\@apify\\\\timeout\\\\cjs\\\\index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"id\":80,\"slug\":\"snacks\",\"title\":\"Snacks\",\"query\":\"Snacks Snacks\",\"__crawlee\":{\"state\":5}},\"handledAt\":\"2026-04-16T03:36:01.821Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 2,
+	"uniqueKey": "80",
+	"url": "https://example.com/dummy"
+}

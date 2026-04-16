@@ -1,0 +1,9 @@
+{
+	"id": "doi271JVWWLQCP4",
+	"json": "{\"id\":\"doi271JVWWLQCP4\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"56\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":56,\"slug\":\"saborizada\",\"title\":\"Saborizada\",\"query\":\"Saborizada Saborizada\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:52.573Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "56",
+	"url": "https://example.com/dummy"
+}

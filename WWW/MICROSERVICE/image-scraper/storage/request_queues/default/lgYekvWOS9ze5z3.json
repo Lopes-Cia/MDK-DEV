@@ -1,0 +1,9 @@
+{
+	"id": "lgYekvWOS9ze5z3",
+	"json": "{\"id\":\"lgYekvWOS9ze5z3\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"73\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":73,\"slug\":\"agua\",\"title\":\"Água\",\"query\":\"Água Água\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:34:08.622Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "73",
+	"url": "https://example.com/dummy"
+}

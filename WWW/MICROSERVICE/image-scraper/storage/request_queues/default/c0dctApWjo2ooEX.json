@@ -1,0 +1,9 @@
+{
+	"id": "c0dctApWjo2ooEX",
+	"json": "{\"id\":\"c0dctApWjo2ooEX\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"42\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":42,\"slug\":\"moscatel\",\"title\":\"Moscatel\",\"query\":\"Moscatel Moscatel\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:01.936Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "42",
+	"url": "https://example.com/dummy"
+}

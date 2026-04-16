@@ -1,0 +1,9 @@
+{
+	"id": "OfqewZDu57b03EQ",
+	"json": "{\"id\":\"OfqewZDu57b03EQ\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"60\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":60,\"slug\":\"branco\",\"title\":\"Branco\",\"query\":\"Branco Branco\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:33:13.944Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "60",
+	"url": "https://example.com/dummy"
+}

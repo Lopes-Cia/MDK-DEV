@@ -1,0 +1,9 @@
+{
+	"id": "HaUbjY5j2pIArnn",
+	"json": "{\"id\":\"HaUbjY5j2pIArnn\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"91\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":91,\"slug\":\"baldes\",\"title\":\"Baldes\",\"query\":\"Baldes Baldes\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:35:14.763Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "91",
+	"url": "https://example.com/dummy"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "UxbKHF3cqObOzPz",
+	"json": "{\"id\":\"UxbKHF3cqObOzPz\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"81\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":81,\"slug\":\"acessorios\",\"title\":\"Acessórios\",\"query\":\"Acessórios Acessórios\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:34:44.564Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "81",
+	"url": "https://example.com/dummy"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "62JNvlbrZiCuYgg",
+	"json": "{\"id\":\"62JNvlbrZiCuYgg\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"74\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":74,\"slug\":\"com-gas\",\"title\":\"Com gás\",\"query\":\"Com gás Com gás\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:34:14.044Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "74",
+	"url": "https://example.com/dummy"
+}

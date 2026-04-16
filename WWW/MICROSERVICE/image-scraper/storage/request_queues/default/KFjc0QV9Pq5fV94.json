@@ -1,0 +1,9 @@
+{
+	"id": "KFjc0QV9Pq5fV94",
+	"json": "{\"id\":\"KFjc0QV9Pq5fV94\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"53\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":53,\"slug\":\"single-malt\",\"title\":\"Single malt\",\"query\":\"Single malt Single malt\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:39.573Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "53",
+	"url": "https://example.com/dummy"
+}

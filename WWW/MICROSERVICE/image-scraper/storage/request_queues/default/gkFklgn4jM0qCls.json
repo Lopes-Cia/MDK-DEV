@@ -1,0 +1,9 @@
+{
+	"id": "gkFklgn4jM0qCls",
+	"json": "{\"id\":\"gkFklgn4jM0qCls\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"92\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":92,\"slug\":\"isqueiros\",\"title\":\"Isqueiros\",\"query\":\"Isqueiros Isqueiros\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:35:31.716Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "92",
+	"url": "https://example.com/dummy"
+}

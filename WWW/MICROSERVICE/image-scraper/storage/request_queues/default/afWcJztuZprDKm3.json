@@ -1,0 +1,9 @@
+{
+	"id": "afWcJztuZprDKm3",
+	"json": "{\"id\":\"afWcJztuZprDKm3\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"90\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":90,\"slug\":\"abridor\",\"title\":\"Abridor\",\"query\":\"Abridor Abridor\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:35:12.482Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "90",
+	"url": "https://example.com/dummy"
+}

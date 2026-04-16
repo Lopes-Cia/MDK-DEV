@@ -1,0 +1,9 @@
+{
+	"id": "gbigP5foeHxThqG",
+	"json": "{\"id\":\"gbigP5foeHxThqG\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"62\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":1,\"errorMessages\":[\"Error: requestHandler timed out after 30 seconds.\\n    at Timeout._onTimeout (C:\\\\LOPES\\\\www\\\\MDK-DEV\\\\WWW\\\\MICROSERVICE\\\\image-scraper\\\\node_modules\\\\@apify\\\\timeout\\\\cjs\\\\index.cjs:64:68)\\n    at listOnTimeout (node:internal/timers:588:17)\\n    at process.processTimers (node:internal/timers:523:7)\"],\"headers\":{},\"userData\":{\"id\":62,\"slug\":\"envelhecido\",\"title\":\"Envelhecido\",\"query\":\"Envelhecido Envelhecido\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:34:53.807Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 1,
+	"uniqueKey": "62",
+	"url": "https://example.com/dummy"
+}

@@ -144,10 +144,55 @@ async function produtoBySlug(req, res, ctx) {
   json(res, 200, { success: true, data: found }, cors);
 }
 
+async function brands(req, res, ctx) {
+  const cors = ctx.cors ?? {};
+  if (!ensureGet(req, res, cors)) return;
+
+  const data = await controller.brands();
+  json(res, 200, { success: true, data }, cors);
+}
+
+async function brandById(req, res, ctx) {
+  const cors = ctx.cors ?? {};
+  if (!ensureGet(req, res, cors)) return;
+
+  const idFromPath = parsePathParam(
+    ctx,
+    "/Servidor/webservice/integration/produtos/brands"
+  );
+  const idBrand = parseIntParam(ctx?.routeParams?.idBrand ?? idFromPath);
+  if (idBrand == null) {
+    json(res, 400, { error: "idBrand must be a valid number" }, cors);
+    return;
+  }
+
+  const qp = new URLSearchParams(ctx.url?.search ?? "");
+  const page = parseIntParam(qp.get("page")) ?? 1;
+  const pageSize = parseIntParam(qp.get("pageSize")) ?? 24;
+  if (page < 1) {
+    json(res, 400, { error: "page must be >= 1" }, cors);
+    return;
+  }
+  if (pageSize < 1 || pageSize > 100) {
+    json(res, 400, { error: "pageSize must be between 1 and 100" }, cors);
+    return;
+  }
+
+  const result = await controller.brandById(idBrand, { page, pageSize });
+  if (!result) {
+    json(res, 404, { error: "not_found" }, cors);
+    return;
+  }
+
+  json(res, 200, { success: true, data: result }, cors);
+}
+
 export const handlers = {
   categorias,
   categoriaById,
   produtosByCategoria,
   produtoById,
   produtoBySlug,
+  brands,
+  brandById,
 };

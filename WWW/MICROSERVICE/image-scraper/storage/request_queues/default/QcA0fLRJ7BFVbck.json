@@ -1,0 +1,9 @@
+{
+	"id": "QcA0fLRJ7BFVbck",
+	"json": "{\"id\":\"QcA0fLRJ7BFVbck\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"52\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":52,\"slug\":\"bourbon\",\"title\":\"Bourbon\",\"query\":\"Bourbon Bourbon\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:38.185Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "52",
+	"url": "https://example.com/dummy"
+}

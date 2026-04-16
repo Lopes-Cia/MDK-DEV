@@ -1,0 +1,9 @@
+{
+	"id": "SkTcFTZCBKgP6A6",
+	"json": "{\"id\":\"SkTcFTZCBKgP6A6\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"10\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":10,\"slug\":\"bebidas\",\"title\":\"Bebidas\",\"query\":\"Bebidas Bebidas\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:30:01.392Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "10",
+	"url": "https://example.com/dummy"
+}

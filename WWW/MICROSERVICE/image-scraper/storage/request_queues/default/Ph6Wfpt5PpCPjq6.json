@@ -1,0 +1,9 @@
+{
+	"id": "Ph6Wfpt5PpCPjq6",
+	"json": "{\"id\":\"Ph6Wfpt5PpCPjq6\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"59\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":59,\"slug\":\"navy-strength\",\"title\":\"Navy Strength\",\"query\":\"Navy Strength Navy Strength\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:33:05.330Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "59",
+	"url": "https://example.com/dummy"
+}

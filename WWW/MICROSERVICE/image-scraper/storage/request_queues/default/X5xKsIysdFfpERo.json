@@ -1,0 +1,9 @@
+{
+	"id": "X5xKsIysdFfpERo",
+	"json": "{\"id\":\"X5xKsIysdFfpERo\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"26\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":26,\"slug\":\"vodka-ice\",\"title\":\"Vodka ice\",\"query\":\"Vodka ice Vodka ice\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:30:46.096Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "26",
+	"url": "https://example.com/dummy"
+}

@@ -1,0 +1,9 @@
+{
+	"id": "huUBSWWGYTEqngs",
+	"json": "{\"id\":\"huUBSWWGYTEqngs\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"34\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":34,\"slug\":\"roses\",\"title\":\"Rosés\",\"query\":\"Rosés Rosés\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:31:32.791Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "34",
+	"url": "https://example.com/dummy"
+}

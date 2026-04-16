@@ -1,0 +1,9 @@
+{
+	"id": "mAEL2ScPmxALYhS",
+	"json": "{\"id\":\"mAEL2ScPmxALYhS\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"48\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":48,\"slug\":\"vodka\",\"title\":\"Vodka\",\"query\":\"Vodka Vodka\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:22.265Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "48",
+	"url": "https://example.com/dummy"
+}

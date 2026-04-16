@@ -1,0 +1,9 @@
+{
+	"id": "NJxBIBti24URkmZ",
+	"json": "{\"id\":\"NJxBIBti24URkmZ\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"78\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":78,\"slug\":\"maca\",\"title\":\"Maçã\",\"query\":\"Maçã Maçã\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:34:19.007Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "78",
+	"url": "https://example.com/dummy"
+}

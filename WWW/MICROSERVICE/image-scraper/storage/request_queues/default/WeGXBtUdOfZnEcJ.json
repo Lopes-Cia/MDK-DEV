@@ -1,0 +1,9 @@
+{
+	"id": "WeGXBtUdOfZnEcJ",
+	"json": "{\"id\":\"WeGXBtUdOfZnEcJ\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"28\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":28,\"slug\":\"tradicional\",\"title\":\"Tradicional\",\"query\":\"Tradicional Tradicional\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:31:10.354Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "28",
+	"url": "https://example.com/dummy"
+}

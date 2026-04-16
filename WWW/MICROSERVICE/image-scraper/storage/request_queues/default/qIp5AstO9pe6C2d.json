@@ -1,0 +1,9 @@
+{
+	"id": "qIp5AstO9pe6C2d",
+	"json": "{\"id\":\"qIp5AstO9pe6C2d\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"77\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":77,\"slug\":\"laranja\",\"title\":\"Laranja\",\"query\":\"Laranja Laranja\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:34:16.409Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "77",
+	"url": "https://example.com/dummy"
+}

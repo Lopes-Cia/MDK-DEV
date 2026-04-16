@@ -1,0 +1,682 @@
+[
+  {
+    "id": 10,
+    "name": "Bebidas",
+    "slug": "bebidas",
+    "parentId": 0,
+    "image": "/assets/images/categorias/bebidas-768b23.jpg",
+    "order": 10
+  },
+  {
+    "id": 11,
+    "name": "Vinhos",
+    "slug": "vinhos",
+    "parentId": 0,
+    "image": "/assets/images/categorias/vinhos-a8a259.png",
+    "order": 11
+  },
+  {
+    "id": 12,
+    "name": "Destilados",
+    "slug": "destilados",
+    "parentId": 0,
+    "image": "/assets/images/categorias/destilados-076798.jpg",
+    "order": 12
+  },
+  {
+    "id": 13,
+    "name": "Não alcoólicas",
+    "slug": "nao-alcoolicas",
+    "parentId": 0,
+    "image": "/assets/images/semImagem.png",
+    "order": 13
+  },
+  {
+    "id": 14,
+    "name": "Conveniência",
+    "slug": "conveniencia",
+    "parentId": 0,
+    "image": "/assets/images/categorias/conveniencia-6cfd5e.jpg",
+    "order": 14
+  },
+  {
+    "id": 15,
+    "name": "Cervejas",
+    "slug": "cervejas",
+    "parentId": 10,
+    "image": "/assets/images/categorias/cervejas-5574dc.jpg",
+    "order": 15
+  },
+  {
+    "id": 16,
+    "name": "Chopp",
+    "slug": "chopp",
+    "parentId": 10,
+    "image": "/assets/images/categorias/chopp-1776d5.png",
+    "order": 16
+  },
+  {
+    "id": 17,
+    "name": "Drinks prontos",
+    "slug": "drinks-prontos",
+    "parentId": 10,
+    "image": "/assets/images/categorias/drinks-prontos-469004.png",
+    "order": 17
+  },
+  {
+    "id": 18,
+    "name": "Sidras",
+    "slug": "sidras",
+    "parentId": 10,
+    "image": "/assets/images/categorias/sidras-315a5d.jpg",
+    "order": 18
+  },
+  {
+    "id": 19,
+    "name": "Lager",
+    "slug": "lager",
+    "parentId": 15,
+    "image": "/assets/images/categorias/lager-2ccedf.jpg",
+    "order": 19
+  },
+  {
+    "id": 20,
+    "name": "IPA",
+    "slug": "ipa",
+    "parentId": 15,
+    "image": "/assets/images/categorias/ipa-c1966f.jpg",
+    "order": 20
+  },
+  {
+    "id": 21,
+    "name": "Pilsen",
+    "slug": "pilsen",
+    "parentId": 15,
+    "image": "/assets/images/categorias/pilsen-5764bb.jpg",
+    "order": 21
+  },
+  {
+    "id": 22,
+    "name": "Pilsen",
+    "slug": "pilsen-22",
+    "parentId": 16,
+    "image": "/assets/images/categorias/pilsen-22-5764bb.jpg",
+    "order": 22
+  },
+  {
+    "id": 23,
+    "name": "IPA",
+    "slug": "ipa-23",
+    "parentId": 16,
+    "image": "/assets/images/categorias/ipa-23-c1966f.jpg",
+    "order": 23
+  },
+  {
+    "id": 24,
+    "name": "Artesanal",
+    "slug": "artesanal",
+    "parentId": 16,
+    "image": "/assets/images/categorias/artesanal-635c93.jpg",
+    "order": 24
+  },
+  {
+    "id": 25,
+    "name": "Gin tônica",
+    "slug": "gin-tonica",
+    "parentId": 17,
+    "image": "/assets/images/categorias/gin-tonica-abc7b0.png",
+    "order": 25
+  },
+  {
+    "id": 26,
+    "name": "Vodka ice",
+    "slug": "vodka-ice",
+    "parentId": 17,
+    "image": "/assets/images/categorias/vodka-ice-72a17d.jpg",
+    "order": 26
+  },
+  {
+    "id": 27,
+    "name": "Caipirinha",
+    "slug": "caipirinha",
+    "parentId": 17,
+    "image": "/assets/images/categorias/caipirinha-645274.jpg",
+    "order": 27
+  },
+  {
+    "id": 28,
+    "name": "Tradicional",
+    "slug": "tradicional",
+    "parentId": 18,
+    "image": "/assets/images/semImagem.png",
+    "order": 28
+  },
+  {
+    "id": 29,
+    "name": "Premium",
+    "slug": "premium",
+    "parentId": 18,
+    "image": "/assets/images/categorias/premium-8b68f4.jpg",
+    "order": 29
+  },
+  {
+    "id": 30,
+    "name": "Artesanal",
+    "slug": "artesanal-30",
+    "parentId": 18,
+    "image": "/assets/images/categorias/artesanal-30-02c2ca.jpg",
+    "order": 30
+  },
+  {
+    "id": 31,
+    "name": "Tintos",
+    "slug": "tintos",
+    "parentId": 11,
+    "image": "/assets/images/categorias/tintos-4c55cf.jpg",
+    "order": 31
+  },
+  {
+    "id": 32,
+    "name": "Brancos",
+    "slug": "brancos",
+    "parentId": 11,
+    "image": "/assets/images/categorias/brancos-dc4ea0.jpg",
+    "order": 32
+  },
+  {
+    "id": 33,
+    "name": "Espumantes",
+    "slug": "espumantes",
+    "parentId": 11,
+    "image": "/assets/images/categorias/espumantes-a45408.jpg",
+    "order": 33
+  },
+  {
+    "id": 34,
+    "name": "Rosés",
+    "slug": "roses",
+    "parentId": 11,
+    "image": "/assets/images/categorias/roses-1a0c72.jpg",
+    "order": 34
+  },
+  {
+    "id": 35,
+    "name": "Seco",
+    "slug": "seco",
+    "parentId": 31,
+    "image": "/assets/images/categorias/seco-fc3ba0.jpg",
+    "order": 35
+  },
+  {
+    "id": 36,
+    "name": "Suave",
+    "slug": "suave",
+    "parentId": 31,
+    "image": "/assets/images/categorias/suave-7e9fcc.jpg",
+    "order": 36
+  },
+  {
+    "id": 37,
+    "name": "Reserva",
+    "slug": "reserva",
+    "parentId": 31,
+    "image": "/assets/images/categorias/reserva-737df9.jpg",
+    "order": 37
+  },
+  {
+    "id": 38,
+    "name": "Seco",
+    "slug": "seco-38",
+    "parentId": 32,
+    "image": "/assets/images/categorias/seco-38-fc3ba0.jpg",
+    "order": 38
+  },
+  {
+    "id": 39,
+    "name": "Suave",
+    "slug": "suave-39",
+    "parentId": 32,
+    "image": "/assets/images/categorias/suave-39-7e9fcc.jpg",
+    "order": 39
+  },
+  {
+    "id": 40,
+    "name": "Frisante",
+    "slug": "frisante",
+    "parentId": 32,
+    "image": "/assets/images/categorias/frisante-daa587.jpg",
+    "order": 40
+  },
+  {
+    "id": 41,
+    "name": "Brut",
+    "slug": "brut",
+    "parentId": 33,
+    "image": "/assets/images/categorias/brut-0ec23e.jpg",
+    "order": 41
+  },
+  {
+    "id": 42,
+    "name": "Moscatel",
+    "slug": "moscatel",
+    "parentId": 33,
+    "image": "/assets/images/categorias/moscatel-339edd.jpg",
+    "order": 42
+  },
+  {
+    "id": 43,
+    "name": "Demi-sec",
+    "slug": "demi-sec",
+    "parentId": 33,
+    "image": "/assets/images/categorias/demi-sec-8099fc.jpg",
+    "order": 43
+  },
+  {
+    "id": 44,
+    "name": "Seco",
+    "slug": "seco-44",
+    "parentId": 34,
+    "image": "/assets/images/categorias/seco-44-fc3ba0.jpg",
+    "order": 44
+  },
+  {
+    "id": 45,
+    "name": "Suave",
+    "slug": "suave-45",
+    "parentId": 34,
+    "image": "/assets/images/categorias/suave-45-7e9fcc.jpg",
+    "order": 45
+  },
+  {
+    "id": 46,
+    "name": "Frisante",
+    "slug": "frisante-46",
+    "parentId": 34,
+    "image": "/assets/images/categorias/frisante-46-daa587.jpg",
+    "order": 46
+  },
+  {
+    "id": 47,
+    "name": "Whisky",
+    "slug": "whisky",
+    "parentId": 12,
+    "image": "/assets/images/categorias/whisky-578e16.jpg",
+    "order": 47
+  },
+  {
+    "id": 48,
+    "name": "Vodka",
+    "slug": "vodka",
+    "parentId": 12,
+    "image": "/assets/images/categorias/vodka-febca9.jpg",
+    "order": 48
+  },
+  {
+    "id": 49,
+    "name": "Gin",
+    "slug": "gin",
+    "parentId": 12,
+    "image": "/assets/images/categorias/gin-bbed13.png",
+    "order": 49
+  },
+  {
+    "id": 50,
+    "name": "Rum",
+    "slug": "rum",
+    "parentId": 12,
+    "image": "/assets/images/categorias/rum-cd4673.jpg",
+    "order": 50
+  },
+  {
+    "id": 51,
+    "name": "Blended",
+    "slug": "blended",
+    "parentId": 47,
+    "image": "/assets/images/semImagem.png",
+    "order": 51
+  },
+  {
+    "id": 52,
+    "name": "Bourbon",
+    "slug": "bourbon",
+    "parentId": 47,
+    "image": "/assets/images/categorias/bourbon-40f21e.png",
+    "order": 52
+  },
+  {
+    "id": 53,
+    "name": "Single malt",
+    "slug": "single-malt",
+    "parentId": 47,
+    "image": "/assets/images/categorias/single-malt-c1a9b8.jpg",
+    "order": 53
+  },
+  {
+    "id": 54,
+    "name": "Tradicional",
+    "slug": "tradicional-54",
+    "parentId": 48,
+    "image": "/assets/images/semImagem.png",
+    "order": 54
+  },
+  {
+    "id": 55,
+    "name": "Premium",
+    "slug": "premium-55",
+    "parentId": 48,
+    "image": "/assets/images/categorias/premium-55-8b68f4.jpg",
+    "order": 55
+  },
+  {
+    "id": 56,
+    "name": "Saborizada",
+    "slug": "saborizada",
+    "parentId": 48,
+    "image": "/assets/images/categorias/saborizada-ab1eba.jpg",
+    "order": 56
+  },
+  {
+    "id": 57,
+    "name": "London Dry",
+    "slug": "london-dry",
+    "parentId": 49,
+    "image": "/assets/images/categorias/london-dry-09e432.png",
+    "order": 57
+  },
+  {
+    "id": 58,
+    "name": "Aromatizado",
+    "slug": "aromatizado",
+    "parentId": 49,
+    "image": "/assets/images/categorias/aromatizado-b14076.jpg",
+    "order": 58
+  },
+  {
+    "id": 59,
+    "name": "Navy Strength",
+    "slug": "navy-strength",
+    "parentId": 49,
+    "image": "/assets/images/categorias/navy-strength-c77bc2.jpg",
+    "order": 59
+  },
+  {
+    "id": 60,
+    "name": "Branco",
+    "slug": "branco",
+    "parentId": 50,
+    "image": "/assets/images/categorias/branco-4b37ae.png",
+    "order": 60
+  },
+  {
+    "id": 61,
+    "name": "Dourado",
+    "slug": "dourado",
+    "parentId": 50,
+    "image": "/assets/images/categorias/dourado-0a36ee.jpg",
+    "order": 61
+  },
+  {
+    "id": 62,
+    "name": "Envelhecido",
+    "slug": "envelhecido",
+    "parentId": 50,
+    "image": "/assets/images/semImagem.png",
+    "order": 62
+  },
+  {
+    "id": 63,
+    "name": "Energéticos",
+    "slug": "energeticos",
+    "parentId": 13,
+    "image": "/assets/images/categorias/energeticos-bc5006.jpg",
+    "order": 63
+  },
+  {
+    "id": 64,
+    "name": "Refrigerantes",
+    "slug": "refrigerantes",
+    "parentId": 13,
+    "image": "/assets/images/categorias/refrigerantes-7a3bdc.jpg",
+    "order": 64
+  },
+  {
+    "id": 65,
+    "name": "Águas & Isotônicos",
+    "slug": "aguas-isotonicos",
+    "parentId": 13,
+    "image": "/assets/images/categorias/aguas-isotonicos-433ff3.png",
+    "order": 65
+  },
+  {
+    "id": 66,
+    "name": "Sucos",
+    "slug": "sucos",
+    "parentId": 13,
+    "image": "/assets/images/categorias/sucos-5cb761.png",
+    "order": 66
+  },
+  {
+    "id": 67,
+    "name": "Tradicional",
+    "slug": "tradicional-67",
+    "parentId": 63,
+    "image": "/assets/images/semImagem.png",
+    "order": 67
+  },
+  {
+    "id": 68,
+    "name": "Zero",
+    "slug": "zero",
+    "parentId": 63,
+    "image": "/assets/images/categorias/zero-dfd540.jpg",
+    "order": 68
+  },
+  {
+    "id": 69,
+    "name": "Sem açúcar",
+    "slug": "sem-acucar",
+    "parentId": 63,
+    "image": "/assets/images/categorias/sem-acucar-40b8d5.jpg",
+    "order": 69
+  },
+  {
+    "id": 70,
+    "name": "Cola",
+    "slug": "cola",
+    "parentId": 64,
+    "image": "/assets/images/categorias/cola-ed4d0b.jpg",
+    "order": 70
+  },
+  {
+    "id": 71,
+    "name": "Guaraná",
+    "slug": "guarana",
+    "parentId": 64,
+    "image": "/assets/images/categorias/guarana-730f84.png",
+    "order": 71
+  },
+  {
+    "id": 72,
+    "name": "Citrus",
+    "slug": "citrus",
+    "parentId": 64,
+    "image": "/assets/images/categorias/citrus-12ca29.png",
+    "order": 72
+  },
+  {
+    "id": 73,
+    "name": "Água",
+    "slug": "agua",
+    "parentId": 65,
+    "image": "/assets/images/categorias/agua-61f8ed.png",
+    "order": 73
+  },
+  {
+    "id": 74,
+    "name": "Com gás",
+    "slug": "com-gas",
+    "parentId": 65,
+    "image": "/assets/images/categorias/com-gas-b1f72e.png",
+    "order": 74
+  },
+  {
+    "id": 75,
+    "name": "Isotônico",
+    "slug": "isotonico",
+    "parentId": 65,
+    "image": "/assets/images/categorias/isotonico-58d8e5.jpg",
+    "order": 75
+  },
+  {
+    "id": 76,
+    "name": "Uva",
+    "slug": "uva",
+    "parentId": 66,
+    "image": "/assets/images/categorias/uva-0a7796.png",
+    "order": 76
+  },
+  {
+    "id": 77,
+    "name": "Laranja",
+    "slug": "laranja",
+    "parentId": 66,
+    "image": "/assets/images/categorias/laranja-6220a3.png",
+    "order": 77
+  },
+  {
+    "id": 78,
+    "name": "Maçã",
+    "slug": "maca",
+    "parentId": 66,
+    "image": "/assets/images/categorias/maca-eb7632.jpg",
+    "order": 78
+  },
+  {
+    "id": 79,
+    "name": "Gelo",
+    "slug": "gelo",
+    "parentId": 14,
+    "image": "/assets/images/categorias/gelo-0584f5.png",
+    "order": 79
+  },
+  {
+    "id": 80,
+    "name": "Snacks",
+    "slug": "snacks",
+    "parentId": 14,
+    "image": "/assets/images/categorias/snacks-1e5823.png",
+    "order": 80
+  },
+  {
+    "id": 81,
+    "name": "Acessórios",
+    "slug": "acessorios",
+    "parentId": 14,
+    "image": "/assets/images/categorias/acessorios-2d1345.jpg",
+    "order": 81
+  },
+  {
+    "id": 82,
+    "name": "Tabacaria",
+    "slug": "tabacaria",
+    "parentId": 14,
+    "image": "/assets/images/categorias/tabacaria-73bce9.jpg",
+    "order": 82
+  },
+  {
+    "id": 83,
+    "name": "Saco 2kg",
+    "slug": "saco-2kg",
+    "parentId": 79,
+    "image": "/assets/images/categorias/saco-2kg-661261.jpg",
+    "order": 83
+  },
+  {
+    "id": 84,
+    "name": "Saco 5kg",
+    "slug": "saco-5kg",
+    "parentId": 79,
+    "image": "/assets/images/categorias/saco-5kg-f6652e.jpg",
+    "order": 84
+  },
+  {
+    "id": 85,
+    "name": "Gelo de coco",
+    "slug": "gelo-de-coco",
+    "parentId": 79,
+    "image": "/assets/images/categorias/gelo-de-coco-31142a.jpg",
+    "order": 85
+  },
+  {
+    "id": 86,
+    "name": "Salgadinhos",
+    "slug": "salgadinhos",
+    "parentId": 80,
+    "image": "/assets/images/categorias/salgadinhos-0500fa.png",
+    "order": 86
+  },
+  {
+    "id": 87,
+    "name": "Amendoim",
+    "slug": "amendoim",
+    "parentId": 80,
+    "image": "/assets/images/categorias/amendoim-4b1511.png",
+    "order": 87
+  },
+  {
+    "id": 88,
+    "name": "Batata chips",
+    "slug": "batata-chips",
+    "parentId": 80,
+    "image": "/assets/images/categorias/batata-chips-b8180e.png",
+    "order": 88
+  },
+  {
+    "id": 89,
+    "name": "Copos",
+    "slug": "copos",
+    "parentId": 81,
+    "image": "/assets/images/categorias/copos-dcf1a1.png",
+    "order": 89
+  },
+  {
+    "id": 90,
+    "name": "Abridor",
+    "slug": "abridor",
+    "parentId": 81,
+    "image": "/assets/images/categorias/abridor-832413.png",
+    "order": 90
+  },
+  {
+    "id": 91,
+    "name": "Baldes",
+    "slug": "baldes",
+    "parentId": 81,
+    "image": "/assets/images/categorias/baldes-836066.jpg",
+    "order": 91
+  },
+  {
+    "id": 92,
+    "name": "Isqueiros",
+    "slug": "isqueiros",
+    "parentId": 82,
+    "image": "/assets/images/categorias/isqueiros-ec26f9.jpg",
+    "order": 92
+  },
+  {
+    "id": 93,
+    "name": "Carvão",
+    "slug": "carvao",
+    "parentId": 82,
+    "image": "/assets/images/categorias/carvao-b10d0b.png",
+    "order": 93
+  },
+  {
+    "id": 94,
+    "name": "Piteiras",
+    "slug": "piteiras",
+    "parentId": 82,
+    "image": "/assets/images/categorias/piteiras-f49ced.png",
+    "order": 94
+  }
+]

@@ -1,0 +1,9 @@
+{
+	"id": "ce5Fo8Dbmphl9zE",
+	"json": "{\"id\":\"ce5Fo8Dbmphl9zE\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"44\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":44,\"slug\":\"seco-44\",\"title\":\"Seco\",\"query\":\"Seco Seco\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:16.058Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "44",
+	"url": "https://example.com/dummy"
+}

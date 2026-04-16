@@ -1,0 +1,9 @@
+{
+	"id": "AtILvX45StWZmkz",
+	"json": "{\"id\":\"AtILvX45StWZmkz\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"55\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":55,\"slug\":\"premium-55\",\"title\":\"Premium\",\"query\":\"Premium Premium\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:32:49.946Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "55",
+	"url": "https://example.com/dummy"
+}

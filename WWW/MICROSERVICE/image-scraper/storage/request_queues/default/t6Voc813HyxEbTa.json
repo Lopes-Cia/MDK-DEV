@@ -1,0 +1,9 @@
+{
+	"id": "t6Voc813HyxEbTa",
+	"json": "{\"id\":\"t6Voc813HyxEbTa\",\"url\":\"https://example.com/dummy\",\"loadedUrl\":\"https://example.com/dummy\",\"uniqueKey\":\"25\",\"method\":\"GET\",\"noRetry\":false,\"retryCount\":0,\"errorMessages\":[],\"headers\":{},\"userData\":{\"id\":25,\"slug\":\"gin-tonica\",\"title\":\"Gin tônica\",\"query\":\"Gin tônica Gin tônica\",\"__crawlee\":{\"state\":4}},\"handledAt\":\"2026-04-16T03:30:43.871Z\"}",
+	"method": "GET",
+	"orderNo": null,
+	"retryCount": 0,
+	"uniqueKey": "25",
+	"url": "https://example.com/dummy"
+}

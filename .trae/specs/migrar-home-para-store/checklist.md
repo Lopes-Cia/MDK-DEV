@@ -1,0 +1,9 @@
+- [x] Home chama `ecommerce-store.loadHome()` e não depende de hardcode para seções cobertas
+- [x] Layout visual da home permanece equivalente ao atual (sem regressão estrutural)
+- [x] Banners renderizam a partir do payload de `home`
+- [x] Cards de categoria usam dados do store e mantêm padrão visual
+- [x] Cards de produto usam dados do store e mantêm padrão visual
+- [x] Carrosséis necessários foram reutilizados ou criados com justificativa técnica
+- [x] Estados de loading/empty/error estão implementados e visíveis na home
+- [x] Não há fetch client-side direto para endpoint de domínio fora da camada de store/api interna
+- [ ] Fluxo manual validado para banners, categorias destaque e coleções de produtos

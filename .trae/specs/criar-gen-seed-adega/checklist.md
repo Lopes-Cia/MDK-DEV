@@ -1,0 +1,10 @@
+- [x] Existe `WWW/MICROSERVICE/GEN-SEED` com `config.json` e script de geração Node (ESM)
+- [x] `config.json` suporta `outputDir`, limites de categorias e `products.minTotal` conforme spec
+- [x] `categorias.json` é gerado no diretório de saída e tem >= 5 raízes (`parentId: 0`)
+- [x] Cada raiz tem 3–5 filhos e cada filho tem 2–4 netos
+- [x] Categorias: `id/name/slug/parentId` válidos; `slug` único; `parentId` referencia id existente (ou 0)
+- [x] `produtos.json` é gerado no diretório de saída e tem >= 120 produtos
+- [x] Produtos distribuídos em categorias netas (terceiro nível) e `categoryId` é válido
+- [x] Produtos: `id` único; `slug` único; `stock` number; `inStock` consistente com `stock`
+- [x] Falhas de validação resultam em throw/erro (sem “sucesso” falso)
+- [x] Saída no console inclui um resumo (counts) quando sucesso

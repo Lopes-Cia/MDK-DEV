@@ -6,6 +6,7 @@ import { json } from "../lib/response.mjs";
 import { handleProxy } from "./proxy.mjs";
 import { handleConnect } from "./connect.mjs";
 import { handleStorageImages } from "./storage-images.mjs";
+import { handlePublicAssets } from "./public-assets.mjs";
 
 // Roteador principal do microservice.
 // - Define qual "projeto/base" está ativo (ctx.projectDir).
@@ -38,6 +39,9 @@ async function loadProjectRoutes(ctx) {
 
 export async function handleRoutes(req, res, ctx) {
   const { cors, pathname } = ctx;
+
+  const handledPublicAssets = await handlePublicAssets(req, res, ctx);
+  if (handledPublicAssets) return true;
 
   // Storage seguro para assets de imagens (usado pelo TRATAMENTO-IMAGENS).
   // Mantém acesso restrito por tenant e proteção contra traversal.
