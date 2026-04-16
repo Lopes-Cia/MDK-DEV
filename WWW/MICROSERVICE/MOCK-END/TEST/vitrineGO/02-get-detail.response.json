@@ -1,0 +1,12 @@
+{
+  "endpoint": "GET http://localhost:4000/connect/Servidor/webservice/integration/vitrineGO/colecoes/mais-vendidos",
+  "status": 200,
+  "body": {
+    "success": true,
+    "data": {
+      "id": "mais-vendidos",
+      "titulo": "Mais Vendidos",
+      "produtos": []
+    }
+  }
+}

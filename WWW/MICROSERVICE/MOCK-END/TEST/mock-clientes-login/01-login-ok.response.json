@@ -1,0 +1,62 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/clientes/login",
+    "body": {
+      "email": "teste@exemplo.com",
+      "senha": "123456"
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "success": true,
+      "data": {
+        "cliente": {
+          "id": 999,
+          "tipoPessoa": "PF",
+          "documento": "11122233344",
+          "nome": "Cliente Teste",
+          "email": "teste@exemplo.com",
+          "whatsapp": "11999990000",
+          "doisFatores": {
+            "habilitado": false,
+            "metodo": "email"
+          },
+          "status": "ativo",
+          "createdAt": "2026-01-01T00:00:00.000Z"
+        },
+        "enderecos": [
+          {
+            "id": 1,
+            "clienteId": 999,
+            "rotulo": "casa",
+            "principal": true,
+            "cep": "01311000",
+            "logradouro": "Avenida Paulista",
+            "numero": "1000",
+            "complemento": "10º andar",
+            "bairro": "Bela Vista",
+            "cidade": "Sao Paulo",
+            "uf": "SP",
+            "pais": "BR"
+          }
+        ],
+        "privacidade": {
+          "clienteId": 999,
+          "aceitaMarketing": false,
+          "aceitaTermos": true,
+          "aceitaCookies": true,
+          "canalPreferido": "email",
+          "updatedAt": "2026-01-01T00:00:00.000Z"
+        },
+        "token": "mock-client-token-999-1776358746973"
+      }
+    }
+  },
+  "expected": {
+    "status": 200
+  },
+  "startedAt": "2026-04-16T16:59:06.896Z",
+  "finishedAt": "2026-04-16T16:59:06.983Z"
+}

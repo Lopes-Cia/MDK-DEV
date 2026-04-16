@@ -110,4 +110,27 @@ export const routes = [
     handler_class: "api/home",
     handler_function: "home",
   },
+  // Clientes - login (mock)
+  {
+    method: "POST",
+    uri: "/Servidor/webservice/integration/clientes/login",
+    auth: {
+      mode: "none",
+      label: "Sem auth para login de cliente no mock-end.",
+    },
+    execution: { mode: "mock" },
+    handler_class: "api/clientes",
+    handler_function: "login",
+  },
+  {
+    method: "POST",
+    uri: "/Servidor/webservice/integration/clientes/cadastro",
+    auth: {
+      mode: "none",
+      label: "Sem auth para cadastro de cliente no mock-end.",
+    },
+    execution: { mode: "mock" },
+    handler_class: "api/clientes",
+    handler_function: "cadastro",
+  },
 ];

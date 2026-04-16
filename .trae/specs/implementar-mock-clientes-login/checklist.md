@@ -1,0 +1,9 @@
+- [x] Rota `POST /Servidor/webservice/integration/clientes/login` existe em `PROJETOS/connect/routes.mjs` com `execution.mode: "mock"` e `handler_class/handler_function` corretos.
+- [x] `clientes.json` existe e contém `cliente[]`, `enderecos[]`, `privacidade[]` com cliente de teste completo.
+- [x] `ClientesController.login(email, senha)` retorna `cliente + enderecos + privacidade + token` e não vaza senha no payload.
+- [x] `clientes.mjs` responde:
+  - [x] `200` no login OK
+  - [x] `401` para credenciais inválidas (email ou senha)
+  - [x] `403` para cliente inativo
+- [x] `IA/DESENHOS/MOCK-CLIENTES.md` documenta o endpoint de login e o cliente de teste (com endereços e privacidade).
+- [x] Pasta `WWW/MICROSERVICE/MOCK-END/TEST/mock-clientes-login/` contém evidências e `relatorio-final.md` concluindo se a implementação está correta.

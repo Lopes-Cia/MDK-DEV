@@ -1,0 +1,34 @@
+{
+  "validations": [
+    {
+      "name": "cadastro-retorna-cliente-id",
+      "ok": true,
+      "details": {
+        "createdClienteId": 1004
+      }
+    },
+    {
+      "name": "login-retorna-mesmo-id",
+      "ok": true,
+      "details": {
+        "createdClienteId": 1004,
+        "loginClienteId": 1004
+      }
+    },
+    {
+      "name": "login-retorna-mesmo-email",
+      "ok": true,
+      "details": {
+        "email": "cadastro.login.1776358953991-5d8c4813b5703@exemplo.com",
+        "loginEmail": "cadastro.login.1776358953991-5d8c4813b5703@exemplo.com"
+      }
+    },
+    {
+      "name": "nao-vaza-senha-no-login",
+      "ok": true,
+      "details": {
+        "senhaLeak": false
+      }
+    }
+  ]
+}

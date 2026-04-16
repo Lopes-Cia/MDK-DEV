@@ -1,0 +1,18 @@
+{
+  "endpoint": "DELETE http://localhost:4000/connect/Servidor/webservice/integration/vitrineGO/colecoes/promocoes",
+  "status": 200,
+  "body": {
+    "success": true,
+    "data": {
+      "id": "promocoes",
+      "titulo": "Promocoes Atualizadas",
+      "produtos": [
+        {
+          "id": 999,
+          "slug": "produto-x",
+          "nome": "Produto X"
+        }
+      ]
+    }
+  }
+}

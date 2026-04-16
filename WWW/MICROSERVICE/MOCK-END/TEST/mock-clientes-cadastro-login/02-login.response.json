@@ -1,0 +1,63 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/clientes/login",
+    "body": {
+      "email": "cadastro.login.1776358953991-5d8c4813b5703@exemplo.com",
+      "senha": "123456"
+    }
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "success": true,
+      "data": {
+        "cliente": {
+          "id": 1004,
+          "tipoPessoa": "PF",
+          "documento": "DOC-1776358953991-5d8c4813b5703",
+          "nome": "Cliente Cadastro Login",
+          "email": "cadastro.login.1776358953991-5d8c4813b5703@exemplo.com",
+          "whatsapp": "11999990000",
+          "doisFatores": {
+            "habilitado": false,
+            "metodo": "email"
+          },
+          "status": "ativo",
+          "createdAt": "2026-04-16T17:02:34.068Z"
+        },
+        "enderecos": [
+          {
+            "id": 6,
+            "clienteId": 1004,
+            "rotulo": "Casa",
+            "principal": true,
+            "cep": "01001000",
+            "logradouro": "Praça da Sé",
+            "numero": "100",
+            "complemento": "lado ímpar",
+            "bairro": "Sé",
+            "cidade": "São Paulo",
+            "uf": "SP",
+            "pais": "BR",
+            "referencia": "Perto da catedral"
+          }
+        ],
+        "privacidade": {
+          "clienteId": 1004,
+          "aceitaMarketing": false,
+          "aceitaTermos": true,
+          "aceitaCookies": true,
+          "canalPreferido": "email",
+          "updatedAt": "2026-04-16T17:02:34.069Z"
+        },
+        "token": "mock-client-token-1004-1776358954086"
+      }
+    }
+  },
+  "expected": {
+    "status": 200
+  },
+  "startedAt": "2026-04-16T17:02:34.083Z",
+  "finishedAt": "2026-04-16T17:02:34.088Z"
+}
