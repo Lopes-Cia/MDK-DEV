@@ -74,6 +74,15 @@ function paginate(items, { page, pageSize }) {
   return { data, page, pageSize, total, totalPages };
 }
 
+function normalizeCategoriaSlug(value) {
+  const raw = String(value ?? "").trim().toLowerCase();
+  if (!raw) return "";
+  if (raw.startsWith("/categoria/")) return raw;
+  if (raw.startsWith("categoria/")) return `/${raw}`;
+  if (raw.startsWith("/")) return raw;
+  return `/categoria/${raw}`;
+}
+
 export class ProdutosController {
   async _categoriasIndex() {
     const categorias = await loadCategorias();
@@ -115,6 +124,17 @@ export class ProdutosController {
     const category = byId.get(id) ?? null;
     if (!category) return null;
     const categoryTree = this._buildNode(category, childrenByParent);
+    return { category: categoryTree };
+  }
+
+  async categoriaBySlug(slug) {
+    const key = normalizeCategoriaSlug(slug);
+    if (!key) return null;
+    const { byId, childrenByParent } = await this._categoriasIndex();
+    const found =
+      Array.from(byId.values()).find((c) => normalizeCategoriaSlug(c?.slug) === key) ?? null;
+    if (!found) return null;
+    const categoryTree = this._buildNode(found, childrenByParent);
     return { category: categoryTree };
   }
 
@@ -169,11 +189,16 @@ export class ProdutosController {
   }
 
   async produtoBySlug(slug) {
-    const key = String(slug ?? "").trim().toLowerCase();
+    const keyRaw = String(slug ?? "").trim().toLowerCase();
+    const key = keyRaw.startsWith("/produtos/") ? keyRaw.slice("/produtos/".length) : keyRaw;
     if (!key) return null;
     const produtos = await loadProdutos();
     return (
-      produtos.find((p) => String(p?.slug ?? "").trim().toLowerCase() === key) ?? null
+      produtos.find((p) => {
+        const raw = String(p?.slug ?? "").trim().toLowerCase();
+        const base = raw.startsWith("/produtos/") ? raw.slice("/produtos/".length) : raw;
+        return base === key;
+      }) ?? null
     );
   }
 

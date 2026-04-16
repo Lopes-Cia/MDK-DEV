@@ -1,4 +1,35 @@
 export const routes = [
+  // Storage JSON multi-tenant (COMMERCE allowlist)
+  {
+    method: "GET",
+    uri: "/api/:tenant/json",
+    execution: { mode: "mock" },
+    handler_class: "api/json",
+    handler_function: "getJson",
+  },
+  {
+    method: "PUT",
+    uri: "/api/:tenant/json",
+    execution: { mode: "mock" },
+    handler_class: "api/json",
+    handler_function: "putJson",
+  },
+  // CRUD mínimo em arrays por id (read-modify-write)
+  {
+    method: "POST",
+    uri: "/api/:tenant/json/array",
+    execution: { mode: "mock" },
+    handler_class: "api/json",
+    handler_function: "upsertArrayItem",
+  },
+  {
+    method: "DELETE",
+    uri: "/api/:tenant/json/array",
+    execution: { mode: "mock" },
+    handler_class: "api/json",
+    handler_function: "removeArrayItem",
+  },
+
   // Catálogo de categorias (árvore completa)
   {
     method: "GET",
@@ -10,6 +41,18 @@ export const routes = [
     execution: { mode: "mock" },
     handler_class: "api/produtos",
     handler_function: "categorias",
+  },
+  // Categoria por slug (path completo /categoria/pai/filho/...)
+  {
+    method: "GET",
+    uri: "/Servidor/webservice/integration/produtos/categorias/by-slug/*",
+    auth: {
+      mode: "required",
+      label: "Token da integradora (quando em modo original).",
+    },
+    execution: { mode: "mock" },
+    handler_class: "api/produtos",
+    handler_function: "categoriaBySlug",
   },
   // Categoria por id (inclui filhos imediatos)
   {

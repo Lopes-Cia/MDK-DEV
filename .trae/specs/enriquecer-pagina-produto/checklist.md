@@ -1,0 +1,7 @@
+- [x] A página `/produtos/[...slug]` usa layout rico equivalente à página antiga `/products/[id]/[slug]`
+- [x] Componentes de UI antigos foram duplicados para o contexto de `/produtos` e adaptados para o novo view model
+- [x] A página de produto exibe marca com imagem pequena e link para `/marca/<slug>` (com fallback)
+- [x] Todos os campos faltantes foram listados em `IA/DESENHOS/falta-produto.md`
+- [x] Fallbacks para descrição/ingredientes/aviso legal/specs técnicas existem e não quebram layout
+- [x] Links e navegação do fluxo final apontam para `/produtos/<slug>` (não para `/products/...`)
+- [x] Não há erros de TypeScript/diagnósticos nos arquivos alterados

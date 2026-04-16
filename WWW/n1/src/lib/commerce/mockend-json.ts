@@ -4,10 +4,14 @@ import { z } from "zod";
 
 import {
   COMMERCE_SCHEMA_VERSION,
+  CartsFileSchema,
   OrdersFileSchema,
+  PasswordResetsFileSchema,
   SessionsFileSchema,
   UsersFileSchema,
+  type CartsFile,
   type OrdersFile,
+  type PasswordResetsFile,
   type SessionsFile,
   type UsersFile,
 } from "./schemas";
@@ -17,7 +21,9 @@ function getMockEndBaseUrl() {
   return base.replace(/\/+$/, "");
 }
 
-function commercePath(fileName: "users.json" | "sessions.json" | "orders.json") {
+function commercePath(
+  fileName: "users.json" | "sessions.json" | "orders.json" | "carts.json" | "passwordResets.json",
+) {
   return `COMMERCE/${fileName}`;
 }
 
@@ -107,5 +113,39 @@ export async function ensureOrdersFile(tenant: string): Promise<OrdersFile> {
 export async function saveOrdersFile(tenant: string, file: OrdersFile) {
   const relPath = commercePath("orders.json");
   const data = parseOrThrow(OrdersFileSchema, file, "orders_file");
+  await mockendPutJson(tenant, relPath, data);
+}
+
+export async function ensureCartsFile(tenant: string): Promise<CartsFile> {
+  const relPath = commercePath("carts.json");
+  const res = await mockendGetJson(tenant, relPath);
+  if (!res.ok) {
+    const seed: CartsFile = { schemaVersion: COMMERCE_SCHEMA_VERSION, carts: [] };
+    await mockendPutJson(tenant, relPath, seed);
+    return seed;
+  }
+  return parseOrThrow(CartsFileSchema, res.data, "carts_file");
+}
+
+export async function saveCartsFile(tenant: string, file: CartsFile) {
+  const relPath = commercePath("carts.json");
+  const data = parseOrThrow(CartsFileSchema, file, "carts_file");
+  await mockendPutJson(tenant, relPath, data);
+}
+
+export async function ensurePasswordResetsFile(tenant: string): Promise<PasswordResetsFile> {
+  const relPath = commercePath("passwordResets.json");
+  const res = await mockendGetJson(tenant, relPath);
+  if (!res.ok) {
+    const seed: PasswordResetsFile = { schemaVersion: COMMERCE_SCHEMA_VERSION, passwordResets: [] };
+    await mockendPutJson(tenant, relPath, seed);
+    return seed;
+  }
+  return parseOrThrow(PasswordResetsFileSchema, res.data, "password_resets_file");
+}
+
+export async function savePasswordResetsFile(tenant: string, file: PasswordResetsFile) {
+  const relPath = commercePath("passwordResets.json");
+  const data = parseOrThrow(PasswordResetsFileSchema, file, "password_resets_file");
   await mockendPutJson(tenant, relPath, data);
 }

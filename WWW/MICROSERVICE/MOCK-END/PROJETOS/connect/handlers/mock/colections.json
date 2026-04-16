@@ -26,7 +26,7 @@
       {
         "id": 35,
         "name": "Seco",
-        "slug": "/categoria/seco",
+        "slug": "/categoria/vinhos/tintos/seco",
         "parentId": 31,
         "image": "http://localhost:4000/assets/images/categorias/seco-fc3ba0.jpg",
         "order": 35
@@ -34,7 +34,7 @@
       {
         "id": 60,
         "name": "Branco",
-        "slug": "/categoria/branco",
+        "slug": "/categoria/destilados/rum/branco",
         "parentId": 50,
         "image": "http://localhost:4000/assets/images/categorias/branco-4b37ae.png",
         "order": 60
@@ -42,7 +42,7 @@
       {
         "id": 31,
         "name": "Tintos",
-        "slug": "/categoria/tintos",
+        "slug": "/categoria/vinhos/tintos",
         "parentId": 11,
         "image": "http://localhost:4000/assets/images/categorias/tintos-4c55cf.jpg",
         "order": 31
@@ -50,7 +50,7 @@
       {
         "id": 33,
         "name": "Espumantes",
-        "slug": "/categoria/espumantes",
+        "slug": "/categoria/vinhos/espumantes",
         "parentId": 11,
         "image": "http://localhost:4000/assets/images/categorias/espumantes-a45408.jpg",
         "order": 33
@@ -58,7 +58,7 @@
       {
         "id": 75,
         "name": "Isotônico",
-        "slug": "/categoria/isotonico",
+        "slug": "/categoria/nao-alcoolicas/aguas-isotonicos/isotonico",
         "parentId": 65,
         "image": "http://localhost:4000/assets/images/categorias/isotonico-58d8e5.jpg",
         "order": 75
@@ -66,26 +66,10 @@
       {
         "id": 32,
         "name": "Brancos",
-        "slug": "/categoria/brancos",
+        "slug": "/categoria/vinhos/brancos",
         "parentId": 11,
         "image": "http://localhost:4000/assets/images/categorias/brancos-dc4ea0.jpg",
         "order": 32
-      },
-      {
-        "id": 74,
-        "name": "Com gás",
-        "slug": "/categoria/com-gas",
-        "parentId": 65,
-        "image": "http://localhost:4000/assets/images/categorias/com-gas-b1f72e.png",
-        "order": 74
-      },
-      {
-        "id": 73,
-        "name": "Água",
-        "slug": "/categoria/agua",
-        "parentId": 65,
-        "image": "http://localhost:4000/assets/images/categorias/agua-61f8ed.png",
-        "order": 73
       }
     ],
     "produtos_maisvendidos": {
@@ -107,7 +91,7 @@
           "category": {
             "id": 51,
             "name": "Blended",
-            "slug": "/categoria/blended",
+            "slug": "/categoria/destilados/whisky/blended",
             "familia": [
               {
                 "id": 12,
@@ -117,12 +101,12 @@
               {
                 "id": 47,
                 "name": "Whisky",
-                "slug": "/categoria/whisky"
+                "slug": "/categoria/destilados/whisky"
               },
               {
                 "id": 51,
                 "name": "Blended",
-                "slug": "/categoria/blended"
+                "slug": "/categoria/destilados/whisky/blended"
               }
             ]
           },
@@ -149,7 +133,7 @@
           "category": {
             "id": 57,
             "name": "London Dry",
-            "slug": "/categoria/london-dry",
+            "slug": "/categoria/destilados/gin/london-dry",
             "familia": [
               {
                 "id": 12,
@@ -159,12 +143,12 @@
               {
                 "id": 49,
                 "name": "Gin",
-                "slug": "/categoria/gin"
+                "slug": "/categoria/destilados/gin"
               },
               {
                 "id": 57,
                 "name": "London Dry",
-                "slug": "/categoria/london-dry"
+                "slug": "/categoria/destilados/gin/london-dry"
               }
             ]
           },
@@ -193,7 +177,7 @@
           "category": {
             "id": 54,
             "name": "Tradicional",
-            "slug": "/categoria/tradicional-54",
+            "slug": "/categoria/destilados/vodka/tradicional",
             "familia": [
               {
                 "id": 12,
@@ -203,12 +187,12 @@
               {
                 "id": 48,
                 "name": "Vodka",
-                "slug": "/categoria/vodka"
+                "slug": "/categoria/destilados/vodka"
               },
               {
                 "id": 54,
                 "name": "Tradicional",
-                "slug": "/categoria/tradicional-54"
+                "slug": "/categoria/destilados/vodka/tradicional"
               }
             ]
           },
@@ -235,7 +219,7 @@
           "category": {
             "id": 41,
             "name": "Brut",
-            "slug": "/categoria/brut",
+            "slug": "/categoria/vinhos/espumantes/brut",
             "familia": [
               {
                 "id": 11,
@@ -245,12 +229,12 @@
               {
                 "id": 33,
                 "name": "Espumantes",
-                "slug": "/categoria/espumantes"
+                "slug": "/categoria/vinhos/espumantes"
               },
               {
                 "id": 41,
                 "name": "Brut",
-                "slug": "/categoria/brut"
+                "slug": "/categoria/vinhos/espumantes/brut"
               }
             ]
           },
@@ -277,7 +261,7 @@
           "category": {
             "id": 62,
             "name": "Envelhecido",
-            "slug": "/categoria/envelhecido",
+            "slug": "/categoria/destilados/rum/envelhecido",
             "familia": [
               {
                 "id": 12,
@@ -287,12 +271,12 @@
               {
                 "id": 50,
                 "name": "Rum",
-                "slug": "/categoria/rum"
+                "slug": "/categoria/destilados/rum"
               },
               {
                 "id": 62,
                 "name": "Envelhecido",
-                "slug": "/categoria/envelhecido"
+                "slug": "/categoria/destilados/rum/envelhecido"
               }
             ]
           },
@@ -319,7 +303,7 @@
           "category": {
             "id": 58,
             "name": "Aromatizado",
-            "slug": "/categoria/aromatizado",
+            "slug": "/categoria/destilados/gin/aromatizado",
             "familia": [
               {
                 "id": 12,
@@ -329,12 +313,12 @@
               {
                 "id": 49,
                 "name": "Gin",
-                "slug": "/categoria/gin"
+                "slug": "/categoria/destilados/gin"
               },
               {
                 "id": 58,
                 "name": "Aromatizado",
-                "slug": "/categoria/aromatizado"
+                "slug": "/categoria/destilados/gin/aromatizado"
               }
             ]
           },
@@ -361,7 +345,7 @@
           "category": {
             "id": 83,
             "name": "Saco 2kg",
-            "slug": "/categoria/saco-2kg",
+            "slug": "/categoria/conveniencia/gelo/saco-2kg",
             "familia": [
               {
                 "id": 14,
@@ -371,12 +355,12 @@
               {
                 "id": 79,
                 "name": "Gelo",
-                "slug": "/categoria/gelo"
+                "slug": "/categoria/conveniencia/gelo"
               },
               {
                 "id": 83,
                 "name": "Saco 2kg",
-                "slug": "/categoria/saco-2kg"
+                "slug": "/categoria/conveniencia/gelo/saco-2kg"
               }
             ]
           },
@@ -403,7 +387,7 @@
           "category": {
             "id": 37,
             "name": "Reserva",
-            "slug": "/categoria/reserva",
+            "slug": "/categoria/vinhos/tintos/reserva",
             "familia": [
               {
                 "id": 11,
@@ -413,12 +397,12 @@
               {
                 "id": 31,
                 "name": "Tintos",
-                "slug": "/categoria/tintos"
+                "slug": "/categoria/vinhos/tintos"
               },
               {
                 "id": 37,
                 "name": "Reserva",
-                "slug": "/categoria/reserva"
+                "slug": "/categoria/vinhos/tintos/reserva"
               }
             ]
           },
@@ -445,7 +429,7 @@
           "category": {
             "id": 43,
             "name": "Demi-sec",
-            "slug": "/categoria/demi-sec",
+            "slug": "/categoria/vinhos/espumantes/demi-sec",
             "familia": [
               {
                 "id": 11,
@@ -455,12 +439,12 @@
               {
                 "id": 33,
                 "name": "Espumantes",
-                "slug": "/categoria/espumantes"
+                "slug": "/categoria/vinhos/espumantes"
               },
               {
                 "id": 43,
                 "name": "Demi-sec",
-                "slug": "/categoria/demi-sec"
+                "slug": "/categoria/vinhos/espumantes/demi-sec"
               }
             ]
           },
@@ -487,7 +471,7 @@
           "category": {
             "id": 35,
             "name": "Seco",
-            "slug": "/categoria/seco",
+            "slug": "/categoria/vinhos/tintos/seco",
             "familia": [
               {
                 "id": 11,
@@ -497,12 +481,12 @@
               {
                 "id": 31,
                 "name": "Tintos",
-                "slug": "/categoria/tintos"
+                "slug": "/categoria/vinhos/tintos"
               },
               {
                 "id": 35,
                 "name": "Seco",
-                "slug": "/categoria/seco"
+                "slug": "/categoria/vinhos/tintos/seco"
               }
             ]
           },
@@ -529,7 +513,7 @@
           "category": {
             "id": 78,
             "name": "Maçã",
-            "slug": "/categoria/maca",
+            "slug": "/categoria/nao-alcoolicas/sucos/maca",
             "familia": [
               {
                 "id": 13,
@@ -539,12 +523,12 @@
               {
                 "id": 66,
                 "name": "Sucos",
-                "slug": "/categoria/sucos"
+                "slug": "/categoria/nao-alcoolicas/sucos"
               },
               {
                 "id": 78,
                 "name": "Maçã",
-                "slug": "/categoria/maca"
+                "slug": "/categoria/nao-alcoolicas/sucos/maca"
               }
             ]
           },
@@ -571,7 +555,7 @@
           "category": {
             "id": 90,
             "name": "Abridor",
-            "slug": "/categoria/abridor",
+            "slug": "/categoria/conveniencia/acessorios/abridor",
             "familia": [
               {
                 "id": 14,
@@ -581,12 +565,12 @@
               {
                 "id": 81,
                 "name": "Acessórios",
-                "slug": "/categoria/acessorios"
+                "slug": "/categoria/conveniencia/acessorios"
               },
               {
                 "id": 90,
                 "name": "Abridor",
-                "slug": "/categoria/abridor"
+                "slug": "/categoria/conveniencia/acessorios/abridor"
               }
             ]
           },
@@ -618,7 +602,7 @@
           "category": {
             "id": 74,
             "name": "Com gás",
-            "slug": "/categoria/com-gas",
+            "slug": "/categoria/nao-alcoolicas/aguas-isotonicos/com-gas",
             "familia": [
               {
                 "id": 13,
@@ -628,12 +612,12 @@
               {
                 "id": 65,
                 "name": "Águas & Isotônicos",
-                "slug": "/categoria/aguas-isotonicos"
+                "slug": "/categoria/nao-alcoolicas/aguas-isotonicos"
               },
               {
                 "id": 74,
                 "name": "Com gás",
-                "slug": "/categoria/com-gas"
+                "slug": "/categoria/nao-alcoolicas/aguas-isotonicos/com-gas"
               }
             ]
           },
@@ -660,7 +644,7 @@
           "category": {
             "id": 37,
             "name": "Reserva",
-            "slug": "/categoria/reserva",
+            "slug": "/categoria/vinhos/tintos/reserva",
             "familia": [
               {
                 "id": 11,
@@ -670,12 +654,12 @@
               {
                 "id": 31,
                 "name": "Tintos",
-                "slug": "/categoria/tintos"
+                "slug": "/categoria/vinhos/tintos"
               },
               {
                 "id": 37,
                 "name": "Reserva",
-                "slug": "/categoria/reserva"
+                "slug": "/categoria/vinhos/tintos/reserva"
               }
             ]
           },
@@ -702,7 +686,7 @@
           "category": {
             "id": 58,
             "name": "Aromatizado",
-            "slug": "/categoria/aromatizado",
+            "slug": "/categoria/destilados/gin/aromatizado",
             "familia": [
               {
                 "id": 12,
@@ -712,12 +696,12 @@
               {
                 "id": 49,
                 "name": "Gin",
-                "slug": "/categoria/gin"
+                "slug": "/categoria/destilados/gin"
               },
               {
                 "id": 58,
                 "name": "Aromatizado",
-                "slug": "/categoria/aromatizado"
+                "slug": "/categoria/destilados/gin/aromatizado"
               }
             ]
           },
@@ -747,7 +731,7 @@
           "category": {
             "id": 68,
             "name": "Zero",
-            "slug": "/categoria/zero",
+            "slug": "/categoria/nao-alcoolicas/energeticos/zero",
             "familia": [
               {
                 "id": 13,
@@ -757,12 +741,12 @@
               {
                 "id": 63,
                 "name": "Energéticos",
-                "slug": "/categoria/energeticos"
+                "slug": "/categoria/nao-alcoolicas/energeticos"
               },
               {
                 "id": 68,
                 "name": "Zero",
-                "slug": "/categoria/zero"
+                "slug": "/categoria/nao-alcoolicas/energeticos/zero"
               }
             ]
           },
@@ -791,7 +775,7 @@
           "category": {
             "id": 20,
             "name": "IPA",
-            "slug": "/categoria/ipa",
+            "slug": "/categoria/bebidas/cervejas/ipa",
             "familia": [
               {
                 "id": 10,
@@ -801,12 +785,12 @@
               {
                 "id": 15,
                 "name": "Cervejas",
-                "slug": "/categoria/cervejas"
+                "slug": "/categoria/bebidas/cervejas"
               },
               {
                 "id": 20,
                 "name": "IPA",
-                "slug": "/categoria/ipa"
+                "slug": "/categoria/bebidas/cervejas/ipa"
               }
             ]
           },
@@ -835,7 +819,7 @@
           "category": {
             "id": 71,
             "name": "Guaraná",
-            "slug": "/categoria/guarana",
+            "slug": "/categoria/nao-alcoolicas/refrigerantes/guarana",
             "familia": [
               {
                 "id": 13,
@@ -845,12 +829,12 @@
               {
                 "id": 64,
                 "name": "Refrigerantes",
-                "slug": "/categoria/refrigerantes"
+                "slug": "/categoria/nao-alcoolicas/refrigerantes"
               },
               {
                 "id": 71,
                 "name": "Guaraná",
-                "slug": "/categoria/guarana"
+                "slug": "/categoria/nao-alcoolicas/refrigerantes/guarana"
               }
             ]
           },
@@ -879,7 +863,7 @@
           "category": {
             "id": 24,
             "name": "Artesanal",
-            "slug": "/categoria/artesanal",
+            "slug": "/categoria/bebidas/chopp/artesanal",
             "familia": [
               {
                 "id": 10,
@@ -889,12 +873,12 @@
               {
                 "id": 16,
                 "name": "Chopp",
-                "slug": "/categoria/chopp"
+                "slug": "/categoria/bebidas/chopp"
               },
               {
                 "id": 24,
                 "name": "Artesanal",
-                "slug": "/categoria/artesanal"
+                "slug": "/categoria/bebidas/chopp/artesanal"
               }
             ]
           },
@@ -921,7 +905,7 @@
           "category": {
             "id": 61,
             "name": "Dourado",
-            "slug": "/categoria/dourado",
+            "slug": "/categoria/destilados/rum/dourado",
             "familia": [
               {
                 "id": 12,
@@ -931,12 +915,12 @@
               {
                 "id": 50,
                 "name": "Rum",
-                "slug": "/categoria/rum"
+                "slug": "/categoria/destilados/rum"
               },
               {
                 "id": 61,
                 "name": "Dourado",
-                "slug": "/categoria/dourado"
+                "slug": "/categoria/destilados/rum/dourado"
               }
             ]
           },
@@ -963,7 +947,7 @@
           "category": {
             "id": 76,
             "name": "Uva",
-            "slug": "/categoria/uva",
+            "slug": "/categoria/nao-alcoolicas/sucos/uva",
             "familia": [
               {
                 "id": 13,
@@ -973,12 +957,12 @@
               {
                 "id": 66,
                 "name": "Sucos",
-                "slug": "/categoria/sucos"
+                "slug": "/categoria/nao-alcoolicas/sucos"
               },
               {
                 "id": 76,
                 "name": "Uva",
-                "slug": "/categoria/uva"
+                "slug": "/categoria/nao-alcoolicas/sucos/uva"
               }
             ]
           },
@@ -1007,7 +991,7 @@
           "category": {
             "id": 25,
             "name": "Gin tônica",
-            "slug": "/categoria/gin-tonica",
+            "slug": "/categoria/bebidas/drinks-prontos/gin-tonica",
             "familia": [
               {
                 "id": 10,
@@ -1017,12 +1001,12 @@
               {
                 "id": 17,
                 "name": "Drinks prontos",
-                "slug": "/categoria/drinks-prontos"
+                "slug": "/categoria/bebidas/drinks-prontos"
               },
               {
                 "id": 25,
                 "name": "Gin tônica",
-                "slug": "/categoria/gin-tonica"
+                "slug": "/categoria/bebidas/drinks-prontos/gin-tonica"
               }
             ]
           },
@@ -1049,7 +1033,7 @@
           "category": {
             "id": 42,
             "name": "Moscatel",
-            "slug": "/categoria/moscatel",
+            "slug": "/categoria/vinhos/espumantes/moscatel",
             "familia": [
               {
                 "id": 11,
@@ -1059,12 +1043,12 @@
               {
                 "id": 33,
                 "name": "Espumantes",
-                "slug": "/categoria/espumantes"
+                "slug": "/categoria/vinhos/espumantes"
               },
               {
                 "id": 42,
                 "name": "Moscatel",
-                "slug": "/categoria/moscatel"
+                "slug": "/categoria/vinhos/espumantes/moscatel"
               }
             ]
           },
@@ -1093,7 +1077,7 @@
           "category": {
             "id": 24,
             "name": "Artesanal",
-            "slug": "/categoria/artesanal",
+            "slug": "/categoria/bebidas/chopp/artesanal",
             "familia": [
               {
                 "id": 10,
@@ -1103,12 +1087,12 @@
               {
                 "id": 16,
                 "name": "Chopp",
-                "slug": "/categoria/chopp"
+                "slug": "/categoria/bebidas/chopp"
               },
               {
                 "id": 24,
                 "name": "Artesanal",
-                "slug": "/categoria/artesanal"
+                "slug": "/categoria/bebidas/chopp/artesanal"
               }
             ]
           },
@@ -1137,7 +1121,7 @@
           "category": {
             "id": 25,
             "name": "Gin tônica",
-            "slug": "/categoria/gin-tonica",
+            "slug": "/categoria/bebidas/drinks-prontos/gin-tonica",
             "familia": [
               {
                 "id": 10,
@@ -1147,12 +1131,12 @@
               {
                 "id": 17,
                 "name": "Drinks prontos",
-                "slug": "/categoria/drinks-prontos"
+                "slug": "/categoria/bebidas/drinks-prontos"
               },
               {
                 "id": 25,
                 "name": "Gin tônica",
-                "slug": "/categoria/gin-tonica"
+                "slug": "/categoria/bebidas/drinks-prontos/gin-tonica"
               }
             ]
           },
@@ -1179,7 +1163,7 @@
           "category": {
             "id": 46,
             "name": "Frisante",
-            "slug": "/categoria/frisante-46",
+            "slug": "/categoria/vinhos/roses/frisante",
             "familia": [
               {
                 "id": 11,
@@ -1189,12 +1173,12 @@
               {
                 "id": 34,
                 "name": "Rosés",
-                "slug": "/categoria/roses"
+                "slug": "/categoria/vinhos/roses"
               },
               {
                 "id": 46,
                 "name": "Frisante",
-                "slug": "/categoria/frisante-46"
+                "slug": "/categoria/vinhos/roses/frisante"
               }
             ]
           },
@@ -1221,7 +1205,7 @@
           "category": {
             "id": 43,
             "name": "Demi-sec",
-            "slug": "/categoria/demi-sec",
+            "slug": "/categoria/vinhos/espumantes/demi-sec",
             "familia": [
               {
                 "id": 11,
@@ -1231,12 +1215,12 @@
               {
                 "id": 33,
                 "name": "Espumantes",
-                "slug": "/categoria/espumantes"
+                "slug": "/categoria/vinhos/espumantes"
               },
               {
                 "id": 43,
                 "name": "Demi-sec",
-                "slug": "/categoria/demi-sec"
+                "slug": "/categoria/vinhos/espumantes/demi-sec"
               }
             ]
           },
@@ -1263,7 +1247,7 @@
           "category": {
             "id": 57,
             "name": "London Dry",
-            "slug": "/categoria/london-dry",
+            "slug": "/categoria/destilados/gin/london-dry",
             "familia": [
               {
                 "id": 12,
@@ -1273,12 +1257,12 @@
               {
                 "id": 49,
                 "name": "Gin",
-                "slug": "/categoria/gin"
+                "slug": "/categoria/destilados/gin"
               },
               {
                 "id": 57,
                 "name": "London Dry",
-                "slug": "/categoria/london-dry"
+                "slug": "/categoria/destilados/gin/london-dry"
               }
             ]
           },
@@ -1305,7 +1289,7 @@
           "category": {
             "id": 58,
             "name": "Aromatizado",
-            "slug": "/categoria/aromatizado",
+            "slug": "/categoria/destilados/gin/aromatizado",
             "familia": [
               {
                 "id": 12,
@@ -1315,12 +1299,12 @@
               {
                 "id": 49,
                 "name": "Gin",
-                "slug": "/categoria/gin"
+                "slug": "/categoria/destilados/gin"
               },
               {
                 "id": 58,
                 "name": "Aromatizado",
-                "slug": "/categoria/aromatizado"
+                "slug": "/categoria/destilados/gin/aromatizado"
               }
             ]
           },
@@ -1347,7 +1331,7 @@
           "category": {
             "id": 51,
             "name": "Blended",
-            "slug": "/categoria/blended",
+            "slug": "/categoria/destilados/whisky/blended",
             "familia": [
               {
                 "id": 12,
@@ -1357,12 +1341,12 @@
               {
                 "id": 47,
                 "name": "Whisky",
-                "slug": "/categoria/whisky"
+                "slug": "/categoria/destilados/whisky"
               },
               {
                 "id": 51,
                 "name": "Blended",
-                "slug": "/categoria/blended"
+                "slug": "/categoria/destilados/whisky/blended"
               }
             ]
           },
@@ -1389,7 +1373,7 @@
           "category": {
             "id": 94,
             "name": "Piteiras",
-            "slug": "/categoria/piteiras",
+            "slug": "/categoria/conveniencia/tabacaria/piteiras",
             "familia": [
               {
                 "id": 14,
@@ -1399,12 +1383,12 @@
               {
                 "id": 82,
                 "name": "Tabacaria",
-                "slug": "/categoria/tabacaria"
+                "slug": "/categoria/conveniencia/tabacaria"
               },
               {
                 "id": 94,
                 "name": "Piteiras",
-                "slug": "/categoria/piteiras"
+                "slug": "/categoria/conveniencia/tabacaria/piteiras"
               }
             ]
           },
@@ -1431,7 +1415,7 @@
           "category": {
             "id": 86,
             "name": "Salgadinhos",
-            "slug": "/categoria/salgadinhos",
+            "slug": "/categoria/conveniencia/snacks/salgadinhos",
             "familia": [
               {
                 "id": 14,
@@ -1441,12 +1425,12 @@
               {
                 "id": 80,
                 "name": "Snacks",
-                "slug": "/categoria/snacks"
+                "slug": "/categoria/conveniencia/snacks"
               },
               {
                 "id": 86,
                 "name": "Salgadinhos",
-                "slug": "/categoria/salgadinhos"
+                "slug": "/categoria/conveniencia/snacks/salgadinhos"
               }
             ]
           },

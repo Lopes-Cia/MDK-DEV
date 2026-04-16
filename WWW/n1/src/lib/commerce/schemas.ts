@@ -12,6 +12,7 @@ export const UserSchema = z.object({
   id: z.string().uuid(),
   email: z.string().email(),
   name: z.string().min(1),
+  phone: z.string().min(6).optional().nullable(),
   passwordHash: z.string().min(1), // mock: usado apenas no server; nunca retornar para UI
   createdAt: IsoDateStringSchema,
   updatedAt: IsoDateStringSchema,
@@ -103,3 +104,52 @@ export const OrdersFileSchema = z.object({
   orders: z.array(OrderSchema),
 });
 export type OrdersFile = z.infer<typeof OrdersFileSchema>;
+
+export const CartItemSchema = z.object({
+  productId: z.number().int().nonnegative(),
+  sku: z.string().optional().nullable(),
+  name: z.string().min(1),
+  unitPrice: z.number().nonnegative(),
+  qty: z.number().int().positive(),
+});
+export type CartItem = z.infer<typeof CartItemSchema>;
+
+export const CartTotalsSchema = z.object({
+  subtotal: z.number().nonnegative(),
+  shipping: z.number().nonnegative().default(0),
+  discount: z.number().nonnegative().default(0),
+  total: z.number().nonnegative(),
+  currency: z.string().default("BRL"),
+});
+export type CartTotals = z.infer<typeof CartTotalsSchema>;
+
+export const CartSchema = z.object({
+  id: z.string().min(1), // no MVP pode ser igual ao userId
+  userId: z.string().uuid(),
+  items: z.array(CartItemSchema).default([]),
+  totals: CartTotalsSchema,
+  updatedAt: IsoDateStringSchema,
+});
+export type Cart = z.infer<typeof CartSchema>;
+
+export const CartsFileSchema = z.object({
+  schemaVersion: z.literal(COMMERCE_SCHEMA_VERSION),
+  carts: z.array(CartSchema),
+});
+export type CartsFile = z.infer<typeof CartsFileSchema>;
+
+export const PasswordResetSchema = z.object({
+  id: z.string().uuid(),
+  userId: z.string().uuid(),
+  token: z.string().min(24),
+  expiresAt: IsoDateStringSchema,
+  usedAt: IsoDateStringSchema.optional().nullable(),
+  createdAt: IsoDateStringSchema.optional(),
+});
+export type PasswordReset = z.infer<typeof PasswordResetSchema>;
+
+export const PasswordResetsFileSchema = z.object({
+  schemaVersion: z.literal(COMMERCE_SCHEMA_VERSION),
+  passwordResets: z.array(PasswordResetSchema),
+});
+export type PasswordResetsFile = z.infer<typeof PasswordResetsFileSchema>;

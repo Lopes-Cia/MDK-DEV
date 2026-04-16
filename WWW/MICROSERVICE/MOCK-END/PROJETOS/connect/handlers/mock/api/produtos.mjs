@@ -53,6 +53,29 @@ async function categoriaById(req, res, ctx) {
   json(res, 200, { success: true, data: found }, cors);
 }
 
+async function categoriaBySlug(req, res, ctx) {
+  const cors = ctx.cors ?? {};
+  if (!ensureGet(req, res, cors)) return;
+
+  const slugFromPath = parsePathParam(
+    ctx,
+    "/Servidor/webservice/integration/produtos/categorias/by-slug"
+  );
+  const slug = String(ctx?.routeParams?.slug ?? slugFromPath ?? "").trim();
+  if (!slug) {
+    json(res, 400, { error: "slug is required" }, cors);
+    return;
+  }
+
+  const found = await controller.categoriaBySlug(slug);
+  if (!found) {
+    json(res, 404, { error: "not_found" }, cors);
+    return;
+  }
+
+  json(res, 200, { success: true, data: found }, cors);
+}
+
 async function produtosByCategoria(req, res, ctx) {
   const cors = ctx.cors ?? {};
   if (!ensureGet(req, res, cors)) return;
@@ -190,6 +213,7 @@ async function brandById(req, res, ctx) {
 export const handlers = {
   categorias,
   categoriaById,
+  categoriaBySlug,
   produtosByCategoria,
   produtoById,
   produtoBySlug,

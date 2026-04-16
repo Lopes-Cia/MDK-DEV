@@ -58,6 +58,17 @@ pagina de produtos
 
 card de categorias, incluir link e nome da categoria
 
+1> verifica se temos uma skill pra facilitar a criação de elementos com - Tailwind CSS
+- shadcn/ui e radix-ui
+caso nao instale com o skills.sh a nivel de projeto
+2> a gente vai criar um elemento usando as skills acima para criar um menu dropdown em [text](../../REFERENCIAS/connect-ecommerce/components/layout/CategoryHeader.tsx)
+<a href="#" className="hover:underline">
+            Todas as categorias
+          </a>
+
+          vamos usar o storeProcategoriasTree no store pra os dados 
+
+
 
 
 header > menus
@@ -72,3 +83,37 @@ pedidos
 paginas institucionais
 footer
 pagina de contato
+
+
+
+
+
+
+
+
+
+presciso de um plano de implementação longo, com varias seções
+
+temos que implementar 
+toda parte de usuarios
+cadastro
+logim
+meus dados
+meus pedidos
+logout
+esqueci senha
+
+toda parte de pedidos
+carrinho de compra
+checkout
+meus pedidos
+
+
+isso vai implicar em tarefas no mock-end, criação de end-points, novos tipos deles como post e put 
+vamos ter q usar para eles alem de ler o JSON tbem editar criar e talvez exluir
+
+ja no front , vamos ter que criar paginas , do 0, mas que siga o mesmo layout
+
+quero fazer isso de uma maneira simples, e depois refator aos poucos, pode para essa verssao escolher vc as opções mais simples e funcionais
+
+vc pode ate usar pra facilitar o entendimento o codigo legado em [text](LEGADO), la existe muito sobre isso

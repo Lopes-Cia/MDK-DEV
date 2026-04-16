@@ -1,0 +1,8 @@
+- [x] `/products` consome `stores/produtos-store` e endpoints finais `/api/produtos/*`
+- [x] Página de categoria existe e reutiliza layout do catálogo
+- [x] Página de marca existe e reutiliza layout do catálogo
+- [x] Cards de produto/categoria/marca navegam usando `slug` como path final
+- [x] Paginação (quando aplicável) funciona em categoria e marca
+- [x] Estados `loading/empty/error` implementados nas três páginas
+- [x] Fluxo manual: home -> categoria -> produto funciona
+- [x] Fluxo manual: home -> marca -> produto funciona
