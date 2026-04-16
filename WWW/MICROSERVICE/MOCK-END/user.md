@@ -50,8 +50,11 @@ remover o produtosV2 para so produtos
 
 
 pagina de produtos
-    ja existe no front uma pagina de produtos, mas quando tento acessar ela pelo link do carrosel na home , ele me da um erro 404, por isso temos q ajustar
-    ja ajustamos tbem essa pagina http://localhost:3000/products
+    o front ja possuia uma pagina para produto e tbem uma pagina estranha em http://localhost:3000/products
+    prescisamos refatorar a pagina de produtos para usar nossa formato
+    prescisamos de uma pagina para as categoria , podemos usar como base a http://localhost:3000/products , mas é uma guia apenas. Vampos ajustar ela pois essa pagina serve bem como pagina de uma categoria , seja pai , filho ou neto, tbem como busca, tbem como pagina da marca que exibe os produtos
+    
+
 
 card de categorias, incluir link e nome da categoria
 

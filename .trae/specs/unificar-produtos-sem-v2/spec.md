@@ -5,7 +5,6 @@ Hoje coexistem dois conjuntos de APIs e código no front (`products` legado e `p
 
 ## What Changes
 - Renomear a API interna BFF de `produtosV2` para `produtos` (mesma semântica, novo path).
-- Substituir o consumo legado de `products` pelo novo `produtos` no front.
 - Renomear store e client API para remover `V2` de nomes de arquivo, exports e chaves do `control-store`.
 - Remover rotas/arquivos/referências antigas (`produtosV2` e `products` legado) sem manter compatibilidade.
 - Ajustar o painel `/(shop)/dev` para testar somente as rotas finais.
@@ -17,10 +16,10 @@ Hoje coexistem dois conjuntos de APIs e código no front (`products` legado e `p
   - `WWW/REFERENCIAS/connect-ecommerce/lib/api/produtosV2.ts` → `lib/api/produtos.ts`
   - `WWW/REFERENCIAS/connect-ecommerce/stores/produtosV2-store.ts` → `stores/produtos-store.ts`
   - `WWW/REFERENCIAS/connect-ecommerce/stores/control-store.ts` (registro do store)
-  - `WWW/REFERENCIAS/connect-ecommerce/app/api/products/**` (remoção)
-  - `WWW/REFERENCIAS/connect-ecommerce/lib/api/products.ts` (remoção/migração)
-  - `WWW/REFERENCIAS/connect-ecommerce/lib/integration/productsService.ts` (remoção/migração)
-  - páginas que consomem `/products` e `getProducts()` (migração)
+  - `WWW/REFERENCIAS/connect-ecommerce/app/api/products/**` (manter como referência por enquanto)
+  - `WWW/REFERENCIAS/connect-ecommerce/lib/api/products.ts` (manter como referência por enquanto)
+  - `WWW/REFERENCIAS/connect-ecommerce/lib/integration/productsService.ts` (manter como referência por enquanto)
+  - páginas que consomem `/products` e `getProducts()` (não migrar agora)
 
 ## ADDED Requirements
 ### Requirement: Rotas finais de produtos (BFF)
@@ -46,10 +45,9 @@ O sistema SHALL expor um store único para produtos/categorias/marcas sem sufixo
 
 ## MODIFIED Requirements
 ### Requirement: Migração da superfície antiga
-Rotas e código legados (`produtosV2` e `products`) deixam de existir após a migração.
+Rotas e código legados `produtosV2` deixam de existir após a migração. O legado `products` permanece temporariamente como referência.
 
 ## REMOVED Requirements
 ### Requirement: Compatibilidade com rotas V2 e products
 **Reason**: considerado legado e fonte de duplicação.
-**Migration**: atualizar import paths e chamadas para usar apenas a superfície final `/api/produtos/*` e store final.
-
+**Migration**: atualizar import paths e chamadas para usar apenas a superfície final `/api/produtos/*` e store final. O legado `products` não deve ser usado em código novo.

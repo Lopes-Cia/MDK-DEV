@@ -1,9 +1,9 @@
-- [ ] Rotas finais existem em `app/api/produtos/**` e respondem conforme contrato
-- [ ] Não existe pasta/rota `app/api/produtosV2/**`
-- [ ] Client API `lib/api/produtos.ts` existe e não há `produtosV2.ts`
-- [ ] Store final existe e está registrado no `control-store` sem sufixo V2
-- [ ] Não existe `stores/produtosV2-store.ts` nem referências a `PRODUTOSV2STORE`
-- [ ] Legado `app/api/products/**` removido e não há consumo de `lib/api/products.ts`
-- [ ] Busca por texto não encontra `produtosV2` nem `/api/products` no front referência
-- [ ] Painel `/(shop)/dev` testa apenas `/api/produtos/*`
+- [x] Rotas finais existem em `app/api/produtos/**` e respondem conforme contrato
+- [x] Não existe pasta/rota `app/api/produtosV2/**`
+- [x] Client API `lib/api/produtos.ts` existe e não há `produtosV2.ts`
+- [x] Store final existe e está registrado no `control-store` sem sufixo V2
+- [x] Não existe `stores/produtosV2-store.ts` nem referências a `PRODUTOSV2STORE`
+- [x] Legado `app/api/products/**` mantido como referência e não é usado em código novo
+- [x] Busca por texto não encontra `produtosV2` nem `/api/produtosV2` no front referência
+- [x] Painel `/(shop)/dev` testa apenas `/api/produtos/*`
 - [ ] Validação manual: categorias, by-id, by-slug, by-categoria e brands OK
