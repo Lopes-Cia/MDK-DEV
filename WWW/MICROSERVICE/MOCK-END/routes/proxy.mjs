@@ -266,15 +266,6 @@ export async function handleProxy(req, res, ctx) {
     return true;
   }
 
-  const authMode = String(route?.auth?.mode ?? "").trim().toLowerCase();
-  if (authMode === "required") {
-    const authHeader = String(req?.headers?.authorization ?? "").trim();
-    if (!authHeader) {
-      json(res, 401, { success: false, message: "unauthorized" }, cors);
-      return true;
-    }
-  }
-
   const mode = String(route?.execution?.mode ?? "original");
   const handlerClassBase = String(route?.handler_class ?? "");
   const handlerFunction = String(route?.handler_function ?? "");

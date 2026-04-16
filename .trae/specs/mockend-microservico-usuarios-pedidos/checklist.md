@@ -1,12 +1,7 @@
-- [x] Escopo está explícito para `WWW/MICROSERVICE/MOCK-END`
-- [x] Contratos de resposta de API foram padronizados
-- [x] Novas rotas seguem padrão `/Servidor/webservice/integration/...` + `auth` + `execution`
-- [x] Novas rotas usam o prefixo constante `/Servidor/webservice/integration/` e apenas o sufixo varia
-- [x] Implementação segue padrão “controller class” (handlers delegam para classes)
-- [x] Novos JSONs do domínio usam raiz array (sem wrapper) e são semelhantes ao padrão de `produtos.json`
-- [x] Endpoints de usuários cobrem cadastro, login, me, logout e update de perfil
-- [x] Endpoint de privacidade (LGPD) permite excluir dados do usuário autenticado
-- [x] Fluxo de esqueci senha (request + reset) está implementado e verificável
-- [x] Carrinho persiste por usuário e participa do checkout
-- [x] Checkout cria pedido e limpa carrinho
-- [x] Persistência JSON local do projeto está estável com criação lazy e erros consistentes
+- [ ] Escopo está explícito para `WWW/MICROSERVICE/MOCK-END`
+- [ ] Contratos de resposta de API foram padronizados
+- [ ] Endpoints de usuários cobrem cadastro, login, me, logout e update de perfil
+- [ ] Fluxo de esqueci senha (request + reset) está implementado e verificável
+- [ ] Carrinho persiste por usuário e participa do checkout
+- [ ] Checkout cria pedido e limpa carrinho
+- [ ] Persistência JSON por tenant está estável com criação lazy e erros consistentes
