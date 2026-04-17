@@ -1,0 +1,30 @@
+{
+  "request": {
+    "method": "POST",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/checkout/sessoes/7/pagamento/pix",
+    "body": {}
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "success": true,
+      "data": {
+        "pagamento": {
+          "pagamentoId": 2,
+          "metodo": "pix",
+          "pix": {
+            "copiaECola": "000201checkout7pag2mockend",
+            "qrCodeBase64": "bW9jay1waXgtcXItY29kZQ==",
+            "expiresAt": "2026-04-17T02:50:48.458Z"
+          },
+          "status": "pendente"
+        }
+      }
+    }
+  },
+  "expected": {
+    "status": 200
+  },
+  "startedAt": "2026-04-17T02:20:48.452Z",
+  "finishedAt": "2026-04-17T02:20:48.461Z"
+}

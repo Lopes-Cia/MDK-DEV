@@ -61,7 +61,6 @@ async function run() {
     whatsapp: "11999990000",
     senha,
     status: "ativo",
-    doisFatores: { habilitado: false, metodo: "email" },
     enderecos: [
       {
         rotulo: "Casa",
@@ -82,6 +81,7 @@ async function run() {
       aceitaTermos: true,
       aceitaCookies: true,
       canalPreferido: "email",
+      doisFatores: { habilitado: false, metodo: "email" },
     },
   };
 
@@ -207,4 +207,3 @@ run().catch((err) => {
   process.stderr.write(`Erro ao executar cenários: ${String(err?.message ?? err)}\n`);
   process.exitCode = 1;
 });
-

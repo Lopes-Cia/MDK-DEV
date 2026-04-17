@@ -12,17 +12,13 @@
     "body": {
       "success": true,
       "data": {
-        "cliente": {
+        "meus_dados": {
           "id": 999,
           "tipoPessoa": "PF",
           "documento": "11122233344",
           "nome": "Cliente Teste",
           "email": "teste@exemplo.com",
           "whatsapp": "11999990000",
-          "doisFatores": {
-            "habilitado": false,
-            "metodo": "email"
-          },
           "status": "ativo",
           "createdAt": "2026-01-01T00:00:00.000Z"
         },
@@ -48,6 +44,10 @@
           "aceitaTermos": true,
           "aceitaCookies": true,
           "canalPreferido": "email",
+          "doisFatores": {
+            "habilitado": false,
+            "metodo": "email"
+          },
           "updatedAt": "2026-01-01T00:00:00.000Z"
         },
         "token": "mock-client-token-999-1776358746973"

@@ -1,0 +1,17 @@
+- Integradora — Integração de sinais em um período de tempo
+- Tabela Preço — Tabela de preços
+- Log — Texto que recolhe cronologicamente todos os eventos que afetaram o sistema
+- Pagamento — Representa os pagamentos
+- Transporte — Transporte do produto
+- Acesso — Possibilita o acesso ao sistema desejado
+- Rotina — Ferramentas do sistema
+- Filial — Representante da empresa, pessoa física ou jurídica que opera utilizando os recursos do sistema
+- Produto — Aquilo que é produzido para venda no mercado
+- Praça — Parâmetro necessário para cadastrar um produto
+- Município — As UFs, municípios e estados
+- Customer — Representa o cliente
+- Nota Fiscal — Nota Fiscal
+- Operation — Operação é o conjunto de todas as ações técnicas e administrativas com o objetivo de permitir que um item exerça uma função necessária
+- Integration — Dispositivo que faz a integração de sinais num período de tempo
+- Pedido — Produto ou serviço requerido
+- Api — Application Programming Interface

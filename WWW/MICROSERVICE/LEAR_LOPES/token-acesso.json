@@ -1,0 +1,19 @@
+{
+  "updatedAt": "2026-04-17T04:04:05.499Z",
+  "mode": "geracao",
+  "endpoint": "https://gp.lopesecia.com.br:9002/ApiLopes/webservice/api/tokenService",
+  "hashToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoiU2VydmljZSBDT05ORUNUIiwiZXhwIjoxNzc2NDA1ODA0fQ.G3CSjSJtGqPbdBaUG0AYbuGbOrTA5KhjvW2KzIgihVY",
+  "refreshToken": 170426010324,
+  "dtExpira": "2026-04-17T03:03:24.847-03:00",
+  "response": {
+    "idUsuario": 0,
+    "idSistema": 8,
+    "refreshToken": 170426010324,
+    "dtCriado": "2026-04-17T01:03:24.847-03:00",
+    "dtExpira": "2026-04-17T03:03:24.847-03:00",
+    "hashToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoiU2VydmljZSBDT05ORUNUIiwiZXhwIjoxNzc2NDA1ODA0fQ.G3CSjSJtGqPbdBaUG0AYbuGbOrTA5KhjvW2KzIgihVY",
+    "canal": "Service CONNECT",
+    "codUnico": "7890000002998",
+    "usado": true
+  }
+}

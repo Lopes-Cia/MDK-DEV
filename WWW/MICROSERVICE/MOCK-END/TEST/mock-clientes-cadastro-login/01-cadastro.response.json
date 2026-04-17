@@ -10,10 +10,6 @@
       "whatsapp": "11999990000",
       "senha": "123456",
       "status": "ativo",
-      "doisFatores": {
-        "habilitado": false,
-        "metodo": "email"
-      },
       "enderecos": [
         {
           "rotulo": "Casa",
@@ -33,7 +29,11 @@
         "aceitaMarketing": false,
         "aceitaTermos": true,
         "aceitaCookies": true,
-        "canalPreferido": "email"
+        "canalPreferido": "email",
+        "doisFatores": {
+          "habilitado": false,
+          "metodo": "email"
+        }
       }
     }
   },
@@ -42,17 +42,13 @@
     "body": {
       "success": true,
       "data": {
-        "cliente": {
+        "meus_dados": {
           "id": 1004,
           "tipoPessoa": "PF",
           "documento": "DOC-1776358953991-5d8c4813b5703",
           "nome": "Cliente Cadastro Login",
           "email": "cadastro.login.1776358953991-5d8c4813b5703@exemplo.com",
           "whatsapp": "11999990000",
-          "doisFatores": {
-            "habilitado": false,
-            "metodo": "email"
-          },
           "status": "ativo",
           "createdAt": "2026-04-16T17:02:34.068Z"
         },
@@ -79,6 +75,10 @@
           "aceitaTermos": true,
           "aceitaCookies": true,
           "canalPreferido": "email",
+          "doisFatores": {
+            "habilitado": false,
+            "metodo": "email"
+          },
           "updatedAt": "2026-04-16T17:02:34.069Z"
         }
       }

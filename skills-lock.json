@@ -1,6 +1,21 @@
 {
   "version": 1,
   "skills": {
+    "API Designer": {
+      "source": "daffy0208/ai-dev-standards",
+      "sourceType": "github",
+      "computedHash": "d14e8d276031e9c5f888bd8cbb3e1c16f0ede80f11df13497524b8d4cf430f34"
+    },
+    "api-contract-review": {
+      "source": "decebals/claude-code-java",
+      "sourceType": "github",
+      "computedHash": "1c81b6bf263f20daa72165ad5b7d17b77453e9c7fe9816b679fdabda61dff0c0"
+    },
+    "api-contract-testing": {
+      "source": "secondsky/claude-skills",
+      "sourceType": "github",
+      "computedHash": "08fd5855432b3d79dab9b08c4e91208249c8b76513ebb55d4f486a21ac1c1e2c"
+    },
     "coss": {
       "source": "cosscom/coss",
       "sourceType": "github",
@@ -35,6 +50,16 @@
       "source": "sickn33/antigravity-awesome-skills",
       "sourceType": "github",
       "computedHash": "e75adda7df9fe2bc5e8a350efc5b99ffbeec9cec5e1aca6ae506dfb652781b79"
+    },
+    "swagger-api-query": {
+      "source": "zhihuihu/agent-skills",
+      "sourceType": "github",
+      "computedHash": "8316207e7cc7f997708fd1980ef9a7bcaf7cc4d9798ec7194fd6dc880ef01db2"
+    },
+    "swagger-doc-creator": {
+      "source": "jeremylongshore/claude-code-plugins-plus-skills",
+      "sourceType": "github",
+      "computedHash": "4b32242199b90ca6d70159d0ff390a9cf7b79c76cbc9797c7c9c18fd57ab07e9"
     },
     "testing-next-stack": {
       "source": "hopeoverture/worldbuilding-app-skills",

@@ -1,0 +1,35 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/carrinho/999",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "success": true,
+      "data": {
+        "carrinhoId": 2,
+        "clienteId": 999,
+        "status": "aberto",
+        "itens": [],
+        "cupom": null,
+        "resumo": {
+          "subtotal": 0,
+          "desconto": 0,
+          "frete": 0,
+          "total": 0,
+          "totalItens": 0,
+          "moeda": "BRL"
+        },
+        "createdAt": "2026-04-17T02:02:34.114Z",
+        "updatedAt": "2026-04-17T02:20:48.386Z"
+      }
+    }
+  },
+  "expected": {
+    "status": 200
+  },
+  "startedAt": "2026-04-17T02:20:48.383Z",
+  "finishedAt": "2026-04-17T02:20:48.390Z"
+}

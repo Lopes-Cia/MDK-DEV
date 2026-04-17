@@ -1,0 +1,138 @@
+{
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/pedidos?clienteId=999&page=1&pageSize=20",
+    "body": null
+  },
+  "response": {
+    "status": 200,
+    "body": {
+      "success": true,
+      "data": [
+        {
+          "pedidoId": 1,
+          "checkoutId": 6,
+          "clienteId": 999,
+          "itens": [
+            {
+              "itemId": 2,
+              "produtoId": 1001,
+              "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+              "slug": "/produtos/heineken-lata-269ml",
+              "nome": "Heineken Lata 269ml",
+              "imagemUrl": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-ad93e1.jpg",
+              "precoUnitario": 4.19,
+              "quantidade": 2,
+              "subtotal": 8.38,
+              "addedAt": "2026-04-17T02:02:34.172Z"
+            }
+          ],
+          "entrega": {
+            "endereco": {
+              "cep": "01311000",
+              "logradouro": "Avenida Paulista",
+              "numero": "1000",
+              "complemento": "10º andar",
+              "bairro": "Bela Vista",
+              "cidade": "Sao Paulo",
+              "uf": "SP",
+              "pais": "BR",
+              "referencia": "protocolo checkout-connect-v1"
+            },
+            "freteSelecionado": {
+              "codigo": "economico",
+              "nome": "Entrega Economica",
+              "preco": 8.9,
+              "prazoDias": 5
+            }
+          },
+          "pagamento": {
+            "pagamentoId": 1,
+            "metodo": "pix",
+            "pix": {
+              "copiaECola": "000201checkout6pag1mockend",
+              "qrCodeBase64": "bW9jay1waXgtcXItY29kZQ==",
+              "expiresAt": "2026-04-17T02:32:34.236Z"
+            },
+            "status": "pago"
+          },
+          "resumo": {
+            "subtotal": 8.38,
+            "desconto": 0.8380000000000001,
+            "frete": 8.9,
+            "total": 16.442,
+            "moeda": "BRL"
+          },
+          "status": "pago",
+          "createdAt": "2026-04-17T02:02:34.253Z"
+        },
+        {
+          "pedidoId": 2,
+          "checkoutId": 7,
+          "clienteId": 999,
+          "itens": [
+            {
+              "itemId": 3,
+              "produtoId": 1001,
+              "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+              "slug": "/produtos/heineken-lata-269ml",
+              "nome": "Heineken Lata 269ml",
+              "imagemUrl": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-ad93e1.jpg",
+              "precoUnitario": 4.19,
+              "quantidade": 2,
+              "subtotal": 8.38,
+              "addedAt": "2026-04-17T02:20:48.403Z"
+            }
+          ],
+          "entrega": {
+            "endereco": {
+              "cep": "01311000",
+              "logradouro": "Avenida Paulista",
+              "numero": "1000",
+              "complemento": "10º andar",
+              "bairro": "Bela Vista",
+              "cidade": "Sao Paulo",
+              "uf": "SP",
+              "pais": "BR",
+              "referencia": "protocolo checkout-connect-v1"
+            },
+            "freteSelecionado": {
+              "codigo": "economico",
+              "nome": "Entrega Economica",
+              "preco": 8.9,
+              "prazoDias": 5
+            }
+          },
+          "pagamento": {
+            "pagamentoId": 2,
+            "metodo": "pix",
+            "pix": {
+              "copiaECola": "000201checkout7pag2mockend",
+              "qrCodeBase64": "bW9jay1waXgtcXItY29kZQ==",
+              "expiresAt": "2026-04-17T02:50:48.458Z"
+            },
+            "status": "pago"
+          },
+          "resumo": {
+            "subtotal": 8.38,
+            "desconto": 0.8380000000000001,
+            "frete": 8.9,
+            "total": 16.442,
+            "moeda": "BRL"
+          },
+          "status": "pago",
+          "createdAt": "2026-04-17T02:20:48.478Z"
+        }
+      ],
+      "page": 1,
+      "pageSize": 20,
+      "total": 2,
+      "totalPages": 1
+    }
+  },
+  "expected": {
+    "status": 200
+  },
+  "startedAt": "2026-04-17T02:20:48.492Z",
+  "finishedAt": "2026-04-17T02:20:48.495Z"
+}

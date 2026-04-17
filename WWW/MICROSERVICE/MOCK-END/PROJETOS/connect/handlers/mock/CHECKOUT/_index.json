@@ -1,0 +1,34 @@
+{
+  "checkoutById": {
+    "6": {
+      "clienteId": 999
+    },
+    "7": {
+      "clienteId": 999
+    },
+    "8": {
+      "clienteId": 999
+    },
+    "9": {
+      "clienteId": 999
+    }
+  },
+  "pedidoById": {
+    "1": {
+      "clienteId": 999,
+      "checkoutId": 6
+    },
+    "2": {
+      "clienteId": 999,
+      "checkoutId": 7
+    },
+    "3": {
+      "clienteId": 999,
+      "checkoutId": 8
+    },
+    "4": {
+      "clienteId": 999,
+      "checkoutId": 9
+    }
+  }
+}

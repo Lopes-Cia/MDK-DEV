@@ -1,0 +1,15 @@
+- [ ] Escopo está explícito: MOCK-END `connect` como base e `connect-ecommerce` como 2º estágio
+- [ ] Decisões congeladas estão registradas: carrinho servidor, `auth none`, Pix-only
+- [ ] Storage v2 está definido (CHECKOUT/ + index global) e o desenho está referenciado
+- [ ] `checkout.json` está definido como config-only (meta/seq/config), sem dados transacionais
+- [ ] Entidades e chaves de carrinho/checkout/pedido estão assertivas e sem ambiguidade
+- [ ] Endpoints de carrinho estão completos (GET, itens CRUD, cupom add/remove)
+- [ ] Endpoints de checkout estão completos (sessão, contato, endereço, frete opções/seleção)
+- [ ] Endpoints de pagamento Pix estão cobertos (gerar + confirmar)
+- [ ] Endpoints de pedidos estão cobertos (finalizar, detalhe, listagem)
+- [ ] Padrão de resposta/erro está explícito (`success/data` e `error`)
+- [ ] Trilha BFF está definida (`app/api/carrinho`, `app/api/checkout`, `app/api/pedidos`)
+- [ ] Trilha de integração server-only está definida (`lib/integration/checkoutService.ts`)
+- [ ] Trilha de stores/UI está definida (`pedidos-store` + wiring checkout/meus-pedidos)
+- [ ] Dependências entre tarefas estão claras para execução incremental
+- [ ] Protocolo de validação pós-implementação do MOCK-END está incluído com evidências

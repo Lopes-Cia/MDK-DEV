@@ -1,0 +1,17 @@
+{
+  "at": "2026-04-17T04:33:54.738Z",
+  "stepId": "lopes_getIntegradora",
+  "endpoint": {
+    "baseUrl": "https://gp.lopesecia.com.br:9004/Servidor",
+    "path": "/webservice/integration/getIntegradora"
+  },
+  "request": {
+    "method": "GET",
+    "url": "https://gp.lopesecia.com.br:9004/Servidor/webservice/integration/getIntegradora?id=8&codCli=1219",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "<redacted>"
+    },
+    "authRequired": true
+  }
+}

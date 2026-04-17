@@ -74,7 +74,6 @@ async function run() {
     whatsapp: "11999990000",
     senha,
     status: "ativo",
-    doisFatores: { habilitado: false, metodo: "email" },
     enderecos: [
       {
         rotulo: "Casa",
@@ -95,6 +94,7 @@ async function run() {
       aceitaTermos: true,
       aceitaCookies: true,
       canalPreferido: "email",
+      doisFatores: { habilitado: false, metodo: "email" },
     },
   };
 
@@ -114,7 +114,7 @@ async function run() {
 
   let createdClienteId = null;
   if (cadastroRes.status === 201) {
-    const id = cadastroRes.json?.data?.cliente?.id;
+    const id = cadastroRes.json?.data?.meus_dados?.id;
     createdClienteId = typeof id === "number" ? id : null;
   }
 
@@ -132,8 +132,8 @@ async function run() {
   results.push({ step: "login", status: loginRes.status, expected: 200, file: "02-login.response.json" });
 
   const validations = [];
-  const loginClienteId = loginRes.json?.data?.cliente?.id;
-  const loginEmail = loginRes.json?.data?.cliente?.email;
+  const loginClienteId = loginRes.json?.data?.meus_dados?.id;
+  const loginEmail = loginRes.json?.data?.meus_dados?.email;
 
   validations.push({
     name: "cadastro-retorna-cliente-id",
@@ -204,4 +204,3 @@ run().catch((err) => {
   process.stderr.write(`Erro ao executar cenários: ${String(err?.message ?? err)}\n`);
   process.exitCode = 1;
 });
-

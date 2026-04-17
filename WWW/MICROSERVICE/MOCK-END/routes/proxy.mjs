@@ -140,15 +140,35 @@ function matchProxyTarget(pathname) {
   return null;
 }
 
-function routeMatches(route, method, pathname) {
-  if (!route) return false;
+function routeMatch(route, method, pathname) {
+  if (!route) return null;
   if (String(route.method ?? "").toUpperCase() !== String(method ?? "").toUpperCase()) {
-    return false;
+    return null;
   }
   const uri = String(route.uri ?? "");
-  if (!uri) return false;
-  if (uri.endsWith("*")) return pathname.startsWith(uri.slice(0, -1));
-  return pathname === uri;
+  if (!uri) return null;
+  if (uri.endsWith("*")) return pathname.startsWith(uri.slice(0, -1)) ? { params: {} } : null;
+
+  if (!uri.includes(":")) return pathname === uri ? { params: {} } : null;
+
+  const uriParts = uri.split("/").filter(Boolean);
+  const pathParts = String(pathname ?? "").split("/").filter(Boolean);
+  if (uriParts.length !== pathParts.length) return null;
+
+  const params = {};
+  for (let i = 0; i < uriParts.length; i++) {
+    const expected = uriParts[i];
+    const actual = pathParts[i];
+    if (expected.startsWith(":")) {
+      const key = expected.slice(1);
+      if (!key) return null;
+      params[key] = actual;
+      continue;
+    }
+    if (expected !== actual) return null;
+  }
+
+  return { params };
 }
 
 const HANDLER_MODULE_CACHE = new Map();
@@ -218,7 +238,7 @@ export async function handleProxy(req, res, ctx) {
     // AUTH base usa o mesmo modelo claro de roteamento: routes.mjs + handlers.
     // O match é feito contra o "upstreamPath" (ex.: /tokenService).
     const routes = Array.isArray(ctx.projectRoutes) ? ctx.projectRoutes : null;
-    const route = routes?.find((r) => routeMatches(r, req.method, match.upstreamPath)) ?? null;
+    const route = routes?.find((r) => routeMatch(r, req.method, match.upstreamPath)) ?? null;
     if (!route) {
       json(res, 404, { error: "not_found" }, cors);
       return true;
@@ -256,15 +276,23 @@ export async function handleProxy(req, res, ctx) {
   //   usa o execution.mode para escolher entre handler original/mock/hybrid.
   const isIntegrationPrefix = match.upstreamPath.startsWith("/Servidor/webservice/integration/");
   const routes = Array.isArray(ctx.projectRoutes) ? ctx.projectRoutes : null;
-  const route =
-    isIntegrationPrefix && routes
-      ? routes.find((r) => routeMatches(r, req.method, match.upstreamPath)) ?? null
-      : null;
+  let route = null;
+  let routeParams = {};
+  if (isIntegrationPrefix && routes) {
+    for (const r of routes) {
+      const m = routeMatch(r, req.method, match.upstreamPath);
+      if (!m) continue;
+      route = r;
+      routeParams = m.params ?? {};
+      break;
+    }
+  }
 
   if (!route) {
     await proxyToUpstream(req, res, cors, targetUrl);
     return true;
   }
+  ctx.routeParams = routeParams;
 
   const mode = String(route?.execution?.mode ?? "original");
   const handlerClassBase = String(route?.handler_class ?? "");

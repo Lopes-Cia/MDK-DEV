@@ -1,0 +1,203 @@
+{
+  "at": "2026-04-17T04:33:54.738Z",
+  "stepId": "lopes_getIntegradora",
+  "request": {
+    "method": "GET",
+    "url": "https://gp.lopesecia.com.br:9004/Servidor/webservice/integration/getIntegradora?id=8&codCli=1219"
+  },
+  "response": {
+    "ok": true,
+    "status": 200,
+    "statusText": "",
+    "durationMs": 443
+  },
+  "data": {
+    "id": 8,
+    "idFilial": 16,
+    "status": 1,
+    "tempoPedido": 0,
+    "tempoEstoque": 0,
+    "tempoPreco": 0,
+    "tempoStatusNf": 0,
+    "diaPedido": 0,
+    "tempoBoleto": 0,
+    "codCli": 1219,
+    "nome": "CONNECT VENDAS WINTHOR",
+    "codUnico": "CONNECT",
+    "identificacao": "INTEGRADORA LOPES",
+    "filialWinthor": {
+      "id": 16,
+      "status": 1,
+      "codUsur": 10,
+      "idParc": 1219,
+      "codFilial": "1",
+      "filial": "CONNECT SJP",
+      "usaEmbalagem": "N",
+      "cgc": "53251396000106",
+      "codPraca": 4,
+      "codPlPag": 1,
+      "codAtiv": 1,
+      "codEmitente": 1,
+      "codTabPr": 2,
+      "idIntegradora": 8,
+      "atualizaDadosCliente": 0,
+      "atualizaEndCob": 0,
+      "atualizaEndEnt": 0,
+      "vendedor": "ECOMMERCE",
+      "praca": "SAO PAULO",
+      "planoPag": "A VISTA",
+      "atividade": "SUPERMERCADO",
+      "emitente": "PADRAO",
+      "tbPreco": "TABELA SP",
+      "codCob": "PIX",
+      "cobranca": "PIX",
+      "codFuncCad": "1",
+      "limiteCredito": 5000,
+      "getListEstoque": [
+        {
+          "envio": 100,
+          "idIntegradora": 8,
+          "idFilial": 16,
+          "codFilial": "1",
+          "filial": "CONNECT SJP"
+        },
+        {
+          "envio": 100,
+          "idIntegradora": 8,
+          "idFilial": 16,
+          "codFilial": "2",
+          "filial": "CONNECT SPC"
+        },
+        {
+          "envio": 100,
+          "idIntegradora": 8,
+          "idFilial": 16,
+          "codFilial": "3",
+          "filial": "CONNECT POA"
+        },
+        {
+          "envio": 100,
+          "idIntegradora": 8,
+          "idFilial": 16,
+          "codFilial": "4",
+          "filial": "CONNECT RECIFE"
+        },
+        {
+          "envio": 100,
+          "idIntegradora": 8,
+          "idFilial": 16,
+          "codFilial": "5",
+          "filial": "CONNECT SALVADOR"
+        },
+        {
+          "envio": 100,
+          "idIntegradora": 8,
+          "idFilial": 16,
+          "codFilial": "6",
+          "filial": "CONNECT SC"
+        },
+        {
+          "envio": 100,
+          "idIntegradora": 8,
+          "idFilial": 16,
+          "codFilial": "7",
+          "filial": "CONNECT MG"
+        },
+        {
+          "envio": 100,
+          "idIntegradora": 8,
+          "idFilial": 16,
+          "codFilial": "8",
+          "filial": "CONNECT APUCARANA"
+        }
+      ]
+    },
+    "parametroList": [
+      {
+        "idIntegradora": 8,
+        "parametro": "intermediadorCnpj",
+        "valor": "53251396000106"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "PackageImportaVendasPc",
+        "valor": "1"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "ErpSeller",
+        "valor": "Totvs Linha WinThor"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "diasServico",
+        "valor": "5"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "testParceiroReceita",
+        "valor": "1"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "vinculoProdAuto",
+        "valor": "0"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "vinculoPorEan",
+        "valor": "0"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "usaTino",
+        "valor": "0"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "idParc",
+        "valor": "1219"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "usaDescWeb",
+        "valor": "0"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "usaImgWeb",
+        "valor": "0"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "usaVendedorFixo",
+        "valor": "0"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "usaVendedorFixoCliente",
+        "valor": "0"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "usaCodPagFixo",
+        "valor": "0"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "usaObsPed",
+        "valor": "1"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "IntegradoraPc",
+        "valor": "29"
+      },
+      {
+        "idIntegradora": 8,
+        "parametro": "endpointApiWinthor",
+        "valor": "https://gp.lopesecia.com.br:9007/ApiWinthor/services"
+      }
+    ]
+  }
+}

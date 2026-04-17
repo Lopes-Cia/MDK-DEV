@@ -1,0 +1,7 @@
+{
+  "openapiPath": "../DOCS/lopes_9004/api-docs.json",
+  "mockRoutesPath": "../../MOCK-END/PROJETOS/connect/routes.mjs",
+  "outputDir": "../DOCS/lopes_9004/contract",
+  "tags": ["Produto", "Customer", "Pedido"]
+}
+

@@ -1,0 +1,281 @@
+PUT /webservice/integration/acessoTotal | tags: Acesso | operationId: acessoTotal
+DELETE /webservice/integration/deleteAcesso | tags: Acesso | operationId: deleteAcesso
+DELETE /webservice/integration/deleteAcessoAll | tags: Acesso | operationId: deleteAcessoAll
+DELETE /webservice/integration/deleteAllPrecoEcommerceMagento | tags: Produto | operationId: deleteAllPrecoEcommerceMagento
+DELETE /webservice/integration/deleteAllPrecoEcommerceOnfood | tags: Produto | operationId: deleteAllPrecoEcommerceOnfood
+DELETE /webservice/integration/deleteCadTracking | tags: Pedido | operationId: deleteCadTracking
+DELETE /webservice/integration/deleteCategoria | tags: Produto | operationId: deleteCategoria
+DELETE /webservice/integration/deleteCidadeSankhya | tags: Município | operationId: deleteCidadeSankhya
+DELETE /webservice/integration/deleteClienteIntegrado | tags: Customer | operationId: deleteClienteIntegrado
+DELETE /webservice/integration/deleteClienteIntegradoOnfood | tags: Customer | operationId: deleteClienteIntegradoOnfood
+DELETE /webservice/integration/deleteCustomer | tags: Customer | operationId: deleteCustomer
+DELETE /webservice/integration/deleteDadoIntegration | tags: Integration | operationId: deleteDadoIntegration
+DELETE /webservice/integration/deleteEstoqueVtex | tags: Produto | operationId: deleteEstoqueVtex
+DELETE /webservice/integration/deleteFilialEstoque | tags: Filial | operationId: deleteFilialEstoque
+DELETE /webservice/integration/deleteFilialEstoqueAll | tags: Filial | operationId: deleteFilialEstoqueAll
+DELETE /webservice/integration/deleteFilialGestao | tags: Filial | operationId: deleteFilialGestao
+DELETE /webservice/integration/deleteFilialLopes | tags: Filial | operationId: deleteFilialLopes
+DELETE /webservice/integration/deleteFilialSankhya | tags: Filial | operationId: deleteFilialSankhya
+DELETE /webservice/integration/deleteFilialTiny | tags: Filial | operationId: deleteFilialTiny
+DELETE /webservice/integration/deleteFilialUpSoftware | tags: Filial | operationId: deleteFilialUpSoftware
+DELETE /webservice/integration/deleteFilialWinthor | tags: Filial | operationId: deleteFilialWinthor
+DELETE /webservice/integration/deleteHistoricoTracking | tags: Pedido | operationId: deleteHistoricoTracking
+DELETE /webservice/integration/deleteImagenProdutoLoja | tags: Produto | operationId: deleteImagenProdutoLoja
+DELETE /webservice/integration/deleteIntegradora | tags: Integradora | operationId: deleteIntegradora
+DELETE /webservice/integration/deleteIntegration | tags: Integration | operationId: deleteIntegration
+DELETE /webservice/integration/deleteListProdutosPresta | tags: Produto | operationId: deleteListProdutosPresta
+DELETE /webservice/integration/deleteListaProdutosPresta | tags: Produto | operationId: deleteListaProdutosPresta
+DELETE /webservice/integration/deleteLog | tags: Log | operationId: deleteLog
+DELETE /webservice/integration/deleteLogB2b | tags: Log | operationId: deleteLogB2b
+DELETE /webservice/integration/deleteNota | tags: Nota Fiscal | operationId: deleteNota
+DELETE /webservice/integration/deletePagamento | tags: Pagamento | operationId: deletePagamento
+DELETE /webservice/integration/deleteParametro | tags: servidor-b-2b | operationId: deleteParametro
+DELETE /webservice/integration/deletePedidoIfc | tags: Order | operationId: deletePedidoIfc
+DELETE /webservice/integration/deletePedidoIntegrado | tags: Pedido | operationId: deletePedidoIntegrado
+DELETE /webservice/integration/deletePracaWinthor | tags: Praça | operationId: DeleteracaWinthor
+DELETE /webservice/integration/deletePrecoEcommerceAllPresta | tags: Produto | operationId: deletePrecoEcommerceAllPresta
+DELETE /webservice/integration/deletePrecoEcommerceMagento | tags: Produto | operationId: deletePrecoEcommerceMagento
+DELETE /webservice/integration/deletePrecoEcommerceOnfood | tags: Produto | operationId: deletePrecoEcommerceOnfood
+DELETE /webservice/integration/deletePrecoEcommercePresta | tags: Produto | operationId: deletePrecoEcommercePresta
+DELETE /webservice/integration/deletePrecoPromocao | tags: Produto | operationId: deletePrecoPromocao
+DELETE /webservice/integration/deleteProdutoPresta | tags: Produto | operationId: deleteProdutoPresta
+DELETE /webservice/integration/deleteProdutos | tags: Produto | operationId: deleteProdutos
+DELETE /webservice/integration/deleteProdutosLoja | tags: Produto | operationId: deleteProdutosLoja
+DELETE /webservice/integration/deleteProdutosOnfood | tags: Produto | operationId: deleteProdutosOnfood
+DELETE /webservice/integration/deleteTabelaPreco | tags: Tabela Preço | operationId: deleteTabelaPreco
+DELETE /webservice/integration/deleteTabelaPrecoEstado | tags: Tabela Preço | operationId: deleteTabelaPrecoEstado
+DELETE /webservice/integration/deleteTabelaPrecoOnfood | tags: Tabela Preço | operationId: deleteTabelaPrecoOnfood
+DELETE /webservice/integration/deleteTipoPreco | tags: Tabela Preço | operationId: deleteTipoPreco
+DELETE /webservice/integration/deleteTodosLog | tags: Log | operationId: deleteTodosLog
+DELETE /webservice/integration/deleteTransporte | tags: Transporte | operationId: deleteTransporte
+DELETE /webservice/integration/deleteVinculoCatMercadoLivre | tags: Produto | operationId: deleteVinculoCatMercadoLivre
+DELETE /webservice/integration/deleteVinculoCategoriaProdutoLoja | tags: Produto | operationId: deleteVinculoCategoriaProdutoLoja
+POST /webservice/integration/gerarPrecoEcommerce | tags: Lista de Preço | operationId: gerarPrecoEcommerce
+POST /webservice/integration/gerarPrecoEcommerceOnfood | tags: Lista de Preço | operationId: gerarPrecoEcommerceOnfood
+GET /webservice/integration/getCategoria | tags: Produto | operationId: getCategoria
+GET /webservice/integration/getCidade | tags: Município | operationId: getCidade
+GET /webservice/integration/getCidadeSankhya | tags: Município | operationId: getCidadeSankhya
+GET /webservice/integration/getClienteIntegrado | tags: Customer | operationId: getClienteIntegrado
+GET /webservice/integration/getClienteIntegradoOnfood | tags: Customer | operationId: getClienteIntegradoOnfood
+GET /webservice/integration/getCustomer | tags: Customer | operationId: getCustomer
+GET /webservice/integration/getDadoIntegration | tags: Operation | operationId: getDadoIntegration
+GET /webservice/integration/getFilialGestao | tags: Filial | operationId: getFilialGestao
+GET /webservice/integration/getFilialLopes | tags: Filial | operationId: getFilialLopes
+GET /webservice/integration/getFilialSankhya | tags: Filial | operationId: getFilialSankhya
+GET /webservice/integration/getFilialTiny | tags: Filial | operationId: getFilialTiny
+GET /webservice/integration/getFilialUpSoftware | tags: Filial | operationId: getFilialUpSoftware
+GET /webservice/integration/getFilialWinthor | tags: Filial | operationId: getFilialWinthor
+GET /webservice/integration/getIntegradora | tags: Integradora | operationId: getIntegradora
+GET /webservice/integration/getListAcesso | tags: Acesso | operationId: getListAcesso
+GET /webservice/integration/getListAtalhoRotina | tags: Rotina | operationId: getListAtalhoRotina
+GET /webservice/integration/getListCadTracking | tags: Pedido | operationId: getListCadTracking
+GET /webservice/integration/getListCategoria | tags: Produto | operationId: getListCategoria
+GET /webservice/integration/getListCidade | tags: Município | operationId: getListCidade
+GET /webservice/integration/getListCidadeSankhya | tags: Município | operationId: getListCidadeSankhya
+GET /webservice/integration/getListClienteIntegrado | tags: Customer | operationId: getListClienteIntegrado
+GET /webservice/integration/getListClienteIntegradoOnfood | tags: Customer | operationId: getListClienteIntegradoOnfood
+GET /webservice/integration/getListCustomer | tags: Customer | operationId: getListCustomer
+GET /webservice/integration/getListDadoIntegration | tags: Operation | operationId: getListDadoIntegration
+GET /webservice/integration/getListEstoqueVtex | tags: Produto | operationId: getListEstoqueVtex
+GET /webservice/integration/getListFiliaLopes | tags: Filial | operationId: getListFiliaLopes
+GET /webservice/integration/getListFiliaUpSoftware | tags: Filial | operationId: getListFiliaUpSoftware
+GET /webservice/integration/getListFilialEstoque | tags: Filial | operationId: getListFilialEstoque
+GET /webservice/integration/getListFilialGestao | tags: Filial | operationId: getListFilialGestao
+GET /webservice/integration/getListFilialSankhya | tags: Filial | operationId: getListFilialSankhya
+GET /webservice/integration/getListFilialTiny | tags: Filial | operationId: getListFilialTiny
+GET /webservice/integration/getListFilialWinthor | tags: Filial | operationId: getListFilialWinthor
+GET /webservice/integration/getListHistoricoTracking | tags: Pedido | operationId: getListHistoricoTracking
+GET /webservice/integration/getListIntegradora | tags: Integradora | operationId: getListIntegradora
+GET /webservice/integration/getListIntegradoraWs | tags: Integradora | operationId: getListIntegradoraWs
+GET /webservice/integration/getListIntegration | tags: Integration | operationId: getListIntegration
+GET /webservice/integration/getListLog | tags: Log | operationId: getListLog
+GET /webservice/integration/getListLogB2b | tags: Log | operationId: getListLogB2b
+GET /webservice/integration/getListLogB2bOnfood | tags: Log | operationId: getListLogB2bOnfood
+GET /webservice/integration/getListNota | tags: Nota Fiscal | operationId: getListNota
+GET /webservice/integration/getListPagamento | tags: Pagamento | operationId: getListPagamento
+GET /webservice/integration/getListPagamentoProcesso | tags: Pagamento | operationId: getListPagamentoProcesso
+GET /webservice/integration/getListPagamentoRecebimentoOrder | tags: Pagamento | operationId: getListPagamentoRecebimentoOrder
+GET /webservice/integration/getListParametro | tags: Integradora | operationId: getListParametro
+GET /webservice/integration/getListPedidoIfc | tags: Order | operationId: getListPedidoIfc
+GET /webservice/integration/getListPedidoIntegrado | tags: Pedido | operationId: getListPedidoIntegrado
+GET /webservice/integration/getListPedidoIntegradoSimples | tags: Pedido | operationId: getListPedidoIntegradoSimples
+GET /webservice/integration/getListPedidoNaoIntegrado | tags: Pedido | operationId: getListPedidoNaoIntegrado
+GET /webservice/integration/getListPedidoPagamento | tags: PedidoPagamento | operationId: getListPedidoPagamento
+GET /webservice/integration/getListPlanoPagCli | tags: Plano Pagamento | operationId: getListPlanoPagCli
+GET /webservice/integration/getListPracaWinthor | tags: Praça | operationId: getListPracaWinthor
+GET /webservice/integration/getListPreco | tags: Produto | operationId: getListPreco
+GET /webservice/integration/getListPrecoMagento | tags: Produto | operationId: getListPrecoMagento
+GET /webservice/integration/getListPrecoOnfood | tags: Produto | operationId: getListPrecoOnfood
+GET /webservice/integration/getListPrecoPresta | tags: Produto | operationId: getListPrecoPresta
+GET /webservice/integration/getListPrecoPromo | tags: Produto | operationId: getListPrecoPromo
+GET /webservice/integration/getListProduto | tags: Produto | operationId: getListProduto
+GET /webservice/integration/getListProdutoLoja | tags: Produto | operationId: getListProdutoLoja
+GET /webservice/integration/getListProdutoOnfood | tags: Produto | operationId: getListProdutoOnfood
+GET /webservice/integration/getListProdutoPresta | tags: Produto | operationId: getListProdutoPresta
+GET /webservice/integration/getListRotina | tags: Rotina | operationId: getListRotina
+GET /webservice/integration/getListTabelaPreco | tags: Tabela Preço | operationId: getListTabelaPreco
+POST /webservice/integration/getListTabelaPrecoEstado | tags: Tabela Preço | operationId: getListTabelaPrecoEstado
+GET /webservice/integration/getListTabelaPrecoOnfood | tags: Tabela PreOnfood | operationId: getListTabelaPrecoOnfood
+GET /webservice/integration/getListTipoPreco | tags: Tabela Preço | operationId: getListTipoPreco
+GET /webservice/integration/getListTipoPrecoOnfood | tags: Tabela Preço | operationId: getListTipoPrecoOnfood
+GET /webservice/integration/getListTransporte | tags: Transporte | operationId: getListTransporte
+GET /webservice/integration/getListVinculoCatMercadoLivre | tags: Produto | operationId: getListVinculoCatMercadoLivre
+GET /webservice/integration/getListVinculoCategoriaProdutoLoja | tags: Produto | operationId: getListVinculoCategoriaProdutoLoja
+GET /webservice/integration/getLog | tags: Log | operationId: getLog
+GET /webservice/integration/getMapParametro | tags: Integradora | operationId: getMapParametro
+GET /webservice/integration/getNota | tags: Nota Fiscal | operationId: getNota
+GET /webservice/integration/getOperation | tags: Operation | operationId: getOperation
+GET /webservice/integration/getPagamento | tags: Pagamento | operationId: getPagamento
+GET /webservice/integration/getPagamentoRecebimentoOrder | tags: Pagamento | operationId: getPagamentoRecebimentoOrder
+GET /webservice/integration/getPedidoIfc | tags: Order | operationId: getPedidoIfc
+GET /webservice/integration/getPedidoIntegrado | tags: Pedido | operationId: getPedidoIntegrado
+GET /webservice/integration/getPedidoPagamento | tags: PedidoPagamento | operationId: getPedidoPagamento
+GET /webservice/integration/getPracaWinthor | tags: Praça | operationId: getPracaWinthor
+GET /webservice/integration/getPreco | tags: Produto | operationId: getPreco
+GET /webservice/integration/getPrecoMagento | tags: Produto | operationId: getPrecoMagento
+GET /webservice/integration/getPrecoOnfood | tags: Produto | operationId: getPrecoOnfood
+GET /webservice/integration/getPrecoPresta | tags: Produto | operationId: getPrecoPresta
+GET /webservice/integration/getPrecoProdutoPresta | tags: Produto | operationId: getPrecoProdutoPresta
+GET /webservice/integration/getProduto | tags: Produto | operationId: getProduto
+GET /webservice/integration/getProdutoLoja | tags: Produto | operationId: getProdutoLoja
+GET /webservice/integration/getProdutoOnfood | tags: Produto | operationId: getProdutoOnfood
+GET /webservice/integration/getProdutoPresta | tags: Produto | operationId: getProdutoPresta
+GET /webservice/integration/getProximoCustomerId | tags: Customer | operationId: getProximoCustomerId
+GET /webservice/integration/getProximoCustomerIdIntegrado | tags: Customer | operationId: getProximoCustomerIdIntegrado
+GET /webservice/integration/getProximoCustomerIdIntegradoOnfood | tags: Customer | operationId: getProximoCustomerIdIntegradoOnfood
+GET /webservice/integration/getProximoSkuId | tags: Produto | operationId: getProximoSkuId
+GET /webservice/integration/getProximoSkuIdOnfood | tags: Produto | operationId: getProximoSkuIdOnfood
+GET /webservice/integration/getProximoSkuIdPresta | tags: Produto | operationId: getProximoSkuIdPresta
+GET /webservice/integration/getQuantidadeCustomerIntegrado | tags: Customer | operationId: getQuantidadeCustomerIntegrado
+GET /webservice/integration/getQuantidadeCustomerIntegradoOnfood | tags: Customer | operationId: getQuantidadeCustomerIntegradoOnfood
+GET /webservice/integration/getQuantidadeCustomerNaoIntegrado | tags: Customer | operationId: getQuantidadeCustomerNaoIntegrado
+GET /webservice/integration/getRotina | tags: Rotina | operationId: getRotina
+GET /webservice/integration/getTabelaPreco | tags: Tabela Preço | operationId: getTabelaPreco
+GET /webservice/integration/getTabelaPrecoOnfood | tags: Tabela Preço | operationId: getTabelaPrecoOnfood
+GET /webservice/integration/getTokenBling | tags: Api | operationId: getTokenBling
+GET /webservice/integration/getTransporte | tags: Transporte | operationId: getTransporte
+GET /webservice/integration/getUltimaIntegradora | tags: Integradora | operationId: getUltimaIntegradora
+GET /webservice/integration/getValorNotas | tags: Nota Fiscal | operationId: getValorNotas
+GET /webservice/integration/getVariante | tags: Produto | operationId: getVariante
+GET /webservice/integration/getVinculoCatMercadoLivre | tags: Produto | operationId: getVinculoCatMercadoLivre
+POST /webservice/integration/insertAcesso | tags: Acesso | operationId: insertAcesso
+POST /webservice/integration/insertAtalhoRotina | tags: Rotina | operationId: insertAtalhoRotina
+POST /webservice/integration/insertCadTracking | tags: Pedido | operationId: insertCadTracking
+POST /webservice/integration/insertCategoria | tags: Produto | operationId: insertCategoria
+DELETE /webservice/integration/insertCidade | tags: Município | operationId: insertCidade
+POST /webservice/integration/insertCidadeSankhya | tags: Município | operationId: insertCidadeSankhya
+POST /webservice/integration/insertClienteIntegrado | tags: Customer | operationId: insertClienteIntegrado
+POST /webservice/integration/insertClienteIntegradoOnfood | tags: Customer | operationId: insertClienteIntegradoOnfood
+POST /webservice/integration/insertCustomer | tags: Customer | operationId: insertCustomer
+POST /webservice/integration/insertCustomerWs | tags: Customer | operationId: insertCustomerWs
+POST /webservice/integration/insertDadoIntegration | tags: Integration | operationId: insertDadoIntegration
+POST /webservice/integration/insertEstoqueVtex | tags: Produto | operationId: insertEstoqueVtex
+POST /webservice/integration/insertFilialEstoque | tags: Filial | operationId: insertFilialEstoque
+POST /webservice/integration/insertFilialGestao | tags: Filial | operationId: insertFilialGestao
+POST /webservice/integration/insertFilialLopes | tags: Filial | operationId: insertFilialLopes
+POST /webservice/integration/insertFilialSankhya | tags: Filial | operationId: insertFilialSankhya
+POST /webservice/integration/insertFilialTiny | tags: Filial | operationId: insertFilialTiny
+POST /webservice/integration/insertFilialUpSoftware | tags: Filial | operationId: insertFilialUpSoftware
+POST /webservice/integration/insertFilialWinthor | tags: Filial | operationId: insertFilialWinthor
+POST /webservice/integration/insertHistoricoTracking | tags: Pedido | operationId: insertHistoricoTracking
+POST /webservice/integration/insertImagenProdutoLoja | tags: Produto | operationId: insertImagenProdutoLoja
+POST /webservice/integration/insertIntegradora | tags: Integradora | operationId: insertIntegradora
+POST /webservice/integration/insertListProdutoLoja | tags: Produto | operationId: insertListProdutoLoja
+POST /webservice/integration/insertListProdutoOnfood | tags: Produto | operationId: insertListProdutoOnfood
+POST /webservice/integration/insertListProdutoPresta | tags: Produto | operationId: insertListProdutoPresta
+POST /webservice/integration/insertLog | tags: Log | operationId: insertLog
+POST /webservice/integration/insertLogB2b | tags: Log | operationId: insertLogB2b
+POST /webservice/integration/insertNota | tags: Nota Fiscal | operationId: insertNota_1
+POST /webservice/integration/insertOperation | tags: Operation | operationId: insertNota
+POST /webservice/integration/insertOrder | tags: Order | operationId: insertOrder
+POST /webservice/integration/insertPagamento | tags: Pagamento | operationId: insertPagamento
+POST /webservice/integration/insertPagamentoVtex | tags: Pagamento | operationId: insertPagamentoVtex
+POST /webservice/integration/insertParametros | tags: servidor-b-2b | operationId: insertParametros
+POST /webservice/integration/insertPayment | tags: Payment | operationId: insertPayment
+POST /webservice/integration/insertPedidoIntegrado | tags: Pedido | operationId: insertPedidoIntegrado
+POST /webservice/integration/insertPedidoPagamento | tags: PedidoPagamento | operationId: insertPedidoPagamento
+POST /webservice/integration/insertPlanoPagCli | tags: Plano Pagamento | operationId: insertPlanoPagCli
+POST /webservice/integration/insertPracaWinthor | tags: Praça | operationId: InsertPracaWinthor
+POST /webservice/integration/insertPrecoEcommerceMagento | tags: Produto | operationId: insertPrecoEcommerceMagento
+POST /webservice/integration/insertPrecoEcommerceOnfood | tags: Produto | operationId: insertPrecoEcommerceOnfood
+POST /webservice/integration/insertPrecoEcommercePresta | tags: Produto | operationId: insertPrecoEcommercePresta
+POST /webservice/integration/insertPrecoPromocao | tags: Produto | operationId: insertPrecoPromocao
+POST /webservice/integration/insertProduto | tags: Produto | operationId: insertProduto
+POST /webservice/integration/insertProdutoLoja | tags: Produto | operationId: insertProdutoLoja
+POST /webservice/integration/insertProdutoOnfood | tags: Produto | operationId: insertProdutoOnfood
+POST /webservice/integration/insertProdutoPresta | tags: Produto | operationId: insertProdutoPresta
+POST /webservice/integration/insertTabelaPreco | tags: Tabela Preço | operationId: insertTabelaPreco
+POST /webservice/integration/insertTabelaPrecoEstado | tags: Tabela Preço | operationId: insertTabelaPrecoEstado
+POST /webservice/integration/insertTabelaPrecoOnfood | tags: Tabela Preço | operationId: insertTabelaPrecoOnfood
+POST /webservice/integration/insertTipoPreco | tags: Tabela Preço | operationId: insertTipoPreco
+POST /webservice/integration/insertTipoPrecoOnfood | tags: Tabela Preço | operationId: insertTipoPrecoOnfood
+POST /webservice/integration/insertTransporte | tags: Transporte | operationId: insertTransporte
+POST /webservice/integration/insertVinculoCatMercadoLivre | tags: Produto | operationId: insertVinculoCatMercadoLivre
+POST /webservice/integration/insertVinculoCategoriaProdutoLoja | tags: Produto | operationId: insertVinculoCategoriaProdutoLoja
+POST /webservice/integration/integration | tags: Integration | operationId: integration
+POST /webservice/integration/notificationOrderIfood | tags: Integration | operationId: notificationOrderIfood
+POST /webservice/integration/notifications | tags: Integration | operationId: notifications
+DELETE /webservice/integration/resetTipoPreco | tags: Lista de Preço | operationId: resetTipoPreco
+POST /webservice/integration/tokenBling | tags: Api | operationId: tokenBling
+PUT /webservice/integration/updateCadTracking | tags: Pedido | operationId: updateCadTracking
+PUT /webservice/integration/updateCategoria | tags: Produto | operationId: updateCategoria
+PUT /webservice/integration/updateCidadeSankhya | tags: Município | operationId: updateCidadeSankhya
+PUT /webservice/integration/updateClienteIntegrado | tags: Customer | operationId: updateClienteIntegrado
+PUT /webservice/integration/updateClienteIntegradoCodcli | tags: Customer | operationId: updateClienteIntegradoCodcli
+PUT /webservice/integration/updateClienteIntegradoCodcliOnfood | tags: Customer | operationId: updateClienteIntegradoCodcliOnfood
+PUT /webservice/integration/updateClienteIntegradoOnfood | tags: Customer | operationId: updateClienteIntegradoOnfood
+PUT /webservice/integration/updateCustomer | tags: Customer | operationId: updateCustomer
+PUT /webservice/integration/updateCustomerId | tags: Customer | operationId: updateCustomerId
+PUT /webservice/integration/updateDadoIntegration | tags: Integration | operationId: updateDadoIntegration
+PUT /webservice/integration/updateEstoqueProduto | tags: Produto | operationId: updateEstoqueProduto
+PUT /webservice/integration/updateEstoqueProdutoCayena | tags: Produto | operationId: updateEstoqueProdutoCayena
+PUT /webservice/integration/updateEstoqueProdutoLoja | tags: Produto | operationId: updateEstoqueProdutoLoja
+PUT /webservice/integration/updateEstoqueProdutoOnfood | tags: Produto | operationId: updateEstoqueProdutoOnfood
+PUT /webservice/integration/updateEstoqueProdutoPresta | tags: Produto | operationId: updateEstoqueProdutoPresta
+PUT /webservice/integration/updateEstoqueProdutoTray | tags: Produto | operationId: updateEstoqueProdutoTray
+PUT /webservice/integration/updateEstoqueVtex | tags: Produto | operationId: updateEstoqueVtex
+PUT /webservice/integration/updateFilialGestao | tags: Filial | operationId: updateFilialGestao
+PUT /webservice/integration/updateFilialLopes | tags: Filial | operationId: updateFilialLopes
+PUT /webservice/integration/updateFilialSankhya | tags: Filial | operationId: updateFilialSankhya
+PUT /webservice/integration/updateFilialTiny | tags: Filial | operationId: updateFilialTiny
+PUT /webservice/integration/updateFilialUpSoftware | tags: Filial | operationId: updateFilialUpSoftware
+PUT /webservice/integration/updateFilialWinthor | tags: Filial | operationId: updateFilialWinthor
+PUT /webservice/integration/updateIntegradora | tags: Integradora | operationId: updateIntegradora
+PUT /webservice/integration/updateIntegration | tags: Integration | operationId: updateIntegration
+PUT /webservice/integration/updateListProduto | tags: Produto | operationId: updateListProduto
+PUT /webservice/integration/updateListProdutoLoja | tags: Produto | operationId: updateListProdutoLoja
+PUT /webservice/integration/updateListProdutoOnfood | tags: Produto | operationId: updateListProdutoOnfood
+PUT /webservice/integration/updateListTipoPreco | tags: Tabela Preço | operationId: updateListTipoPreco
+PUT /webservice/integration/updateListTipoPrecoOnfood | tags: Tabela Preço | operationId: updateListTipoPrecoOnfood
+PUT /webservice/integration/updatePagamentoRecebimentoOrder | tags: Pagamento | operationId: updatePagamentoRecebimentoOrder
+PUT /webservice/integration/updatePedidoIntegrado | tags: Pedido | operationId: updatePedidoIntegrado
+PUT /webservice/integration/updatePedidoIntegradoNumPed | tags: Pedido | operationId: updatePedidoIntegradoNumPed
+PUT /webservice/integration/updatePrecoEcommerce | tags: Produto | operationId: updatePrecoEcommerce
+PUT /webservice/integration/updatePrecoEcommerceCayena | tags: Produto | operationId: updatePrecoEcommerceCayena
+PUT /webservice/integration/updatePrecoEcommerceMagento | tags: Produto | operationId: updatePrecoEcommerceMagento
+PUT /webservice/integration/updatePrecoEcommerceOnfood | tags: Produto | operationId: updatePrecoEcommerceOnfood
+PUT /webservice/integration/updatePrecoEcommercePresta | tags: Produto | operationId: updatePrecoEcommercePresta
+PUT /webservice/integration/updatePrecoProduto | tags: Produto | operationId: updatePrecoProduto
+PUT /webservice/integration/updatePrecoProdutoCayena | tags: Produto | operationId: updatePrecoProdutoCayena
+PUT /webservice/integration/updatePrecoProdutoLoja | tags: Produto | operationId: updatePrecoProdutoLoja
+PUT /webservice/integration/updatePrecoProdutoOnfood | tags: Produto | operationId: updatePrecoProdutoOnfood
+PUT /webservice/integration/updatePrecoProdutoPresta | tags: Produto | operationId: updatePrecoProdutoPresta
+PUT /webservice/integration/updatePrecoProdutoTray | tags: Produto | operationId: updatePrecoProdutoTray
+PUT /webservice/integration/updatePrecoPromocao | tags: Produto | operationId: updatePrecoPromocao
+PUT /webservice/integration/updateProduto | tags: Produto | operationId: updateProduto
+PUT /webservice/integration/updateProdutoLoja | tags: Produto | operationId: updateProdutoLoja
+PUT /webservice/integration/updateProdutoOnfood | tags: Produto | operationId: updateProdutoOnfood
+PUT /webservice/integration/updateProdutoPresta | tags: Produto | operationId: updateProdutoPresta
+PUT /webservice/integration/updateStatusPedidoIfc | tags: Order | operationId: updateStatusPedidoIfc
+PUT /webservice/integration/updateTabelaPreco | tags: Tabela Preço | operationId: updateTabelaPreco
+PUT /webservice/integration/updateTabelaPrecoOnfood | tags: Tabela Preço | operationId: updateTabelaPrecoOnfood
+PUT /webservice/integration/updateVinculoCatMercadoLivre | tags: Produto | operationId: updateVinculoCatMercadoLivre
+PUT /webservice/integration/upperCidadeSankhya | tags: Município | operationId: upperCidadeSankhya
+GET /webservice/integration/validaCustomer | tags: Customer | operationId: validaCustomer
+GET /webservice/integration/validaOrder | tags: Order | operationId: validaOrder
+GET /webservice/integration/validaPayment | tags: Customer | operationId: validaPayment
+PUT /webservice/integration/validaVinculoProdutos | tags: Produto | operationId: validaVinculoProdutos
+PUT /webservice/integration/validaVinculoProdutosLoja | tags: Produto | operationId: validaVinculoProdutosLoja
+PUT /webservice/integration/validaVinculoProdutosOnfood | tags: Produto | operationId: validaVinculoProdutosOnfood
+PUT /webservice/integration/validaVinculoProdutosPresta | tags: Produto | operationId: validaVinculoProdutosPresta
+GET /webservice/integration/verPermissaoAcesso | tags: Acesso | operationId: verPermissaoAcesso

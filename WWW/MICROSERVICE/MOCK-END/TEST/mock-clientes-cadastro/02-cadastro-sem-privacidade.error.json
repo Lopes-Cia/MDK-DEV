@@ -10,10 +10,6 @@
       "whatsapp": "11999990000",
       "senha": "123456",
       "status": "ativo",
-      "doisFatores": {
-        "habilitado": false,
-        "metodo": "email"
-      },
       "enderecos": [
         {
           "rotulo": "Casa",

@@ -1,0 +1,9 @@
+- [x] Meus Endereços: não usa mais `alert()`/`confirm()`; exclusão pede confirmação; sucesso/erro/validação usam `frontModal`
+- [x] Meus Dados: sucesso/erro de salvar usam `frontModal` (sem `alert()`)
+- [x] Privacidade: validação JSON, sucesso e erro usam `frontModal` (sem `alert()`)
+- [x] CheckoutForm: remove alerts de JSON; usa `frontModal.success/error`
+- [x] LoginForm: remove alerts de JSON; usa `frontModal.success/error/warning`
+- [x] Logout: todos os pontos de UI passam por confirmação antes de `logout()`
+- [x] Login necessário: checkout e área do cliente mostram modal 1x antes do redirect (sem loop)
+- [x] Verificação: grep não encontra `alert(` ou `confirm(` nos arquivos alterados
+- [x] Verificação: diagnostics TypeScript sem erros nos arquivos alterados

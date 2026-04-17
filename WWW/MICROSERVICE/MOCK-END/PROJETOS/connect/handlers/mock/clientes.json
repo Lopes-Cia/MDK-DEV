@@ -1,17 +1,13 @@
 [
   {
-    "cliente": {
+    "meus_dados": {
       "id": 999,
       "tipoPessoa": "PF",
       "documento": "11122233344",
-      "nome": "Cliente Teste",
+      "nome": "Cliente Testeoooo",
       "email": "teste@exemplo.com",
       "whatsapp": "11999990000",
       "senha": "123456",
-      "doisFatores": {
-        "habilitado": false,
-        "metodo": "email"
-      },
       "status": "ativo",
       "createdAt": "2026-01-01T00:00:00.000Z"
     },
@@ -33,15 +29,19 @@
     ],
     "privacidade": {
       "clienteId": 999,
-      "aceitaMarketing": false,
+      "doisFatores": {
+        "habilitado": false,
+        "metodo": "email"
+      },
+      "aceitaMarketing": true,
       "aceitaTermos": true,
       "aceitaCookies": true,
       "canalPreferido": "email",
-      "updatedAt": "2026-01-01T00:00:00.000Z"
+      "updatedAt": "2026-04-17T00:29:41.106Z"
     }
   },
   {
-    "cliente": {
+    "meus_dados": {
       "id": 998,
       "tipoPessoa": "PF",
       "documento": "55566677788",
@@ -49,16 +49,16 @@
       "email": "inativo@exemplo.com",
       "whatsapp": "11999990001",
       "senha": "123456",
-      "doisFatores": {
-        "habilitado": false,
-        "metodo": "email"
-      },
       "status": "inativo",
       "createdAt": "2026-01-01T00:00:00.000Z"
     },
     "enderecos": [],
     "privacidade": {
       "clienteId": 998,
+      "doisFatores": {
+        "habilitado": false,
+        "metodo": "email"
+      },
       "aceitaMarketing": false,
       "aceitaTermos": true,
       "aceitaCookies": true,
@@ -67,7 +67,7 @@
     }
   },
   {
-    "cliente": {
+    "meus_dados": {
       "id": 1000,
       "tipoPessoa": "PF",
       "documento": "DOC-1776356666544-599f2c336ad6d",
@@ -75,10 +75,6 @@
       "email": "cadastro.1776356666544-599f2c336ad6d@exemplo.com",
       "whatsapp": "11999990000",
       "senha": "123456",
-      "doisFatores": {
-        "habilitado": false,
-        "metodo": "email"
-      },
       "status": "ativo",
       "createdAt": "2026-04-16T16:24:26.645Z"
     },
@@ -101,6 +97,10 @@
     ],
     "privacidade": {
       "clienteId": 1000,
+      "doisFatores": {
+        "habilitado": false,
+        "metodo": "email"
+      },
       "aceitaMarketing": false,
       "aceitaTermos": true,
       "aceitaCookies": true,
@@ -109,7 +109,7 @@
     }
   },
   {
-    "cliente": {
+    "meus_dados": {
       "id": 1001,
       "tipoPessoa": "PF",
       "documento": "DOC-1776357769555-659cb422fb48",
@@ -117,10 +117,6 @@
       "email": "cadastro.1776357769555-659cb422fb48@exemplo.com",
       "whatsapp": "11999990000",
       "senha": "123456",
-      "doisFatores": {
-        "habilitado": false,
-        "metodo": "email"
-      },
       "status": "ativo",
       "createdAt": "2026-04-16T16:42:49.647Z"
     },
@@ -143,6 +139,10 @@
     ],
     "privacidade": {
       "clienteId": 1001,
+      "doisFatores": {
+        "habilitado": false,
+        "metodo": "email"
+      },
       "aceitaMarketing": false,
       "aceitaTermos": true,
       "aceitaCookies": true,
@@ -151,7 +151,7 @@
     }
   },
   {
-    "cliente": {
+    "meus_dados": {
       "id": 1002,
       "tipoPessoa": "PF",
       "documento": "DOC-1776358466797-1a47a1ff215f7",
@@ -159,10 +159,6 @@
       "email": "cadastro.1776358466797-1a47a1ff215f7@exemplo.com",
       "whatsapp": "11999990000",
       "senha": "123456",
-      "doisFatores": {
-        "habilitado": false,
-        "metodo": "email"
-      },
       "status": "ativo",
       "createdAt": "2026-04-16T16:54:26.881Z"
     },
@@ -185,6 +181,10 @@
     ],
     "privacidade": {
       "clienteId": 1002,
+      "doisFatores": {
+        "habilitado": false,
+        "metodo": "email"
+      },
       "aceitaMarketing": false,
       "aceitaTermos": true,
       "aceitaCookies": true,
@@ -193,7 +193,7 @@
     }
   },
   {
-    "cliente": {
+    "meus_dados": {
       "id": 1003,
       "tipoPessoa": "PF",
       "documento": "DOC-1776358759735-52f8e695b7504",
@@ -201,10 +201,6 @@
       "email": "cadastro.1776358759735-52f8e695b7504@exemplo.com",
       "whatsapp": "11999990000",
       "senha": "123456",
-      "doisFatores": {
-        "habilitado": false,
-        "metodo": "email"
-      },
       "status": "ativo",
       "createdAt": "2026-04-16T16:59:19.826Z"
     },
@@ -227,6 +223,10 @@
     ],
     "privacidade": {
       "clienteId": 1003,
+      "doisFatores": {
+        "habilitado": false,
+        "metodo": "email"
+      },
       "aceitaMarketing": false,
       "aceitaTermos": true,
       "aceitaCookies": true,
@@ -235,7 +235,7 @@
     }
   },
   {
-    "cliente": {
+    "meus_dados": {
       "id": 1004,
       "tipoPessoa": "PF",
       "documento": "DOC-1776358953991-5d8c4813b5703",
@@ -243,10 +243,6 @@
       "email": "cadastro.login.1776358953991-5d8c4813b5703@exemplo.com",
       "whatsapp": "11999990000",
       "senha": "123456",
-      "doisFatores": {
-        "habilitado": false,
-        "metodo": "email"
-      },
       "status": "ativo",
       "createdAt": "2026-04-16T17:02:34.068Z"
     },
@@ -269,6 +265,10 @@
     ],
     "privacidade": {
       "clienteId": 1004,
+      "doisFatores": {
+        "habilitado": false,
+        "metodo": "email"
+      },
       "aceitaMarketing": false,
       "aceitaTermos": true,
       "aceitaCookies": true,
