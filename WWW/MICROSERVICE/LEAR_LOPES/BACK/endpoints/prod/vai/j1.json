@@ -1,0 +1,20 @@
+[
+  {
+    "codProd": 8,
+    "qtUnit": 1,
+    "qtUnitCaixa": 1,
+    "descricaoErp": "CERV BRAHMA CHOPP LT 269ML",
+    "descricaoEcomerce": "Cerveja Brahma Chopp Lata 269 ml",
+    "ean": "7891149103270",
+    "eanCaixa": "7891149103270",
+    "codVol": "UN",
+    "productId": "8",
+    "preco": 2.49,
+    "qtEstoque": 4485,
+    "imagem": "https://lopesecia.com.br/img/7891149103270A.webp",
+    "categoriaPrinciapal": 0,
+    "dtUltAlter": "2026-04-16T12:41:24.000+00:00",
+    "imagens": [],
+    "categorias": []
+  }
+]

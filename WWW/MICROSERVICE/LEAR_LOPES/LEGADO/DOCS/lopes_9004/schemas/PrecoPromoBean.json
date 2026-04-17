@@ -1,0 +1,37 @@
+{
+  "type": "object",
+  "properties": {
+    "idTabela": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codProd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtUnit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "idIntegradora": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "produto": {
+      "type": "string"
+    },
+    "precoPromo": {
+      "type": "number"
+    },
+    "stPromo": {
+      "type": "number"
+    },
+    "dtCadPreco": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

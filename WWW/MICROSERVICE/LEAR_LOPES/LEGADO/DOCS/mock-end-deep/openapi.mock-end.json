@@ -1,0 +1,4738 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "MOCK-END",
+    "version": "0.1.0",
+    "description": "Swagger gerado a partir das rotas declarativas do MOCK-END e exemplos capturados em LEAR_LOPES/data."
+  },
+  "servers": [
+    {
+      "url": "http://localhost:4000"
+    }
+  ],
+  "components": {
+    "securitySchemes": {
+      "Authorization": {
+        "type": "apiKey",
+        "in": "header",
+        "name": "Authorization"
+      }
+    }
+  },
+  "paths": {
+    "/health": {
+      "get": {
+        "tags": [
+          "core"
+        ],
+        "summary": "Healthcheck do MOCK-END",
+        "operationId": "health__get",
+        "responses": {
+          "200": {
+            "description": "Resposta (exemplo do mock).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {
+                  "ok": true
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/assets/images/{wildcard}": {
+      "get": {
+        "tags": [
+          "core"
+        ],
+        "summary": "Assets publicos de imagens (mock connect)",
+        "operationId": "public_assets_images__get",
+        "parameters": [
+          {
+            "name": "wildcard",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "head": {
+        "tags": [
+          "core"
+        ],
+        "summary": "Assets publicos de imagens (mock connect)",
+        "operationId": "public_assets_images__head",
+        "parameters": [
+          {
+            "name": "wildcard",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/api/storage/{tenant}/images/{rest}": {
+      "get": {
+        "tags": [
+          "core"
+        ],
+        "summary": "Storage seguro de imagens por tenant (originals/derived/manifests)",
+        "operationId": "storage_images__get",
+        "parameters": [
+          {
+            "name": "tenant",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rest",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resposta (exemplo do mock).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {
+                  "ok": true,
+                  "path": "manifests/<sha>.json",
+                  "bytes": 123
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "head": {
+        "tags": [
+          "core"
+        ],
+        "summary": "Storage seguro de imagens por tenant (originals/derived/manifests)",
+        "operationId": "storage_images__head",
+        "parameters": [
+          {
+            "name": "tenant",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rest",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resposta (exemplo do mock).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {
+                  "ok": true,
+                  "path": "manifests/<sha>.json",
+                  "bytes": 123
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "core"
+        ],
+        "summary": "Storage seguro de imagens por tenant (originals/derived/manifests)",
+        "operationId": "storage_images__put",
+        "parameters": [
+          {
+            "name": "tenant",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rest",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resposta (exemplo do mock).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {
+                  "ok": true,
+                  "path": "manifests/<sha>.json",
+                  "bytes": 123
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "core"
+        ],
+        "summary": "Storage seguro de imagens por tenant (originals/derived/manifests)",
+        "operationId": "storage_images__post",
+        "parameters": [
+          {
+            "name": "tenant",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "rest",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Resposta (exemplo do mock).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {
+                  "ok": true,
+                  "path": "manifests/<sha>.json",
+                  "bytes": 123
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/produtos/categorias": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Token da integradora (quando em modo original). | handler: api/produtos.categorias",
+        "operationId": "connect__GET__Servidor__webservice__integration__produtos__categorias__get",
+        "responses": {
+          "200": {
+            "description": "Resposta (capturada).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {
+                  "success": true,
+                  "data": [
+                    {
+                      "id": 10,
+                      "name": "Bebidas",
+                      "slug": "/categoria/bebidas",
+                      "parentId": 0,
+                      "image": "http://localhost:4000/assets/images/categorias/bebidas-768b23.jpg",
+                      "order": 10,
+                      "children": [
+                        {
+                          "id": 15,
+                          "name": "Cervejas",
+                          "slug": "/categoria/bebidas/cervejas",
+                          "parentId": 10,
+                          "image": "http://localhost:4000/assets/images/categorias/cervejas-5574dc.jpg",
+                          "order": 15,
+                          "children": [
+                            {
+                              "id": 19,
+                              "name": "Lager",
+                              "slug": "/categoria/bebidas/cervejas/lager",
+                              "parentId": 15,
+                              "image": "http://localhost:4000/assets/images/categorias/lager-2ccedf.jpg",
+                              "order": 19,
+                              "children": []
+                            },
+                            {
+                              "id": 20,
+                              "name": "IPA",
+                              "slug": "/categoria/bebidas/cervejas/ipa",
+                              "parentId": 15,
+                              "image": "http://localhost:4000/assets/images/categorias/ipa-c1966f.jpg",
+                              "order": 20,
+                              "children": []
+                            },
+                            {
+                              "id": 21,
+                              "name": "Pilsen",
+                              "slug": "/categoria/bebidas/cervejas/pilsen",
+                              "parentId": 15,
+                              "image": "http://localhost:4000/assets/images/categorias/pilsen-5764bb.jpg",
+                              "order": 21,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 16,
+                          "name": "Chopp",
+                          "slug": "/categoria/bebidas/chopp",
+                          "parentId": 10,
+                          "image": "http://localhost:4000/assets/images/categorias/chopp-1776d5.png",
+                          "order": 16,
+                          "children": [
+                            {
+                              "id": 22,
+                              "name": "Pilsen",
+                              "slug": "/categoria/bebidas/chopp/pilsen",
+                              "parentId": 16,
+                              "image": "http://localhost:4000/assets/images/categorias/pilsen-22-5764bb.jpg",
+                              "order": 22,
+                              "children": []
+                            },
+                            {
+                              "id": 23,
+                              "name": "IPA",
+                              "slug": "/categoria/bebidas/chopp/ipa",
+                              "parentId": 16,
+                              "image": "http://localhost:4000/assets/images/categorias/ipa-23-c1966f.jpg",
+                              "order": 23,
+                              "children": []
+                            },
+                            {
+                              "id": 24,
+                              "name": "Artesanal",
+                              "slug": "/categoria/bebidas/chopp/artesanal",
+                              "parentId": 16,
+                              "image": "http://localhost:4000/assets/images/categorias/artesanal-635c93.jpg",
+                              "order": 24,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 17,
+                          "name": "Drinks prontos",
+                          "slug": "/categoria/bebidas/drinks-prontos",
+                          "parentId": 10,
+                          "image": "http://localhost:4000/assets/images/categorias/drinks-prontos-469004.png",
+                          "order": 17,
+                          "children": [
+                            {
+                              "id": 25,
+                              "name": "Gin tônica",
+                              "slug": "/categoria/bebidas/drinks-prontos/gin-tonica",
+                              "parentId": 17,
+                              "image": "http://localhost:4000/assets/images/categorias/gin-tonica-abc7b0.png",
+                              "order": 25,
+                              "children": []
+                            },
+                            {
+                              "id": 26,
+                              "name": "Vodka ice",
+                              "slug": "/categoria/bebidas/drinks-prontos/vodka-ice",
+                              "parentId": 17,
+                              "image": "http://localhost:4000/assets/images/categorias/vodka-ice-72a17d.jpg",
+                              "order": 26,
+                              "children": []
+                            },
+                            {
+                              "id": 27,
+                              "name": "Caipirinha",
+                              "slug": "/categoria/bebidas/drinks-prontos/caipirinha",
+                              "parentId": 17,
+                              "image": "http://localhost:4000/assets/images/categorias/caipirinha-645274.jpg",
+                              "order": 27,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 18,
+                          "name": "Sidras",
+                          "slug": "/categoria/bebidas/sidras",
+                          "parentId": 10,
+                          "image": "http://localhost:4000/assets/images/categorias/sidras-315a5d.jpg",
+                          "order": 18,
+                          "children": [
+                            {
+                              "id": 28,
+                              "name": "Tradicional",
+                              "slug": "/categoria/bebidas/sidras/tradicional",
+                              "parentId": 18,
+                              "image": "http://localhost:4000/assets/images/semImagem.png",
+                              "order": 28,
+                              "children": []
+                            },
+                            {
+                              "id": 29,
+                              "name": "Premium",
+                              "slug": "/categoria/bebidas/sidras/premium",
+                              "parentId": 18,
+                              "image": "http://localhost:4000/assets/images/categorias/premium-8b68f4.jpg",
+                              "order": 29,
+                              "children": []
+                            },
+                            {
+                              "id": 30,
+                              "name": "Artesanal",
+                              "slug": "/categoria/bebidas/sidras/artesanal",
+                              "parentId": 18,
+                              "image": "http://localhost:4000/assets/images/categorias/artesanal-30-02c2ca.jpg",
+                              "order": 30,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 11,
+                      "name": "Vinhos",
+                      "slug": "/categoria/vinhos",
+                      "parentId": 0,
+                      "image": "http://localhost:4000/assets/images/categorias/vinhos-a8a259.png",
+                      "order": 11,
+                      "children": [
+                        {
+                          "id": 31,
+                          "name": "Tintos",
+                          "slug": "/categoria/vinhos/tintos",
+                          "parentId": 11,
+                          "image": "http://localhost:4000/assets/images/categorias/tintos-4c55cf.jpg",
+                          "order": 31,
+                          "children": [
+                            {
+                              "id": 35,
+                              "name": "Seco",
+                              "slug": "/categoria/vinhos/tintos/seco",
+                              "parentId": 31,
+                              "image": "http://localhost:4000/assets/images/categorias/seco-fc3ba0.jpg",
+                              "order": 35,
+                              "children": []
+                            },
+                            {
+                              "id": 36,
+                              "name": "Suave",
+                              "slug": "/categoria/vinhos/tintos/suave",
+                              "parentId": 31,
+                              "image": "http://localhost:4000/assets/images/categorias/suave-7e9fcc.jpg",
+                              "order": 36,
+                              "children": []
+                            },
+                            {
+                              "id": 37,
+                              "name": "Reserva",
+                              "slug": "/categoria/vinhos/tintos/reserva",
+                              "parentId": 31,
+                              "image": "http://localhost:4000/assets/images/categorias/reserva-737df9.jpg",
+                              "order": 37,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 32,
+                          "name": "Brancos",
+                          "slug": "/categoria/vinhos/brancos",
+                          "parentId": 11,
+                          "image": "http://localhost:4000/assets/images/categorias/brancos-dc4ea0.jpg",
+                          "order": 32,
+                          "children": [
+                            {
+                              "id": 38,
+                              "name": "Seco",
+                              "slug": "/categoria/vinhos/brancos/seco",
+                              "parentId": 32,
+                              "image": "http://localhost:4000/assets/images/categorias/seco-38-fc3ba0.jpg",
+                              "order": 38,
+                              "children": []
+                            },
+                            {
+                              "id": 39,
+                              "name": "Suave",
+                              "slug": "/categoria/vinhos/brancos/suave",
+                              "parentId": 32,
+                              "image": "http://localhost:4000/assets/images/categorias/suave-39-7e9fcc.jpg",
+                              "order": 39,
+                              "children": []
+                            },
+                            {
+                              "id": 40,
+                              "name": "Frisante",
+                              "slug": "/categoria/vinhos/brancos/frisante",
+                              "parentId": 32,
+                              "image": "http://localhost:4000/assets/images/categorias/frisante-daa587.jpg",
+                              "order": 40,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 33,
+                          "name": "Espumantes",
+                          "slug": "/categoria/vinhos/espumantes",
+                          "parentId": 11,
+                          "image": "http://localhost:4000/assets/images/categorias/espumantes-a45408.jpg",
+                          "order": 33,
+                          "children": [
+                            {
+                              "id": 41,
+                              "name": "Brut",
+                              "slug": "/categoria/vinhos/espumantes/brut",
+                              "parentId": 33,
+                              "image": "http://localhost:4000/assets/images/categorias/brut-0ec23e.jpg",
+                              "order": 41,
+                              "children": []
+                            },
+                            {
+                              "id": 42,
+                              "name": "Moscatel",
+                              "slug": "/categoria/vinhos/espumantes/moscatel",
+                              "parentId": 33,
+                              "image": "http://localhost:4000/assets/images/categorias/moscatel-339edd.jpg",
+                              "order": 42,
+                              "children": []
+                            },
+                            {
+                              "id": 43,
+                              "name": "Demi-sec",
+                              "slug": "/categoria/vinhos/espumantes/demi-sec",
+                              "parentId": 33,
+                              "image": "http://localhost:4000/assets/images/categorias/demi-sec-8099fc.jpg",
+                              "order": 43,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 34,
+                          "name": "Rosés",
+                          "slug": "/categoria/vinhos/roses",
+                          "parentId": 11,
+                          "image": "http://localhost:4000/assets/images/categorias/roses-1a0c72.jpg",
+                          "order": 34,
+                          "children": [
+                            {
+                              "id": 44,
+                              "name": "Seco",
+                              "slug": "/categoria/vinhos/roses/seco",
+                              "parentId": 34,
+                              "image": "http://localhost:4000/assets/images/categorias/seco-44-fc3ba0.jpg",
+                              "order": 44,
+                              "children": []
+                            },
+                            {
+                              "id": 45,
+                              "name": "Suave",
+                              "slug": "/categoria/vinhos/roses/suave",
+                              "parentId": 34,
+                              "image": "http://localhost:4000/assets/images/categorias/suave-45-7e9fcc.jpg",
+                              "order": 45,
+                              "children": []
+                            },
+                            {
+                              "id": 46,
+                              "name": "Frisante",
+                              "slug": "/categoria/vinhos/roses/frisante",
+                              "parentId": 34,
+                              "image": "http://localhost:4000/assets/images/categorias/frisante-46-daa587.jpg",
+                              "order": 46,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 12,
+                      "name": "Destilados",
+                      "slug": "/categoria/destilados",
+                      "parentId": 0,
+                      "image": "http://localhost:4000/assets/images/categorias/destilados-076798.jpg",
+                      "order": 12,
+                      "children": [
+                        {
+                          "id": 47,
+                          "name": "Whisky",
+                          "slug": "/categoria/destilados/whisky",
+                          "parentId": 12,
+                          "image": "http://localhost:4000/assets/images/categorias/whisky-578e16.jpg",
+                          "order": 47,
+                          "children": [
+                            {
+                              "id": 51,
+                              "name": "Blended",
+                              "slug": "/categoria/destilados/whisky/blended",
+                              "parentId": 47,
+                              "image": "http://localhost:4000/assets/images/semImagem.png",
+                              "order": 51,
+                              "children": []
+                            },
+                            {
+                              "id": 52,
+                              "name": "Bourbon",
+                              "slug": "/categoria/destilados/whisky/bourbon",
+                              "parentId": 47,
+                              "image": "http://localhost:4000/assets/images/categorias/bourbon-40f21e.png",
+                              "order": 52,
+                              "children": []
+                            },
+                            {
+                              "id": 53,
+                              "name": "Single malt",
+                              "slug": "/categoria/destilados/whisky/single-malt",
+                              "parentId": 47,
+                              "image": "http://localhost:4000/assets/images/categorias/single-malt-c1a9b8.jpg",
+                              "order": 53,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 48,
+                          "name": "Vodka",
+                          "slug": "/categoria/destilados/vodka",
+                          "parentId": 12,
+                          "image": "http://localhost:4000/assets/images/categorias/vodka-febca9.jpg",
+                          "order": 48,
+                          "children": [
+                            {
+                              "id": 54,
+                              "name": "Tradicional",
+                              "slug": "/categoria/destilados/vodka/tradicional",
+                              "parentId": 48,
+                              "image": "http://localhost:4000/assets/images/semImagem.png",
+                              "order": 54,
+                              "children": []
+                            },
+                            {
+                              "id": 55,
+                              "name": "Premium",
+                              "slug": "/categoria/destilados/vodka/premium",
+                              "parentId": 48,
+                              "image": "http://localhost:4000/assets/images/categorias/premium-55-8b68f4.jpg",
+                              "order": 55,
+                              "children": []
+                            },
+                            {
+                              "id": 56,
+                              "name": "Saborizada",
+                              "slug": "/categoria/destilados/vodka/saborizada",
+                              "parentId": 48,
+                              "image": "http://localhost:4000/assets/images/categorias/saborizada-ab1eba.jpg",
+                              "order": 56,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 49,
+                          "name": "Gin",
+                          "slug": "/categoria/destilados/gin",
+                          "parentId": 12,
+                          "image": "http://localhost:4000/assets/images/categorias/gin-bbed13.png",
+                          "order": 49,
+                          "children": [
+                            {
+                              "id": 57,
+                              "name": "London Dry",
+                              "slug": "/categoria/destilados/gin/london-dry",
+                              "parentId": 49,
+                              "image": "http://localhost:4000/assets/images/categorias/london-dry-09e432.png",
+                              "order": 57,
+                              "children": []
+                            },
+                            {
+                              "id": 58,
+                              "name": "Aromatizado",
+                              "slug": "/categoria/destilados/gin/aromatizado",
+                              "parentId": 49,
+                              "image": "http://localhost:4000/assets/images/categorias/aromatizado-b14076.jpg",
+                              "order": 58,
+                              "children": []
+                            },
+                            {
+                              "id": 59,
+                              "name": "Navy Strength",
+                              "slug": "/categoria/destilados/gin/navy-strength",
+                              "parentId": 49,
+                              "image": "http://localhost:4000/assets/images/categorias/navy-strength-c77bc2.jpg",
+                              "order": 59,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 50,
+                          "name": "Rum",
+                          "slug": "/categoria/destilados/rum",
+                          "parentId": 12,
+                          "image": "http://localhost:4000/assets/images/categorias/rum-cd4673.jpg",
+                          "order": 50,
+                          "children": [
+                            {
+                              "id": 60,
+                              "name": "Branco",
+                              "slug": "/categoria/destilados/rum/branco",
+                              "parentId": 50,
+                              "image": "http://localhost:4000/assets/images/categorias/branco-4b37ae.png",
+                              "order": 60,
+                              "children": []
+                            },
+                            {
+                              "id": 61,
+                              "name": "Dourado",
+                              "slug": "/categoria/destilados/rum/dourado",
+                              "parentId": 50,
+                              "image": "http://localhost:4000/assets/images/categorias/dourado-0a36ee.jpg",
+                              "order": 61,
+                              "children": []
+                            },
+                            {
+                              "id": 62,
+                              "name": "Envelhecido",
+                              "slug": "/categoria/destilados/rum/envelhecido",
+                              "parentId": 50,
+                              "image": "http://localhost:4000/assets/images/semImagem.png",
+                              "order": 62,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 13,
+                      "name": "Não alcoólicas",
+                      "slug": "/categoria/nao-alcoolicas",
+                      "parentId": 0,
+                      "image": "http://localhost:4000/assets/images/semImagem.png",
+                      "order": 13,
+                      "children": [
+                        {
+                          "id": 63,
+                          "name": "Energéticos",
+                          "slug": "/categoria/nao-alcoolicas/energeticos",
+                          "parentId": 13,
+                          "image": "http://localhost:4000/assets/images/categorias/energeticos-bc5006.jpg",
+                          "order": 63,
+                          "children": [
+                            {
+                              "id": 67,
+                              "name": "Tradicional",
+                              "slug": "/categoria/nao-alcoolicas/energeticos/tradicional",
+                              "parentId": 63,
+                              "image": "http://localhost:4000/assets/images/semImagem.png",
+                              "order": 67,
+                              "children": []
+                            },
+                            {
+                              "id": 68,
+                              "name": "Zero",
+                              "slug": "/categoria/nao-alcoolicas/energeticos/zero",
+                              "parentId": 63,
+                              "image": "http://localhost:4000/assets/images/categorias/zero-dfd540.jpg",
+                              "order": 68,
+                              "children": []
+                            },
+                            {
+                              "id": 69,
+                              "name": "Sem açúcar",
+                              "slug": "/categoria/nao-alcoolicas/energeticos/sem-acucar",
+                              "parentId": 63,
+                              "image": "http://localhost:4000/assets/images/categorias/sem-acucar-40b8d5.jpg",
+                              "order": 69,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 64,
+                          "name": "Refrigerantes",
+                          "slug": "/categoria/nao-alcoolicas/refrigerantes",
+                          "parentId": 13,
+                          "image": "http://localhost:4000/assets/images/categorias/refrigerantes-7a3bdc.jpg",
+                          "order": 64,
+                          "children": [
+                            {
+                              "id": 70,
+                              "name": "Cola",
+                              "slug": "/categoria/nao-alcoolicas/refrigerantes/cola",
+                              "parentId": 64,
+                              "image": "http://localhost:4000/assets/images/categorias/cola-ed4d0b.jpg",
+                              "order": 70,
+                              "children": []
+                            },
+                            {
+                              "id": 71,
+                              "name": "Guaraná",
+                              "slug": "/categoria/nao-alcoolicas/refrigerantes/guarana",
+                              "parentId": 64,
+                              "image": "http://localhost:4000/assets/images/categorias/guarana-730f84.png",
+                              "order": 71,
+                              "children": []
+                            },
+                            {
+                              "id": 72,
+                              "name": "Citrus",
+                              "slug": "/categoria/nao-alcoolicas/refrigerantes/citrus",
+                              "parentId": 64,
+                              "image": "http://localhost:4000/assets/images/categorias/citrus-12ca29.png",
+                              "order": 72,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 65,
+                          "name": "Águas & Isotônicos",
+                          "slug": "/categoria/nao-alcoolicas/aguas-isotonicos",
+                          "parentId": 13,
+                          "image": "http://localhost:4000/assets/images/categorias/aguas-isotonicos-433ff3.png",
+                          "order": 65,
+                          "children": [
+                            {
+                              "id": 73,
+                              "name": "Água",
+                              "slug": "/categoria/nao-alcoolicas/aguas-isotonicos/agua",
+                              "parentId": 65,
+                              "image": "http://localhost:4000/assets/images/categorias/agua-61f8ed.png",
+                              "order": 73,
+                              "children": []
+                            },
+                            {
+                              "id": 74,
+                              "name": "Com gás",
+                              "slug": "/categoria/nao-alcoolicas/aguas-isotonicos/com-gas",
+                              "parentId": 65,
+                              "image": "http://localhost:4000/assets/images/categorias/com-gas-b1f72e.png",
+                              "order": 74,
+                              "children": []
+                            },
+                            {
+                              "id": 75,
+                              "name": "Isotônico",
+                              "slug": "/categoria/nao-alcoolicas/aguas-isotonicos/isotonico",
+                              "parentId": 65,
+                              "image": "http://localhost:4000/assets/images/categorias/isotonico-58d8e5.jpg",
+                              "order": 75,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 66,
+                          "name": "Sucos",
+                          "slug": "/categoria/nao-alcoolicas/sucos",
+                          "parentId": 13,
+                          "image": "http://localhost:4000/assets/images/categorias/sucos-5cb761.png",
+                          "order": 66,
+                          "children": [
+                            {
+                              "id": 76,
+                              "name": "Uva",
+                              "slug": "/categoria/nao-alcoolicas/sucos/uva",
+                              "parentId": 66,
+                              "image": "http://localhost:4000/assets/images/categorias/uva-0a7796.png",
+                              "order": 76,
+                              "children": []
+                            },
+                            {
+                              "id": 77,
+                              "name": "Laranja",
+                              "slug": "/categoria/nao-alcoolicas/sucos/laranja",
+                              "parentId": 66,
+                              "image": "http://localhost:4000/assets/images/categorias/laranja-6220a3.png",
+                              "order": 77,
+                              "children": []
+                            },
+                            {
+                              "id": 78,
+                              "name": "Maçã",
+                              "slug": "/categoria/nao-alcoolicas/sucos/maca",
+                              "parentId": 66,
+                              "image": "http://localhost:4000/assets/images/categorias/maca-eb7632.jpg",
+                              "order": 78,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "id": 14,
+                      "name": "Conveniência",
+                      "slug": "/categoria/conveniencia",
+                      "parentId": 0,
+                      "image": "http://localhost:4000/assets/images/categorias/conveniencia-6cfd5e.jpg",
+                      "order": 14,
+                      "children": [
+                        {
+                          "id": 79,
+                          "name": "Gelo",
+                          "slug": "/categoria/conveniencia/gelo",
+                          "parentId": 14,
+                          "image": "http://localhost:4000/assets/images/categorias/gelo-0584f5.png",
+                          "order": 79,
+                          "children": [
+                            {
+                              "id": 83,
+                              "name": "Saco 2kg",
+                              "slug": "/categoria/conveniencia/gelo/saco-2kg",
+                              "parentId": 79,
+                              "image": "http://localhost:4000/assets/images/categorias/saco-2kg-661261.jpg",
+                              "order": 83,
+                              "children": []
+                            },
+                            {
+                              "id": 84,
+                              "name": "Saco 5kg",
+                              "slug": "/categoria/conveniencia/gelo/saco-5kg",
+                              "parentId": 79,
+                              "image": "http://localhost:4000/assets/images/categorias/saco-5kg-f6652e.jpg",
+                              "order": 84,
+                              "children": []
+                            },
+                            {
+                              "id": 85,
+                              "name": "Gelo de coco",
+                              "slug": "/categoria/conveniencia/gelo/gelo-de-coco",
+                              "parentId": 79,
+                              "image": "http://localhost:4000/assets/images/categorias/gelo-de-coco-31142a.jpg",
+                              "order": 85,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 80,
+                          "name": "Snacks",
+                          "slug": "/categoria/conveniencia/snacks",
+                          "parentId": 14,
+                          "image": "http://localhost:4000/assets/images/categorias/snacks-1e5823.png",
+                          "order": 80,
+                          "children": [
+                            {
+                              "id": 86,
+                              "name": "Salgadinhos",
+                              "slug": "/categoria/conveniencia/snacks/salgadinhos",
+                              "parentId": 80,
+                              "image": "http://localhost:4000/assets/images/categorias/salgadinhos-0500fa.png",
+                              "order": 86,
+                              "children": []
+                            },
+                            {
+                              "id": 87,
+                              "name": "Amendoim",
+                              "slug": "/categoria/conveniencia/snacks/amendoim",
+                              "parentId": 80,
+                              "image": "http://localhost:4000/assets/images/categorias/amendoim-4b1511.png",
+                              "order": 87,
+                              "children": []
+                            },
+                            {
+                              "id": 88,
+                              "name": "Batata chips",
+                              "slug": "/categoria/conveniencia/snacks/batata-chips",
+                              "parentId": 80,
+                              "image": "http://localhost:4000/assets/images/categorias/batata-chips-b8180e.png",
+                              "order": 88,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 81,
+                          "name": "Acessórios",
+                          "slug": "/categoria/conveniencia/acessorios",
+                          "parentId": 14,
+                          "image": "http://localhost:4000/assets/images/categorias/acessorios-2d1345.jpg",
+                          "order": 81,
+                          "children": [
+                            {
+                              "id": 89,
+                              "name": "Copos",
+                              "slug": "/categoria/conveniencia/acessorios/copos",
+                              "parentId": 81,
+                              "image": "http://localhost:4000/assets/images/categorias/copos-dcf1a1.png",
+                              "order": 89,
+                              "children": []
+                            },
+                            {
+                              "id": 90,
+                              "name": "Abridor",
+                              "slug": "/categoria/conveniencia/acessorios/abridor",
+                              "parentId": 81,
+                              "image": "http://localhost:4000/assets/images/categorias/abridor-832413.png",
+                              "order": 90,
+                              "children": []
+                            },
+                            {
+                              "id": 91,
+                              "name": "Baldes",
+                              "slug": "/categoria/conveniencia/acessorios/baldes",
+                              "parentId": 81,
+                              "image": "http://localhost:4000/assets/images/categorias/baldes-836066.jpg",
+                              "order": 91,
+                              "children": []
+                            }
+                          ]
+                        },
+                        {
+                          "id": 82,
+                          "name": "Tabacaria",
+                          "slug": "/categoria/conveniencia/tabacaria",
+                          "parentId": 14,
+                          "image": "http://localhost:4000/assets/images/categorias/tabacaria-73bce9.jpg",
+                          "order": 82,
+                          "children": [
+                            {
+                              "id": 92,
+                              "name": "Isqueiros",
+                              "slug": "/categoria/conveniencia/tabacaria/isqueiros",
+                              "parentId": 82,
+                              "image": "http://localhost:4000/assets/images/categorias/isqueiros-ec26f9.jpg",
+                              "order": 92,
+                              "children": []
+                            },
+                            {
+                              "id": 93,
+                              "name": "Carvão",
+                              "slug": "/categoria/conveniencia/tabacaria/carvao",
+                              "parentId": 82,
+                              "image": "http://localhost:4000/assets/images/categorias/carvao-b10d0b.png",
+                              "order": 93,
+                              "children": []
+                            },
+                            {
+                              "id": 94,
+                              "name": "Piteiras",
+                              "slug": "/categoria/conveniencia/tabacaria/piteiras",
+                              "parentId": 82,
+                              "image": "http://localhost:4000/assets/images/categorias/piteiras-f49ced.png",
+                              "order": 94,
+                              "children": []
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/connect/Servidor/webservice/integration/produtos/categorias/by-slug/{wildcard}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Token da integradora (quando em modo original). | handler: api/produtos.categoriaBySlug",
+        "operationId": "connect__GET__Servidor__webservice__integration__produtos__categorias__by-slug__-__get",
+        "parameters": [
+          {
+            "name": "wildcard",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/connect/Servidor/webservice/integration/produtos/categorias/{wildcard}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Token da integradora (quando em modo original). | handler: api/produtos.categoriaById",
+        "operationId": "connect__GET__Servidor__webservice__integration__produtos__categorias__-__get",
+        "parameters": [
+          {
+            "name": "wildcard",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/connect/Servidor/webservice/integration/produtos/by-categoria/{wildcard}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Token da integradora (quando em modo original). | handler: api/produtos.produtosByCategoria",
+        "operationId": "connect__GET__Servidor__webservice__integration__produtos__by-categoria__-__get",
+        "parameters": [
+          {
+            "name": "wildcard",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/connect/Servidor/webservice/integration/produtos/by-id/{wildcard}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Token da integradora (quando em modo original). | handler: api/produtos.produtoById",
+        "operationId": "connect__GET__Servidor__webservice__integration__produtos__by-id__-__get",
+        "parameters": [
+          {
+            "name": "wildcard",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/connect/Servidor/webservice/integration/produtos/by-slug/{wildcard}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Token da integradora (quando em modo original). | handler: api/produtos.produtoBySlug",
+        "operationId": "connect__GET__Servidor__webservice__integration__produtos__by-slug__-__get",
+        "parameters": [
+          {
+            "name": "wildcard",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/connect/Servidor/webservice/integration/produtos/brands": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Token da integradora (quando em modo original). | handler: api/produtos.brands",
+        "operationId": "connect__GET__Servidor__webservice__integration__produtos__brands__get",
+        "responses": {
+          "200": {
+            "description": "Resposta (capturada).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {
+                  "success": true,
+                  "data": [
+                    {
+                      "id": 871013969,
+                      "name": "Absolut",
+                      "slug": "/marca/absolut",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 3582257716,
+                      "name": "Acessórios",
+                      "slug": "/marca/acessorios",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 2410706081,
+                      "name": "Aurora",
+                      "slug": "/marca/aurora",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 1709002083,
+                      "name": "Ballantine's",
+                      "slug": "/marca/ballantine-s",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 4170688548,
+                      "name": "Beefeater",
+                      "slug": "/marca/beefeater",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 1046477162,
+                      "name": "Bonafont",
+                      "slug": "/marca/bonafont",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 4222076832,
+                      "name": "Casa Perini",
+                      "slug": "/marca/casa-perini",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 4117937138,
+                      "name": "Chandon",
+                      "slug": "/marca/chandon",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 138155915,
+                      "name": "Chopp",
+                      "slug": "/marca/chopp",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 3751095991,
+                      "name": "Coca-Cola",
+                      "slug": "/marca/coca-cola",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 2435987914,
+                      "name": "Concha y Toro",
+                      "slug": "/marca/concha-y-toro",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 3168311026,
+                      "name": "Conveniência",
+                      "slug": "/marca/conveniencia",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 112414825,
+                      "name": "Crystal",
+                      "slug": "/marca/crystal",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 2505821670,
+                      "name": "Drinks",
+                      "slug": "/marca/drinks",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 3895226784,
+                      "name": "Gelo",
+                      "slug": "/marca/gelo",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 3433190152,
+                      "name": "Guaraná",
+                      "slug": "/marca/guarana",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 2028873282,
+                      "name": "Heineken",
+                      "slug": "/marca/heineken",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 789960514,
+                      "name": "Johnnie Walker",
+                      "slug": "/marca/johnnie-walker",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 1900825813,
+                      "name": "Miolo",
+                      "slug": "/marca/miolo",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 2747053077,
+                      "name": "Red Bull",
+                      "slug": "/marca/red-bull",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 2354570455,
+                      "name": "Rum",
+                      "slug": "/marca/rum",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 3153560811,
+                      "name": "Santa Helena",
+                      "slug": "/marca/santa-helena",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 3668623785,
+                      "name": "Seleção",
+                      "slug": "/marca/selecao",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 1284966993,
+                      "name": "Smirnoff",
+                      "slug": "/marca/smirnoff",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 1447089293,
+                      "name": "Snack",
+                      "slug": "/marca/snack",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    },
+                    {
+                      "id": 1909697191,
+                      "name": "Tanqueray",
+                      "slug": "/marca/tanqueray",
+                      "image": "http://localhost:4000/assets/images/semImagem.png"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/connect/Servidor/webservice/integration/produtos/brands/{wildcard}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Token da integradora (quando em modo original). | handler: api/produtos.brandById",
+        "operationId": "connect__GET__Servidor__webservice__integration__produtos__brands__-__get",
+        "parameters": [
+          {
+            "name": "wildcard",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/connect/Servidor/webservice/integration/home": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Token da integradora (quando em modo original). | handler: api/home.home",
+        "operationId": "connect__GET__Servidor__webservice__integration__home__get",
+        "responses": {
+          "200": {
+            "description": "Resposta (capturada).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {
+                  "success": true,
+                  "data": {
+                    "home": {
+                      "banners_1": [
+                        {
+                          "id": 1,
+                          "image": "http://localhost:4000/assets/images/banners/banner-1.webp",
+                          "link": ""
+                        },
+                        {
+                          "id": 2,
+                          "image": "http://localhost:4000/assets/images/banners/banner-2.webp",
+                          "link": ""
+                        },
+                        {
+                          "id": 3,
+                          "image": "http://localhost:4000/assets/images/banners/banner-3.webp",
+                          "link": ""
+                        },
+                        {
+                          "id": 4,
+                          "image": "http://localhost:4000/assets/images/banners/banner-4.webp",
+                          "link": ""
+                        }
+                      ],
+                      "categorias_destaque": [
+                        {
+                          "id": 35,
+                          "name": "Seco",
+                          "slug": "/categoria/vinhos/tintos/seco",
+                          "parentId": 31,
+                          "image": "http://localhost:4000/assets/images/categorias/seco-fc3ba0.jpg",
+                          "order": 35
+                        },
+                        {
+                          "id": 60,
+                          "name": "Branco",
+                          "slug": "/categoria/destilados/rum/branco",
+                          "parentId": 50,
+                          "image": "http://localhost:4000/assets/images/categorias/branco-4b37ae.png",
+                          "order": 60
+                        },
+                        {
+                          "id": 31,
+                          "name": "Tintos",
+                          "slug": "/categoria/vinhos/tintos",
+                          "parentId": 11,
+                          "image": "http://localhost:4000/assets/images/categorias/tintos-4c55cf.jpg",
+                          "order": 31
+                        },
+                        {
+                          "id": 33,
+                          "name": "Espumantes",
+                          "slug": "/categoria/vinhos/espumantes",
+                          "parentId": 11,
+                          "image": "http://localhost:4000/assets/images/categorias/espumantes-a45408.jpg",
+                          "order": 33
+                        },
+                        {
+                          "id": 75,
+                          "name": "Isotônico",
+                          "slug": "/categoria/nao-alcoolicas/aguas-isotonicos/isotonico",
+                          "parentId": 65,
+                          "image": "http://localhost:4000/assets/images/categorias/isotonico-58d8e5.jpg",
+                          "order": 75
+                        },
+                        {
+                          "id": 32,
+                          "name": "Brancos",
+                          "slug": "/categoria/vinhos/brancos",
+                          "parentId": 11,
+                          "image": "http://localhost:4000/assets/images/categorias/brancos-dc4ea0.jpg",
+                          "order": 32
+                        }
+                      ],
+                      "produtos_maisvendidos": {
+                        "slug": "mais-vendidos",
+                        "data": [
+                          {
+                            "id": 1050,
+                            "sku": "BALLANTINE-S-WHISKY-BALLANTINE-S-BLENDED-1L-1L",
+                            "name": "Whisky Ballantine's Blended 1L",
+                            "slug": "/produtos/whisky-ballantine-s-blended-1l",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "1L",
+                            "price": 124.45,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 171,
+                            "inStock": true,
+                            "category": {
+                              "id": 51,
+                              "name": "Blended",
+                              "slug": "/categoria/destilados/whisky/blended",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 47,
+                                  "name": "Whisky",
+                                  "slug": "/categoria/destilados/whisky"
+                                },
+                                {
+                                  "id": 51,
+                                  "name": "Blended",
+                                  "slug": "/categoria/destilados/whisky/blended"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1709002083,
+                              "name": "Ballantine's",
+                              "slug": "/marca/ballantine-s",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1061,
+                            "sku": "TANQUERAY-GIN-TANQUERAY-LONDON-DRY-750ML-750ML",
+                            "name": "Gin Tanqueray London Dry 750ml",
+                            "slug": "/produtos/gin-tanqueray-london-dry-750ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 150.17,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/gin-tanqueray-london-dry-750ml-09e432.png",
+                            "stock": 105,
+                            "inStock": true,
+                            "category": {
+                              "id": 57,
+                              "name": "London Dry",
+                              "slug": "/categoria/destilados/gin/london-dry",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 49,
+                                  "name": "Gin",
+                                  "slug": "/categoria/destilados/gin"
+                                },
+                                {
+                                  "id": 57,
+                                  "name": "London Dry",
+                                  "slug": "/categoria/destilados/gin/london-dry"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1909697191,
+                              "name": "Tanqueray",
+                              "slug": "/marca/tanqueray",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1055,
+                            "sku": "SMIRNOFF-VODKA-SMIRNOFF-TRADICIONAL-1L-1L",
+                            "name": "Vodka Smirnoff Tradicional 1L",
+                            "slug": "/produtos/vodka-smirnoff-tradicional-1l",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "1L",
+                            "price": 64.54,
+                            "compareAtPrice": 74.22,
+                            "badges": [
+                              "promo"
+                            ],
+                            "image": "http://localhost:4000/assets/images/produtos/vodka-smirnoff-tradicional-1l-e7fff0.jpg",
+                            "stock": 18,
+                            "inStock": true,
+                            "category": {
+                              "id": 54,
+                              "name": "Tradicional",
+                              "slug": "/categoria/destilados/vodka/tradicional",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 48,
+                                  "name": "Vodka",
+                                  "slug": "/categoria/destilados/vodka"
+                                },
+                                {
+                                  "id": 54,
+                                  "name": "Tradicional",
+                                  "slug": "/categoria/destilados/vodka/tradicional"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1284966993,
+                              "name": "Smirnoff",
+                              "slug": "/marca/smirnoff",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1038,
+                            "sku": "CASA-PERINI-ESPUMANTE-BRUT-750ML-750ML",
+                            "name": "Espumante Brut 750ml",
+                            "slug": "/produtos/espumante-brut-750ml-casa-perini",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 79.89,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 58,
+                            "inStock": true,
+                            "category": {
+                              "id": 41,
+                              "name": "Brut",
+                              "slug": "/categoria/vinhos/espumantes/brut",
+                              "familia": [
+                                {
+                                  "id": 11,
+                                  "name": "Vinhos",
+                                  "slug": "/categoria/vinhos"
+                                },
+                                {
+                                  "id": 33,
+                                  "name": "Espumantes",
+                                  "slug": "/categoria/vinhos/espumantes"
+                                },
+                                {
+                                  "id": 41,
+                                  "name": "Brut",
+                                  "slug": "/categoria/vinhos/espumantes/brut"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 4222076832,
+                              "name": "Casa Perini",
+                              "slug": "/marca/casa-perini",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1072,
+                            "sku": "RUM-RUM-ENVELHECIDO-750ML-3-750ML",
+                            "name": "Rum Envelhecido 750ml 3",
+                            "slug": "/produtos/rum-envelhecido-750ml-3",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 82.92,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/rum-envelhecido-750ml-3-76c049.png",
+                            "stock": 11,
+                            "inStock": true,
+                            "category": {
+                              "id": 62,
+                              "name": "Envelhecido",
+                              "slug": "/categoria/destilados/rum/envelhecido",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 50,
+                                  "name": "Rum",
+                                  "slug": "/categoria/destilados/rum"
+                                },
+                                {
+                                  "id": 62,
+                                  "name": "Envelhecido",
+                                  "slug": "/categoria/destilados/rum/envelhecido"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 2354570455,
+                              "name": "Rum",
+                              "slug": "/marca/rum",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1064,
+                            "sku": "BEEFEATER-GIN-BEEFEATER-AROMATIZADO-750ML-750ML",
+                            "name": "Gin Beefeater Aromatizado 750ml",
+                            "slug": "/produtos/gin-beefeater-aromatizado-750ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 127.05,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/gin-beefeater-aromatizado-750ml-c315e5.jpg",
+                            "stock": 28,
+                            "inStock": true,
+                            "category": {
+                              "id": 58,
+                              "name": "Aromatizado",
+                              "slug": "/categoria/destilados/gin/aromatizado",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 49,
+                                  "name": "Gin",
+                                  "slug": "/categoria/destilados/gin"
+                                },
+                                {
+                                  "id": 58,
+                                  "name": "Aromatizado",
+                                  "slug": "/categoria/destilados/gin/aromatizado"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 4170688548,
+                              "name": "Beefeater",
+                              "slug": "/marca/beefeater",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1098,
+                            "sku": "GELO-GELO-SACO-5KG-5KG",
+                            "name": "Gelo Saco 5kg",
+                            "slug": "/produtos/gelo-saco-5kg",
+                            "unitLabel": "saco",
+                            "sizeLabel": "5kg",
+                            "price": 19.31,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/gelo-saco-5kg-80be7a.jpg",
+                            "stock": 28,
+                            "inStock": true,
+                            "category": {
+                              "id": 83,
+                              "name": "Saco 2kg",
+                              "slug": "/categoria/conveniencia/gelo/saco-2kg",
+                              "familia": [
+                                {
+                                  "id": 14,
+                                  "name": "Conveniência",
+                                  "slug": "/categoria/conveniencia"
+                                },
+                                {
+                                  "id": 79,
+                                  "name": "Gelo",
+                                  "slug": "/categoria/conveniencia/gelo"
+                                },
+                                {
+                                  "id": 83,
+                                  "name": "Saco 2kg",
+                                  "slug": "/categoria/conveniencia/gelo/saco-2kg"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 3895226784,
+                              "name": "Gelo",
+                              "slug": "/marca/gelo",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1029,
+                            "sku": "MIOLO-VINHO-TINTO-RESERVA-750ML-750ML",
+                            "name": "Vinho Tinto Reserva 750ml",
+                            "slug": "/produtos/vinho-tinto-reserva-750ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 89.7,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 84,
+                            "inStock": true,
+                            "category": {
+                              "id": 37,
+                              "name": "Reserva",
+                              "slug": "/categoria/vinhos/tintos/reserva",
+                              "familia": [
+                                {
+                                  "id": 11,
+                                  "name": "Vinhos",
+                                  "slug": "/categoria/vinhos"
+                                },
+                                {
+                                  "id": 31,
+                                  "name": "Tintos",
+                                  "slug": "/categoria/vinhos/tintos"
+                                },
+                                {
+                                  "id": 37,
+                                  "name": "Reserva",
+                                  "slug": "/categoria/vinhos/tintos/reserva"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1900825813,
+                              "name": "Miolo",
+                              "slug": "/marca/miolo",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1042,
+                            "sku": "CASA-PERINI-ESPUMANTE-DEMI-SEC-750ML-750ML",
+                            "name": "Espumante Demi-sec 750ml",
+                            "slug": "/produtos/espumante-demi-sec-750ml-casa-perini",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 84.54,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/espumante-demi-sec-750ml-casa-perini-55cb69.jpg",
+                            "stock": 101,
+                            "inStock": true,
+                            "category": {
+                              "id": 43,
+                              "name": "Demi-sec",
+                              "slug": "/categoria/vinhos/espumantes/demi-sec",
+                              "familia": [
+                                {
+                                  "id": 11,
+                                  "name": "Vinhos",
+                                  "slug": "/categoria/vinhos"
+                                },
+                                {
+                                  "id": 33,
+                                  "name": "Espumantes",
+                                  "slug": "/categoria/vinhos/espumantes"
+                                },
+                                {
+                                  "id": 43,
+                                  "name": "Demi-sec",
+                                  "slug": "/categoria/vinhos/espumantes/demi-sec"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 4222076832,
+                              "name": "Casa Perini",
+                              "slug": "/marca/casa-perini",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1025,
+                            "sku": "MIOLO-VINHO-TINTO-SECO-750ML-750ML",
+                            "name": "Vinho Tinto Seco 750ml",
+                            "slug": "/produtos/vinho-tinto-seco-750ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 74.38,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/vinho-tinto-seco-750ml-bd9acf.jpg",
+                            "stock": 152,
+                            "inStock": true,
+                            "category": {
+                              "id": 35,
+                              "name": "Seco",
+                              "slug": "/categoria/vinhos/tintos/seco",
+                              "familia": [
+                                {
+                                  "id": 11,
+                                  "name": "Vinhos",
+                                  "slug": "/categoria/vinhos"
+                                },
+                                {
+                                  "id": 31,
+                                  "name": "Tintos",
+                                  "slug": "/categoria/vinhos/tintos"
+                                },
+                                {
+                                  "id": 35,
+                                  "name": "Seco",
+                                  "slug": "/categoria/vinhos/tintos/seco"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1900825813,
+                              "name": "Miolo",
+                              "slug": "/marca/miolo",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1096,
+                            "sku": "SELECAO-SUCOS-MACA-1L-3-1L",
+                            "name": "Sucos Maçã 1L 3",
+                            "slug": "/produtos/sucos-maca-1l-3",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "1L",
+                            "price": 8.36,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/sucos-maca-1l-3-026c2f.jpg",
+                            "stock": 46,
+                            "inStock": true,
+                            "category": {
+                              "id": 78,
+                              "name": "Maçã",
+                              "slug": "/categoria/nao-alcoolicas/sucos/maca",
+                              "familia": [
+                                {
+                                  "id": 13,
+                                  "name": "Não alcoólicas",
+                                  "slug": "/categoria/nao-alcoolicas"
+                                },
+                                {
+                                  "id": 66,
+                                  "name": "Sucos",
+                                  "slug": "/categoria/nao-alcoolicas/sucos"
+                                },
+                                {
+                                  "id": 78,
+                                  "name": "Maçã",
+                                  "slug": "/categoria/nao-alcoolicas/sucos/maca"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 3668623785,
+                              "name": "Seleção",
+                              "slug": "/marca/selecao",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1112,
+                            "sku": "ACESSORIOS-COPO-LONG-DRINK-1-UN",
+                            "name": "Copo Long Drink",
+                            "slug": "/produtos/copo-long-drink-acessorios",
+                            "unitLabel": "unidade",
+                            "sizeLabel": "1 un",
+                            "price": 13.11,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/copo-long-drink-acessorios-dc4420.jpg",
+                            "stock": 127,
+                            "inStock": true,
+                            "category": {
+                              "id": 90,
+                              "name": "Abridor",
+                              "slug": "/categoria/conveniencia/acessorios/abridor",
+                              "familia": [
+                                {
+                                  "id": 14,
+                                  "name": "Conveniência",
+                                  "slug": "/categoria/conveniencia"
+                                },
+                                {
+                                  "id": 81,
+                                  "name": "Acessórios",
+                                  "slug": "/categoria/conveniencia/acessorios"
+                                },
+                                {
+                                  "id": 90,
+                                  "name": "Abridor",
+                                  "slug": "/categoria/conveniencia/acessorios/abridor"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 3582257716,
+                              "name": "Acessórios",
+                              "slug": "/marca/acessorios",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          }
+                        ]
+                      },
+                      "produtos_promocao": {
+                        "slug": "promocao",
+                        "data": [
+                          {
+                            "id": 1087,
+                            "sku": "BONAFONT-AGUA-MINERAL-COM-GAS-500ML-500ML",
+                            "name": "Água Mineral Com gás 500ml",
+                            "slug": "/produtos/agua-mineral-com-gas-500ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "500ml",
+                            "price": 2.63,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/agua-mineral-com-gas-500ml-832d76.jpg",
+                            "stock": 134,
+                            "inStock": true,
+                            "category": {
+                              "id": 74,
+                              "name": "Com gás",
+                              "slug": "/categoria/nao-alcoolicas/aguas-isotonicos/com-gas",
+                              "familia": [
+                                {
+                                  "id": 13,
+                                  "name": "Não alcoólicas",
+                                  "slug": "/categoria/nao-alcoolicas"
+                                },
+                                {
+                                  "id": 65,
+                                  "name": "Águas & Isotônicos",
+                                  "slug": "/categoria/nao-alcoolicas/aguas-isotonicos"
+                                },
+                                {
+                                  "id": 74,
+                                  "name": "Com gás",
+                                  "slug": "/categoria/nao-alcoolicas/aguas-isotonicos/com-gas"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1046477162,
+                              "name": "Bonafont",
+                              "slug": "/marca/bonafont",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1029,
+                            "sku": "MIOLO-VINHO-TINTO-RESERVA-750ML-750ML",
+                            "name": "Vinho Tinto Reserva 750ml",
+                            "slug": "/produtos/vinho-tinto-reserva-750ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 89.7,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 84,
+                            "inStock": true,
+                            "category": {
+                              "id": 37,
+                              "name": "Reserva",
+                              "slug": "/categoria/vinhos/tintos/reserva",
+                              "familia": [
+                                {
+                                  "id": 11,
+                                  "name": "Vinhos",
+                                  "slug": "/categoria/vinhos"
+                                },
+                                {
+                                  "id": 31,
+                                  "name": "Tintos",
+                                  "slug": "/categoria/vinhos/tintos"
+                                },
+                                {
+                                  "id": 37,
+                                  "name": "Reserva",
+                                  "slug": "/categoria/vinhos/tintos/reserva"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1900825813,
+                              "name": "Miolo",
+                              "slug": "/marca/miolo",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1063,
+                            "sku": "TANQUERAY-GIN-TANQUERAY-AROMATIZADO-750ML-750ML",
+                            "name": "Gin Tanqueray Aromatizado 750ml",
+                            "slug": "/produtos/gin-tanqueray-aromatizado-750ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 149.48,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/gin-tanqueray-aromatizado-750ml-3748be.jpg",
+                            "stock": 41,
+                            "inStock": true,
+                            "category": {
+                              "id": 58,
+                              "name": "Aromatizado",
+                              "slug": "/categoria/destilados/gin/aromatizado",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 49,
+                                  "name": "Gin",
+                                  "slug": "/categoria/destilados/gin"
+                                },
+                                {
+                                  "id": 58,
+                                  "name": "Aromatizado",
+                                  "slug": "/categoria/destilados/gin/aromatizado"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1909697191,
+                              "name": "Tanqueray",
+                              "slug": "/marca/tanqueray",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1075,
+                            "sku": "RED-BULL-RED-BULL-ZERO-250ML-250ML",
+                            "name": "Red Bull Zero 250ml",
+                            "slug": "/produtos/red-bull-zero-250ml",
+                            "unitLabel": "lata",
+                            "sizeLabel": "250ml",
+                            "price": 10.55,
+                            "compareAtPrice": 12.13,
+                            "badges": [
+                              "gelada",
+                              "promo"
+                            ],
+                            "image": "http://localhost:4000/assets/images/produtos/red-bull-zero-250ml-ff6d89.jpg",
+                            "stock": 32,
+                            "inStock": true,
+                            "category": {
+                              "id": 68,
+                              "name": "Zero",
+                              "slug": "/categoria/nao-alcoolicas/energeticos/zero",
+                              "familia": [
+                                {
+                                  "id": 13,
+                                  "name": "Não alcoólicas",
+                                  "slug": "/categoria/nao-alcoolicas"
+                                },
+                                {
+                                  "id": 63,
+                                  "name": "Energéticos",
+                                  "slug": "/categoria/nao-alcoolicas/energeticos"
+                                },
+                                {
+                                  "id": 68,
+                                  "name": "Zero",
+                                  "slug": "/categoria/nao-alcoolicas/energeticos/zero"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 2747053077,
+                              "name": "Red Bull",
+                              "slug": "/marca/red-bull",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1004,
+                            "sku": "HEINEKEN-HEINEKEN-LATA-350ML-350ML",
+                            "name": "Heineken Lata 350ml",
+                            "slug": "/produtos/heineken-lata-350ml-heineken",
+                            "unitLabel": "lata",
+                            "sizeLabel": "350ml",
+                            "price": 4.72,
+                            "compareAtPrice": null,
+                            "badges": [
+                              "gelada"
+                            ],
+                            "image": "http://localhost:4000/assets/images/produtos/heineken-lata-350ml-heineken-4f3bf3.jpg",
+                            "stock": 15,
+                            "inStock": true,
+                            "category": {
+                              "id": 20,
+                              "name": "IPA",
+                              "slug": "/categoria/bebidas/cervejas/ipa",
+                              "familia": [
+                                {
+                                  "id": 10,
+                                  "name": "Bebidas",
+                                  "slug": "/categoria/bebidas"
+                                },
+                                {
+                                  "id": 15,
+                                  "name": "Cervejas",
+                                  "slug": "/categoria/bebidas/cervejas"
+                                },
+                                {
+                                  "id": 20,
+                                  "name": "IPA",
+                                  "slug": "/categoria/bebidas/cervejas/ipa"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 2028873282,
+                              "name": "Heineken",
+                              "slug": "/marca/heineken",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1082,
+                            "sku": "GUARANA-GUARANA-GUARANA-LATA-350ML-350ML",
+                            "name": "Guaraná Guaraná Lata 350ml",
+                            "slug": "/produtos/guarana-guarana-lata-350ml",
+                            "unitLabel": "lata",
+                            "sizeLabel": "350ml",
+                            "price": 4.17,
+                            "compareAtPrice": null,
+                            "badges": [
+                              "gelada"
+                            ],
+                            "image": "http://localhost:4000/assets/images/produtos/guarana-guarana-lata-350ml-3e0427.jpg",
+                            "stock": 92,
+                            "inStock": true,
+                            "category": {
+                              "id": 71,
+                              "name": "Guaraná",
+                              "slug": "/categoria/nao-alcoolicas/refrigerantes/guarana",
+                              "familia": [
+                                {
+                                  "id": 13,
+                                  "name": "Não alcoólicas",
+                                  "slug": "/categoria/nao-alcoolicas"
+                                },
+                                {
+                                  "id": 64,
+                                  "name": "Refrigerantes",
+                                  "slug": "/categoria/nao-alcoolicas/refrigerantes"
+                                },
+                                {
+                                  "id": 71,
+                                  "name": "Guaraná",
+                                  "slug": "/categoria/nao-alcoolicas/refrigerantes/guarana"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 3433190152,
+                              "name": "Guaraná",
+                              "slug": "/marca/guarana",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1011,
+                            "sku": "CHOPP-CHOPP-PILSEN-1L-1L",
+                            "name": "Chopp Pilsen 1L",
+                            "slug": "/produtos/chopp-pilsen-1l-chopp-1011",
+                            "unitLabel": "growler",
+                            "sizeLabel": "1L",
+                            "price": 22.02,
+                            "compareAtPrice": null,
+                            "badges": [
+                              "gelada"
+                            ],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 171,
+                            "inStock": true,
+                            "category": {
+                              "id": 24,
+                              "name": "Artesanal",
+                              "slug": "/categoria/bebidas/chopp/artesanal",
+                              "familia": [
+                                {
+                                  "id": 10,
+                                  "name": "Bebidas",
+                                  "slug": "/categoria/bebidas"
+                                },
+                                {
+                                  "id": 16,
+                                  "name": "Chopp",
+                                  "slug": "/categoria/bebidas/chopp"
+                                },
+                                {
+                                  "id": 24,
+                                  "name": "Artesanal",
+                                  "slug": "/categoria/bebidas/chopp/artesanal"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 138155915,
+                              "name": "Chopp",
+                              "slug": "/marca/chopp",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1070,
+                            "sku": "RUM-RUM-DOURADO-750ML-3-750ML",
+                            "name": "Rum Dourado 750ml 3",
+                            "slug": "/produtos/rum-dourado-750ml-3",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 89.97,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/rum-dourado-750ml-3-4b0873.jpg",
+                            "stock": 97,
+                            "inStock": true,
+                            "category": {
+                              "id": 61,
+                              "name": "Dourado",
+                              "slug": "/categoria/destilados/rum/dourado",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 50,
+                                  "name": "Rum",
+                                  "slug": "/categoria/destilados/rum"
+                                },
+                                {
+                                  "id": 61,
+                                  "name": "Dourado",
+                                  "slug": "/categoria/destilados/rum/dourado"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 2354570455,
+                              "name": "Rum",
+                              "slug": "/marca/rum",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1092,
+                            "sku": "SELECAO-SUCOS-UVA-1L-3-1L",
+                            "name": "Sucos Uva 1L 3",
+                            "slug": "/produtos/sucos-uva-1l-3",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "1L",
+                            "price": 7.47,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/sucos-uva-1l-3-665cec.jpg",
+                            "stock": 107,
+                            "inStock": true,
+                            "category": {
+                              "id": 76,
+                              "name": "Uva",
+                              "slug": "/categoria/nao-alcoolicas/sucos/uva",
+                              "familia": [
+                                {
+                                  "id": 13,
+                                  "name": "Não alcoólicas",
+                                  "slug": "/categoria/nao-alcoolicas"
+                                },
+                                {
+                                  "id": 66,
+                                  "name": "Sucos",
+                                  "slug": "/categoria/nao-alcoolicas/sucos"
+                                },
+                                {
+                                  "id": 76,
+                                  "name": "Uva",
+                                  "slug": "/categoria/nao-alcoolicas/sucos/uva"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 3668623785,
+                              "name": "Seleção",
+                              "slug": "/marca/selecao",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1014,
+                            "sku": "DRINKS-VODKA-ICE-LATA-269ML-269ML",
+                            "name": "Vodka Ice Lata 269ml",
+                            "slug": "/produtos/vodka-ice-lata-269ml",
+                            "unitLabel": "lata",
+                            "sizeLabel": "269ml",
+                            "price": 9.55,
+                            "compareAtPrice": null,
+                            "badges": [
+                              "gelada"
+                            ],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 104,
+                            "inStock": true,
+                            "category": {
+                              "id": 25,
+                              "name": "Gin tônica",
+                              "slug": "/categoria/bebidas/drinks-prontos/gin-tonica",
+                              "familia": [
+                                {
+                                  "id": 10,
+                                  "name": "Bebidas",
+                                  "slug": "/categoria/bebidas"
+                                },
+                                {
+                                  "id": 17,
+                                  "name": "Drinks prontos",
+                                  "slug": "/categoria/bebidas/drinks-prontos"
+                                },
+                                {
+                                  "id": 25,
+                                  "name": "Gin tônica",
+                                  "slug": "/categoria/bebidas/drinks-prontos/gin-tonica"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 2505821670,
+                              "name": "Drinks",
+                              "slug": "/marca/drinks",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1040,
+                            "sku": "CASA-PERINI-ESPUMANTE-MOSCATEL-750ML-750ML",
+                            "name": "Espumante Moscatel 750ml",
+                            "slug": "/produtos/espumante-moscatel-750ml-casa-perini",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 75.14,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/espumante-moscatel-750ml-casa-perini-f16527.png",
+                            "stock": 102,
+                            "inStock": true,
+                            "category": {
+                              "id": 42,
+                              "name": "Moscatel",
+                              "slug": "/categoria/vinhos/espumantes/moscatel",
+                              "familia": [
+                                {
+                                  "id": 11,
+                                  "name": "Vinhos",
+                                  "slug": "/categoria/vinhos"
+                                },
+                                {
+                                  "id": 33,
+                                  "name": "Espumantes",
+                                  "slug": "/categoria/vinhos/espumantes"
+                                },
+                                {
+                                  "id": 42,
+                                  "name": "Moscatel",
+                                  "slug": "/categoria/vinhos/espumantes/moscatel"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 4222076832,
+                              "name": "Casa Perini",
+                              "slug": "/marca/casa-perini",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1012,
+                            "sku": "CHOPP-CHOPP-PILSEN-2L-2L",
+                            "name": "Chopp Pilsen 2L",
+                            "slug": "/produtos/chopp-pilsen-2l-chopp-1012",
+                            "unitLabel": "growler",
+                            "sizeLabel": "2L",
+                            "price": 42.29,
+                            "compareAtPrice": null,
+                            "badges": [
+                              "gelada"
+                            ],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 26,
+                            "inStock": true,
+                            "category": {
+                              "id": 24,
+                              "name": "Artesanal",
+                              "slug": "/categoria/bebidas/chopp/artesanal",
+                              "familia": [
+                                {
+                                  "id": 10,
+                                  "name": "Bebidas",
+                                  "slug": "/categoria/bebidas"
+                                },
+                                {
+                                  "id": 16,
+                                  "name": "Chopp",
+                                  "slug": "/categoria/bebidas/chopp"
+                                },
+                                {
+                                  "id": 24,
+                                  "name": "Artesanal",
+                                  "slug": "/categoria/bebidas/chopp/artesanal"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 138155915,
+                              "name": "Chopp",
+                              "slug": "/marca/chopp",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1013,
+                            "sku": "DRINKS-GIN-TONICA-LATA-269ML-269ML",
+                            "name": "Gin Tônica Lata 269ml",
+                            "slug": "/produtos/gin-tonica-lata-269ml",
+                            "unitLabel": "lata",
+                            "sizeLabel": "269ml",
+                            "price": 10.98,
+                            "compareAtPrice": null,
+                            "badges": [
+                              "gelada"
+                            ],
+                            "image": "http://localhost:4000/assets/images/produtos/gin-tonica-lata-269ml-fccd4f.jpg",
+                            "stock": 10,
+                            "inStock": true,
+                            "category": {
+                              "id": 25,
+                              "name": "Gin tônica",
+                              "slug": "/categoria/bebidas/drinks-prontos/gin-tonica",
+                              "familia": [
+                                {
+                                  "id": 10,
+                                  "name": "Bebidas",
+                                  "slug": "/categoria/bebidas"
+                                },
+                                {
+                                  "id": 17,
+                                  "name": "Drinks prontos",
+                                  "slug": "/categoria/bebidas/drinks-prontos"
+                                },
+                                {
+                                  "id": 25,
+                                  "name": "Gin tônica",
+                                  "slug": "/categoria/bebidas/drinks-prontos/gin-tonica"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 2505821670,
+                              "name": "Drinks",
+                              "slug": "/marca/drinks",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1048,
+                            "sku": "SELECAO-VINHO-ROSES-FRISANTE-750ML-3-750ML",
+                            "name": "Vinho Rosés Frisante 750ml 3",
+                            "slug": "/produtos/vinho-roses-frisante-750ml-3",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 50.49,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/vinho-roses-frisante-750ml-3-dcb52a.jpg",
+                            "stock": 59,
+                            "inStock": true,
+                            "category": {
+                              "id": 46,
+                              "name": "Frisante",
+                              "slug": "/categoria/vinhos/roses/frisante",
+                              "familia": [
+                                {
+                                  "id": 11,
+                                  "name": "Vinhos",
+                                  "slug": "/categoria/vinhos"
+                                },
+                                {
+                                  "id": 34,
+                                  "name": "Rosés",
+                                  "slug": "/categoria/vinhos/roses"
+                                },
+                                {
+                                  "id": 46,
+                                  "name": "Frisante",
+                                  "slug": "/categoria/vinhos/roses/frisante"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 3668623785,
+                              "name": "Seleção",
+                              "slug": "/marca/selecao",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1041,
+                            "sku": "CHANDON-ESPUMANTE-DEMI-SEC-750ML-750ML",
+                            "name": "Espumante Demi-sec 750ml",
+                            "slug": "/produtos/espumante-demi-sec-750ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 100.54,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 97,
+                            "inStock": true,
+                            "category": {
+                              "id": 43,
+                              "name": "Demi-sec",
+                              "slug": "/categoria/vinhos/espumantes/demi-sec",
+                              "familia": [
+                                {
+                                  "id": 11,
+                                  "name": "Vinhos",
+                                  "slug": "/categoria/vinhos"
+                                },
+                                {
+                                  "id": 33,
+                                  "name": "Espumantes",
+                                  "slug": "/categoria/vinhos/espumantes"
+                                },
+                                {
+                                  "id": 43,
+                                  "name": "Demi-sec",
+                                  "slug": "/categoria/vinhos/espumantes/demi-sec"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 4117937138,
+                              "name": "Chandon",
+                              "slug": "/marca/chandon",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1062,
+                            "sku": "BEEFEATER-GIN-BEEFEATER-LONDON-DRY-750ML-750ML",
+                            "name": "Gin Beefeater London Dry 750ml",
+                            "slug": "/produtos/gin-beefeater-london-dry-750ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 118.21,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/gin-beefeater-london-dry-750ml-f2f20a.jpg",
+                            "stock": 94,
+                            "inStock": true,
+                            "category": {
+                              "id": 57,
+                              "name": "London Dry",
+                              "slug": "/categoria/destilados/gin/london-dry",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 49,
+                                  "name": "Gin",
+                                  "slug": "/categoria/destilados/gin"
+                                },
+                                {
+                                  "id": 57,
+                                  "name": "London Dry",
+                                  "slug": "/categoria/destilados/gin/london-dry"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 4170688548,
+                              "name": "Beefeater",
+                              "slug": "/marca/beefeater",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1064,
+                            "sku": "BEEFEATER-GIN-BEEFEATER-AROMATIZADO-750ML-750ML",
+                            "name": "Gin Beefeater Aromatizado 750ml",
+                            "slug": "/produtos/gin-beefeater-aromatizado-750ml",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "750ml",
+                            "price": 127.05,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/gin-beefeater-aromatizado-750ml-c315e5.jpg",
+                            "stock": 28,
+                            "inStock": true,
+                            "category": {
+                              "id": 58,
+                              "name": "Aromatizado",
+                              "slug": "/categoria/destilados/gin/aromatizado",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 49,
+                                  "name": "Gin",
+                                  "slug": "/categoria/destilados/gin"
+                                },
+                                {
+                                  "id": 58,
+                                  "name": "Aromatizado",
+                                  "slug": "/categoria/destilados/gin/aromatizado"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 4170688548,
+                              "name": "Beefeater",
+                              "slug": "/marca/beefeater",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1050,
+                            "sku": "BALLANTINE-S-WHISKY-BALLANTINE-S-BLENDED-1L-1L",
+                            "name": "Whisky Ballantine's Blended 1L",
+                            "slug": "/produtos/whisky-ballantine-s-blended-1l",
+                            "unitLabel": "garrafa",
+                            "sizeLabel": "1L",
+                            "price": 124.45,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 171,
+                            "inStock": true,
+                            "category": {
+                              "id": 51,
+                              "name": "Blended",
+                              "slug": "/categoria/destilados/whisky/blended",
+                              "familia": [
+                                {
+                                  "id": 12,
+                                  "name": "Destilados",
+                                  "slug": "/categoria/destilados"
+                                },
+                                {
+                                  "id": 47,
+                                  "name": "Whisky",
+                                  "slug": "/categoria/destilados/whisky"
+                                },
+                                {
+                                  "id": 51,
+                                  "name": "Blended",
+                                  "slug": "/categoria/destilados/whisky/blended"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1709002083,
+                              "name": "Ballantine's",
+                              "slug": "/marca/ballantine-s",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1120,
+                            "sku": "CONVENIENCIA-TABACARIA-PITEIRAS-3-1-UN",
+                            "name": "Tabacaria Piteiras 3",
+                            "slug": "/produtos/tabacaria-piteiras-3",
+                            "unitLabel": "unidade",
+                            "sizeLabel": "1 un",
+                            "price": 9.19,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/produtos/tabacaria-piteiras-3-c206d7.jpg",
+                            "stock": 0,
+                            "inStock": false,
+                            "category": {
+                              "id": 94,
+                              "name": "Piteiras",
+                              "slug": "/categoria/conveniencia/tabacaria/piteiras",
+                              "familia": [
+                                {
+                                  "id": 14,
+                                  "name": "Conveniência",
+                                  "slug": "/categoria/conveniencia"
+                                },
+                                {
+                                  "id": 82,
+                                  "name": "Tabacaria",
+                                  "slug": "/categoria/conveniencia/tabacaria"
+                                },
+                                {
+                                  "id": 94,
+                                  "name": "Piteiras",
+                                  "slug": "/categoria/conveniencia/tabacaria/piteiras"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 3168311026,
+                              "name": "Conveniência",
+                              "slug": "/marca/conveniencia",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          },
+                          {
+                            "id": 1103,
+                            "sku": "SNACK-AMENDOIM-TORRADO-150G-150G",
+                            "name": "Amendoim Torrado 150g",
+                            "slug": "/produtos/amendoim-torrado-150g",
+                            "unitLabel": "pacote",
+                            "sizeLabel": "150g",
+                            "price": 6.61,
+                            "compareAtPrice": null,
+                            "badges": [],
+                            "image": "http://localhost:4000/assets/images/semImagem.png",
+                            "stock": 17,
+                            "inStock": true,
+                            "category": {
+                              "id": 86,
+                              "name": "Salgadinhos",
+                              "slug": "/categoria/conveniencia/snacks/salgadinhos",
+                              "familia": [
+                                {
+                                  "id": 14,
+                                  "name": "Conveniência",
+                                  "slug": "/categoria/conveniencia"
+                                },
+                                {
+                                  "id": 80,
+                                  "name": "Snacks",
+                                  "slug": "/categoria/conveniencia/snacks"
+                                },
+                                {
+                                  "id": 86,
+                                  "name": "Salgadinhos",
+                                  "slug": "/categoria/conveniencia/snacks/salgadinhos"
+                                }
+                              ]
+                            },
+                            "brand": {
+                              "id": 1447089293,
+                              "name": "Snack",
+                              "slug": "/marca/snack",
+                              "image": "http://localhost:4000/assets/images/semImagem.png"
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/connect/Servidor/webservice/integration/clientes/login": {
+      "post": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Sem auth para login de cliente no mock-end. | handler: api/clientes.login",
+        "operationId": "connect__POST__Servidor__webservice__integration__clientes__login__post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/clientes/cadastro": {
+      "post": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Sem auth para cadastro de cliente no mock-end. | handler: api/clientes.cadastro",
+        "operationId": "connect__POST__Servidor__webservice__integration__clientes__cadastro__post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/clientes/meus-dados": {
+      "put": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificação via clienteId no body. | handler: api/clientes.updateMeusDados",
+        "operationId": "connect__PUT__Servidor__webservice__integration__clientes__meus-dados__put",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/clientes/privacidade": {
+      "put": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificação via clienteId no body. | handler: api/clientes.updatePrivacidade",
+        "operationId": "connect__PUT__Servidor__webservice__integration__clientes__privacidade__put",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/clientes/enderecos/{clienteId}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificação via param clienteId. | handler: api/clientes.listEnderecos",
+        "operationId": "connect__GET__Servidor__webservice__integration__clientes__enderecos___clienteId__get",
+        "parameters": [
+          {
+            "name": "clienteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/clientes/enderecos": {
+      "post": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificação via clienteId no body. | handler: api/clientes.createEndereco",
+        "operationId": "connect__POST__Servidor__webservice__integration__clientes__enderecos__post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/clientes/enderecos/{enderecoId}": {
+      "put": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificação via param enderecoId (clienteId opcional no body). | handler: api/clientes.updateEndereco",
+        "operationId": "connect__PUT__Servidor__webservice__integration__clientes__enderecos___enderecoId__put",
+        "parameters": [
+          {
+            "name": "enderecoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificação via param enderecoId (clienteId opcional no body). | handler: api/clientes.deleteEndereco",
+        "operationId": "connect__DELETE__Servidor__webservice__integration__clientes__enderecos___enderecoId__delete",
+        "parameters": [
+          {
+            "name": "enderecoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/carrinho/{clienteId}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificacao via param clienteId. | handler: api/checkout.getCarrinho",
+        "operationId": "connect__GET__Servidor__webservice__integration__carrinho___clienteId__get",
+        "parameters": [
+          {
+            "name": "clienteId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/carrinho/itens": {
+      "post": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificacao via clienteId no body. | handler: api/checkout.addCarrinhoItem",
+        "operationId": "connect__POST__Servidor__webservice__integration__carrinho__itens__post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/carrinho/itens/{itemId}": {
+      "put": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificacao via itemId na rota e clienteId no body. | handler: api/checkout.updateCarrinhoItem",
+        "operationId": "connect__PUT__Servidor__webservice__integration__carrinho__itens___itemId__put",
+        "parameters": [
+          {
+            "name": "itemId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificacao via itemId na rota e clienteId no body. | handler: api/checkout.deleteCarrinhoItem",
+        "operationId": "connect__DELETE__Servidor__webservice__integration__carrinho__itens___itemId__delete",
+        "parameters": [
+          {
+            "name": "itemId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/carrinho/cupom": {
+      "post": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificacao via clienteId no body. | handler: api/checkout.applyCupom",
+        "operationId": "connect__POST__Servidor__webservice__integration__carrinho__cupom__post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Identificacao via clienteId no body. | handler: api/checkout.removeCupom",
+        "operationId": "connect__DELETE__Servidor__webservice__integration__carrinho__cupom__delete",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/checkout/sessoes": {
+      "post": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Cria sessao via clienteId no body. | handler: api/checkout.createCheckoutSessao",
+        "operationId": "connect__POST__Servidor__webservice__integration__checkout__sessoes__post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/checkout/sessoes/{checkoutId}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Leitura por checkoutId. | handler: api/checkout.getCheckoutSessao",
+        "operationId": "connect__GET__Servidor__webservice__integration__checkout__sessoes___checkoutId__get",
+        "parameters": [
+          {
+            "name": "checkoutId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/checkout/sessoes/{checkoutId}/contato": {
+      "put": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Atualiza contato do checkout. | handler: api/checkout.updateCheckoutContato",
+        "operationId": "connect__PUT__Servidor__webservice__integration__checkout__sessoes___checkoutId__contato__put",
+        "parameters": [
+          {
+            "name": "checkoutId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/checkout/sessoes/{checkoutId}/entrega/endereco": {
+      "put": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Atualiza endereco de entrega do checkout. | handler: api/checkout.updateCheckoutEndereco",
+        "operationId": "connect__PUT__Servidor__webservice__integration__checkout__sessoes___checkoutId__entrega__endereco__put",
+        "parameters": [
+          {
+            "name": "checkoutId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/checkout/sessoes/{checkoutId}/entrega/frete/opcoes": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Lista opcoes de frete do checkout. | handler: api/checkout.listFreteOpcoes",
+        "operationId": "connect__GET__Servidor__webservice__integration__checkout__sessoes___checkoutId__entrega__frete__opcoes__get",
+        "parameters": [
+          {
+            "name": "checkoutId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/checkout/sessoes/{checkoutId}/entrega/frete": {
+      "put": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Seleciona frete do checkout. | handler: api/checkout.setFrete",
+        "operationId": "connect__PUT__Servidor__webservice__integration__checkout__sessoes___checkoutId__entrega__frete__put",
+        "parameters": [
+          {
+            "name": "checkoutId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/checkout/sessoes/{checkoutId}/pagamento/pix": {
+      "post": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Gera payload Pix do checkout. | handler: api/checkout.createPix",
+        "operationId": "connect__POST__Servidor__webservice__integration__checkout__sessoes___checkoutId__pagamento__pix__post",
+        "parameters": [
+          {
+            "name": "checkoutId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {},
+                "additionalProperties": true
+              }
+            }
+          }
+        },
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/checkout/sessoes/{checkoutId}/pagamento/pix/confirmar": {
+      "post": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Confirma pagamento Pix mock. | handler: api/checkout.confirmPix",
+        "operationId": "connect__POST__Servidor__webservice__integration__checkout__sessoes___checkoutId__pagamento__pix__confirmar__post",
+        "parameters": [
+          {
+            "name": "checkoutId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/checkout/sessoes/{checkoutId}/finalizar": {
+      "post": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Finaliza checkout e cria pedido. | handler: api/checkout.finalizarCheckout",
+        "operationId": "connect__POST__Servidor__webservice__integration__checkout__sessoes___checkoutId__finalizar__post",
+        "parameters": [
+          {
+            "name": "checkoutId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/pedidos/{pedidoId}": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Consulta pedido por id. | handler: api/checkout.getPedido",
+        "operationId": "connect__GET__Servidor__webservice__integration__pedidos___pedidoId__get",
+        "parameters": [
+          {
+            "name": "pedidoId",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/connect/Servidor/webservice/integration/pedidos": {
+      "get": {
+        "tags": [
+          "connect"
+        ],
+        "summary": "Lista pedidos por clienteId via query. | handler: api/checkout.listPedidos",
+        "operationId": "connect__GET__Servidor__webservice__integration__pedidos__get",
+        "responses": {
+          "200": {
+            "description": "Resposta (capturada).",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "additionalProperties": true
+                },
+                "example": {
+                  "success": true,
+                  "data": [
+                    {
+                      "pedidoId": 1,
+                      "checkoutId": 6,
+                      "clienteId": 999,
+                      "itens": [
+                        {
+                          "itemId": 2,
+                          "produtoId": 1001,
+                          "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+                          "slug": "/produtos/heineken-lata-269ml",
+                          "nome": "Heineken Lata 269ml",
+                          "imagemUrl": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-ad93e1.jpg",
+                          "precoUnitario": 4.19,
+                          "quantidade": 2,
+                          "subtotal": 8.38,
+                          "addedAt": "2026-04-17T02:02:34.172Z"
+                        }
+                      ],
+                      "entrega": {
+                        "endereco": {
+                          "cep": "01311000",
+                          "logradouro": "Avenida Paulista",
+                          "numero": "1000",
+                          "complemento": "10º andar",
+                          "bairro": "Bela Vista",
+                          "cidade": "Sao Paulo",
+                          "uf": "SP",
+                          "pais": "BR",
+                          "referencia": "protocolo checkout-connect-v1"
+                        },
+                        "freteSelecionado": {
+                          "codigo": "economico",
+                          "nome": "Entrega Economica",
+                          "preco": 8.9,
+                          "prazoDias": 5
+                        }
+                      },
+                      "pagamento": {
+                        "pagamentoId": 1,
+                        "metodo": "pix",
+                        "pix": {
+                          "copiaECola": "000201checkout6pag1mockend",
+                          "qrCodeBase64": "bW9jay1waXgtcXItY29kZQ==",
+                          "expiresAt": "2026-04-17T02:32:34.236Z"
+                        },
+                        "status": "pago"
+                      },
+                      "resumo": {
+                        "subtotal": 8.38,
+                        "desconto": 0.8380000000000001,
+                        "frete": 8.9,
+                        "total": 16.442,
+                        "moeda": "BRL"
+                      },
+                      "status": "pago",
+                      "createdAt": "2026-04-17T02:02:34.253Z"
+                    },
+                    {
+                      "pedidoId": 2,
+                      "checkoutId": 7,
+                      "clienteId": 999,
+                      "itens": [
+                        {
+                          "itemId": 3,
+                          "produtoId": 1001,
+                          "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+                          "slug": "/produtos/heineken-lata-269ml",
+                          "nome": "Heineken Lata 269ml",
+                          "imagemUrl": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-ad93e1.jpg",
+                          "precoUnitario": 4.19,
+                          "quantidade": 2,
+                          "subtotal": 8.38,
+                          "addedAt": "2026-04-17T02:20:48.403Z"
+                        }
+                      ],
+                      "entrega": {
+                        "endereco": {
+                          "cep": "01311000",
+                          "logradouro": "Avenida Paulista",
+                          "numero": "1000",
+                          "complemento": "10º andar",
+                          "bairro": "Bela Vista",
+                          "cidade": "Sao Paulo",
+                          "uf": "SP",
+                          "pais": "BR",
+                          "referencia": "protocolo checkout-connect-v1"
+                        },
+                        "freteSelecionado": {
+                          "codigo": "economico",
+                          "nome": "Entrega Economica",
+                          "preco": 8.9,
+                          "prazoDias": 5
+                        }
+                      },
+                      "pagamento": {
+                        "pagamentoId": 2,
+                        "metodo": "pix",
+                        "pix": {
+                          "copiaECola": "000201checkout7pag2mockend",
+                          "qrCodeBase64": "bW9jay1waXgtcXItY29kZQ==",
+                          "expiresAt": "2026-04-17T02:50:48.458Z"
+                        },
+                        "status": "pago"
+                      },
+                      "resumo": {
+                        "subtotal": 8.38,
+                        "desconto": 0.8380000000000001,
+                        "frete": 8.9,
+                        "total": 16.442,
+                        "moeda": "BRL"
+                      },
+                      "status": "pago",
+                      "createdAt": "2026-04-17T02:20:48.478Z"
+                    },
+                    {
+                      "pedidoId": 3,
+                      "checkoutId": 8,
+                      "clienteId": 999,
+                      "itens": [
+                        {
+                          "itemId": 5,
+                          "produtoId": 1061,
+                          "sku": "TANQUERAY-GIN-TANQUERAY-LONDON-DRY-750ML-750ML",
+                          "slug": "/produtos/gin-tanqueray-london-dry-750ml",
+                          "nome": "Gin Tanqueray London Dry 750ml",
+                          "imagemUrl": "http://localhost:4000/assets/images/produtos/gin-tanqueray-london-dry-750ml-09e432.png",
+                          "precoUnitario": 150.17,
+                          "quantidade": 1,
+                          "subtotal": 150.17,
+                          "addedAt": "2026-04-17T03:11:50.375Z"
+                        }
+                      ],
+                      "entrega": {
+                        "endereco": {
+                          "cep": "01311000",
+                          "logradouro": "Avenida Paulista",
+                          "numero": "1000",
+                          "complemento": "10º andar",
+                          "bairro": "Bela Vista",
+                          "cidade": "Sao Paulo",
+                          "uf": "SP",
+                          "pais": "BR"
+                        },
+                        "freteSelecionado": {
+                          "codigo": "economico",
+                          "nome": "Entrega Economica",
+                          "preco": 8.9,
+                          "prazoDias": 5
+                        }
+                      },
+                      "pagamento": {
+                        "pagamentoId": 3,
+                        "metodo": "pix",
+                        "pix": {
+                          "copiaECola": "000201checkout8pag3mockend",
+                          "qrCodeBase64": "bW9jay1waXgtcXItY29kZQ==",
+                          "expiresAt": "2026-04-17T03:42:13.755Z"
+                        },
+                        "status": "pago"
+                      },
+                      "resumo": {
+                        "subtotal": 150.17,
+                        "desconto": 0,
+                        "frete": 8.9,
+                        "total": 159.07,
+                        "moeda": "BRL"
+                      },
+                      "status": "pago",
+                      "createdAt": "2026-04-17T03:12:15.548Z"
+                    },
+                    {
+                      "pedidoId": 4,
+                      "checkoutId": 9,
+                      "clienteId": 999,
+                      "itens": [
+                        {
+                          "itemId": 6,
+                          "produtoId": 1072,
+                          "sku": "RUM-RUM-ENVELHECIDO-750ML-3-750ML",
+                          "slug": "/produtos/rum-envelhecido-750ml-3",
+                          "nome": "Rum Envelhecido 750ml 3",
+                          "imagemUrl": "http://localhost:4000/assets/images/produtos/rum-envelhecido-750ml-3-76c049.png",
+                          "precoUnitario": 82.92,
+                          "quantidade": 1,
+                          "subtotal": 82.92,
+                          "addedAt": "2026-04-17T03:12:41.977Z"
+                        },
+                        {
+                          "itemId": 7,
+                          "produtoId": 1064,
+                          "sku": "BEEFEATER-GIN-BEEFEATER-AROMATIZADO-750ML-750ML",
+                          "slug": "/produtos/gin-beefeater-aromatizado-750ml",
+                          "nome": "Gin Beefeater Aromatizado 750ml",
+                          "imagemUrl": "http://localhost:4000/assets/images/produtos/gin-beefeater-aromatizado-750ml-c315e5.jpg",
+                          "precoUnitario": 127.05,
+                          "quantidade": 1,
+                          "subtotal": 127.05,
+                          "addedAt": "2026-04-17T03:12:46.801Z"
+                        }
+                      ],
+                      "entrega": {
+                        "endereco": {
+                          "cep": "01311000",
+                          "logradouro": "Avenida Paulista",
+                          "numero": "1000",
+                          "complemento": "10º andar",
+                          "bairro": "Bela Vista",
+                          "cidade": "Sao Paulo",
+                          "uf": "SP",
+                          "pais": "BR"
+                        },
+                        "freteSelecionado": {
+                          "codigo": "economico",
+                          "nome": "Entrega Economica",
+                          "preco": 8.9,
+                          "prazoDias": 5
+                        }
+                      },
+                      "pagamento": {
+                        "pagamentoId": 4,
+                        "metodo": "pix",
+                        "pix": {
+                          "copiaECola": "000201checkout9pag4mockend",
+                          "qrCodeBase64": "bW9jay1waXgtcXItY29kZQ==",
+                          "expiresAt": "2026-04-17T03:42:55.390Z"
+                        },
+                        "status": "pago"
+                      },
+                      "resumo": {
+                        "subtotal": 209.97,
+                        "desconto": 0,
+                        "frete": 8.9,
+                        "total": 218.87,
+                        "moeda": "BRL"
+                      },
+                      "status": "pago",
+                      "createdAt": "2026-04-17T03:12:55.452Z"
+                    }
+                  ],
+                  "page": 1,
+                  "pageSize": 20,
+                  "total": 4,
+                  "totalPages": 1
+                }
+              }
+            }
+          },
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/ApiLopes/webservice/api/tokenService": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Auth no upstream; mock-end não impõe auth aqui. | handler: auth.tokenService",
+        "operationId": "auth__POST__tokenService__post",
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        }
+      }
+    },
+    "/ApiLopes/webservice/api/postAutenteicaAplicativo": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Auth no upstream; mock-end não impõe auth aqui. | handler: auth.postAutenteicaAplicativo",
+        "operationId": "auth__POST__postAutenteicaAplicativo__post",
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/ApiLopes/webservice/api/enviarToken": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Auth no upstream; mock-end não impõe auth aqui. | handler: auth.enviarToken",
+        "operationId": "auth__POST__enviarToken__post",
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/ApiLopes/webservice/api/verificarTokenSistema": {
+      "post": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Auth no upstream; mock-end não impõe auth aqui. | handler: auth.verificarTokenSistema",
+        "operationId": "auth__POST__verificarTokenSistema__post",
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    },
+    "/ApiLopes/webservice/api/getOperadorSistemaForId": {
+      "get": {
+        "tags": [
+          "auth"
+        ],
+        "summary": "Auth no upstream; mock-end não impõe auth aqui. | handler: auth.getOperadorSistemaForId",
+        "operationId": "auth__GET__getOperadorSistemaForId__get",
+        "responses": {
+          "400": {
+            "description": "Bad Request"
+          },
+          "401": {
+            "description": "Unauthorized"
+          },
+          "403": {
+            "description": "Forbidden"
+          },
+          "404": {
+            "description": "Not Found"
+          },
+          "405": {
+            "description": "Method Not Allowed"
+          },
+          "500": {
+            "description": "Internal Server Error"
+          }
+        },
+        "security": [
+          {
+            "Authorization": []
+          }
+        ]
+      }
+    }
+  }
+}

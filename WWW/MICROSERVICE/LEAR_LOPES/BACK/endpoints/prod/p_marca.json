@@ -1,0 +1,265 @@
+{
+  "version": "1",
+  "brands": [
+    {
+      "id": "tixan-ype",
+      "name": "Tixan Ypê",
+      "match": {
+        "any": [
+          "tixan",
+          "tixan ype",
+          "tixan ype"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "bak-ype",
+      "name": "Bak Ypê",
+      "match": {
+        "any": [
+          "bak",
+          "bak ype",
+          "bak ype"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "ype",
+      "name": "Ypê",
+      "match": {
+        "any": [
+          "ypê",
+          "ype"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "skol-beats",
+      "name": "Skol Beats",
+      "match": {
+        "any": [
+          "skol beats",
+          "beats"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "stella-artois",
+      "name": "Stella Artois",
+      "match": {
+        "any": [
+          "stella artois"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "michelob-ultra",
+      "name": "Michelob Ultra",
+      "match": {
+        "any": [
+          "michelob ultra"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "guarana-antarctica",
+      "name": "Guaraná Antarctica",
+      "match": {
+        "any": [
+          "guaraná antarctica",
+          "guarana antarctica"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "brahma",
+      "name": "Brahma",
+      "match": {
+        "any": [
+          "brahma"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "skol",
+      "name": "Skol",
+      "match": {
+        "any": [
+          "skol"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "heineken",
+      "name": "Heineken",
+      "match": {
+        "any": [
+          "heineken"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "budweiser",
+      "name": "Budweiser",
+      "match": {
+        "any": [
+          "budweiser"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "corona",
+      "name": "Corona",
+      "match": {
+        "any": [
+          "corona"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "spaten",
+      "name": "Spaten",
+      "match": {
+        "any": [
+          "spaten"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "becks",
+      "name": "Beck's",
+      "match": {
+        "any": [
+          "becks"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "amstel",
+      "name": "Amstel",
+      "match": {
+        "any": [
+          "amstel"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "bohemia",
+      "name": "Bohemia",
+      "match": {
+        "any": [
+          "bohemia"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "polar",
+      "name": "Polar",
+      "match": {
+        "any": [
+          "polar"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "antarctica",
+      "name": "Antarctica",
+      "match": {
+        "any": [
+          "antarctica"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "itaipava",
+      "name": "Itaipava",
+      "match": {
+        "any": [
+          "itaipava"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "original",
+      "name": "Original",
+      "match": {
+        "any": [
+          "original"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "pepsi",
+      "name": "Pepsi",
+      "match": {
+        "any": [
+          "pepsi"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "gatorade",
+      "name": "Gatorade",
+      "match": {
+        "any": [
+          "gatorade"
+        ],
+        "all": [],
+        "none": []
+      }
+    },
+    {
+      "id": "trident",
+      "name": "Trident",
+      "match": {
+        "any": [
+          "trident"
+        ],
+        "all": [],
+        "none": []
+      }
+    }
+  ]
+}

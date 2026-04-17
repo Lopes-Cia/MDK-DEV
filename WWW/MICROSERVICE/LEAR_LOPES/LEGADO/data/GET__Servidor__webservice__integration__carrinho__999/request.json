@@ -1,0 +1,24 @@
+{
+  "at": "2026-04-17T05:09:53.064Z",
+  "stepId": "GET__Servidor__webservice__integration__carrinho__999",
+  "endpoint": {
+    "baseUrl": "http://localhost:4000/connect",
+    "path": "/Servidor/webservice/integration/carrinho/999"
+  },
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/carrinho/999",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "authRequired": false,
+    "body": null
+  },
+  "route": {
+    "uriTemplate": "/Servidor/webservice/integration/carrinho/:clienteId",
+    "executionMode": "mock",
+    "authMode": "none",
+    "handler_function": "getCarrinho",
+    "handler_class": "api/checkout"
+  }
+}

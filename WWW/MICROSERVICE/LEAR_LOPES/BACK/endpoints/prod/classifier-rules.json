@@ -1,0 +1,151 @@
+{
+  "version": 1,
+  "textFields": ["descricaoEcomerce", "descricaoErp"],
+  "brandRules": [
+    { "id": "tixan-ype", "name": "Tixan Ypê", "any": ["tixan", "tixan ype", "tixan ype"] },
+    { "id": "bak-ype", "name": "Bak Ypê", "any": ["bak", "bak ype", "bak ype"] },
+    { "id": "ype", "name": "Ypê", "any": ["ypê", "ype"] },
+    { "id": "skol-beats", "name": "Skol Beats", "any": ["skol beats", "beats"] },
+    { "id": "stella-artois", "name": "Stella Artois", "any": ["stella artois"] },
+    { "id": "michelob-ultra", "name": "Michelob Ultra", "any": ["michelob ultra"] },
+    { "id": "guarana-antarctica", "name": "Guaraná Antarctica", "any": ["guaraná antarctica", "guarana antarctica"] },
+    { "id": "brahma", "name": "Brahma", "any": ["brahma"] },
+    { "id": "skol", "name": "Skol", "any": ["skol"] },
+    { "id": "heineken", "name": "Heineken", "any": ["heineken"] },
+    { "id": "budweiser", "name": "Budweiser", "any": ["budweiser"] },
+    { "id": "corona", "name": "Corona", "any": ["corona"] },
+    { "id": "spaten", "name": "Spaten", "any": ["spaten"] },
+    { "id": "becks", "name": "Beck's", "any": ["becks"] },
+    { "id": "amstel", "name": "Amstel", "any": ["amstel"] },
+    { "id": "bohemia", "name": "Bohemia", "any": ["bohemia"] },
+    { "id": "polar", "name": "Polar", "any": ["polar"] },
+    { "id": "antarctica", "name": "Antarctica", "any": ["antarctica"] },
+    { "id": "itaipava", "name": "Itaipava", "any": ["itaipava"] },
+    { "id": "original", "name": "Original", "any": ["original"] },
+    { "id": "pepsi", "name": "Pepsi", "any": ["pepsi"] },
+    { "id": "gatorade", "name": "Gatorade", "any": ["gatorade"] },
+    { "id": "trident", "name": "Trident", "any": ["trident"] }
+  ],
+  "categoryTree": [
+    {
+      "id": "bebidas",
+      "name": "Bebidas",
+      "any": ["cerveja", "refrigerante", "isotonico", "isotônico"],
+      "children": [
+        {
+          "id": "bebidas-cervejas",
+          "name": "Cervejas",
+          "any": ["cerveja"],
+          "children": [
+            {
+              "id": "bebidas-cervejas-zero",
+              "name": "Zero álcool / Zero",
+              "any": ["zero"],
+              "children": []
+            },
+            {
+              "id": "bebidas-cervejas-saborizadas",
+              "name": "Saborizadas / Beats",
+              "any": ["beats", "caipirinha", "mojito", "tropical", "senses", "gt"],
+              "children": []
+            },
+            {
+              "id": "bebidas-cervejas-premium",
+              "name": "Premium",
+              "any": ["heineken", "stella", "budweiser", "corona", "spaten", "becks", "amstel", "michelob"],
+              "children": []
+            },
+            {
+              "id": "bebidas-cervejas-tradicionais",
+              "name": "Tradicionais",
+              "any": ["brahma", "skol", "antarctica", "itaipava", "original", "bohemia", "polar"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "bebidas-refrigerantes",
+          "name": "Refrigerantes",
+          "any": ["refrigerante"],
+          "children": [
+            {
+              "id": "bebidas-refrigerantes-guarana",
+              "name": "Guaraná",
+              "any": ["guarana", "guaraná"],
+              "children": []
+            },
+            {
+              "id": "bebidas-refrigerantes-cola",
+              "name": "Cola",
+              "any": ["cola", "pepsi"],
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "bebidas-isotonicos",
+          "name": "Isotônicos",
+          "any": ["isotonico", "isotônico", "gatorade"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "mercearia",
+      "name": "Mercearia",
+      "any": ["trident"],
+      "children": [
+        {
+          "id": "mercearia-balas-gomas",
+          "name": "Balas e Gomas",
+          "any": ["trident", "hortela", "hortelã", "menta"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "limpeza",
+      "name": "Limpeza",
+      "any": ["lava-loucas", "lava-louças", "desinfetante"],
+      "children": [
+        {
+          "id": "limpeza-lava-loucas",
+          "name": "Lava-louças",
+          "any": ["lava-loucas", "lava-louças", "neutro", "limao", "limão", "maca", "maça", "coco", "clear"],
+          "children": []
+        },
+        {
+          "id": "limpeza-desinfetantes",
+          "name": "Desinfetantes",
+          "any": ["desinfetante", "bak", "eucalipto", "floral", "turquesa", "lavanda"],
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "lavanderia",
+      "name": "Lavanderia",
+      "any": ["lava-roupas", "amaciante", "tixan"],
+      "children": [
+        {
+          "id": "lavanderia-lava-roupas",
+          "name": "Lava-roupas",
+          "any": ["lava-roupas", "tixan", "em po", "em pó", "po", "pó", "primavera", "maciez"],
+          "children": []
+        },
+        {
+          "id": "lavanderia-amaciantes",
+          "name": "Amaciantes",
+          "any": ["amaciante", "intenso", "aconchego"],
+          "children": []
+        }
+      ]
+    }
+  ],
+  "packagingRules": {
+    "packQtyPatterns": [
+      { "type": "caixa", "regex": "caixa\\s+com\\s+(\\d+)\\s+unidades" }
+    ],
+    "unitTokens": ["lata", "long neck", "frasco", "envelope", "multipack", "caixa"]
+  }
+}

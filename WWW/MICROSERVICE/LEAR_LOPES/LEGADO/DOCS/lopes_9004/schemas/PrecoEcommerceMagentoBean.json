@@ -1,0 +1,47 @@
+{
+  "type": "object",
+  "properties": {
+    "idIntegradora": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codProd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtUnit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "idTabPrecoErp": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "tipoPreco": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "descricao": {
+      "type": "string"
+    },
+    "dtEnvioPrice": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dtValidPrice": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "price": {
+      "type": "number"
+    },
+    "listPrice": {
+      "type": "number"
+    },
+    "costPrice": {
+      "type": "number"
+    }
+  }
+}

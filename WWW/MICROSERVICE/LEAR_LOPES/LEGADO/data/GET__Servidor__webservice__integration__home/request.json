@@ -1,0 +1,25 @@
+{
+  "at": "2026-04-17T05:09:53.040Z",
+  "stepId": "GET__Servidor__webservice__integration__home",
+  "endpoint": {
+    "baseUrl": "http://localhost:4000/connect",
+    "path": "/Servidor/webservice/integration/home"
+  },
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/home",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "<redacted>"
+    },
+    "authRequired": true,
+    "body": null
+  },
+  "route": {
+    "uriTemplate": "/Servidor/webservice/integration/home",
+    "executionMode": "mock",
+    "authMode": "required",
+    "handler_function": "home",
+    "handler_class": "api/home"
+  }
+}

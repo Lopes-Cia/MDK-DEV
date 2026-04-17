@@ -1,0 +1,24 @@
+{
+  "at": "2026-04-17T05:09:53.076Z",
+  "stepId": "GET__Servidor__webservice__integration__pedidos",
+  "endpoint": {
+    "baseUrl": "http://localhost:4000/connect",
+    "path": "/Servidor/webservice/integration/pedidos"
+  },
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/pedidos?clienteId=999&page=1&pageSize=20",
+    "headers": {
+      "Accept": "application/json"
+    },
+    "authRequired": false,
+    "body": null
+  },
+  "route": {
+    "uriTemplate": "/Servidor/webservice/integration/pedidos",
+    "executionMode": "mock",
+    "authMode": "none",
+    "handler_function": "listPedidos",
+    "handler_class": "api/checkout"
+  }
+}

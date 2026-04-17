@@ -1,0 +1,81 @@
+{
+  "type": "object",
+  "properties": {
+    "codProd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "idIntegradora": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "indiceEstoque": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtUnit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtUnitCaixa": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codLocalOrig": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "fatorConversao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "recalculaPrecoUnidade": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "recalculaEstoqueUnidade": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "descricaoErp": {
+      "type": "string"
+    },
+    "descricaoEcomerce": {
+      "type": "string"
+    },
+    "ean": {
+      "type": "string"
+    },
+    "eanCaixa": {
+      "type": "string"
+    },
+    "codVol": {
+      "type": "string"
+    },
+    "refId": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "string"
+    },
+    "codFilial": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "dadosOnfood": {
+      "$ref": "#/components/schemas/JSONObject"
+    },
+    "preco": {
+      "type": "number"
+    },
+    "qtEstoque": {
+      "type": "number"
+    },
+    "dtUltAlter": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

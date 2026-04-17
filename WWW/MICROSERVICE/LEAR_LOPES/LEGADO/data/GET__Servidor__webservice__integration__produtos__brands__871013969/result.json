@@ -1,0 +1,159 @@
+{
+  "at": "2026-04-17T05:09:53.032Z",
+  "stepId": "GET__Servidor__webservice__integration__produtos__brands__871013969",
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/produtos/brands/871013969"
+  },
+  "response": {
+    "ok": true,
+    "status": 200,
+    "statusText": "OK",
+    "durationMs": 3
+  },
+  "data": {
+    "success": true,
+    "data": {
+      "brand": {
+        "id": 871013969,
+        "name": "Absolut",
+        "slug": "/marca/absolut",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      "products": {
+        "data": [
+          {
+            "id": 1056,
+            "sku": "ABSOLUT-VODKA-ABSOLUT-TRADICIONAL-750ML-750ML",
+            "name": "Vodka Absolut Tradicional 750ml",
+            "slug": "/produtos/vodka-absolut-tradicional-750ml",
+            "unitLabel": "garrafa",
+            "sizeLabel": "750ml",
+            "price": 109.13,
+            "compareAtPrice": null,
+            "badges": [],
+            "image": "http://localhost:4000/assets/images/semImagem.png",
+            "stock": 76,
+            "inStock": true,
+            "category": {
+              "id": 54,
+              "name": "Tradicional",
+              "slug": "/categoria/destilados/vodka/tradicional",
+              "familia": [
+                {
+                  "id": 12,
+                  "name": "Destilados",
+                  "slug": "/categoria/destilados"
+                },
+                {
+                  "id": 48,
+                  "name": "Vodka",
+                  "slug": "/categoria/destilados/vodka"
+                },
+                {
+                  "id": 54,
+                  "name": "Tradicional",
+                  "slug": "/categoria/destilados/vodka/tradicional"
+                }
+              ]
+            },
+            "brand": {
+              "id": 871013969,
+              "name": "Absolut",
+              "slug": "/marca/absolut",
+              "image": "http://localhost:4000/assets/images/semImagem.png"
+            }
+          },
+          {
+            "id": 1058,
+            "sku": "ABSOLUT-VODKA-ABSOLUT-PREMIUM-750ML-750ML",
+            "name": "Vodka Absolut Premium 750ml",
+            "slug": "/produtos/vodka-absolut-premium-750ml",
+            "unitLabel": "garrafa",
+            "sizeLabel": "750ml",
+            "price": 108.56,
+            "compareAtPrice": null,
+            "badges": [],
+            "image": "http://localhost:4000/assets/images/semImagem.png",
+            "stock": 171,
+            "inStock": true,
+            "category": {
+              "id": 55,
+              "name": "Premium",
+              "slug": "/categoria/destilados/vodka/premium",
+              "familia": [
+                {
+                  "id": 12,
+                  "name": "Destilados",
+                  "slug": "/categoria/destilados"
+                },
+                {
+                  "id": 48,
+                  "name": "Vodka",
+                  "slug": "/categoria/destilados/vodka"
+                },
+                {
+                  "id": 55,
+                  "name": "Premium",
+                  "slug": "/categoria/destilados/vodka/premium"
+                }
+              ]
+            },
+            "brand": {
+              "id": 871013969,
+              "name": "Absolut",
+              "slug": "/marca/absolut",
+              "image": "http://localhost:4000/assets/images/semImagem.png"
+            }
+          },
+          {
+            "id": 1060,
+            "sku": "ABSOLUT-VODKA-ABSOLUT-SABORIZADA-750ML-750ML",
+            "name": "Vodka Absolut Saborizada 750ml",
+            "slug": "/produtos/vodka-absolut-saborizada-750ml",
+            "unitLabel": "garrafa",
+            "sizeLabel": "750ml",
+            "price": 108.8,
+            "compareAtPrice": null,
+            "badges": [],
+            "image": "http://localhost:4000/assets/images/produtos/vodka-absolut-saborizada-750ml-350a67.jpg",
+            "stock": 163,
+            "inStock": true,
+            "category": {
+              "id": 56,
+              "name": "Saborizada",
+              "slug": "/categoria/destilados/vodka/saborizada",
+              "familia": [
+                {
+                  "id": 12,
+                  "name": "Destilados",
+                  "slug": "/categoria/destilados"
+                },
+                {
+                  "id": 48,
+                  "name": "Vodka",
+                  "slug": "/categoria/destilados/vodka"
+                },
+                {
+                  "id": 56,
+                  "name": "Saborizada",
+                  "slug": "/categoria/destilados/vodka/saborizada"
+                }
+              ]
+            },
+            "brand": {
+              "id": 871013969,
+              "name": "Absolut",
+              "slug": "/marca/absolut",
+              "image": "http://localhost:4000/assets/images/semImagem.png"
+            }
+          }
+        ],
+        "page": 1,
+        "pageSize": 24,
+        "total": 3,
+        "totalPages": 1
+      }
+    }
+  }
+}

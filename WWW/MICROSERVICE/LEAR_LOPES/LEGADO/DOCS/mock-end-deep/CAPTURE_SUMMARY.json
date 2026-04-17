@@ -1,0 +1,255 @@
+{
+  "generatedAt": "2026-04-17T05:09:52.909Z",
+  "base": "http://localhost:4000/connect",
+  "getOnly": true,
+  "totalRoutes": 34,
+  "executed": 13,
+  "skipped": 21,
+  "ok": 13,
+  "failed": 0,
+  "items": [
+    {
+      "stepId": "GET__Servidor__webservice__integration__produtos__categorias",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/categorias",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__categorias\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__categorias\\result.json"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__produtos__categorias__by-slug__bebidas",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/categorias/by-slug/bebidas",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__categorias__by-slug__bebidas\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__categorias__by-slug__bebidas\\result.json"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__produtos__categorias__10",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/categorias/10",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__categorias__10\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__categorias__10\\result.json"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__produtos__by-categoria__10",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/by-categoria/10",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__by-categoria__10\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__by-categoria__10\\result.json"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__produtos__by-id__1001",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/by-id/1001",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__by-id__1001\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__by-id__1001\\result.json"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__produtos__by-slug__heineken-lata-269ml",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/by-slug/heineken-lata-269ml",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__by-slug__heineken-lata-269ml\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__by-slug__heineken-lata-269ml\\result.json"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__produtos__brands",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/brands",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__brands\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__brands\\result.json"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__produtos__brands__871013969",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/brands/871013969",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__brands__871013969\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__brands__871013969\\result.json"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__home",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/home",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__home\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__home\\result.json"
+    },
+    {
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/clientes/login",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/clientes/cadastro",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/clientes/meus-dados",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/clientes/privacidade",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__clientes__enderecos__999",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/clientes/enderecos/999",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__clientes__enderecos__999\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__clientes__enderecos__999\\result.json"
+    },
+    {
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/clientes/enderecos",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/clientes/enderecos/:enderecoId",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "DELETE",
+      "uri": "/Servidor/webservice/integration/clientes/enderecos/:enderecoId",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__carrinho__999",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/carrinho/999",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__carrinho__999\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__carrinho__999\\result.json"
+    },
+    {
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/carrinho/itens",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/carrinho/itens/:itemId",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "DELETE",
+      "uri": "/Servidor/webservice/integration/carrinho/itens/:itemId",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/carrinho/cupom",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "DELETE",
+      "uri": "/Servidor/webservice/integration/carrinho/cupom",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId",
+      "skipped": true,
+      "reason": "requires_checkout"
+    },
+    {
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/contato",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/entrega/endereco",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/entrega/frete/opcoes",
+      "skipped": true,
+      "reason": "requires_checkout"
+    },
+    {
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/entrega/frete",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/pagamento/pix",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/pagamento/pix/confirmar",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/finalizar",
+      "skipped": true,
+      "reason": "write_disabled"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__pedidos__1",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/pedidos/1",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__pedidos__1\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__pedidos__1\\result.json"
+    },
+    {
+      "stepId": "GET__Servidor__webservice__integration__pedidos",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/pedidos",
+      "ok": true,
+      "status": 200,
+      "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__pedidos\\request.json",
+      "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__pedidos\\result.json"
+    }
+  ]
+}

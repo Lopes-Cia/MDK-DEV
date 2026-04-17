@@ -1,0 +1,25 @@
+{
+  "at": "2026-04-17T05:02:38.831Z",
+  "stepId": "GET__Servidor__webservice__integration__produtos__by-slug__categoria__bebidas",
+  "endpoint": {
+    "baseUrl": "http://localhost:4000/connect",
+    "path": "/Servidor/webservice/integration/produtos/by-slug/categoria/bebidas"
+  },
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/produtos/by-slug/categoria/bebidas",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "<redacted>"
+    },
+    "authRequired": true,
+    "body": null
+  },
+  "route": {
+    "uriTemplate": "/Servidor/webservice/integration/produtos/by-slug/*",
+    "executionMode": "mock",
+    "authMode": "required",
+    "handler_function": "produtoBySlug",
+    "handler_class": "api/produtos"
+  }
+}

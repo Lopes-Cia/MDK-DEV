@@ -1,0 +1,40 @@
+{
+  "type": "object",
+  "properties": {
+    "idIntegradora": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codigo": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codPai": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "idMercadoLivre": {
+      "type": "string"
+    },
+    "nomeMercadoLivre": {
+      "type": "string"
+    },
+    "detalhamento": {
+      "type": "string"
+    },
+    "imagem": {
+      "type": "string"
+    },
+    "codProd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "sequencia": {
+      "type": "integer",
+      "format": "int32"
+    }
+  }
+}

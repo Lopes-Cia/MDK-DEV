@@ -1,0 +1,1341 @@
+{
+  "generatedAt": "2026-04-17T05:11:12.446Z",
+  "endpoints": [
+    {
+      "id": "health",
+      "group": "core",
+      "method": "GET",
+      "uri": "/health",
+      "summary": "Healthcheck do MOCK-END",
+      "request": {
+        "headers": [],
+        "query": [],
+        "body": null
+      },
+      "response": {
+        "contentType": "application/json",
+        "exampleFrom": "hardcoded",
+        "example": {
+          "ok": true
+        }
+      }
+    },
+    {
+      "id": "public_assets_images",
+      "group": "core",
+      "method": "GET|HEAD",
+      "uri": "/assets/images/*",
+      "summary": "Assets publicos de imagens (mock connect)",
+      "request": {
+        "headers": [],
+        "query": [],
+        "body": null
+      },
+      "response": {
+        "contentType": "image/*",
+        "exampleFrom": "filesystem",
+        "example": null
+      }
+    },
+    {
+      "id": "storage_images",
+      "group": "core",
+      "method": "GET|HEAD|PUT|POST",
+      "uri": "/api/storage/:tenant/images/<rest...>",
+      "summary": "Storage seguro de imagens por tenant (originals/derived/manifests)",
+      "request": {
+        "headers": [],
+        "query": [],
+        "body": "binary or json (manifest)"
+      },
+      "response": {
+        "contentType": "application/json (writes) / image|json (reads)",
+        "exampleFrom": "code",
+        "example": {
+          "ok": true,
+          "path": "manifests/<sha>.json",
+          "bytes": 123
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__produtos__categorias",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/categorias",
+      "key": "GET /Servidor/webservice/integration/produtos/categorias",
+      "executionMode": "mock",
+      "authMode": "required",
+      "authLabel": "Token da integradora (quando em modo original).",
+      "handler": {
+        "handler_class": "api/produtos",
+        "handler_function": "categorias"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\produtos.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "categorias",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      },
+      "example": {
+        "stepId": "GET__Servidor__webservice__integration__produtos__categorias",
+        "at": "2026-04-17T05:09:52.983Z",
+        "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__categorias\\request.json",
+        "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__categorias\\result.json",
+        "url": "http://localhost:4000/connect/Servidor/webservice/integration/produtos/categorias"
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__produtos__categorias__by-slug__-",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/categorias/by-slug/*",
+      "key": "GET /Servidor/webservice/integration/produtos/categorias/by-slug/*",
+      "executionMode": "mock",
+      "authMode": "required",
+      "authLabel": "Token da integradora (quando em modo original).",
+      "handler": {
+        "handler_class": "api/produtos",
+        "handler_function": "categoriaBySlug"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": true,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\produtos.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "categoriaBySlug",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__produtos__categorias__-",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/categorias/*",
+      "key": "GET /Servidor/webservice/integration/produtos/categorias/*",
+      "executionMode": "mock",
+      "authMode": "required",
+      "authLabel": "Token da integradora (quando em modo original).",
+      "handler": {
+        "handler_class": "api/produtos",
+        "handler_function": "categoriaById"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": true,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\produtos.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "categoriaById",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__produtos__by-categoria__-",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/by-categoria/*",
+      "key": "GET /Servidor/webservice/integration/produtos/by-categoria/*",
+      "executionMode": "mock",
+      "authMode": "required",
+      "authLabel": "Token da integradora (quando em modo original).",
+      "handler": {
+        "handler_class": "api/produtos",
+        "handler_function": "produtosByCategoria"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": true,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\produtos.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "produtosByCategoria",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__produtos__by-id__-",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/by-id/*",
+      "key": "GET /Servidor/webservice/integration/produtos/by-id/*",
+      "executionMode": "mock",
+      "authMode": "required",
+      "authLabel": "Token da integradora (quando em modo original).",
+      "handler": {
+        "handler_class": "api/produtos",
+        "handler_function": "produtoById"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": true,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\produtos.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "produtoById",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__produtos__by-slug__-",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/by-slug/*",
+      "key": "GET /Servidor/webservice/integration/produtos/by-slug/*",
+      "executionMode": "mock",
+      "authMode": "required",
+      "authLabel": "Token da integradora (quando em modo original).",
+      "handler": {
+        "handler_class": "api/produtos",
+        "handler_function": "produtoBySlug"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": true,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\produtos.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "produtoBySlug",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__produtos__brands",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/brands",
+      "key": "GET /Servidor/webservice/integration/produtos/brands",
+      "executionMode": "mock",
+      "authMode": "required",
+      "authLabel": "Token da integradora (quando em modo original).",
+      "handler": {
+        "handler_class": "api/produtos",
+        "handler_function": "brands"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\produtos.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "brands",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      },
+      "example": {
+        "stepId": "GET__Servidor__webservice__integration__produtos__brands",
+        "at": "2026-04-17T05:09:53.026Z",
+        "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__brands\\request.json",
+        "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__produtos__brands\\result.json",
+        "url": "http://localhost:4000/connect/Servidor/webservice/integration/produtos/brands"
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__produtos__brands__-",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/produtos/brands/*",
+      "key": "GET /Servidor/webservice/integration/produtos/brands/*",
+      "executionMode": "mock",
+      "authMode": "required",
+      "authLabel": "Token da integradora (quando em modo original).",
+      "handler": {
+        "handler_class": "api/produtos",
+        "handler_function": "brandById"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": true,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\produtos.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "brandById",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__home",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/home",
+      "key": "GET /Servidor/webservice/integration/home",
+      "executionMode": "mock",
+      "authMode": "required",
+      "authLabel": "Token da integradora (quando em modo original).",
+      "handler": {
+        "handler_class": "api/home",
+        "handler_function": "home"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\home.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "home",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      },
+      "example": {
+        "stepId": "GET__Servidor__webservice__integration__home",
+        "at": "2026-04-17T05:09:53.040Z",
+        "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__home\\request.json",
+        "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__home\\result.json",
+        "url": "http://localhost:4000/connect/Servidor/webservice/integration/home"
+      }
+    },
+    {
+      "id": "connect__POST__Servidor__webservice__integration__clientes__login",
+      "group": "connect",
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/clientes/login",
+      "key": "POST /Servidor/webservice/integration/clientes/login",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Sem auth para login de cliente no mock-end.",
+      "handler": {
+        "handler_class": "api/clientes",
+        "handler_function": "login"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\clientes.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "login",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__POST__Servidor__webservice__integration__clientes__cadastro",
+      "group": "connect",
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/clientes/cadastro",
+      "key": "POST /Servidor/webservice/integration/clientes/cadastro",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Sem auth para cadastro de cliente no mock-end.",
+      "handler": {
+        "handler_class": "api/clientes",
+        "handler_function": "cadastro"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\clientes.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "cadastro",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__PUT__Servidor__webservice__integration__clientes__meus-dados",
+      "group": "connect",
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/clientes/meus-dados",
+      "key": "PUT /Servidor/webservice/integration/clientes/meus-dados",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificação via clienteId no body.",
+      "handler": {
+        "handler_class": "api/clientes",
+        "handler_function": "updateMeusDados"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\clientes.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "updateMeusDados",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [
+            "message"
+          ],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__PUT__Servidor__webservice__integration__clientes__privacidade",
+      "group": "connect",
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/clientes/privacidade",
+      "key": "PUT /Servidor/webservice/integration/clientes/privacidade",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificação via clienteId no body.",
+      "handler": {
+        "handler_class": "api/clientes",
+        "handler_function": "updatePrivacidade"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\clientes.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "updatePrivacidade",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [
+            "message"
+          ],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__clientes__enderecos___clienteId",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/clientes/enderecos/:clienteId",
+      "key": "GET /Servidor/webservice/integration/clientes/enderecos/:clienteId",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificação via param clienteId.",
+      "handler": {
+        "handler_class": "api/clientes",
+        "handler_function": "listEnderecos"
+      },
+      "summary": "",
+      "pathParams": [
+        "clienteId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\clientes.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "listEnderecos",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [
+            "message"
+          ],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__POST__Servidor__webservice__integration__clientes__enderecos",
+      "group": "connect",
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/clientes/enderecos",
+      "key": "POST /Servidor/webservice/integration/clientes/enderecos",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificação via clienteId no body.",
+      "handler": {
+        "handler_class": "api/clientes",
+        "handler_function": "createEndereco"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\clientes.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "createEndereco",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [
+            "message"
+          ],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__PUT__Servidor__webservice__integration__clientes__enderecos___enderecoId",
+      "group": "connect",
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/clientes/enderecos/:enderecoId",
+      "key": "PUT /Servidor/webservice/integration/clientes/enderecos/:enderecoId",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificação via param enderecoId (clienteId opcional no body).",
+      "handler": {
+        "handler_class": "api/clientes",
+        "handler_function": "updateEndereco"
+      },
+      "summary": "",
+      "pathParams": [
+        "enderecoId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\clientes.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "updateEndereco",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [
+            "message"
+          ],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__DELETE__Servidor__webservice__integration__clientes__enderecos___enderecoId",
+      "group": "connect",
+      "method": "DELETE",
+      "uri": "/Servidor/webservice/integration/clientes/enderecos/:enderecoId",
+      "key": "DELETE /Servidor/webservice/integration/clientes/enderecos/:enderecoId",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificação via param enderecoId (clienteId opcional no body).",
+      "handler": {
+        "handler_class": "api/clientes",
+        "handler_function": "deleteEndereco"
+      },
+      "summary": "",
+      "pathParams": [
+        "enderecoId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\clientes.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "deleteEndereco",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [
+            "message"
+          ],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__carrinho___clienteId",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/carrinho/:clienteId",
+      "key": "GET /Servidor/webservice/integration/carrinho/:clienteId",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificacao via param clienteId.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "getCarrinho"
+      },
+      "summary": "",
+      "pathParams": [
+        "clienteId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "getCarrinho",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__POST__Servidor__webservice__integration__carrinho__itens",
+      "group": "connect",
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/carrinho/itens",
+      "key": "POST /Servidor/webservice/integration/carrinho/itens",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificacao via clienteId no body.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "addCarrinhoItem"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "addCarrinhoItem",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__PUT__Servidor__webservice__integration__carrinho__itens___itemId",
+      "group": "connect",
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/carrinho/itens/:itemId",
+      "key": "PUT /Servidor/webservice/integration/carrinho/itens/:itemId",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificacao via itemId na rota e clienteId no body.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "updateCarrinhoItem"
+      },
+      "summary": "",
+      "pathParams": [
+        "itemId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "updateCarrinhoItem",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__DELETE__Servidor__webservice__integration__carrinho__itens___itemId",
+      "group": "connect",
+      "method": "DELETE",
+      "uri": "/Servidor/webservice/integration/carrinho/itens/:itemId",
+      "key": "DELETE /Servidor/webservice/integration/carrinho/itens/:itemId",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificacao via itemId na rota e clienteId no body.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "deleteCarrinhoItem"
+      },
+      "summary": "",
+      "pathParams": [
+        "itemId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "deleteCarrinhoItem",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__POST__Servidor__webservice__integration__carrinho__cupom",
+      "group": "connect",
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/carrinho/cupom",
+      "key": "POST /Servidor/webservice/integration/carrinho/cupom",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificacao via clienteId no body.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "applyCupom"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "applyCupom",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__DELETE__Servidor__webservice__integration__carrinho__cupom",
+      "group": "connect",
+      "method": "DELETE",
+      "uri": "/Servidor/webservice/integration/carrinho/cupom",
+      "key": "DELETE /Servidor/webservice/integration/carrinho/cupom",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Identificacao via clienteId no body.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "removeCupom"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "removeCupom",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__POST__Servidor__webservice__integration__checkout__sessoes",
+      "group": "connect",
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes",
+      "key": "POST /Servidor/webservice/integration/checkout/sessoes",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Cria sessao via clienteId no body.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "createCheckoutSessao"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "createCheckoutSessao",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__checkout__sessoes___checkoutId",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId",
+      "key": "GET /Servidor/webservice/integration/checkout/sessoes/:checkoutId",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Leitura por checkoutId.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "getCheckoutSessao"
+      },
+      "summary": "",
+      "pathParams": [
+        "checkoutId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "getCheckoutSessao",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__PUT__Servidor__webservice__integration__checkout__sessoes___checkoutId__contato",
+      "group": "connect",
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/contato",
+      "key": "PUT /Servidor/webservice/integration/checkout/sessoes/:checkoutId/contato",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Atualiza contato do checkout.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "updateCheckoutContato"
+      },
+      "summary": "",
+      "pathParams": [
+        "checkoutId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "updateCheckoutContato",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__PUT__Servidor__webservice__integration__checkout__sessoes___checkoutId__entrega__endereco",
+      "group": "connect",
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/entrega/endereco",
+      "key": "PUT /Servidor/webservice/integration/checkout/sessoes/:checkoutId/entrega/endereco",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Atualiza endereco de entrega do checkout.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "updateCheckoutEndereco"
+      },
+      "summary": "",
+      "pathParams": [
+        "checkoutId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "updateCheckoutEndereco",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__checkout__sessoes___checkoutId__entrega__frete__opcoes",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/entrega/frete/opcoes",
+      "key": "GET /Servidor/webservice/integration/checkout/sessoes/:checkoutId/entrega/frete/opcoes",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Lista opcoes de frete do checkout.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "listFreteOpcoes"
+      },
+      "summary": "",
+      "pathParams": [
+        "checkoutId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "listFreteOpcoes",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__PUT__Servidor__webservice__integration__checkout__sessoes___checkoutId__entrega__frete",
+      "group": "connect",
+      "method": "PUT",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/entrega/frete",
+      "key": "PUT /Servidor/webservice/integration/checkout/sessoes/:checkoutId/entrega/frete",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Seleciona frete do checkout.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "setFrete"
+      },
+      "summary": "",
+      "pathParams": [
+        "checkoutId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "setFrete",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": true
+        }
+      }
+    },
+    {
+      "id": "connect__POST__Servidor__webservice__integration__checkout__sessoes___checkoutId__pagamento__pix",
+      "group": "connect",
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/pagamento/pix",
+      "key": "POST /Servidor/webservice/integration/checkout/sessoes/:checkoutId/pagamento/pix",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Gera payload Pix do checkout.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "createPix"
+      },
+      "summary": "",
+      "pathParams": [
+        "checkoutId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "createPix",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": true,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      }
+    },
+    {
+      "id": "connect__POST__Servidor__webservice__integration__checkout__sessoes___checkoutId__pagamento__pix__confirmar",
+      "group": "connect",
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/pagamento/pix/confirmar",
+      "key": "POST /Servidor/webservice/integration/checkout/sessoes/:checkoutId/pagamento/pix/confirmar",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Confirma pagamento Pix mock.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "confirmPix"
+      },
+      "summary": "",
+      "pathParams": [
+        "checkoutId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "confirmPix",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      }
+    },
+    {
+      "id": "connect__POST__Servidor__webservice__integration__checkout__sessoes___checkoutId__finalizar",
+      "group": "connect",
+      "method": "POST",
+      "uri": "/Servidor/webservice/integration/checkout/sessoes/:checkoutId/finalizar",
+      "key": "POST /Servidor/webservice/integration/checkout/sessoes/:checkoutId/finalizar",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Finaliza checkout e cria pedido.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "finalizarCheckout"
+      },
+      "summary": "",
+      "pathParams": [
+        "checkoutId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "finalizarCheckout",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__pedidos___pedidoId",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/pedidos/:pedidoId",
+      "key": "GET /Servidor/webservice/integration/pedidos/:pedidoId",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Consulta pedido por id.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "getPedido"
+      },
+      "summary": "",
+      "pathParams": [
+        "pedidoId"
+      ],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "getPedido",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      }
+    },
+    {
+      "id": "connect__GET__Servidor__webservice__integration__pedidos",
+      "group": "connect",
+      "method": "GET",
+      "uri": "/Servidor/webservice/integration/pedidos",
+      "key": "GET /Servidor/webservice/integration/pedidos",
+      "executionMode": "mock",
+      "authMode": "none",
+      "authLabel": "Lista pedidos por clienteId via query.",
+      "handler": {
+        "handler_class": "api/checkout",
+        "handler_function": "listPedidos"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\connect\\handlers\\mock\\api\\checkout.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "listPedidos",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      },
+      "example": {
+        "stepId": "GET__Servidor__webservice__integration__pedidos",
+        "at": "2026-04-17T05:09:53.076Z",
+        "requestJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__pedidos\\request.json",
+        "resultJson": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\LEAR_LOPES\\data\\GET__Servidor__webservice__integration__pedidos\\result.json",
+        "url": "http://localhost:4000/connect/Servidor/webservice/integration/pedidos?clienteId=999&page=1&pageSize=20"
+      }
+    },
+    {
+      "id": "auth__POST__tokenService",
+      "group": "auth",
+      "method": "POST",
+      "uri": "/tokenService",
+      "key": "POST /tokenService",
+      "executionMode": "original",
+      "authMode": "none",
+      "authLabel": "Auth no upstream; mock-end não impõe auth aqui.",
+      "handler": {
+        "handler_class": "auth",
+        "handler_function": "tokenService"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\ApiLopes\\webservice\\api\\handlers\\auth.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "tokenService",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      }
+    },
+    {
+      "id": "auth__POST__postAutenteicaAplicativo",
+      "group": "auth",
+      "method": "POST",
+      "uri": "/postAutenteicaAplicativo",
+      "key": "POST /postAutenteicaAplicativo",
+      "executionMode": "original",
+      "authMode": "required",
+      "authLabel": "Auth no upstream; mock-end não impõe auth aqui.",
+      "handler": {
+        "handler_class": "auth",
+        "handler_function": "postAutenteicaAplicativo"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\ApiLopes\\webservice\\api\\handlers\\auth.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "postAutenteicaAplicativo",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      }
+    },
+    {
+      "id": "auth__POST__enviarToken",
+      "group": "auth",
+      "method": "POST",
+      "uri": "/enviarToken",
+      "key": "POST /enviarToken",
+      "executionMode": "original",
+      "authMode": "required",
+      "authLabel": "Auth no upstream; mock-end não impõe auth aqui.",
+      "handler": {
+        "handler_class": "auth",
+        "handler_function": "enviarToken"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\ApiLopes\\webservice\\api\\handlers\\auth.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "enviarToken",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      }
+    },
+    {
+      "id": "auth__POST__verificarTokenSistema",
+      "group": "auth",
+      "method": "POST",
+      "uri": "/verificarTokenSistema",
+      "key": "POST /verificarTokenSistema",
+      "executionMode": "original",
+      "authMode": "required",
+      "authLabel": "Auth no upstream; mock-end não impõe auth aqui.",
+      "handler": {
+        "handler_class": "auth",
+        "handler_function": "verificarTokenSistema"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\ApiLopes\\webservice\\api\\handlers\\auth.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "verificarTokenSistema",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      }
+    },
+    {
+      "id": "auth__GET__getOperadorSistemaForId",
+      "group": "auth",
+      "method": "GET",
+      "uri": "/getOperadorSistemaForId",
+      "key": "GET /getOperadorSistemaForId",
+      "executionMode": "original",
+      "authMode": "required",
+      "authLabel": "Auth no upstream; mock-end não impõe auth aqui.",
+      "handler": {
+        "handler_class": "auth",
+        "handler_function": "getOperadorSistemaForId"
+      },
+      "summary": "",
+      "pathParams": [],
+      "wildcard": false,
+      "analysis": {
+        "handlerFile": "c:\\LOPES\\www\\MDK-DEV\\WWW\\MICROSERVICE\\MOCK-END\\PROJETOS\\ApiLopes\\webservice\\api\\handlers\\auth.mjs",
+        "handlerExists": true,
+        "resolvedFunction": "getOperadorSistemaForId",
+        "queryKeys": [],
+        "body": {
+          "usesJsonBody": false,
+          "keys": []
+        },
+        "response": {
+          "keys": [],
+          "hasJsonResponse": false
+        }
+      }
+    }
+  ]
+}

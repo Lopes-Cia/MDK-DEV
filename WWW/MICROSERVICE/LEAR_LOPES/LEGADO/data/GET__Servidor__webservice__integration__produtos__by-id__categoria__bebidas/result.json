@@ -1,0 +1,17 @@
+{
+  "at": "2026-04-17T05:02:38.820Z",
+  "stepId": "GET__Servidor__webservice__integration__produtos__by-id__categoria__bebidas",
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/produtos/by-id/categoria/bebidas"
+  },
+  "response": {
+    "ok": false,
+    "status": 400,
+    "statusText": "Bad Request",
+    "durationMs": 4
+  },
+  "data": {
+    "error": "idProduto must be a valid number"
+  }
+}

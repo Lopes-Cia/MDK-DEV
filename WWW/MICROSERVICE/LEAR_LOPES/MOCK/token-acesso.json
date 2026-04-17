@@ -1,0 +1,20 @@
+{
+  "updatedAt": "2026-04-17T05:51:13.363Z",
+  "mode": "geracao",
+  "endpoint": "http://localhost:4000/ApiLopes/webservice/api/tokenService",
+  "hashToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoiU2VydmljZSBDT05ORUNUIiwiZXhwIjoxNzc2NDEyMjMyfQ.-2bFu8TOVSKqIqTgAPXmPOnsJcX5rmokEDDlTlEv6o0",
+  "refreshToken": 170426025032,
+  "dtExpira": "2026-04-17T04:50:32.720-03:00",
+  "dtExpiraIso": "2026-04-17T07:50:32.720Z",
+  "response": {
+    "idUsuario": 0,
+    "idSistema": 8,
+    "refreshToken": 170426025032,
+    "dtCriado": "2026-04-17T02:50:32.720-03:00",
+    "dtExpira": "2026-04-17T04:50:32.720-03:00",
+    "hashToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoiU2VydmljZSBDT05ORUNUIiwiZXhwIjoxNzc2NDEyMjMyfQ.-2bFu8TOVSKqIqTgAPXmPOnsJcX5rmokEDDlTlEv6o0",
+    "canal": "Service CONNECT",
+    "codUnico": "7890000002998",
+    "usado": true
+  }
+}

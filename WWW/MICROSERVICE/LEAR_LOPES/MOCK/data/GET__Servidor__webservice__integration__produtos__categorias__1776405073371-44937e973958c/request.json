@@ -1,0 +1,19 @@
+{
+  "at": "2026-04-17T05:51:13.372Z",
+  "id": "1776405073371-44937e973958c",
+  "base": "integration",
+  "endpoint": {
+    "baseUrl": "http://localhost:4000/connect",
+    "path": "/Servidor/webservice/integration/produtos/categorias",
+    "query": null
+  },
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/produtos/categorias",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "<redacted>"
+    },
+    "body": null
+  }
+}

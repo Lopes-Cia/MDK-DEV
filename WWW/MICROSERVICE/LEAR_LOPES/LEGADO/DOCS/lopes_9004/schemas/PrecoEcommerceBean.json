@@ -1,0 +1,61 @@
+{
+  "type": "object",
+  "properties": {
+    "idTabelaErp": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "idTabela": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codProd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtUnit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "idIntegradora": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "coluna": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "tipoPreco": {
+      "type": "string"
+    },
+    "codTabErp": {
+      "type": "string"
+    },
+    "precoAtual": {
+      "type": "number"
+    },
+    "precoAnterior": {
+      "type": "number"
+    },
+    "stAtual": {
+      "type": "number"
+    },
+    "stAnterior": {
+      "type": "number"
+    },
+    "recalcula": {
+      "type": "boolean"
+    },
+    "dtEnvioAtual": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "dtEnvioAnterior": {
+      "type": "string",
+      "format": "date-time"
+    }
+  }
+}

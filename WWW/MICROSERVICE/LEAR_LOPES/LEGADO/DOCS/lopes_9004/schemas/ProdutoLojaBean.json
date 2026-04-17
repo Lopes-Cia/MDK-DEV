@@ -1,0 +1,104 @@
+{
+  "type": "object",
+  "properties": {
+    "codProd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "idIntegradora": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "indiceEstoque": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtUnit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtUnitCaixa": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codLocalOrig": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "fatorConversao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "recalculaPrecoUnidade": {
+      "type": "boolean"
+    },
+    "recalculaEstoqueUnidade": {
+      "type": "boolean"
+    },
+    "descricaoErp": {
+      "type": "string"
+    },
+    "descricaoEcomerce": {
+      "type": "string"
+    },
+    "ean": {
+      "type": "string"
+    },
+    "eanCaixa": {
+      "type": "string"
+    },
+    "codVol": {
+      "type": "string"
+    },
+    "refId": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "string"
+    },
+    "codFilial": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "referencia": {
+      "type": "string"
+    },
+    "descricaoTecnica": {
+      "type": "string"
+    },
+    "preco": {
+      "type": "number"
+    },
+    "promotion": {
+      "type": "number"
+    },
+    "qtEstoque": {
+      "type": "number"
+    },
+    "imagem": {
+      "type": "string"
+    },
+    "categoriaPrinciapal": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "dtUltAlter": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "imagens": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "categorias": {
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/VinculoCatMercadoLivreBean"
+      }
+    }
+  }
+}

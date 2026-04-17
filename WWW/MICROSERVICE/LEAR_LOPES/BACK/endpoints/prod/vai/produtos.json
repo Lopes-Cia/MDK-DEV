@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1001,
+    "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+    "name": "Heineken Lata 269ml",
+    "slug": "/produtos/heineken-lata-269ml",
+    "unitLabel": "lata",
+    "sizeLabel": "269ml",
+    "price": 4.19,
+    "compareAtPrice": null,
+    "badges": [
+      "gelada"
+    ],
+    "image": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-ad93e1.jpg",
+    "stock": 171,
+    "inStock": true,
+    "category": {
+      "id": 19,
+      "name": "Lager",
+      "slug": "/categoria/bebidas/cervejas/lager",
+      "familia": [
+        {
+          "id": 10,
+          "name": "Bebidas",
+          "slug": "/categoria/bebidas"
+        },
+        {
+          "id": 15,
+          "name": "Cervejas",
+          "slug": "/categoria/bebidas/cervejas"
+        },
+        {
+          "id": 19,
+          "name": "Lager",
+          "slug": "/categoria/bebidas/cervejas/lager"
+        }
+      ]
+    },
+    "brand": {
+      "id": 2028873282,
+      "name": "Heineken",
+      "slug": "/marca/heineken",
+      "image": "http://localhost:4000/assets/images/semImagem.png"
+    },
+    "qtUnit": 1,
+    "qtUnitCaixa": 1,
+    "ean": "7891149103270",
+    "eanCaixa": "7891149103270",
+    "codVol": "UN"
+  }
+]

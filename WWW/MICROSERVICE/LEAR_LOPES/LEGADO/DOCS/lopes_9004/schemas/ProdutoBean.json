@@ -1,0 +1,111 @@
+{
+  "type": "object",
+  "properties": {
+    "codProd": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "idIntegradora": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "indiceEstoque": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "fatorConversao": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "codLocalOrig": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "recalculaPrecoUnidade": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "recalculaEstoqueUnidade": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "idVariante": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtUnit": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "qtVariants": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "descricaoErp": {
+      "type": "string"
+    },
+    "descricaoEcomerce": {
+      "type": "string"
+    },
+    "ean": {
+      "type": "string"
+    },
+    "codVol": {
+      "type": "string"
+    },
+    "refId": {
+      "type": "string"
+    },
+    "productId": {
+      "type": "string"
+    },
+    "codFilial": {
+      "type": "string"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "wharehouseId": {
+      "type": "string"
+    },
+    "multEstoque": {
+      "type": "string"
+    },
+    "departamento": {
+      "type": "string"
+    },
+    "categoria": {
+      "type": "string"
+    },
+    "url": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "proximoValida": {
+      "type": "string"
+    },
+    "preco": {
+      "type": "number"
+    },
+    "qtEstoque": {
+      "type": "number"
+    },
+    "mult_unid_ecommerc": {
+      "type": "number"
+    },
+    "variants": {
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/VarianteBean"
+      }
+    },
+    "stocks": {
+      "type": "array",
+      "items": {
+        "$ref": "#/components/schemas/Stock_availables"
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "type": "object",
+  "properties": {
+    "idIntegradora": {
+      "type": "integer",
+      "format": "int32"
+    },
+    "skuId": {
+      "type": "string"
+    },
+    "ean": {
+      "type": "string"
+    },
+    "codFilial": {
+      "type": "string"
+    },
+    "warehouseId": {
+      "type": "string"
+    },
+    "warehouseName": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "number"
+    },
+    "reservado": {
+      "type": "number"
+    },
+    "estoque": {
+      "type": "number"
+    }
+  }
+}

@@ -1,0 +1,1067 @@
+{
+  "at": "2026-04-17T05:09:53.005Z",
+  "stepId": "GET__Servidor__webservice__integration__produtos__by-categoria__10",
+  "request": {
+    "method": "GET",
+    "url": "http://localhost:4000/connect/Servidor/webservice/integration/produtos/by-categoria/10"
+  },
+  "response": {
+    "ok": true,
+    "status": 200,
+    "statusText": "OK",
+    "durationMs": 5
+  },
+  "data": {
+    "success": true,
+    "data": [
+      {
+        "id": 1001,
+        "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+        "name": "Heineken Lata 269ml",
+        "slug": "/produtos/heineken-lata-269ml",
+        "unitLabel": "lata",
+        "sizeLabel": "269ml",
+        "price": 4.19,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-ad93e1.jpg",
+        "stock": 171,
+        "inStock": true,
+        "category": {
+          "id": 19,
+          "name": "Lager",
+          "slug": "/categoria/bebidas/cervejas/lager",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 15,
+              "name": "Cervejas",
+              "slug": "/categoria/bebidas/cervejas"
+            },
+            {
+              "id": 19,
+              "name": "Lager",
+              "slug": "/categoria/bebidas/cervejas/lager"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2028873282,
+          "name": "Heineken",
+          "slug": "/marca/heineken",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1002,
+        "sku": "HEINEKEN-HEINEKEN-LATA-350ML-350ML",
+        "name": "Heineken Lata 350ml",
+        "slug": "/produtos/heineken-lata-350ml",
+        "unitLabel": "lata",
+        "sizeLabel": "350ml",
+        "price": 4.72,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/produtos/heineken-lata-350ml-4f3bf3.jpg",
+        "stock": 15,
+        "inStock": true,
+        "category": {
+          "id": 19,
+          "name": "Lager",
+          "slug": "/categoria/bebidas/cervejas/lager",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 15,
+              "name": "Cervejas",
+              "slug": "/categoria/bebidas/cervejas"
+            },
+            {
+              "id": 19,
+              "name": "Lager",
+              "slug": "/categoria/bebidas/cervejas/lager"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2028873282,
+          "name": "Heineken",
+          "slug": "/marca/heineken",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1003,
+        "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+        "name": "Heineken Lata 269ml",
+        "slug": "/produtos/heineken-lata-269ml-heineken",
+        "unitLabel": "lata",
+        "sizeLabel": "269ml",
+        "price": 4.19,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-heineken-ad93e1.jpg",
+        "stock": 171,
+        "inStock": true,
+        "category": {
+          "id": 20,
+          "name": "IPA",
+          "slug": "/categoria/bebidas/cervejas/ipa",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 15,
+              "name": "Cervejas",
+              "slug": "/categoria/bebidas/cervejas"
+            },
+            {
+              "id": 20,
+              "name": "IPA",
+              "slug": "/categoria/bebidas/cervejas/ipa"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2028873282,
+          "name": "Heineken",
+          "slug": "/marca/heineken",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1004,
+        "sku": "HEINEKEN-HEINEKEN-LATA-350ML-350ML",
+        "name": "Heineken Lata 350ml",
+        "slug": "/produtos/heineken-lata-350ml-heineken",
+        "unitLabel": "lata",
+        "sizeLabel": "350ml",
+        "price": 4.72,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/produtos/heineken-lata-350ml-heineken-4f3bf3.jpg",
+        "stock": 15,
+        "inStock": true,
+        "category": {
+          "id": 20,
+          "name": "IPA",
+          "slug": "/categoria/bebidas/cervejas/ipa",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 15,
+              "name": "Cervejas",
+              "slug": "/categoria/bebidas/cervejas"
+            },
+            {
+              "id": 20,
+              "name": "IPA",
+              "slug": "/categoria/bebidas/cervejas/ipa"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2028873282,
+          "name": "Heineken",
+          "slug": "/marca/heineken",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1005,
+        "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+        "name": "Heineken Lata 269ml",
+        "slug": "/produtos/heineken-lata-269ml-heineken-1005",
+        "unitLabel": "lata",
+        "sizeLabel": "269ml",
+        "price": 4.19,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-heineken-1005-ad93e1.jpg",
+        "stock": 171,
+        "inStock": true,
+        "category": {
+          "id": 21,
+          "name": "Pilsen",
+          "slug": "/categoria/bebidas/cervejas/pilsen",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 15,
+              "name": "Cervejas",
+              "slug": "/categoria/bebidas/cervejas"
+            },
+            {
+              "id": 21,
+              "name": "Pilsen",
+              "slug": "/categoria/bebidas/cervejas/pilsen"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2028873282,
+          "name": "Heineken",
+          "slug": "/marca/heineken",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1006,
+        "sku": "HEINEKEN-HEINEKEN-LATA-350ML-350ML",
+        "name": "Heineken Lata 350ml",
+        "slug": "/produtos/heineken-lata-350ml-heineken-1006",
+        "unitLabel": "lata",
+        "sizeLabel": "350ml",
+        "price": 4.72,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/produtos/heineken-lata-350ml-heineken-1006-4f3bf3.jpg",
+        "stock": 15,
+        "inStock": true,
+        "category": {
+          "id": 21,
+          "name": "Pilsen",
+          "slug": "/categoria/bebidas/cervejas/pilsen",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 15,
+              "name": "Cervejas",
+              "slug": "/categoria/bebidas/cervejas"
+            },
+            {
+              "id": 21,
+              "name": "Pilsen",
+              "slug": "/categoria/bebidas/cervejas/pilsen"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2028873282,
+          "name": "Heineken",
+          "slug": "/marca/heineken",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1007,
+        "sku": "CHOPP-CHOPP-PILSEN-1L-1L",
+        "name": "Chopp Pilsen 1L",
+        "slug": "/produtos/chopp-pilsen-1l",
+        "unitLabel": "growler",
+        "sizeLabel": "1L",
+        "price": 22.02,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 171,
+        "inStock": true,
+        "category": {
+          "id": 22,
+          "name": "Pilsen",
+          "slug": "/categoria/bebidas/chopp/pilsen",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 16,
+              "name": "Chopp",
+              "slug": "/categoria/bebidas/chopp"
+            },
+            {
+              "id": 22,
+              "name": "Pilsen",
+              "slug": "/categoria/bebidas/chopp/pilsen"
+            }
+          ]
+        },
+        "brand": {
+          "id": 138155915,
+          "name": "Chopp",
+          "slug": "/marca/chopp",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1008,
+        "sku": "CHOPP-CHOPP-PILSEN-2L-2L",
+        "name": "Chopp Pilsen 2L",
+        "slug": "/produtos/chopp-pilsen-2l",
+        "unitLabel": "growler",
+        "sizeLabel": "2L",
+        "price": 42.29,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 26,
+        "inStock": true,
+        "category": {
+          "id": 22,
+          "name": "Pilsen",
+          "slug": "/categoria/bebidas/chopp/pilsen",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 16,
+              "name": "Chopp",
+              "slug": "/categoria/bebidas/chopp"
+            },
+            {
+              "id": 22,
+              "name": "Pilsen",
+              "slug": "/categoria/bebidas/chopp/pilsen"
+            }
+          ]
+        },
+        "brand": {
+          "id": 138155915,
+          "name": "Chopp",
+          "slug": "/marca/chopp",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1009,
+        "sku": "CHOPP-CHOPP-PILSEN-1L-1L",
+        "name": "Chopp Pilsen 1L",
+        "slug": "/produtos/chopp-pilsen-1l-chopp",
+        "unitLabel": "growler",
+        "sizeLabel": "1L",
+        "price": 22.02,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 171,
+        "inStock": true,
+        "category": {
+          "id": 23,
+          "name": "IPA",
+          "slug": "/categoria/bebidas/chopp/ipa",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 16,
+              "name": "Chopp",
+              "slug": "/categoria/bebidas/chopp"
+            },
+            {
+              "id": 23,
+              "name": "IPA",
+              "slug": "/categoria/bebidas/chopp/ipa"
+            }
+          ]
+        },
+        "brand": {
+          "id": 138155915,
+          "name": "Chopp",
+          "slug": "/marca/chopp",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1010,
+        "sku": "CHOPP-CHOPP-PILSEN-2L-2L",
+        "name": "Chopp Pilsen 2L",
+        "slug": "/produtos/chopp-pilsen-2l-chopp",
+        "unitLabel": "growler",
+        "sizeLabel": "2L",
+        "price": 42.29,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 26,
+        "inStock": true,
+        "category": {
+          "id": 23,
+          "name": "IPA",
+          "slug": "/categoria/bebidas/chopp/ipa",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 16,
+              "name": "Chopp",
+              "slug": "/categoria/bebidas/chopp"
+            },
+            {
+              "id": 23,
+              "name": "IPA",
+              "slug": "/categoria/bebidas/chopp/ipa"
+            }
+          ]
+        },
+        "brand": {
+          "id": 138155915,
+          "name": "Chopp",
+          "slug": "/marca/chopp",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1011,
+        "sku": "CHOPP-CHOPP-PILSEN-1L-1L",
+        "name": "Chopp Pilsen 1L",
+        "slug": "/produtos/chopp-pilsen-1l-chopp-1011",
+        "unitLabel": "growler",
+        "sizeLabel": "1L",
+        "price": 22.02,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 171,
+        "inStock": true,
+        "category": {
+          "id": 24,
+          "name": "Artesanal",
+          "slug": "/categoria/bebidas/chopp/artesanal",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 16,
+              "name": "Chopp",
+              "slug": "/categoria/bebidas/chopp"
+            },
+            {
+              "id": 24,
+              "name": "Artesanal",
+              "slug": "/categoria/bebidas/chopp/artesanal"
+            }
+          ]
+        },
+        "brand": {
+          "id": 138155915,
+          "name": "Chopp",
+          "slug": "/marca/chopp",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1012,
+        "sku": "CHOPP-CHOPP-PILSEN-2L-2L",
+        "name": "Chopp Pilsen 2L",
+        "slug": "/produtos/chopp-pilsen-2l-chopp-1012",
+        "unitLabel": "growler",
+        "sizeLabel": "2L",
+        "price": 42.29,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 26,
+        "inStock": true,
+        "category": {
+          "id": 24,
+          "name": "Artesanal",
+          "slug": "/categoria/bebidas/chopp/artesanal",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 16,
+              "name": "Chopp",
+              "slug": "/categoria/bebidas/chopp"
+            },
+            {
+              "id": 24,
+              "name": "Artesanal",
+              "slug": "/categoria/bebidas/chopp/artesanal"
+            }
+          ]
+        },
+        "brand": {
+          "id": 138155915,
+          "name": "Chopp",
+          "slug": "/marca/chopp",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1013,
+        "sku": "DRINKS-GIN-TONICA-LATA-269ML-269ML",
+        "name": "Gin Tônica Lata 269ml",
+        "slug": "/produtos/gin-tonica-lata-269ml",
+        "unitLabel": "lata",
+        "sizeLabel": "269ml",
+        "price": 10.98,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/produtos/gin-tonica-lata-269ml-fccd4f.jpg",
+        "stock": 10,
+        "inStock": true,
+        "category": {
+          "id": 25,
+          "name": "Gin tônica",
+          "slug": "/categoria/bebidas/drinks-prontos/gin-tonica",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 17,
+              "name": "Drinks prontos",
+              "slug": "/categoria/bebidas/drinks-prontos"
+            },
+            {
+              "id": 25,
+              "name": "Gin tônica",
+              "slug": "/categoria/bebidas/drinks-prontos/gin-tonica"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2505821670,
+          "name": "Drinks",
+          "slug": "/marca/drinks",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1014,
+        "sku": "DRINKS-VODKA-ICE-LATA-269ML-269ML",
+        "name": "Vodka Ice Lata 269ml",
+        "slug": "/produtos/vodka-ice-lata-269ml",
+        "unitLabel": "lata",
+        "sizeLabel": "269ml",
+        "price": 9.55,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 104,
+        "inStock": true,
+        "category": {
+          "id": 25,
+          "name": "Gin tônica",
+          "slug": "/categoria/bebidas/drinks-prontos/gin-tonica",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 17,
+              "name": "Drinks prontos",
+              "slug": "/categoria/bebidas/drinks-prontos"
+            },
+            {
+              "id": 25,
+              "name": "Gin tônica",
+              "slug": "/categoria/bebidas/drinks-prontos/gin-tonica"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2505821670,
+          "name": "Drinks",
+          "slug": "/marca/drinks",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1015,
+        "sku": "DRINKS-GIN-TONICA-LATA-269ML-269ML",
+        "name": "Gin Tônica Lata 269ml",
+        "slug": "/produtos/gin-tonica-lata-269ml-drinks",
+        "unitLabel": "lata",
+        "sizeLabel": "269ml",
+        "price": 10.98,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/produtos/gin-tonica-lata-269ml-drinks-fccd4f.jpg",
+        "stock": 10,
+        "inStock": true,
+        "category": {
+          "id": 26,
+          "name": "Vodka ice",
+          "slug": "/categoria/bebidas/drinks-prontos/vodka-ice",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 17,
+              "name": "Drinks prontos",
+              "slug": "/categoria/bebidas/drinks-prontos"
+            },
+            {
+              "id": 26,
+              "name": "Vodka ice",
+              "slug": "/categoria/bebidas/drinks-prontos/vodka-ice"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2505821670,
+          "name": "Drinks",
+          "slug": "/marca/drinks",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1016,
+        "sku": "DRINKS-VODKA-ICE-LATA-269ML-269ML",
+        "name": "Vodka Ice Lata 269ml",
+        "slug": "/produtos/vodka-ice-lata-269ml-drinks",
+        "unitLabel": "lata",
+        "sizeLabel": "269ml",
+        "price": 9.55,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 104,
+        "inStock": true,
+        "category": {
+          "id": 26,
+          "name": "Vodka ice",
+          "slug": "/categoria/bebidas/drinks-prontos/vodka-ice",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 17,
+              "name": "Drinks prontos",
+              "slug": "/categoria/bebidas/drinks-prontos"
+            },
+            {
+              "id": 26,
+              "name": "Vodka ice",
+              "slug": "/categoria/bebidas/drinks-prontos/vodka-ice"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2505821670,
+          "name": "Drinks",
+          "slug": "/marca/drinks",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1017,
+        "sku": "DRINKS-GIN-TONICA-LATA-269ML-269ML",
+        "name": "Gin Tônica Lata 269ml",
+        "slug": "/produtos/gin-tonica-lata-269ml-drinks-1017",
+        "unitLabel": "lata",
+        "sizeLabel": "269ml",
+        "price": 10.98,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/produtos/gin-tonica-lata-269ml-drinks-1017-fccd4f.jpg",
+        "stock": 10,
+        "inStock": true,
+        "category": {
+          "id": 27,
+          "name": "Caipirinha",
+          "slug": "/categoria/bebidas/drinks-prontos/caipirinha",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 17,
+              "name": "Drinks prontos",
+              "slug": "/categoria/bebidas/drinks-prontos"
+            },
+            {
+              "id": 27,
+              "name": "Caipirinha",
+              "slug": "/categoria/bebidas/drinks-prontos/caipirinha"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2505821670,
+          "name": "Drinks",
+          "slug": "/marca/drinks",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1018,
+        "sku": "DRINKS-VODKA-ICE-LATA-269ML-269ML",
+        "name": "Vodka Ice Lata 269ml",
+        "slug": "/produtos/vodka-ice-lata-269ml-drinks-1018",
+        "unitLabel": "lata",
+        "sizeLabel": "269ml",
+        "price": 9.55,
+        "compareAtPrice": null,
+        "badges": [
+          "gelada"
+        ],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 104,
+        "inStock": true,
+        "category": {
+          "id": 27,
+          "name": "Caipirinha",
+          "slug": "/categoria/bebidas/drinks-prontos/caipirinha",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 17,
+              "name": "Drinks prontos",
+              "slug": "/categoria/bebidas/drinks-prontos"
+            },
+            {
+              "id": 27,
+              "name": "Caipirinha",
+              "slug": "/categoria/bebidas/drinks-prontos/caipirinha"
+            }
+          ]
+        },
+        "brand": {
+          "id": 2505821670,
+          "name": "Drinks",
+          "slug": "/marca/drinks",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1019,
+        "sku": "SELECAO-BEBIDAS-SIDRAS-TRADICIONAL-1-UN",
+        "name": "Bebidas Sidras Tradicional",
+        "slug": "/produtos/bebidas-sidras-tradicional",
+        "unitLabel": "unidade",
+        "sizeLabel": "1 un",
+        "price": 19.15,
+        "compareAtPrice": null,
+        "badges": [],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 25,
+        "inStock": true,
+        "category": {
+          "id": 28,
+          "name": "Tradicional",
+          "slug": "/categoria/bebidas/sidras/tradicional",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 18,
+              "name": "Sidras",
+              "slug": "/categoria/bebidas/sidras"
+            },
+            {
+              "id": 28,
+              "name": "Tradicional",
+              "slug": "/categoria/bebidas/sidras/tradicional"
+            }
+          ]
+        },
+        "brand": {
+          "id": 3668623785,
+          "name": "Seleção",
+          "slug": "/marca/selecao",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1020,
+        "sku": "SELECAO-BEBIDAS-SIDRAS-TRADICIONAL-3-1-UN",
+        "name": "Bebidas Sidras Tradicional 3",
+        "slug": "/produtos/bebidas-sidras-tradicional-3",
+        "unitLabel": "unidade",
+        "sizeLabel": "1 un",
+        "price": 19.89,
+        "compareAtPrice": null,
+        "badges": [],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 102,
+        "inStock": true,
+        "category": {
+          "id": 28,
+          "name": "Tradicional",
+          "slug": "/categoria/bebidas/sidras/tradicional",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 18,
+              "name": "Sidras",
+              "slug": "/categoria/bebidas/sidras"
+            },
+            {
+              "id": 28,
+              "name": "Tradicional",
+              "slug": "/categoria/bebidas/sidras/tradicional"
+            }
+          ]
+        },
+        "brand": {
+          "id": 3668623785,
+          "name": "Seleção",
+          "slug": "/marca/selecao",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1021,
+        "sku": "SELECAO-BEBIDAS-SIDRAS-PREMIUM-1-UN",
+        "name": "Bebidas Sidras Premium",
+        "slug": "/produtos/bebidas-sidras-premium",
+        "unitLabel": "unidade",
+        "sizeLabel": "1 un",
+        "price": 18.94,
+        "compareAtPrice": null,
+        "badges": [],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 182,
+        "inStock": true,
+        "category": {
+          "id": 29,
+          "name": "Premium",
+          "slug": "/categoria/bebidas/sidras/premium",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 18,
+              "name": "Sidras",
+              "slug": "/categoria/bebidas/sidras"
+            },
+            {
+              "id": 29,
+              "name": "Premium",
+              "slug": "/categoria/bebidas/sidras/premium"
+            }
+          ]
+        },
+        "brand": {
+          "id": 3668623785,
+          "name": "Seleção",
+          "slug": "/marca/selecao",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1022,
+        "sku": "SELECAO-BEBIDAS-SIDRAS-PREMIUM-3-1-UN",
+        "name": "Bebidas Sidras Premium 3",
+        "slug": "/produtos/bebidas-sidras-premium-3",
+        "unitLabel": "unidade",
+        "sizeLabel": "1 un",
+        "price": 19.84,
+        "compareAtPrice": null,
+        "badges": [],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 7,
+        "inStock": true,
+        "category": {
+          "id": 29,
+          "name": "Premium",
+          "slug": "/categoria/bebidas/sidras/premium",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 18,
+              "name": "Sidras",
+              "slug": "/categoria/bebidas/sidras"
+            },
+            {
+              "id": 29,
+              "name": "Premium",
+              "slug": "/categoria/bebidas/sidras/premium"
+            }
+          ]
+        },
+        "brand": {
+          "id": 3668623785,
+          "name": "Seleção",
+          "slug": "/marca/selecao",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1023,
+        "sku": "SELECAO-BEBIDAS-SIDRAS-ARTESANAL-1-UN",
+        "name": "Bebidas Sidras Artesanal",
+        "slug": "/produtos/bebidas-sidras-artesanal",
+        "unitLabel": "unidade",
+        "sizeLabel": "1 un",
+        "price": 20.63,
+        "compareAtPrice": null,
+        "badges": [],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 153,
+        "inStock": true,
+        "category": {
+          "id": 30,
+          "name": "Artesanal",
+          "slug": "/categoria/bebidas/sidras/artesanal",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 18,
+              "name": "Sidras",
+              "slug": "/categoria/bebidas/sidras"
+            },
+            {
+              "id": 30,
+              "name": "Artesanal",
+              "slug": "/categoria/bebidas/sidras/artesanal"
+            }
+          ]
+        },
+        "brand": {
+          "id": 3668623785,
+          "name": "Seleção",
+          "slug": "/marca/selecao",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      },
+      {
+        "id": 1024,
+        "sku": "SELECAO-BEBIDAS-SIDRAS-ARTESANAL-3-1-UN",
+        "name": "Bebidas Sidras Artesanal 3",
+        "slug": "/produtos/bebidas-sidras-artesanal-3",
+        "unitLabel": "unidade",
+        "sizeLabel": "1 un",
+        "price": 20.2,
+        "compareAtPrice": null,
+        "badges": [],
+        "image": "http://localhost:4000/assets/images/semImagem.png",
+        "stock": 69,
+        "inStock": true,
+        "category": {
+          "id": 30,
+          "name": "Artesanal",
+          "slug": "/categoria/bebidas/sidras/artesanal",
+          "familia": [
+            {
+              "id": 10,
+              "name": "Bebidas",
+              "slug": "/categoria/bebidas"
+            },
+            {
+              "id": 18,
+              "name": "Sidras",
+              "slug": "/categoria/bebidas/sidras"
+            },
+            {
+              "id": 30,
+              "name": "Artesanal",
+              "slug": "/categoria/bebidas/sidras/artesanal"
+            }
+          ]
+        },
+        "brand": {
+          "id": 3668623785,
+          "name": "Seleção",
+          "slug": "/marca/selecao",
+          "image": "http://localhost:4000/assets/images/semImagem.png"
+        }
+      }
+    ],
+    "page": 1,
+    "pageSize": 24,
+    "total": 24,
+    "totalPages": 1
+  }
+}

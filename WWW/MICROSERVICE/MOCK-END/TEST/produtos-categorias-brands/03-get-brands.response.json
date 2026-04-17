@@ -1,0 +1,167 @@
+{
+  "endpoint": "GET /Servidor/webservice/integration/produtos/brands",
+  "url": "http://localhost:4000/connect/Servidor/webservice/integration/produtos/brands",
+  "status": 200,
+  "parsedJson": true,
+  "body": {
+    "success": true,
+    "data": [
+      {
+        "id": 871013969,
+        "name": "Absolut",
+        "slug": "/marca/absolut",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 3582257716,
+        "name": "Acessórios",
+        "slug": "/marca/acessorios",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 2410706081,
+        "name": "Aurora",
+        "slug": "/marca/aurora",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 1709002083,
+        "name": "Ballantine's",
+        "slug": "/marca/ballantine-s",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 4170688548,
+        "name": "Beefeater",
+        "slug": "/marca/beefeater",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 1046477162,
+        "name": "Bonafont",
+        "slug": "/marca/bonafont",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 4222076832,
+        "name": "Casa Perini",
+        "slug": "/marca/casa-perini",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 4117937138,
+        "name": "Chandon",
+        "slug": "/marca/chandon",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 138155915,
+        "name": "Chopp",
+        "slug": "/marca/chopp",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 3751095991,
+        "name": "Coca-Cola",
+        "slug": "/marca/coca-cola",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 2435987914,
+        "name": "Concha y Toro",
+        "slug": "/marca/concha-y-toro",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 3168311026,
+        "name": "Conveniência",
+        "slug": "/marca/conveniencia",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 112414825,
+        "name": "Crystal",
+        "slug": "/marca/crystal",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 2505821670,
+        "name": "Drinks",
+        "slug": "/marca/drinks",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 3895226784,
+        "name": "Gelo",
+        "slug": "/marca/gelo",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 3433190152,
+        "name": "Guaraná",
+        "slug": "/marca/guarana",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 2028873282,
+        "name": "Heineken",
+        "slug": "/marca/heineken",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 789960514,
+        "name": "Johnnie Walker",
+        "slug": "/marca/johnnie-walker",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 1900825813,
+        "name": "Miolo",
+        "slug": "/marca/miolo",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 2747053077,
+        "name": "Red Bull",
+        "slug": "/marca/red-bull",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 2354570455,
+        "name": "Rum",
+        "slug": "/marca/rum",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 3153560811,
+        "name": "Santa Helena",
+        "slug": "/marca/santa-helena",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 3668623785,
+        "name": "Seleção",
+        "slug": "/marca/selecao",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 1284966993,
+        "name": "Smirnoff",
+        "slug": "/marca/smirnoff",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 1447089293,
+        "name": "Snack",
+        "slug": "/marca/snack",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      },
+      {
+        "id": 1909697191,
+        "name": "Tanqueray",
+        "slug": "/marca/tanqueray",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      }
+    ]
+  }
+}

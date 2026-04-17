@@ -1,0 +1,17 @@
+{
+  "type": "object",
+  "properties": {
+    "idStock": {
+      "type": "string"
+    },
+    "id_product": {
+      "type": "string"
+    },
+    "id_product_attribute": {
+      "type": "string"
+    },
+    "quantity": {
+      "type": "string"
+    }
+  }
+}

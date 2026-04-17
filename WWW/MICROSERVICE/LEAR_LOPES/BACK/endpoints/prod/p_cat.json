@@ -1,0 +1,281 @@
+{
+  "version": "1",
+  "taxonomy": [
+    {
+      "id": "bebidas",
+      "name": "Bebidas",
+      "match": {
+        "any": [
+          "cerveja",
+          "refrigerante",
+          "isotonico",
+          "isotônico"
+        ],
+        "all": [],
+        "none": []
+      },
+      "children": [
+        {
+          "id": "bebidas-cervejas",
+          "name": "Cervejas",
+          "match": {
+            "any": [
+              "cerveja"
+            ],
+            "all": [],
+            "none": []
+          },
+          "children": [
+            {
+              "id": "bebidas-cervejas-zero",
+              "name": "Zero álcool / Zero",
+              "match": {
+                "any": [
+                  "zero"
+                ],
+                "all": [],
+                "none": []
+              },
+              "children": []
+            },
+            {
+              "id": "bebidas-cervejas-saborizadas",
+              "name": "Saborizadas / Beats",
+              "match": {
+                "any": [
+                  "beats",
+                  "caipirinha",
+                  "mojito",
+                  "tropical",
+                  "senses",
+                  "gt"
+                ],
+                "all": [],
+                "none": []
+              },
+              "children": []
+            },
+            {
+              "id": "bebidas-cervejas-premium",
+              "name": "Premium",
+              "match": {
+                "any": [
+                  "heineken",
+                  "stella",
+                  "budweiser",
+                  "corona",
+                  "spaten",
+                  "becks",
+                  "amstel",
+                  "michelob"
+                ],
+                "all": [],
+                "none": []
+              },
+              "children": []
+            },
+            {
+              "id": "bebidas-cervejas-tradicionais",
+              "name": "Tradicionais",
+              "match": {
+                "any": [
+                  "brahma",
+                  "skol",
+                  "antarctica",
+                  "itaipava",
+                  "original",
+                  "bohemia",
+                  "polar"
+                ],
+                "all": [],
+                "none": []
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "bebidas-refrigerantes",
+          "name": "Refrigerantes",
+          "match": {
+            "any": [
+              "refrigerante"
+            ],
+            "all": [],
+            "none": []
+          },
+          "children": [
+            {
+              "id": "bebidas-refrigerantes-guarana",
+              "name": "Guaraná",
+              "match": {
+                "any": [
+                  "guarana",
+                  "guaraná"
+                ],
+                "all": [],
+                "none": []
+              },
+              "children": []
+            },
+            {
+              "id": "bebidas-refrigerantes-cola",
+              "name": "Cola",
+              "match": {
+                "any": [
+                  "cola",
+                  "pepsi"
+                ],
+                "all": [],
+                "none": []
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "id": "bebidas-isotonicos",
+          "name": "Isotônicos",
+          "match": {
+            "any": [
+              "isotonico",
+              "isotônico",
+              "gatorade"
+            ],
+            "all": [],
+            "none": []
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "mercearia",
+      "name": "Mercearia",
+      "match": {
+        "any": [
+          "trident"
+        ],
+        "all": [],
+        "none": []
+      },
+      "children": [
+        {
+          "id": "mercearia-balas-gomas",
+          "name": "Balas e Gomas",
+          "match": {
+            "any": [
+              "trident",
+              "hortela",
+              "hortelã",
+              "menta"
+            ],
+            "all": [],
+            "none": []
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "limpeza",
+      "name": "Limpeza",
+      "match": {
+        "any": [
+          "lava-loucas",
+          "lava-louças",
+          "desinfetante"
+        ],
+        "all": [],
+        "none": []
+      },
+      "children": [
+        {
+          "id": "limpeza-lava-loucas",
+          "name": "Lava-louças",
+          "match": {
+            "any": [
+              "lava-loucas",
+              "lava-louças",
+              "neutro",
+              "limao",
+              "limão",
+              "maca",
+              "maça",
+              "coco",
+              "clear"
+            ],
+            "all": [],
+            "none": []
+          },
+          "children": []
+        },
+        {
+          "id": "limpeza-desinfetantes",
+          "name": "Desinfetantes",
+          "match": {
+            "any": [
+              "desinfetante",
+              "bak",
+              "eucalipto",
+              "floral",
+              "turquesa",
+              "lavanda"
+            ],
+            "all": [],
+            "none": []
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "id": "lavanderia",
+      "name": "Lavanderia",
+      "match": {
+        "any": [
+          "lava-roupas",
+          "amaciante",
+          "tixan"
+        ],
+        "all": [],
+        "none": []
+      },
+      "children": [
+        {
+          "id": "lavanderia-lava-roupas",
+          "name": "Lava-roupas",
+          "match": {
+            "any": [
+              "lava-roupas",
+              "tixan",
+              "em po",
+              "em pó",
+              "po",
+              "pó",
+              "primavera",
+              "maciez"
+            ],
+            "all": [],
+            "none": []
+          },
+          "children": []
+        },
+        {
+          "id": "lavanderia-amaciantes",
+          "name": "Amaciantes",
+          "match": {
+            "any": [
+              "amaciante",
+              "intenso",
+              "aconchego"
+            ],
+            "all": [],
+            "none": []
+          },
+          "children": []
+        }
+      ]
+    }
+  ]
+}
