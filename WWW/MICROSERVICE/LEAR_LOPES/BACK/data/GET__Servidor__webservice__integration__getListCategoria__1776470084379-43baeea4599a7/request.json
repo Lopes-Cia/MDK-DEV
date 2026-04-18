@@ -1,0 +1,19 @@
+{
+  "at": "2026-04-17T23:54:44.380Z",
+  "id": "1776470084379-43baeea4599a7",
+  "base": "integration",
+  "endpoint": {
+    "baseUrl": "https://gp.lopesecia.com.br:9004",
+    "path": "/Servidor/webservice/integration/getListCategoria",
+    "query": "idIntegradora=8"
+  },
+  "request": {
+    "method": "GET",
+    "url": "https://gp.lopesecia.com.br:9004/Servidor/webservice/integration/getListCategoria?idIntegradora=8",
+    "headers": {
+      "Accept": "application/json",
+      "Authorization": "<redacted>"
+    },
+    "body": null
+  }
+}

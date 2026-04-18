@@ -1,0 +1,53 @@
+{
+  "at": "2026-04-17T23:54:44.381Z",
+  "id": "1776470084379-43baeea4599a7",
+  "request": {
+    "method": "GET",
+    "url": "https://gp.lopesecia.com.br:9004/Servidor/webservice/integration/getListCategoria?idIntegradora=8"
+  },
+  "response": {
+    "ok": true,
+    "status": 200,
+    "statusText": "",
+    "durationMs": 259,
+    "contentType": "application/json"
+  },
+  "data": [
+    {
+      "idIntegradora": 8,
+      "codigo": 1,
+      "codPai": 0,
+      "categoria": "Bebidas",
+      "detalhamento": "Bebidas em geral",
+      "imagem": "https://lopesecia.com.br/img/semImagem.png",
+      "sequencia": 1
+    },
+    {
+      "idIntegradora": 8,
+      "codigo": 2,
+      "codPai": 1,
+      "categoria": "Cervejas",
+      "detalhamento": "Cervejas Tradicionais",
+      "imagem": "https://lopesecia.com.br/img/semImagem.png",
+      "sequencia": 1
+    },
+    {
+      "idIntegradora": 8,
+      "codigo": 3,
+      "codPai": 1,
+      "categoria": "Água",
+      "detalhamento": "Água",
+      "imagem": "https://lopesecia.com.br/img/semImagem.png",
+      "sequencia": 1
+    },
+    {
+      "idIntegradora": 8,
+      "codigo": 4,
+      "codPai": 1,
+      "categoria": "Cervejas Especiais",
+      "detalhamento": "Cervejas Especiais",
+      "imagem": "https://lopesecia.com.br/img/semImagem.png",
+      "sequencia": 1
+    }
+  ]
+}

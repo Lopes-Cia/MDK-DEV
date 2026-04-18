@@ -20,11 +20,21 @@ function parsePathParam(ctx, prefix) {
   return raw.slice(idx + prefix.length).replace(/^\/+/, "");
 }
 
+function maskAuthorization(value) {
+  const raw = String(value ?? "").trim();
+  if (!raw) return "(empty)";
+  if (raw.length <= 16) return `${raw.slice(0, 4)}...(${raw.length})`;
+  return `${raw.slice(0, 8)}...${raw.slice(-4)} (${raw.length})`;
+}
+
 const controller = new ProdutosController();
 
 async function categorias(req, res, ctx) {
   const cors = ctx.cors ?? {};
   if (!ensureGet(req, res, cors)) return;
+
+  const authMasked = maskAuthorization(req?.headers?.authorization);
+  process.stdout.write(`[mock-end][produtos][categorias] authorization=${authMasked}\n`);
 
   const data = await controller.categorias();
   json(res, 200, { success: true, data }, cors);
