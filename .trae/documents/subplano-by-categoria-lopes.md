@@ -1,7 +1,7 @@
-# Subplano — `/api/produtos/by-categoria/[idCategoria]`
+# Subplano — `/api/lopes/produtos/by-categoria/[idCategoria]`
 
 ## Objetivo
-- Definir implementação do endpoint `GET /api/produtos/by-categoria/[idCategoria]?includeDescendants=0|1&page=&pageSize=` usando back Lopes, mantendo contrato atual do front.
+- Definir implementação do endpoint `GET /api/lopes/produtos/by-categoria/[idCategoria]?includeDescendants=0|1&page=&pageSize=` usando back Lopes, mantendo contrato atual do front.
 
 ## Contexto Técnico
 - Fonte de dados: `getBackListProdutoLoja` em `lib/integration/lopesBackClient.ts`.

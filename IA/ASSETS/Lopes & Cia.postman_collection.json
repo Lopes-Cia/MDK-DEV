@@ -1,0 +1,2770 @@
+{
+  "info": {
+    "_postman_id": "31869632-24f0-477c-9254-9f6649c2fe20",
+    "name": "Lopes & Cia",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "28584604"
+  },
+  "item": [
+    {
+      "name": "Auth",
+      "item": [
+        {
+          "name": "enviarToken",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/enviarToken?whatsapp=86777772",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "enviarToken"
+              ],
+              "query": [
+                {
+                  "key": "whatsapp",
+                  "value": "86777772"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "verificarToken",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/verificarToken?token=quCeCn",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "verificarToken"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "quCeCn"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "deletarSessao",
+          "request": {
+            "method": "DELETE",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIjZyZ3FUQlwifSIsImV4cCI6MTc3MDA5Mzk1OX0.7QJjYAV31F6wpPBoTS-V_5Ajxmma5vutgg-eSM9IZnA",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/deleteSessao?verificacao=60426172921",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "deleteSessao"
+              ],
+              "query": [
+                {
+                  "key": "verificacao",
+                  "value": "60426172921"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "registrarSessao",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"token\": \"YnmTl3\",\r\n  \"equipamento\": \"Firefox\",\r\n  \"localizacao\": \"Condado, Paraíba\",\r\n  \"idIntegradora\": 11\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/registrarSessao",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "registrarSessao"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Token Service",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"produto\": \"CONNECT\",\r\n    \"ean\": \"7890000002998\",\r\n    \"idIntegradora\": 8,\r\n    \"codCli\": 1219\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/tokenService",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "tokenService"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Post Autentica Aplicativo",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"produto\": \"CONNECT\",\r\n    \"ean\": \"\",\r\n    \"idIntegradora\": 8,\r\n    \"codCli\": 1219\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://gp.lopesecia.com.br:9002/ApiLopes/webservice/api/postAutenteicaAplicativo",
+              "protocol": "https",
+              "host": [
+                "gp",
+                "lopesecia",
+                "com",
+                "br"
+              ],
+              "port": "9002",
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "postAutenteicaAplicativo"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Verificar Token Sistema",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"produto\": \"CONNECT\",\r\n    \"ean\": \"\",\r\n    \"idIntegradora\": 8,\r\n    \"codCli\": 1219\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://gp.lopesecia.com.br:9002/ApiLopes/webservice/api/verificarTokenSistema?token=R8Jpbh&idIntegradora=8",
+              "protocol": "https",
+              "host": [
+                "gp",
+                "lopesecia",
+                "com",
+                "br"
+              ],
+              "port": "9002",
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "verificarTokenSistema"
+              ],
+              "query": [
+                {
+                  "key": "token",
+                  "value": "R8Jpbh"
+                },
+                {
+                  "key": "idIntegradora",
+                  "value": "8"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Sistema Service",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoiU2VydmljZSBDT05ORUNUIiwiZXhwIjoxNzc0MDUxNjY2fQ._mqL4cq2eLcvqAYXBmkX3hWNiRb9_gwbtjkfMOTB3Hc",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://gp.lopesecia.com.br:9002/ApiLopes/webeservice/api/getSistemaService?codCli=1219&codigo=789000000299818&idIntegradora=8",
+              "protocol": "https",
+              "host": [
+                "gp",
+                "lopesecia",
+                "com",
+                "br"
+              ],
+              "port": "9002",
+              "path": [
+                "ApiLopes",
+                "webeservice",
+                "api",
+                "getSistemaService"
+              ],
+              "query": [
+                {
+                  "key": "codCli",
+                  "value": "1219"
+                },
+                {
+                  "key": "codigo",
+                  "value": "789000000299818"
+                },
+                {
+                  "key": "idIntegradora",
+                  "value": "8"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Operador Sistema For ID",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkxPUEVTRVJQXCIsXCJ0b2tlblwiOlwiRWlMQXZJXCJ9IiwiZXhwIjoxNzY4NDg4MDczfQ.-lXxErFp-xdtxHJECBXJS2xUWgsYjEbo7wv9K9KPXIg",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getOperadorSistemaForId?id=12",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getOperadorSistemaForId"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "12"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Cliente Integrado",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "iqK!mtg}J&",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkxPUEVTRVJQXCIsXCJ0b2tlblwiOlwiRWlMQXZJXCJ9IiwiZXhwIjoxNzY4NDg4MDczfQ.-lXxErFp-xdtxHJECBXJS2xUWgsYjEbo7wv9K9KPXIg",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "https://gp.lopesecia.com.br:9004/Servidor/webservice/integration/getClienteIntegrado?idIntegradora=25&cgc=26086218000102",
+              "protocol": "https",
+              "host": [
+                "gp",
+                "lopesecia",
+                "com",
+                "br"
+              ],
+              "port": "9004",
+              "path": [
+                "Servidor",
+                "webservice",
+                "integration",
+                "getClienteIntegrado"
+              ],
+              "query": [
+                {
+                  "key": "idIntegradora",
+                  "value": "25"
+                },
+                {
+                  "key": "cgc",
+                  "value": "26086218000102"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Usuario",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkxPUEVTRVJQXCIsXCJ0b2tlblwiOlwiRWlMQXZJXCJ9IiwiZXhwIjoxNzY4NDg4MDczfQ.-lXxErFp-xdtxHJECBXJS2xUWgsYjEbo7wv9K9KPXIg",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getUsuario?codCli=19&idParc=12",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getUsuario"
+              ],
+              "query": [
+                {
+                  "key": "codCli",
+                  "value": "19"
+                },
+                {
+                  "key": "idParc",
+                  "value": "12"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Lista de Acesso Rotinas",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIlNFTmZ1bVwifSIsImV4cCI6MTc2OTAzMjAzMX0.PsI6mqr5Cc_U4qdk81yEOMQb7HNJjFvlveIXpVgubXk",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListAcesso?idUsuario=12&idFilial=1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListAcesso"
+              ],
+              "query": [
+                {
+                  "key": "idUsuario",
+                  "value": "12"
+                },
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get List Operador Sistema",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcInF1Q2VDblwifSIsImV4cCI6MTc3MDIxNzc3OH0.GfTfGiFUpjGT_CW2RBbt89TaOrbdfGWdEHjtQ0fSZ5o",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListOperadorSistema?codCli=19&codUnico=BYSHOP&idFilial=1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListOperadorSistema"
+              ],
+              "query": [
+                {
+                  "key": "codCli",
+                  "value": "19"
+                },
+                {
+                  "key": "codUnico",
+                  "value": "BYSHOP"
+                },
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get List Usuario Logado",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIlNkbktneFwifSIsImV4cCI6MTc3MDk1NzYwN30.4uOY6aXnigga_0kjk8b4_Hj7mJfHz4bfgUlu-Zdr7B4",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListUsuarioLogado?idSistema=11&codUnico=BYSHOP",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListUsuarioLogado"
+              ],
+              "query": [
+                {
+                  "key": "idSistema",
+                  "value": "11"
+                },
+                {
+                  "key": "codUnico",
+                  "value": "BYSHOP"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Filial",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkxPUEVTRVJQXCIsXCJ0b2tlblwiOlwiVDR4cWxGXCJ9IiwiZXhwIjoxNzY4OTE2NTczfQ.yOwuUDbZZ5W1rQVDMxkuIhAQxh5KSQTz6W1BDrgFYN8",
+                "type": "text",
+                "disabled": true
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getFilial?codCli=19&idFilial=1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getFilial"
+              ],
+              "query": [
+                {
+                  "key": "codCli",
+                  "value": "19"
+                },
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Profissional",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkxPUEVTRVJQXCIsXCJ0b2tlblwiOlwiVUpUNTBrXCJ9IiwiZXhwIjoxNzY4MzE1NzYyfQ.dtPudNyrCBndbbuIiQ6p2BuspsF4JD6UFw1kJi-q6fk",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getProfissional?idFilial=1&idParc=12",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getProfissional"
+              ],
+              "query": [
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                },
+                {
+                  "key": "idParc",
+                  "value": "12"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Lista Profissional",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIjZPbHVNZ1wifSIsImV4cCI6MTc3MDA0MjA0Nn0.FIievWhz_JaoOOuc0tMmISvVaQFPfN0ZYNy2VLeka2o",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListProfissional?idFilial=1",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListProfissional"
+              ],
+              "query": [
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Valida Sessao Ativa",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcInF1Q2VDblwifSIsImV4cCI6MTc3MDIxNzc3OH0.GfTfGiFUpjGT_CW2RBbt89TaOrbdfGWdEHjtQ0fSZ5o",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getValidaSessaoAtiva?idParc=12&identificador=40226100938",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getValidaSessaoAtiva"
+              ],
+              "query": [
+                {
+                  "key": "idParc",
+                  "value": "12"
+                },
+                {
+                  "key": "identificador",
+                  "value": "40226100938"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Insert Atalho Rotina",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/insertAtalhoRotina",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "insertAtalhoRotina"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Insert Telemarketing",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"selected\": {\r\n    \"name\": \"\",\r\n    \"value\": false,\r\n    \"valid\": true\r\n  },\r\n  \"idFilial\": 1,\r\n  \"idOperador\": 5,\r\n  \"idParc\": 19,\r\n  \"status\": 0,\r\n  \"aviso\": 0,\r\n  \"assunto\": \"Ticket de Teste 4\",\r\n  \"mensagem\": \"<html dir=\\\"ltr\\\"><head></head><body contenteditable=\\\"true\\\"><p><font face=\\\"Segoe UI\\\">Teste Teste 4 <u>Teste</u></font></p></body></html>\",\r\n  \"canal\": \"Telefone\",\r\n  \"contato\": \"Francis Bernard FONE 83986777772\",\r\n  \"natureza\": \"Suporte ou implantação\",\r\n  \"chamado\": \"\",\r\n  \"dtContato\": \"2026-02-18\",\r\n  \"dtCompromisso\": \"2026-02-20\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/insertTelemarketing",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "insertTelemarketing"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Update Telemarketing",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n  \"chamado\": \"0202181446\"\r\n}\r\n",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/updateTelemarketing",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "updateTelemarketing"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Insert Ticket",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"selected\": {\r\n        \"name\": \"\",\r\n        \"value\": false,\r\n        \"valid\": true\r\n    },\r\n    \"idFilial\": 1,\r\n    \"idProf\": 6,\r\n    \"idParc\": 19,\r\n    \"idContato\": 12,\r\n    \"tipo\": 2,\r\n    \"idProjeto\": 0,\r\n    \"integrado\": 0,\r\n    \"nota\": 0,\r\n    \"idGestor\": 5,\r\n    \"idtelelarketing\": 6810,\r\n    \"idPatrocinio\": 19,\r\n    \"prioridade\": 3,\r\n    \"idtermo\": 0,\r\n    \"evolucao\": 0,\r\n    \"numeroContrato\": 0,\r\n    \"chamado\": \"0202181446\",\r\n    \"problema\": \"<html dir=\\\"ltr\\\"><head></head><body contenteditable=\\\"true\\\"><p><font face=\\\"Segoe UI\\\">Teste Teste 4 <u>Teste</u></font></p></body></html>\",\r\n    \"assunto\": \"Ticket de Teste\",\r\n    \"anotacao\": \"\",\r\n    \"resumo\": \"Ticket de Teste\\nContato responsável: Francis Bernard FONE 83986777772\",\r\n    \"solicitante\": \"Francis Bernard\",\r\n    \"categoria\": \"Default\",\r\n    \"subCategoria\": \"Default\",\r\n    \"complexidade\": \"Baixa\",\r\n    \"urgencia\": \"Baixa\",\r\n    \"dtChamado\": \"Feb 18, 2026 12:17:08 AM\",\r\n    \"status\": {\r\n        \"id\": 0,\r\n        \"tipo\": 2,\r\n        \"nome\": \"Ainda não foi iniciado\"\r\n    },\r\n    \"atendimento\": []\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/insertTicket",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "insertTicket"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get List Anexo",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListAnexo64?id=0202191607",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListAnexo64"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "0202191607"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Incluir Anexo",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"id\": \"0202191607\",\r\n    \"name\": \"logoLopes.png\",\r\n    \"dado64\": \"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\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/incluirAnexo",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "incluirAnexo"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Ultimo Telemarketing",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getUltimoTelemarketing?idFilial=1&idParc=19",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getUltimoTelemarketing"
+              ],
+              "query": [
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                },
+                {
+                  "key": "idParc",
+                  "value": "19"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Operador Sistema",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getOperadorSistema?telefone=83911223344&email=fulano@gmail.com",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getOperadorSistema"
+              ],
+              "query": [
+                {
+                  "key": "telefone",
+                  "value": "83911223344"
+                },
+                {
+                  "key": "email",
+                  "value": "fulano@gmail.com"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Ticket",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getTicket?idFilial=1&ticket=0202131639",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getTicket"
+              ],
+              "query": [
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                },
+                {
+                  "key": "ticket",
+                  "value": "0202131639"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get List Plano Pagamento",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListPlanoPagamento?idFilial=3",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListPlanoPagamento"
+              ],
+              "query": [
+                {
+                  "key": "idFilial",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get List Prazo",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListPrazo?idFilial=3",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListPrazo"
+              ],
+              "query": [
+                {
+                  "key": "idFilial",
+                  "value": "3"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get List Ticket",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListTicketPainel?datFinal=2026%2D02%2D19&datInicial=2026%2D02%2D04&idFilial=1&idParc=19",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListTicketPainel"
+              ],
+              "query": [
+                {
+                  "key": "datFinal",
+                  "value": "2026%2D02%2D19"
+                },
+                {
+                  "key": "datInicial",
+                  "value": "2026%2D02%2D04"
+                },
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                },
+                {
+                  "key": "idParc",
+                  "value": "19"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Gera Codigo Ticket",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/geraCodigoTicket?codCli=19&tipo=2",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "geraCodigoTicket"
+              ],
+              "query": [
+                {
+                  "key": "codCli",
+                  "value": "19"
+                },
+                {
+                  "key": "tipo",
+                  "value": "2"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Refresh Token",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkxPUEVTRVJQXCIsXCJ0b2tlblwiOlwiSExWQjl6XCJ9IiwiZXhwIjoxNzY2MDgwMzcyfQ.XE87EdOBG_VTw6DJ5kgSOWQ9bGKzAOhq__lCzQLhP58",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"refreshToken\": \"171225155534\",\n    \"token\": \"7QK1iV\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/refreshToken",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "refreshToken"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Operadores",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListOperadorSistema?idFilial=1&codUnico=BREAD",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListOperadorSistema"
+              ],
+              "query": [
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                },
+                {
+                  "key": "codUnico",
+                  "value": "BREAD"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Get Ultimas Rotinas Acessadas",
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "token",
+                "value": "FIfsk>Ptrm",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIlNFTmZ1bVwifSIsImV4cCI6MTc2OTAzMjAzMX0.PsI6mqr5Cc_U4qdk81yEOMQb7HNJjFvlveIXpVgubXk",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/getListAtalhoRotina?idFilial=1&idParc=12",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "getListAtalhoRotina"
+              ],
+              "query": [
+                {
+                  "key": "idFilial",
+                  "value": "1"
+                },
+                {
+                  "key": "idParc",
+                  "value": "12"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "B2B/B2C",
+      "item": [
+        {
+          "name": "Meio de Pagamento",
+          "item": [
+            {
+              "name": "Get List Pagamento",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/getListPagamento?idIntegradora=25",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "getListPagamento"
+                  ],
+                  "query": [
+                    {
+                      "key": "idIntegradora",
+                      "value": "25"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Insert Pagamento",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text"
+                  },
+                  {
+                    "key": "token",
+                    "value": "FIfsk>Ptrm",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n  \"idIntegradora\": 11,\r\n  \"idPaymentEcom\": 0,\r\n  \"idPlPagEcom\": 0,\r\n  \"idPlPag\": 5,\r\n  \"codFilial\": \"13\",\r\n  \"codCob\": \"9\",\r\n  \"cobrancaErp\": \"CREDITO 3X\",\r\n  \"paymentEcom\": \"CARTÃO\",\r\n  \"prazo\": \"CARTAO\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/insertPagamento",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "insertPagamento"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Pagamento",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text"
+                  },
+                  {
+                    "key": "token",
+                    "value": "FIfsk>Ptrm",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idIntegradora\": 11,\r\n    \"idPaymentEcom\": 2\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/deletePagamento",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "deletePagamento"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Produto",
+          "item": [
+            {
+              "name": "Get List Produto Loja",
+              "event": [
+                {
+                  "listen": "test",
+                  "script": {
+                    "exec": [
+                      "// Verify the response is valid JSON\r",
+                      "pm.test(\"Response is valid JSON\", function () {\r",
+                      "  pm.response.to.be.json;\r",
+                      "});\r",
+                      "\r",
+                      "// Verify the response body is an array\r",
+                      "pm.test(\"Response body is an array\", function () {\r",
+                      "  const body = pm.response.json();\r",
+                      "  pm.expect(body).to.be.an(\"array\");\r",
+                      "});\r",
+                      "\r",
+                      "pm.test(\"Count total objects in the array\", function () {\r",
+                      "  const body = pm.response.json();\r",
+                      "  pm.expect(body).to.be.an(\"array\");\r",
+                      "\r",
+                      "  const totalObjects = body.filter(\r",
+                      "    (item) => typeof item === \"object\" && item !== null && !Array.isArray(item)\r",
+                      "  ).length;\r",
+                      "\r",
+                      "  // 👇 The count appears in the test name in the results panel\r",
+                      "  pm.test(`Total objects in array: ${totalObjects}`, function () {});\r",
+                      "});\r",
+                      "\r",
+                      "// Optional: assert a specific expected count\r",
+                      "// pm.test(\"Array contains exactly N objects\", function () {\r",
+                      "//   const body = pm.response.json();\r",
+                      "//   pm.expect(body.length).to.eql(10);\r",
+                      "// });"
+                    ],
+                    "type": "text/javascript",
+                    "packages": {},
+                    "requests": {}
+                  }
+                },
+                {
+                  "listen": "prerequest",
+                  "script": {
+                    "exec": [
+                      ""
+                    ],
+                    "type": "text/javascript",
+                    "packages": {},
+                    "requests": {}
+                  }
+                }
+              ],
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/getListProdutoLoja?idIntegradora=25",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "getListProdutoLoja"
+                  ],
+                  "query": [
+                    {
+                      "key": "idIntegradora",
+                      "value": "25"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Produto Loja",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/getProdutoLoja?idIntegradora=25&codProd=25",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "getProdutoLoja"
+                  ],
+                  "query": [
+                    {
+                      "key": "idIntegradora",
+                      "value": "25"
+                    },
+                    {
+                      "key": "codProd",
+                      "value": "25"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get List Filial Upsoftware",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/getListFiliaUpSoftware?idIntegradora=25",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "getListFiliaUpSoftware"
+                  ],
+                  "query": [
+                    {
+                      "key": "idIntegradora",
+                      "value": "25"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Insert Produto Loja",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"codProd\": 26,\r\n    \"idIntegradora\": 25,\r\n    \"indiceEstoque\": 100,\r\n    \"qtUnit\": 1,\r\n    \"qtUnitCaixa\": 1,\r\n    \"codLocalOrig\": 0,\r\n    \"recalculaPrecoUnidade\": true,\r\n    \"recalculaEstoqueUnidade\": true,\r\n    \"descricaoErp\": \"CORTADOR RISCADEIRA PISO PORCELANATO AZULEJO TEC-100 CORTAG\",\r\n    \"descricaoEcomerce\": \"Riscadeira porcelanato profissional TEC-100\",\r\n    \"ean\": \"7891884862128\",\r\n    \"eanCaixa\": \"7891884862128\",\r\n    \"codVol\": \"UN\",\r\n    \"codFilial\": \"3\",\r\n    \"skuId\": \"7891884862128\",\r\n    \"descricaoTecnica\": \"<p>Os cortadores profissionais da linha TEC são indicados para cortar pisos cerâmicos e porcelanatos até 10 mm de espessura. ? Sistema de separação na parte superior do carro guia; ? Sistema de separação em alumínio injetado; ? Guias em aço carbono niquelado proporcionando maior durabilidade; ? Limitador lateral garantindo medidas uniformes em cortes retos ou em diagonal; ? Rodel cortante com haste em aço carbono zincado e disco de carboneto de tungstênio (wídia); TAMANHO MÁXIMO DE PISO PARA CORTE DIAGONAL 710 mm x 710 mm COMPRIMENTO MÁXIMO DE CORTE 1000 mm ESPESSURA MÁXIMA DE CORTE 10 mm.</p>\",\r\n    \"preco\": 85.49,\r\n    \"qtEstoque\": 54,\r\n    \"imagem\": \"https://lopesecia.com.br/img/7891884862128.png\",\r\n    \"categoriaPrinciapal\": 1,\r\n    \"imagens\": [\r\n        \"https://lopesecia.com.br/img/7891884862128A.png\",\r\n        \"https://lopesecia.com.br/img/7891884862128C.png\",\r\n        \"https://lopesecia.com.br/img/7891884862128B.png\"\r\n    ],\r\n    \"categorias\": [\r\n        {\r\n            \"codigo\": 3,\r\n            \"codPai\": 1,\r\n            \"categoria\": \"Eletrônicos\",\r\n            \"detalhamento\": \"Briquedos Elétricos e Eletrônicos\",\r\n            \"imagem\": \"https://lopesecia.com.br/img/SemImagem.png\",\r\n            \"codProd\": 11\r\n        },\r\n        {\r\n            \"codigo\": 2,\r\n            \"codPai\": 1,\r\n            \"categoria\": \"Bonecos\",\r\n            \"detalhamento\": \"Bonecas e bonecos para todos os gêneros\",\r\n            \"imagem\": \"https://lopesecia.com.br/img/SemImagem.png\",\r\n            \"codProd\": 11\r\n        }\r\n    ]\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/insertProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "insertProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Insert List Produto Loja",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n  {\r\n    \"codProd\": 50810,\r\n    \"idIntegradora\": 25,\r\n    \"indiceEstoque\": 100,\r\n    \"qtUnit\": 1,\r\n    \"qtUnitCaixa\": 1,\r\n    \"codLocalOrig\": 0,\r\n    \"recalculaPrecoUnidade\": true,\r\n    \"recalculaEstoqueUnidade\": true,\r\n    \"descricaoErp\": \"PAO HOT DOG ORIGINAL NEWBREAD 400G\",\r\n    \"descricaoEcomerce\": \"Pão para Hot Dog 400g\",\r\n    \"ean\": \"7896998708102\",\r\n    \"eanCaixa\": \"7896998708102\",\r\n    \"codVol\": \"UN\",\r\n    \"productId\": \"50810\",\r\n    \"codFilial\": \"1\",\r\n    \"skuId\": \"7896998708102\",\r\n    \"descricaoTecnica\": \"INGREDIENTES: Farinha de trigo enriquecida com ferro e ácido fólico, açúcar, gordura vegetal de palma, sal, emulsificante mono e diglicerídeos de ácidos graxos e conservador propionato de cálcio. CONTÉM GLÚTEN.\\n\\nALÉRGICOS: CONTÉM DERIVADOS DE TRIGO. PODE CONTER: SOJA, OVOS, AVEIA, CEVADA, TRITICALE, CASTANHA-DE-CAJU, CASTANHA-DO-PARÁ E CENTEIO.\",\r\n    \"categoriaPrinciapal\": 7,\r\n    \"imagem\": \"produtos/lanche/Hot Dog 400 G/pao_de_hot_dog_400g.webp\",\r\n    \"imagens\": [],\r\n    \"categorias\": []\r\n  }\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/insertListProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "insertListProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Produto Loja",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"codProd\": 50012,\r\n    \"idIntegradora\": 25,\r\n    \"indiceEstoque\": 100,\r\n    \"qtUnit\": 1,\r\n    \"qtUnitCaixa\": 1,\r\n    \"codLocalOrig\": 0,\r\n    \"recalculaPrecoUnidade\": true,\r\n    \"recalculaEstoqueUnidade\": true,\r\n    \"descricaoErp\": \"PAO FORMA NEWBREAD INTEGRAL 34% 450G\",\r\n    \"descricaoEcomerce\": \"Pão de Forma Integral 34% 450g\",\r\n    \"ean\": \"7896998700113\",\r\n    \"eanCaixa\": \"7896998700113\",\r\n    \"productId\": \"50012\",\r\n    \"codFilial\": \"1\",\r\n    \"skuId\": \"7896998700113\",\r\n    \"imagem\": \"https://lopesecia.com.br/img/7896998700113.webp\",\r\n    \"categoriaPrinciapal\": 1,\r\n    \"imagens\": [],\r\n    \"categorias\": [\r\n    ],\r\n    \"criterioPreco\": []\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/updateProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "updateProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update List Produto Loja",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n    {\r\n        \"codProd\": 50010,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO DE FORMA TRADICIONAL NEWBREAD 450G\",\r\n        \"descricaoEcomerce\": \"Pão de Forma Tradicional Newbread 450g\",\r\n        \"ean\": \"7896998700106\",\r\n        \"eanCaixa\": \"7896998700106\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50010\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998700106\",\r\n        \"categoriaPrinciapal\": 1,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998700106.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50012,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO FORMA NEWBREAD INTEGRAL 34% 450G\",\r\n        \"descricaoEcomerce\": \"Pão de Forma Integral 34% 450g\",\r\n        \"ean\": \"7896998700113\",\r\n        \"eanCaixa\": \"7896998700113\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50012\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998700113\",\r\n        \"categoriaPrinciapal\": 1,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998700113.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50025,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO DE FORMA POCOS DE CALDAS NEWBREAD 400G\",\r\n        \"descricaoEcomerce\": \"Pão de Forma Tradicional Poços de Caldas 400g\",\r\n        \"ean\": \"7896998700250\",\r\n        \"eanCaixa\": \"7896998700250\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50025\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998700250\",\r\n        \"categoriaPrinciapal\": 4,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998700250.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50026,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO POCOS DE CALDAS INTEGRAL 37% 400G\",\r\n        \"descricaoEcomerce\": \"Pão de Forma Poços de caldas Fibras 400g\",\r\n        \"ean\": \"7896998700267\",\r\n        \"eanCaixa\": \"7896998700267\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50026\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998700267\",\r\n        \"categoriaPrinciapal\": 4,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998700267.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50030,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BISNAGUINHA NEWBREAD SPACE TRIX 300G\",\r\n        \"descricaoEcomerce\": \"Bisnaguinha Tradicional 300g\",\r\n        \"ean\": \"7896998700304\",\r\n        \"eanCaixa\": \"7896998700304\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50030\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998700304\",\r\n        \"categoriaPrinciapal\": 9,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998700304.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50031,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BISNAGUINHA POCOS DE CALDAS 240G\",\r\n        \"descricaoEcomerce\": \"BISNAGUINHA POCOS DE CALDAS 240G\",\r\n        \"ean\": \"7896998700328\",\r\n        \"eanCaixa\": \"7896998700328\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50031\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998700328\",\r\n        \"categoriaPrinciapal\": 4,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998700328.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50032,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BISNAGUINHA INTEGRAL NEWBREAD 240G\",\r\n        \"descricaoEcomerce\": \"100% Sabor Bisnaguinha Fibras 240g\",\r\n        \"ean\": \"7896998700311\",\r\n        \"eanCaixa\": \"7896998700311\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50032\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998700311\",\r\n        \"categoriaPrinciapal\": 10,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998700311.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50120,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO INTEGRAL 35% LIGHT 450G\",\r\n        \"descricaoEcomerce\": \"Pão de Forma Integral 35% Light Sem Adição de Açúcares 450g\",\r\n        \"ean\": \"7896998701202\",\r\n        \"eanCaixa\": \"7896998701202\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50120\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998701202\",\r\n        \"categoriaPrinciapal\": 1,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998701202.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50127,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO DE FORMA GRAOS INTEGRAIS LIGHT 400G\",\r\n        \"descricaoEcomerce\": \"100% Sabor Grãos Integrais Light 350g\",\r\n        \"ean\": \"7896998701271\",\r\n        \"eanCaixa\": \"7896998701271\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50127\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998701271\",\r\n        \"categoriaPrinciapal\": 10,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998701271.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50128,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO FORMA NEWBREAD INTEGRAL 59% 450G\",\r\n        \"descricaoEcomerce\": \"Pão de Forma Integral 59% 450g\",\r\n        \"ean\": \"7896998701288\",\r\n        \"eanCaixa\": \"7896998701288\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50128\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998701288\",\r\n        \"categoriaPrinciapal\": 1,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998701288.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50129,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO DE FORMA GRAOS INTEGRAIS ZERO 400G\",\r\n        \"descricaoEcomerce\": \"Sabor Grãos Integrais Zero 400g\",\r\n        \"ean\": \"7896998701295\",\r\n        \"eanCaixa\": \"7896998701295\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50129\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998701295\",\r\n        \"categoriaPrinciapal\": 10,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998701295.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50137,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO DE FORMA 12 GRAOS ZERO 400G\",\r\n        \"descricaoEcomerce\": \"12 Grãos Zero 400g\",\r\n        \"ean\": \"7896998701370\",\r\n        \"eanCaixa\": \"7896998701370\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50137\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998701370\",\r\n        \"categoriaPrinciapal\": 10,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998701370.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50151,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"MAXI 7 GRAOS 400G\",\r\n        \"descricaoEcomerce\": \"Maxi Grãos Premium 7 grãos 400g\",\r\n        \"ean\": \"7896998701516\",\r\n        \"eanCaixa\": \"7896998701516\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50151\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998701516\",\r\n        \"categoriaPrinciapal\": 6,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998701516.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50152,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"MAXI CASTANHA E QUINOA 400G\",\r\n        \"descricaoEcomerce\": \"Maxi Grãos Premium Castanha do Pará e Quinoa 400g\",\r\n        \"ean\": \"7896998701523\",\r\n        \"eanCaixa\": \"7896998701523\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50152\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998701523\",\r\n        \"categoriaPrinciapal\": 6,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998701523.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50153,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"MAXI CASTANHA E CHIA 400G\",\r\n        \"descricaoEcomerce\": \"Maxi Grãos Castanhas e Chia 400g\",\r\n        \"ean\": \"7896998701547\",\r\n        \"eanCaixa\": \"7896998701547\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50153\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998701547\",\r\n        \"categoriaPrinciapal\": 6,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998701547.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50181,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PANEDITONE FRUTAS CRISTALIZADAS NEWBREAD 400G\",\r\n        \"descricaoEcomerce\": \"Paneditone 400g\",\r\n        \"ean\": \"7896998701813\",\r\n        \"eanCaixa\": \"7896998701813\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50181\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998701813\",\r\n        \"categoriaPrinciapal\": 11,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998701813.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50300,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PANETTONE TRADICIONAL NEWBREAD 400G\",\r\n        \"descricaoEcomerce\": \"Panettone Tradicional  400g\",\r\n        \"ean\": \"7896998703008\",\r\n        \"eanCaixa\": \"7896998703008\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50300\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998703008\",\r\n        \"categoriaPrinciapal\": 5,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998703008.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50310,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PANETTONE C GOTAS DE CHOCOLATE NEWBREAD 400G\",\r\n        \"descricaoEcomerce\": \"Panettone Gotas sabor Chocolate 400g\",\r\n        \"ean\": \"7896998703107\",\r\n        \"eanCaixa\": \"7896998703107\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50310\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998703107\",\r\n        \"categoriaPrinciapal\": 5,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998703107.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50320,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PANETTONE DUPLO CHOCOLATE NEWBREAD 400G\",\r\n        \"descricaoEcomerce\": \"Panettone Duplo Chocolate 400g\",\r\n        \"ean\": \"7896998703206\",\r\n        \"eanCaixa\": \"7896998703206\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50320\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998703206\",\r\n        \"categoriaPrinciapal\": 5,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998703206.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50510,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"ROSQUINHA DE CHOCOLATE NEWBREAD 300G\",\r\n        \"descricaoEcomerce\": \"Rosquinha sabor Chocolate 300g\",\r\n        \"ean\": \"7896998705101\",\r\n        \"eanCaixa\": \"7896998705101\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50510\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705101\",\r\n        \"categoriaPrinciapal\": 2,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705101.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50511,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"ROSQUINHA DE CHOCOLATE NEWBREAD 500G\",\r\n        \"descricaoEcomerce\": \"Rosquinha sabor Chocolate 500g\",\r\n        \"ean\": \"7896998705118\",\r\n        \"eanCaixa\": \"7896998705118\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50511\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705118\",\r\n        \"categoriaPrinciapal\": 2,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705118.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50520,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"ROSQUINHA DE LEITE NEWBREAD 300G\",\r\n        \"descricaoEcomerce\": \"Rosquinha sabor Leite 300g\",\r\n        \"ean\": \"7896998705200\",\r\n        \"eanCaixa\": \"7896998705200\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50520\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705200\",\r\n        \"categoriaPrinciapal\": 2,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705200.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50521,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"ROSQUINHA DE MILHO NEWBREAD 300G\",\r\n        \"descricaoEcomerce\": \"Rosquinha sabor Milho 300g\",\r\n        \"ean\": \"7896998705217\",\r\n        \"eanCaixa\": \"7896998705217\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50521\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705217\",\r\n        \"categoriaPrinciapal\": 2,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705217.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50522,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"ROSQUINHA DE MILHO NEWBREAD 500G\",\r\n        \"descricaoEcomerce\": \"Rosquinha sabor Milho 500g\",\r\n        \"ean\": \"7896998705224\",\r\n        \"eanCaixa\": \"7896998705224\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50522\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705224\",\r\n        \"categoriaPrinciapal\": 2,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705224.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50523,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"ROSQUINHA DE LEITE NEWBREAD 500G\",\r\n        \"descricaoEcomerce\": \"Rosquinha sabor Leite 500g\",\r\n        \"ean\": \"7896998705231\",\r\n        \"eanCaixa\": \"7896998705231\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50523\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705231\",\r\n        \"categoriaPrinciapal\": 2,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705231.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50530,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"ROSQUINHA DE COCO NEWBREAD 300G\",\r\n        \"descricaoEcomerce\": \"Rosquinha sabor Coco 300g\",\r\n        \"ean\": \"7896998705309\",\r\n        \"eanCaixa\": \"7896998705309\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50530\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705309\",\r\n        \"categoriaPrinciapal\": 2,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705309.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50531,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"ROSQUINHA DE COCO NEWBREAD 500G\",\r\n        \"descricaoEcomerce\": \"Rosquinha sabor Coco 500g\",\r\n        \"ean\": \"7896998705316\",\r\n        \"eanCaixa\": \"7896998705316\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50531\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705316\",\r\n        \"categoriaPrinciapal\": 2,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705316.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50554,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"SEQUILHO DE COCO NEWBREAD 240G\",\r\n        \"descricaoEcomerce\": \"Sequilhos sabor Coco 240g\",\r\n        \"ean\": \"7896998705545\",\r\n        \"eanCaixa\": \"7896998705545\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50554\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705545\",\r\n        \"categoriaPrinciapal\": 3,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705545.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50559,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"SEQUILHO DE LEITE CONDENSADO NEWBREAD 240G\",\r\n        \"descricaoEcomerce\": \"Sequilhos sabor Leite Condensado 240g\",\r\n        \"ean\": \"7896998705590\",\r\n        \"eanCaixa\": \"7896998705590\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50559\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998705590\",\r\n        \"categoriaPrinciapal\": 3,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998705590.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50600,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BOLO DE CHOCOLATE NEWBREAD 200G\",\r\n        \"descricaoEcomerce\": \"Bolo sabor Chocolate 200g\",\r\n        \"ean\": \"7896998706009\",\r\n        \"eanCaixa\": \"7896998706009\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50600\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998706009\",\r\n        \"categoriaPrinciapal\": 8,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998706009.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50601,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BOLO DE LARANJA NEWBREAD 200G\",\r\n        \"descricaoEcomerce\": \"Bolo sabor Laranja 200g\",\r\n        \"ean\": \"7896998706016\",\r\n        \"eanCaixa\": \"7896998706016\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50601\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998706016\",\r\n        \"categoriaPrinciapal\": 8,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998706016.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50602,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BOLO GOTAS DE CHOCOLATE NEWBREAD 200G\",\r\n        \"descricaoEcomerce\": \"Bolo Gotas de Chocolate 200g\",\r\n        \"ean\": \"7896998706023\",\r\n        \"eanCaixa\": \"7896998706023\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50602\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998706023\",\r\n        \"categoriaPrinciapal\": 8,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998706023.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50603,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BOLO DE COCO NEWBREAD 200G\",\r\n        \"descricaoEcomerce\": \"Bolo sabor Coco 200g\",\r\n        \"ean\": \"7896998706030\",\r\n        \"eanCaixa\": \"7896998706030\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50603\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998706030\",\r\n        \"categoriaPrinciapal\": 8,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998706030.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50604,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BOLO DE ABACAXI NEWBREAD 200G\",\r\n        \"descricaoEcomerce\": \"Bolo sabor Abacaxi 200g\",\r\n        \"ean\": \"7896998706047\",\r\n        \"eanCaixa\": \"7896998706047\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50604\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998706047\",\r\n        \"categoriaPrinciapal\": 8,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998706047.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50605,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BOLO FORMIGUEIRO NEWBREAD 200G\",\r\n        \"descricaoEcomerce\": \"Bolo Formigueiro 200g\",\r\n        \"ean\": \"7896998706054\",\r\n        \"eanCaixa\": \"7896998706054\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50605\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998706054\",\r\n        \"categoriaPrinciapal\": 8,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998706054.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50607,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"BOLO MESCLADO NEWBREAD 200G\",\r\n        \"descricaoEcomerce\": \"Bolo Mesclado 200g\",\r\n        \"ean\": \"7896998706078\",\r\n        \"eanCaixa\": \"7896998706078\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50607\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998706078\",\r\n        \"categoriaPrinciapal\": 8,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998706078.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50800,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO HAMBURGUER ORIGINAL NEWBREAD\",\r\n        \"descricaoEcomerce\": \"Pão para Hot Dog 400g\",\r\n        \"ean\": \"7896998708003\",\r\n        \"eanCaixa\": \"7896998708003\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50800\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998708003\",\r\n        \"categoriaPrinciapal\": 7,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998708003.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50810,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO HOT DOG ORIGINAL NEWBREAD 400G\",\r\n        \"descricaoEcomerce\": \"Pão para Hot Dog 400g\",\r\n        \"ean\": \"7896998708102\",\r\n        \"eanCaixa\": \"7896998708102\",\r\n        \"codVol\": \"UN\",\r\n        \"productId\": \"50810\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998708102\",\r\n        \"categoriaPrinciapal\": 7,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7896998708102.webp\",\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    }\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/updateListProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "updateListProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update Estoque Produto Loja",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"codProd\": 26,\r\n    \"idIntegradora\": 25,\r\n    \"indiceEstoque\": 100,\r\n    \"qtUnit\": 1,\r\n    \"qtUnitCaixa\": 1,\r\n    \"codLocalOrig\": 0,\r\n    \"recalculaPrecoUnidade\": true,\r\n    \"recalculaEstoqueUnidade\": true,\r\n    \"descricaoErp\": \"CORTADOR RISCADEIRA PISO PORCELANATO AZULEJO TEC-100 CORTAG\",\r\n    \"descricaoEcomerce\": \"Riscadeira porcelanato profissional TEC-100\",\r\n    \"ean\": \"7891884862128\",\r\n    \"eanCaixa\": \"7891884862128\",\r\n    \"codVol\": \"UN\",\r\n    \"codFilial\": \"3\",\r\n    \"skuId\": \"7891884862128\",\r\n    \"descricaoTecnica\": \"<p>Os cortadores profissionais da linha TEC são indicados para cortar pisos cerâmicos e porcelanatos até 10 mm de espessura. ? Sistema de separação na parte superior do carro guia; ? Sistema de separação em alumínio injetado; ? Guias em aço carbono niquelado proporcionando maior durabilidade; ? Limitador lateral garantindo medidas uniformes em cortes retos ou em diagonal; ? Rodel cortante com haste em aço carbono zincado e disco de carboneto de tungstênio (wídia); TAMANHO MÁXIMO DE PISO PARA CORTE DIAGONAL 710 mm x 710 mm COMPRIMENTO MÁXIMO DE CORTE 1000 mm ESPESSURA MÁXIMA DE CORTE 10 mm.</p>\",\r\n    \"preco\": 85.49,\r\n    \"qtEstoque\": 55,\r\n    \"imagem\": \"https://lopesecia.com.br/img/7891884862128.png\",\r\n    \"categoriaPrinciapal\": 1,\r\n    \"imagens\": [\r\n        \"https://lopesecia.com.br/img/7891884862128A.png\",\r\n        \"https://lopesecia.com.br/img/7891884862128B.png\",\r\n        \"https://lopesecia.com.br/img/7891884862128B.png\",\r\n        \"https://lopesecia.com.br/img/7891884862128C.png\",\r\n        \"https://lopesecia.com.br/img/7891884862128A.png\",\r\n        \"https://lopesecia.com.br/img/7891884862128C.png\"\r\n    ],\r\n    \"categorias\": []\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/updateEstoqueProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "updateEstoqueProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Update PreçoProduto Loja",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n    {\r\n        \"codProd\": 25,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"CORTADOR RISCADEIRA PISO PORCELANATO AZULEJO TEC-100 CORTAG\",\r\n        \"descricaoEcomerce\": \"Riscadeira porcelanato profissional TEC-100\",\r\n        \"ean\": \"7891884862128\",\r\n        \"eanCaixa\": \"7891884862128\",\r\n        \"codVol\": \"UN\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7891884862128\",\r\n        \"descricaoTecnica\": \"<p>Os cortadores profissionais da linha TEC são indicados para cortar pisos cerâmicos e porcelanatos até 10 mm de espessura. ? Sistema de separação na parte superior do carro guia; ? Sistema de separação em alumínio injetado; ? Guias em aço carbono niquelado proporcionando maior durabilidade; ? Limitador lateral garantindo medidas uniformes em cortes retos ou em diagonal; ? Rodel cortante com haste em aço carbono zincado e disco de carboneto de tungstênio (wídia); TAMANHO MÁXIMO DE PISO PARA CORTE DIAGONAL 710 mm x 710 mm COMPRIMENTO MÁXIMO DE CORTE 1000 mm ESPESSURA MÁXIMA DE CORTE 10 mm.</p>\",\r\n        \"preco\": 85.49,\r\n        \"qtEstoque\": 54,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7891884862128.png\",\r\n        \"categoriaPrinciapal\": 1,\r\n        \"dtUltAlter\": \"2024-10-31T14:20:49.000+00:00\",\r\n        \"imagens\": [\r\n            \"https://lopesecia.com.br/img/7891884862128A.png\",\r\n            \"https://lopesecia.com.br/img/7891884862128C.png\",\r\n            \"https://lopesecia.com.br/img/7891884862128B.png\"\r\n        ],\r\n        \"categorias\": [\r\n            {\r\n                \"codigo\": 3,\r\n                \"codPai\": 1,\r\n                \"categoria\": \"Eletrônicos\",\r\n                \"detalhamento\": \"Briquedos Elétricos e Eletrônicos\",\r\n                \"imagem\": \"https://lopesecia.com.br/img/SemImagem.png\",\r\n                \"codProd\": 11\r\n            },\r\n            {\r\n                \"codigo\": 2,\r\n                \"codPai\": 1,\r\n                \"categoria\": \"Bonecos\",\r\n                \"detalhamento\": \"Bonecas e bonecos para todos os gêneros\",\r\n                \"imagem\": \"https://lopesecia.com.br/img/SemImagem.png\",\r\n                \"codProd\": 11\r\n            }\r\n        ]\r\n    }\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/updatePrecoProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "updatePrecoProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Valida Vinculos Produto Loja",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"codProd\": 50010,\r\n    \"idIntegradora\": 25,\r\n    \"indiceEstoque\": 100,\r\n    \"qtUnit\": 1,\r\n    \"qtUnitCaixa\": 1,\r\n    \"codLocalOrig\": 0,\r\n    \"recalculaPrecoUnidade\": false,\r\n    \"recalculaEstoqueUnidade\": false,\r\n    \"descricaoErp\": \"PAO DE FORMA TRADICIONAL NEWBREAD 450G\",\r\n    \"descricaoEcomerce\": \"PÃO DE FORMA TRADICIONAL NEWBREAD 450G\",\r\n    \"ean\": \"7896998700106\",\r\n    \"eanCaixa\": \"7896998700106\",\r\n    \"codVol\": \"UN\",\r\n    \"productId\": \"50010\",\r\n    \"skuId\": \"7896998700106\",\r\n    \"descricaoTecnica\": \"PAO DE FORMA TRADICIONAL NEWBREAD 450G\",\r\n    \"preco\": 5,\r\n    \"qtEstoque\": 10,\r\n    \"categoriaPrinciapal\": 1,\r\n    \"imagens\": [],\r\n    \"categorias\": []\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/validaVinculoProdutosLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "validaVinculoProdutosLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Produtos Loja",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n    {\r\n        \"codProd\": 26,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"CORTADOR RISCADEIRA PISO PORCELANATO AZULEJO TEC-100 CORTAG\",\r\n        \"descricaoEcomerce\": \"Riscadeira porcelanato profissional TEC-100\",\r\n        \"ean\": \"7891884862128\",\r\n        \"eanCaixa\": \"7891884862128\",\r\n        \"codVol\": \"UN\",\r\n        \"codFilial\": \"3\",\r\n        \"skuId\": \"7891884862128\",\r\n        \"descricaoTecnica\": \"<p>Os cortadores profissionais da linha TEC são indicados para cortar pisos cerâmicos e porcelanatos até 10 mm de espessura. ? Sistema de separação na parte superior do carro guia; ? Sistema de separação em alumínio injetado; ? Guias em aço carbono niquelado proporcionando maior durabilidade; ? Limitador lateral garantindo medidas uniformes em cortes retos ou em diagonal; ? Rodel cortante com haste em aço carbono zincado e disco de carboneto de tungstênio (wídia); TAMANHO MÁXIMO DE PISO PARA CORTE DIAGONAL 710 mm x 710 mm COMPRIMENTO MÁXIMO DE CORTE 1000 mm ESPESSURA MÁXIMA DE CORTE 10 mm.</p>\",\r\n        \"preco\": 85.49,\r\n        \"imagem\": \"https://lopesecia.com.br/img/7891884862128.png\",\r\n        \"categoriaPrinciapal\": 1,\r\n        \"imagens\": [\r\n            \"https://lopesecia.com.br/img/7891884862128A.png\",\r\n            \"https://lopesecia.com.br/img/7891884862128C.png\",\r\n            \"https://lopesecia.com.br/img/7891884862128B.png\",\r\n            \"https://lopesecia.com.br/img/7891884862128C.png\",\r\n            \"https://lopesecia.com.br/img/7891884862128A.png\",\r\n            \"https://lopesecia.com.br/img/7891884862128B.png\",\r\n            \"https://lopesecia.com.br/img/7891884862128C.png\",\r\n            \"https://lopesecia.com.br/img/7891884862128A.png\",\r\n            \"https://placehold.co/600x400\",\r\n            \"https://lopesecia.com.br/img/7891884862128B.png\"\r\n        ],\r\n        \"categorias\": []\r\n    },\r\n    {\r\n        \"codProd\": 50010,\r\n        \"idIntegradora\": 25,\r\n        \"indiceEstoque\": 100,\r\n        \"qtUnit\": 1,\r\n        \"qtUnitCaixa\": 1,\r\n        \"codLocalOrig\": 0,\r\n        \"recalculaPrecoUnidade\": true,\r\n        \"recalculaEstoqueUnidade\": true,\r\n        \"descricaoErp\": \"PAO DE FORMA TRADICIONAL NEWBREAD 450G\",\r\n        \"descricaoEcomerce\": \"Pão de Forma Tradicional Newbread 450g\",\r\n        \"ean\": \"7896998700106\",\r\n        \"eanCaixa\": \"7896998700106\",\r\n        \"codVol\": \"UN\",\r\n        \"codFilial\": \"1\",\r\n        \"skuId\": \"7896998700106\",\r\n        \"descricaoTecnica\": \"INGREDIENTES: Farinha de trigo enriquecida com ferro e ácido fólico, açúcar, óleo vegetal de soja, sal, vinagre, farinha de soja, emulsificantes: mono e diglicerídeos de ácidos graxos e estearoil-2-lactil lactato de sódio, conservador propionato de cálcio. CONTÉM GLÚTEN.\\n\\nALÉRGICOS: CONTÉM DERIVADOS DE TRIGO E DERIVADOS DE SOJA. PODE CONTER: OVOS, LEITE, AVEIA, CEVADA, TRITICALE, CASTANHA-DE-CAJU, CASTANHA-DO-PARÁ E DERIVADOS DE CENTEIO.\",\r\n        \"preco\": 0,\r\n        \"imagem\": \"produtos/tradicional/Pao de Forma 450 G/forma_tradicional.webp\",\r\n        \"categoriaPrinciapal\": 1,\r\n        \"imagens\": [],\r\n        \"categorias\": []\r\n    }\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/deleteProdutosLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "deleteProdutosLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Insert Imagem Produto Loja",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n    {\r\n        \"idIntegradora\": 8,\r\n        \"codProd\": 8,\r\n        \"imagem\": \"https://placehold.co/600x400\"\r\n    }\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/insertImagenProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "insertImagenProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Imagem Produto Loja",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "[\r\n    {\r\n        \"idIntegradora\": 25,\r\n        \"codProd\": 26,\r\n        \"imagem\": \"https://placehold.co/600x400\"\r\n    }\r\n]",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/deleteImagenProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "deleteImagenProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Vinculo Categoria Produto Loja",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/getListVinculoCategoriaProdutoLoja?idIntegradora=25",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "getListVinculoCategoriaProdutoLoja"
+                  ],
+                  "query": [
+                    {
+                      "key": "idIntegradora",
+                      "value": "25"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Insert Vinculo Categoria Produto Loja",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idIntegradora\": 25,\r\n    \"codigo\": 7,\r\n    \"codProd\": 50010\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/insertVinculoCategoriaProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "insertVinculoCategoriaProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Vinculo Categoria Produto Loja",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"idIntegradora\": 25,\r\n    \"codigo\": 7,\r\n    \"codProd\": 50010\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/deleteVinculoCategoriaProdutoLoja",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "deleteVinculoCategoriaProdutoLoja"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Rotinas",
+          "item": [
+            {
+              "name": "Get List Acesso",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIkpYQ1NFclwifSIsImV4cCI6MTc3MDg0Mjg3NH0.pyze8ZyMAc9e6xP8wXUESnomqfOIKsW35gCcCsOQLbI",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/getListAcesso?idIntegradora=11&idUsuario=12",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "getListAcesso"
+                  ],
+                  "query": [
+                    {
+                      "key": "idIntegradora",
+                      "value": "11"
+                    },
+                    {
+                      "key": "idUsuario",
+                      "value": "12"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get List Rotinas",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIlRBMzY3MlwifSIsImV4cCI6MTc3MDk1MTkxMH0.-rUmSHasnYwXi3nMAK29puf8WUuXdB3FCB87l-1SrGQ",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/getListRotina?id=&nome=",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "getListRotina"
+                  ],
+                  "query": [
+                    {
+                      "key": "id",
+                      "value": ""
+                    },
+                    {
+                      "key": "nome",
+                      "value": ""
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Delete Acesso Rotina",
+              "request": {
+                "method": "DELETE",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIlNFTmZ1bVwifSIsImV4cCI6MTc2OTAzMjAzMX0.PsI6mqr5Cc_U4qdk81yEOMQb7HNJjFvlveIXpVgubXk",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"selected\": {\r\n        \"name\": \"\",\r\n        \"value\": false,\r\n        \"valid\": true\r\n    },\r\n    \"idFunc\": 12,\r\n    \"idRotina\": 9003,\r\n    \"idIntegradora\": 11\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/deleteAcesso",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "deleteAcesso"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Put Acesso Total",
+              "request": {
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIkpYQ1NFclwifSIsImV4cCI6MTc3MDg0Mjg3NH0.pyze8ZyMAc9e6xP8wXUESnomqfOIKsW35gCcCsOQLbI",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"selected\": {\r\n        \"name\": \"\",\r\n        \"value\": false,\r\n        \"valid\": true\r\n    },\r\n    \"idFunc\": 12,\r\n    \"idRotina\": 0,\r\n    \"idIntegradora\": 11\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/acessoTotal",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "acessoTotal"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Ver Permissão Acesso",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIjZPbHVNZ1wifSIsImV4cCI6MTc3MDA0MjA0Nn0.FIievWhz_JaoOOuc0tMmISvVaQFPfN0ZYNy2VLeka2o",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/verPermissaoAcesso?idUsuario=12&idIntegradora=11&rotina=9003",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "verPermissaoAcesso"
+                  ],
+                  "query": [
+                    {
+                      "key": "idUsuario",
+                      "value": "12"
+                    },
+                    {
+                      "key": "idIntegradora",
+                      "value": "11"
+                    },
+                    {
+                      "key": "rotina",
+                      "value": "9003"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "UpSoftware",
+          "item": [
+            {
+              "name": "Api Token UP",
+              "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"ID_Cliente\": \"U>DBDGDBF\",\r\n    \"homolog\": false,\r\n    \"integrador\" : \"2\"\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "http://upapi.cloudupsoftware.com/UpApi/v11/api/Token",
+                  "protocol": "http",
+                  "host": [
+                    "upapi",
+                    "cloudupsoftware",
+                    "com"
+                  ],
+                  "path": [
+                    "UpApi",
+                    "v11",
+                    "api",
+                    "Token"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Produto ERP UP by ID",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVT5EQkRHREJGIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiIiwiaW50ZWdyYWRvciI6IjIiLCJleHAiOjE3NzM4NjE4ODUsImlzcyI6InVwc29mdHdhcmUiLCJhdWQiOiJ1cHNvZnR3YXJlIn0.0X0s98P4-T39o3VPFNlHvWO5lQZH6RaVCONxUASio-g",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://upapi.cloudupsoftware.com/UpApi/v11/api/Produtos/consulta/todos/0/[50010]",
+                  "protocol": "http",
+                  "host": [
+                    "upapi",
+                    "cloudupsoftware",
+                    "com"
+                  ],
+                  "path": [
+                    "UpApi",
+                    "v11",
+                    "api",
+                    "Produtos",
+                    "consulta",
+                    "todos",
+                    "0",
+                    "[50010]"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Categoria ERP UP",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVT5EQkRHREJGIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiIiwiaW50ZWdyYWRvciI6IjIiLCJleHAiOjE3NzQ1OTA3MDcsImlzcyI6InVwc29mdHdhcmUiLCJhdWQiOiJ1cHNvZnR3YXJlIn0.LJzz0cb2svcim5hwKaUOIE3XuwFcU4SBxr8SgSpRpE8",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://upapi.cloudupsoftware.com/UpApi/v11/api/ClassificacaoProduto",
+                  "protocol": "http",
+                  "host": [
+                    "upapi",
+                    "cloudupsoftware",
+                    "com"
+                  ],
+                  "path": [
+                    "UpApi",
+                    "v11",
+                    "api",
+                    "ClassificacaoProduto"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Get Todos Produtos ERP UP",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVT5EQkRHREJGIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiIiwiaW50ZWdyYWRvciI6IjIiLCJleHAiOjE3NzYyNjQ2NjksImlzcyI6InVwc29mdHdhcmUiLCJhdWQiOiJ1cHNvZnR3YXJlIn0.EPxUraBTcJmf2j8j7i2wY72Wzjw0v4OWhilwJ6BVOLE",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "http://upapi.cloudupsoftware.com/UpApi/v11/api/Produtos/consulta/todos/0",
+                  "protocol": "http",
+                  "host": [
+                    "upapi",
+                    "cloudupsoftware",
+                    "com"
+                  ],
+                  "path": [
+                    "UpApi",
+                    "v11",
+                    "api",
+                    "Produtos",
+                    "consulta",
+                    "todos",
+                    "0"
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "UP CondicoesPagamento",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVT5EQkRHREJGIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiIiwiaW50ZWdyYWRvciI6IjIiLCJleHAiOjE3NzMxNTg3MjEsImlzcyI6InVwc29mdHdhcmUiLCJhdWQiOiJ1cHNvZnR3YXJlIn0.4_KazRPIKVo1mYLJGjIec7rXu7TfvCdp4StxU0EskyM",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9uYW1lIjoiVT5EQkRHREJGIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiIiwiaW50ZWdyYWRvciI6IjIiLCJleHAiOjE3NzMxNTg3MjEsImlzcyI6InVwc29mdHdhcmUiLCJhdWQiOiJ1cHNvZnR3YXJlIn0.4_KazRPIKVo1mYLJGjIec7rXu7TfvCdp4StxU0EskyM",
+                    "type": "text",
+                    "disabled": true
+                  }
+                ],
+                "url": {
+                  "raw": "http://upapi.cloudupsoftware.com/UpApi/v11/api/CondicoesPagamento",
+                  "protocol": "http",
+                  "host": [
+                    "upapi",
+                    "cloudupsoftware",
+                    "com"
+                  ],
+                  "path": [
+                    "UpApi",
+                    "v11",
+                    "api",
+                    "CondicoesPagamento"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Categoria",
+          "item": [
+            {
+              "name": "Get List Categoria",
+              "request": {
+                "method": "GET",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/getListCategoria?idIntegradora=25",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "getListCategoria"
+                  ],
+                  "query": [
+                    {
+                      "key": "idIntegradora",
+                      "value": "25"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "Insert Categoria",
+              "request": {
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Authorization",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcIllubVRsM1wifSIsImV4cCI6MTc3MjE0MzE0MX0.hw_hwyf1AcWs2sEtGfm2ACbfFEbx-XxYS_j8SIocpgY",
+                    "type": "text",
+                    "disabled": true
+                  },
+                  {
+                    "key": "token",
+                    "value": "iqK!mtg}J&",
+                    "type": "text"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\r\n    \"codigo\": 2,\r\n    \"codPai\": 0,\r\n    \"categoria\": \"BOLOS\",\r\n    \"detalhamento\": \"Bolos\",\r\n    \"imagem\": \"https://lopesecia.com.br/img/semImagem.png\",\r\n    \"codProd\": 50010,\r\n    \"sequencia\": 2\r\n}",
+                  "options": {
+                    "raw": {
+                      "language": "json"
+                    }
+                  }
+                },
+                "url": {
+                  "raw": "{{B2C_BASE_URL}}/Servidor/webservice/integration/insertCategoria",
+                  "host": [
+                    "{{B2C_BASE_URL}}"
+                  ],
+                  "path": [
+                    "Servidor",
+                    "webservice",
+                    "integration",
+                    "insertCategoria"
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "Get Integradora",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoiU2VydmljZSBDT05ORUNUIiwiZXhwIjoxNzc0MDI2NjE4fQ.a-7HH6cTAh-FxNTJM4t2fMAhAj05mH0QVNNX_P08Xo4",
+                "type": "text",
+                "disabled": true
+              },
+              {
+                "key": "token",
+                "value": "iqK!mtg}J&",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "https://gp.lopesecia.com.br:9004/Servidor/webservice/integration/getIntegradora?id=8",
+              "protocol": "https",
+              "host": [
+                "gp",
+                "lopesecia",
+                "com",
+                "br"
+              ],
+              "port": "9004",
+              "path": [
+                "Servidor",
+                "webservice",
+                "integration",
+                "getIntegradora"
+              ],
+              "query": [
+                {
+                  "key": "id",
+                  "value": "8"
+                }
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Insert Operador Sistema",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoie1wiY29kVW5pY29cIjpcIkJZU0hPUFwiLFwidG9rZW5cIjpcInF1Q2VDblwifSIsImV4cCI6MTc3MDIxNzc3OH0.GfTfGiFUpjGT_CW2RBbt89TaOrbdfGWdEHjtQ0fSZ5o",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"status\": 1,\r\n    \"idFilial\": 1,\r\n    \"nome\": \"Fulano\",\r\n    \"telefone\": \"83911223344\",\r\n    \"email\": \"fulano@gmail.com\"\r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{baseURL}}/ApiLopes/webservice/api/insertOperadorSistema",
+              "host": [
+                "{{baseURL}}"
+              ],
+              "path": [
+                "ApiLopes",
+                "webservice",
+                "api",
+                "insertOperadorSistema"
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Winthor",
+      "item": [
+        {
+          "name": "Get List Produto",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoiU2VydmljZSBDT05ORUNUIiwiZXhwIjoxNzc1MDIyOTAxfQ.K7G6yEJPyz-cpuFMmkhhVLb-B67ghm7hHEN3Jux_Z1k",
+                "type": "text"
+              }
+            ],
+            "url": {
+              "raw": "http://45.225.191.246:8060/ApiWinthor/services/getListProduto?embalagem=N&usaViews=true&codFilial=1",
+              "protocol": "http",
+              "host": [
+                "45",
+                "225",
+                "191",
+                "246"
+              ],
+              "port": "8060",
+              "path": [
+                "ApiWinthor",
+                "services",
+                "getListProduto"
+              ],
+              "query": [
+                {
+                  "key": "embalagem",
+                  "value": "N"
+                },
+                {
+                  "key": "revenda",
+                  "value": "true",
+                  "disabled": true
+                },
+                {
+                  "key": "foraLinha",
+                  "value": "false",
+                  "disabled": true
+                },
+                {
+                  "key": "usaViews",
+                  "value": "true"
+                },
+                {
+                  "key": "codFilial",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Insert Cod Unico",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "token",
+            "value": "FIfsk>Ptrm",
+            "type": "text"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"idFilial\": 1,\r\n    \"idOperador\": 1217,\r\n    \"codUnico\": \"BYSHOP\",\r\n    \"unidade\": \"BYSHOP - BYSHOP\"\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "{{baseURL}}/ApiLopes/webservice/api/insertCodUnico",
+          "host": [
+            "{{baseURL}}"
+          ],
+          "path": [
+            "ApiLopes",
+            "webservice",
+            "api",
+            "insertCodUnico"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "packages": {},
+        "requests": {},
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseURL",
+      "value": ""
+    },
+    {
+      "key": "B2C_BASE_URL",
+      "value": ""
+    }
+  ]
+}

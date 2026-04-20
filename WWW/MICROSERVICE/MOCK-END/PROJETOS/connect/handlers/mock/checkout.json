@@ -1,14 +1,14 @@
 {
   "meta": {
     "version": 2,
-    "updatedAt": "2026-04-17T03:49:58.183Z"
+    "updatedAt": "2026-04-20T14:31:35.799Z"
   },
   "seq": {
     "carrinhoId": 3,
-    "itemId": 11,
-    "checkoutId": 10,
-    "pedidoId": 5,
-    "pagamentoId": 5
+    "itemId": 12,
+    "checkoutId": 11,
+    "pedidoId": 6,
+    "pagamentoId": 6
   },
   "config": {
     "moeda": "BRL",

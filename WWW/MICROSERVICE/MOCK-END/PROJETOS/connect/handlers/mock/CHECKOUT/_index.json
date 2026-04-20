@@ -11,6 +11,9 @@
     },
     "9": {
       "clienteId": 999
+    },
+    "10": {
+      "clienteId": 999
     }
   },
   "pedidoById": {
@@ -29,6 +32,10 @@
     "4": {
       "clienteId": 999,
       "checkoutId": 9
+    },
+    "5": {
+      "clienteId": 999,
+      "checkoutId": 10
     }
   }
 }
