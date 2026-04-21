@@ -1,0 +1,11 @@
+{
+  "servidor.getListProdutoLoja": {
+    "method": "GET",
+    "url": "${SERVIDOR_BASE_URL}/webservice/integration/getListProdutoLoja?idIntegradora=${IDINTEGRADORA}",
+    "auth": "tokenService",
+    "headers": {
+      "Accept": "application/json"
+    }
+  }
+}
+

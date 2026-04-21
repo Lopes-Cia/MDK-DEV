@@ -9,7 +9,7 @@ import time
 import urllib.error
 import urllib.parse
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 
@@ -46,8 +46,8 @@ def read_env_file(path: Path):
 
 def load_env(env_file: Path):
     file_env = read_env_file(env_file)
-    merged = dict(file_env)
-    for k, v in os.environ.items():
+    merged = dict(os.environ)
+    for k, v in file_env.items():
         merged[k] = v
     return merged
 
@@ -109,7 +109,7 @@ def add_query(url: str, query: dict):
     return urllib.parse.urlunsplit((u.scheme, u.netloc, u.path, new_qs, u.fragment))
 
 
-def http_request(method: str, url: str, headers: dict, body_bytes: bytes | None, timeout_s: int):
+def http_request(method: str, url: str, headers: dict, body_bytes, timeout_s: int):
     req = urllib.request.Request(url, data=body_bytes, method=method.upper())
     for k, v in (headers or {}).items():
         req.add_header(k, v)
@@ -172,6 +172,22 @@ def format_body_for_print(content_type: str, body_bytes: bytes, max_chars: int, 
         return text
     return text[:max_chars] + "\n...\n"
 
+def bytes_to_text_snippet(b: bytes, max_chars: int = 1000):
+    if not b:
+        return ""
+    s = b.decode("utf-8", errors="replace")
+    if max_chars <= 0:
+        return ""
+    if len(s) <= max_chars:
+        return s
+    return s[:max_chars] + "\n...\n"
+
+def now_iso_z():
+    return datetime.now(timezone.utc).isoformat().replace("+00:00", "Z")
+
+def now_compact_z():
+    return datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+
 
 def resolve_base_url(env: dict, base_var: str):
     v = safe_str(env.get(base_var))
@@ -209,12 +225,12 @@ def token_service_get(env: dict, timeout_s: int):
     res = http_request("POST", url, headers, json.dumps(payload).encode("utf-8"), timeout_s)
     data = try_parse_json_bytes(res["body_bytes"])
     if res["status"] != 200:
-        return {"ok": False, "status": res["status"], "url": url, "data": data, "raw": res["body_bytes"]}
+        return {"ok": False, "status": res["status"], "url": url, "data": data, "raw_text": bytes_to_text_snippet(res["body_bytes"])}
     if not isinstance(data, dict):
-        return {"ok": False, "status": res["status"], "url": url, "data": data, "raw": res["body_bytes"]}
+        return {"ok": False, "status": res["status"], "url": url, "data": data, "raw_text": bytes_to_text_snippet(res["body_bytes"])}
     token = safe_str(data.get("hashToken"))
     if not token:
-        return {"ok": False, "status": res["status"], "url": url, "data": data, "raw": res["body_bytes"]}
+        return {"ok": False, "status": res["status"], "url": url, "data": data, "raw_text": bytes_to_text_snippet(res["body_bytes"])}
     return {"ok": True, "status": res["status"], "url": url, "token": token, "data": data}
 
 
@@ -266,7 +282,7 @@ def cmd_request(args):
     body_print = format_body_for_print(res.get("content_type", ""), res.get("body_bytes", b""), args.max_body, args.full_body)
 
     request_snapshot = {
-        "at": datetime.utcnow().isoformat() + "Z",
+        "at": now_iso_z(),
         "method": args.method.upper(),
         "url": url,
         "headers": redact_headers(headers),
@@ -275,7 +291,7 @@ def cmd_request(args):
         "body_json": try_parse_json_bytes(body_bytes or b"") if body_bytes else None,
     }
     response_snapshot = {
-        "at": datetime.utcnow().isoformat() + "Z",
+        "at": now_iso_z(),
         "status": res.get("status"),
         "ok": bool(res.get("ok")),
         "duration_ms": res.get("duration_ms"),
@@ -288,7 +304,7 @@ def cmd_request(args):
     sys.stdout.write(json.dumps({"request": request_snapshot, "response": response_snapshot}, ensure_ascii=False, indent=2) + "\n")
 
     if args.save:
-        ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+        ts = now_compact_z()
         run_dir = Path(args.runs_dir) / ts
         save_run(run_dir, request_snapshot, response_snapshot)
 
@@ -362,7 +378,7 @@ def cmd_run(args):
     body_print = format_body_for_print(res.get("content_type", ""), res.get("body_bytes", b""), args.max_body, args.full_body)
 
     request_snapshot = {
-        "at": datetime.utcnow().isoformat() + "Z",
+        "at": now_iso_z(),
         "name": args.name,
         "method": method,
         "url": final_url,
@@ -372,7 +388,7 @@ def cmd_run(args):
         "body_json": try_parse_json_bytes(body_bytes or b"") if body_bytes else None,
     }
     response_snapshot = {
-        "at": datetime.utcnow().isoformat() + "Z",
+        "at": now_iso_z(),
         "status": res.get("status"),
         "ok": bool(res.get("ok")),
         "duration_ms": res.get("duration_ms"),
@@ -385,7 +401,7 @@ def cmd_run(args):
     sys.stdout.write(json.dumps({"request": request_snapshot, "response": response_snapshot}, ensure_ascii=False, indent=2) + "\n")
 
     if args.save:
-        ts = datetime.utcnow().strftime("%Y%m%dT%H%M%SZ")
+        ts = now_compact_z()
         run_dir = Path(args.runs_dir) / ts
         save_run(run_dir, request_snapshot, response_snapshot)
 
@@ -446,4 +462,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

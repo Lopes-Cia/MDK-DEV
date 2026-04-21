@@ -14,6 +14,39 @@ Construir, de forma incremental, um guia prático para navegar nas documentaçõ
 - Sempre registrar: método, URL completa, headers, query/body, exemplos de execução, respostas comuns e erros.
 - Nunca colar tokens reais. Usar placeholders como `{{authorizationToken}}`.
 
+## Ferramenta (Runner IA-friendly)
+
+O objetivo do runner é permitir que um agente de IA execute endpoints com:
+
+- GET/POST/PUT/DELETE
+- headers e query params
+- body JSON
+- auth via `Authorization` (inclui geração automática via `tokenService`)
+- logs com redaction de segredos (não imprime `Authorization`)
+
+Arquivos:
+
+- `scripts/runner.py`: executor
+- `.env.local`: segredos e variáveis locais (ignorado pelo git)
+- `.env.example`: exemplo sem segredos
+- `requests.json`: catálogo de endpoints por nome (atalhos)
+
+Uso (atalho por nome):
+
+```bash
+python /workspace/WWW/MICROSERVICE/LOPES-API/scripts/runner.py --env-file /workspace/WWW/MICROSERVICE/LOPES-API/.env.local run servidor.getListProdutoLoja
+```
+
+Uso (request genérico):
+
+```bash
+python /workspace/WWW/MICROSERVICE/LOPES-API/scripts/runner.py request \
+  --method GET \
+  --url 'https://gp.lopesecia.com.br:9004/Servidor/webservice/integration/getListProdutoLoja' \
+  --query 'idIntegradora=8' \
+  --auth tokenService
+```
+
 ## Token de autenticação (Authorization)
 
 ### Quando é necessário
