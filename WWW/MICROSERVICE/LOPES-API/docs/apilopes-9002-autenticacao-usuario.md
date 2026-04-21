@@ -126,6 +126,11 @@ O response real veio com campos adicionais (além do schema básico), incluindo 
 Observação importante:
 - Esse endpoint pode disparar envio real (email/whatsapp). Evite rodar em produção sem alinhamento.
 
+Comportamento observado (execução real):
+
+- Status 200
+- Body: `true` (boolean em JSON), indicando que o envio foi disparado com sucesso
+
 Exemplo:
 
 ```bash
@@ -181,6 +186,40 @@ curl -X POST \
   -H 'Authorization: {{hashToken}}'
 ```
 
+### Comportamento observado (execução real)
+
+Na execução real com um token recebido por e-mail (OTP), o comportamento foi diferente do que a spec sugere:
+
+1) `POST /webservice/api/verificarTokenSistema?token=...&idIntegradora=8`
+- Status: 200
+- Retorno: **objeto** (não array) com dados da validação e vínculo com cliente
+
+Exemplo de retorno (valores sensíveis redigidos):
+
+```json
+{
+  "idUsuario": 1231,
+  "tentativas": 0,
+  "maxTentativas": 5,
+  "hashToken": "<redacted>",
+  "canal": "eduardo.rezende@lopesecia.com.br",
+  "cnpjCliente": "25231575000146",
+  "dtCriacao": "2026-04-21T10:03:12.052-03:00",
+  "dtExpira": "2026-04-21T10:33:12.052-03:00",
+  "usado": false
+}
+```
+
+Leitura prática:
+- Esse retorno confirma **qual cliente** está associado ao OTP (`cnpjCliente`) e a janela de expiração (`dtExpira`).
+- O campo `hashToken` retornado aqui não deve ser assumido como “token de serviço” (ele pode representar outro tipo de credencial/identificador, dependendo da implementação).
+
+2) `POST /webservice/api/verificarToken?token=...`
+- Status: 400
+- Body: `"Ususem acesso!"`
+
+Ou seja: no ambiente testado, `verificarTokenSistema` foi o endpoint efetivo para validar o OTP; `verificarToken` não concedeu acesso (possível regra de permissão/fluxo diferente).
+
 ## Como isso se conecta com “o pedido”
 
 Para inserir pedido no 9004 (ex.: `insertDadoIntegration`), você precisa de um `Authorization` válido.
@@ -191,4 +230,3 @@ Os caminhos mais comuns são:
 - **Integração usuário/app**: validar o token do usuário (`verificarTokenSistema`) e obter `urlApi` + `tokenApi`, usando `tokenApi` para chamar o 9004.
 
 Se você me disser qual token você usa hoje no 9004 (hashToken vs tokenApi), dá para fechar qual é o fluxo “correto” do seu caso.
-
