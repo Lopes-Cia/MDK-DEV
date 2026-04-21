@@ -39,6 +39,19 @@ Pelo que temos na collection [MOCK-END - Projetos Dinâmicos.postman_collection.
   - `codCli` (number)
 - O response retorna o token (na collection normalmente é usado como `authorizationToken`).
 
+Exemplo (gerar token):
+
+```bash
+curl --location 'https://gp.lopesecia.com.br:9002/ApiLopes/webservice/api/tokenService' \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "produto": "CONNECT",
+    "ean": 7890000002998,
+    "idIntegradora": 8,
+    "codCli": 1219
+  }'
+```
+
 ### Como usar o token
 
 - Header:
