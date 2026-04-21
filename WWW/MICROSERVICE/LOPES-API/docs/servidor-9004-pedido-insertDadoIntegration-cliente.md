@@ -81,6 +81,29 @@ Principais endpoints:
   - opcionais: `codCli` (int) ou `cgc` (string)
 - Respostas: 200 (`ClienteBean`), 400 (parâmetro inválido), 404, 500
 
+##### O que vem no ClienteBean (campos mais úteis)
+
+A spec do `ClienteBean` é grande. No dia-a-dia, os campos que mais ajudam a “achar o cliente” e comparar com o payload do pedido são:
+
+- Identificadores:
+  - `codCli` (int) — código interno do cliente
+  - `customerId` (string) — id externo (quando existe)
+  - `cgcEnt` / `cgcEntrega` (string) — documentos associados a endereços (quando preenchidos)
+- Nome:
+  - `cliente` (string) — razão/nome
+  - `fantasia` (string)
+- Contato:
+  - `email` (string)
+  - `telCom`, `telEnt`, `telCob` (string)
+- Endereços (comercial/entrega/cobrança):
+  - `enderCom`, `bairroCom`, `municCom`, `cepCom`, `estCom`
+  - `enderEnt`, `bairroEnt`, `municEnt`, `cepEnt`, `estEnt`
+  - `enderCob`, `bairroCob`, `municCob`, `cepCob`, `estCob`
+- Integração:
+  - `integrado` (string)
+  - `integradora` (int)
+  - `dtUltAlter` (date-time)
+
 Observação prática:
 - No payload do pedido você tem `CPFCNPJ`.
 - Na API de cliente integrado você consulta por `cgc`.
@@ -95,6 +118,29 @@ curl -X GET \
   -H 'Authorization: {{authorizationToken}}'
 ```
 
+##### Exemplo de response (200) — getClienteIntegrado
+
+Exemplo baseado no schema `ClienteBean` (campos variam conforme cadastro):
+
+```json
+{
+  "codCli": 1219,
+  "customerId": "1219",
+  "cliente": "COMERCIO DE BEBIDAS FICTICIO (TESTE)",
+  "fantasia": "BEBIDAS FICTICIO",
+  "uf": "SC",
+  "email": "smbebidas91@gmail.com",
+  "integrado": "S",
+  "integradora": 8,
+  "enderCom": "RODOVIA BR-101",
+  "bairroCom": "PACHECOS",
+  "municCom": "PALHOCA",
+  "cepCom": "88135010",
+  "estCom": "SC",
+  "dtUltAlter": "2026-04-20T17:05:20Z"
+}
+```
+
 #### GET /webservice/integration/getListClienteIntegrado
 
 - Descrição (spec): Retorna uma lista de clientes integrados
@@ -104,6 +150,30 @@ curl -X GET \
 - Resposta 200 (spec): `ClienteBean`
 
 Nota: a spec indica `ClienteBean` (não `array`). Se na prática vier uma lista/paginação, vale confirmar pelo retorno real.
+
+##### Exemplo de response (200) — getListClienteIntegrado
+
+O retorno real pode ser:
+
+- um array de `ClienteBean`, ou
+- um objeto com paginação (ex.: `{ items: [...], page, pageSize }`), ou
+- um único `ClienteBean` (como a spec sugere).
+
+Exemplo comum (lista):
+
+```json
+[
+  {
+    "codCli": 1219,
+    "customerId": "1219",
+    "cliente": "COMERCIO DE BEBIDAS FICTICIO (TESTE)",
+    "fantasia": "BEBIDAS FICTICIO",
+    "email": "smbebidas91@gmail.com",
+    "integrado": "S",
+    "integradora": 8
+  }
+]
+```
 
 #### POST /webservice/integration/insertClienteIntegrado
 
@@ -123,4 +193,3 @@ Checklist rápido para tirar a dúvida:
 
 - Após inserir um pedido, chamar `getClienteIntegrado` usando `cgc = payload.cliente.CPFCNPJ`.
 - Se vier 404, testar criar o cliente via `insertClienteIntegrado` e repetir a consulta.
-
