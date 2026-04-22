@@ -1,0 +1,17 @@
+{
+  "success": true,
+  "data": {
+    "privacidade": {
+      "clienteId": 1009,
+      "aceitaMarketing": true,
+      "aceitaTermos": true,
+      "aceitaCookies": true,
+      "canalPreferido": "email",
+      "doisFatores": {
+        "habilitado": false,
+        "metodo": "email"
+      },
+      "updatedAt": "2026-04-22T04:40:14.521Z"
+    }
+  }
+}

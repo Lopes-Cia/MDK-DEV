@@ -1,0 +1,17 @@
+{
+  "clienteId": 1009,
+  "contato": {
+    "nome": "Cliente 4f2029204940",
+    "email": "mock-4f2029204940@local.test",
+    "telefone": "5511999999999"
+  },
+  "enderecoEntrega": {
+    "cep": "01001000",
+    "logradouro": "Rua Mock",
+    "numero": "123",
+    "bairro": "Centro",
+    "cidade": "Sao Paulo",
+    "uf": "SP",
+    "pais": "BR"
+  }
+}

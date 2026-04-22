@@ -1,0 +1,11 @@
+{
+  "endereco": {
+    "cep": "01001000",
+    "logradouro": "Rua Mock 3",
+    "numero": "999",
+    "bairro": "Centro",
+    "cidade": "Sao Paulo",
+    "uf": "SP",
+    "pais": "BR"
+  }
+}

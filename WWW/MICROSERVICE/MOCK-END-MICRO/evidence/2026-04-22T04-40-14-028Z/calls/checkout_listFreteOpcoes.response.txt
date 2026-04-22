@@ -1,0 +1,1 @@
+{"success":true,"data":{"opcoes":[{"codigo":"economico","nome":"Entrega Economica","preco":8.9,"prazoDias":5},{"codigo":"expresso","nome":"Entrega Expresso","preco":17.9,"prazoDias":2}]}}

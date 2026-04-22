@@ -1,0 +1,7 @@
+- [x] O MVP conecta no Redis Cloud via TLS e `PING` funciona sem logar segredos.
+- [x] O MVP detecta RedisJSON e RediSearch; se não houver, aborta com mensagem objetiva.
+- [x] Importação cria/atualiza chaves `catalog:brand:*`, `catalog:category:*`, `catalog:product:*` e imprime contagens.
+- [x] Rotina de limpeza remove somente chaves com prefixo `catalog:` (sem FLUSHALL/FLUSHDB).
+- [x] Índice `idx:catalog:product` existe e responde consultas com `DIALECT 2`.
+- [x] Consulta suporta paginação (page/pageSize) e retorna `{ total, page, pageSize, items }`.
+- [x] Consulta suporta busca por texto em `name` e filtros (categoryId, brandId, price range, inStock via stock).

@@ -1,0 +1,9 @@
+{
+  "id": "clientes_updatePrivacidade",
+  "method": "PUT",
+  "url": "http://localhost:4004/connect/usuarios/privacidade",
+  "status": 200,
+  "ok": true,
+  "durationMs": 4,
+  "error": null
+}

@@ -1,0 +1,9 @@
+{
+  "id": "checkout_createSessao",
+  "method": "POST",
+  "url": "http://localhost:4004/connect/checkout/sessoes",
+  "status": 201,
+  "ok": true,
+  "durationMs": 12,
+  "error": null
+}

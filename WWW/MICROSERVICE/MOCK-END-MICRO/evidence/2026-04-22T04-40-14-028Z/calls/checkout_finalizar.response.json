@@ -1,0 +1,7 @@
+{
+  "success": true,
+  "data": {
+    "pedidoId": 10,
+    "status": "pago"
+  }
+}

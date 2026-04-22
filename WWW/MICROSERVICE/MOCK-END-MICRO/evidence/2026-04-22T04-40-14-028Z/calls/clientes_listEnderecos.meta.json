@@ -1,0 +1,9 @@
+{
+  "id": "clientes_listEnderecos",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/usuarios/enderecos/1009",
+  "status": 200,
+  "ok": true,
+  "durationMs": 2,
+  "error": null
+}

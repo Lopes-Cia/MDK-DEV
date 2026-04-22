@@ -1,0 +1,9 @@
+{
+  "id": "checkout_confirmPix",
+  "method": "POST",
+  "url": "http://localhost:4004/connect/checkout/sessoes/15/pagamento/pix/confirmar",
+  "status": 200,
+  "ok": true,
+  "durationMs": 4,
+  "error": null
+}

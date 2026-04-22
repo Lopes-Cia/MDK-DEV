@@ -1,0 +1,9 @@
+{
+  "id": "brandById",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/produtos/brands/871013969?page=1&pageSize=5",
+  "status": 200,
+  "ok": true,
+  "durationMs": 2,
+  "error": null
+}

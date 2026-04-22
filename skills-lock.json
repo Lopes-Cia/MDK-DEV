@@ -46,6 +46,16 @@
       "sourceType": "github",
       "computedHash": "d94268ecf8422b888b64b8db78894aad3bda5a3c750f06d540a5398d7b47863d"
     },
+    "redis-best-practices": {
+      "source": "mindrally/skills",
+      "sourceType": "github",
+      "computedHash": "7d5b0f93221b2b0f1f1c35352d06990a9d18226aa95f546b161b10a4fdaabf6b"
+    },
+    "redis-development": {
+      "source": "redis/agent-skills",
+      "sourceType": "github",
+      "computedHash": "993ad240385d830a9717796a4b76e835ed737bfc9d3e10a4528e00bacd58cbf8"
+    },
     "seed-data-generator": {
       "source": "curiouslearner/devkit",
       "sourceType": "github",

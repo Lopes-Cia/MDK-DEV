@@ -1,0 +1,9 @@
+{
+  "id": "checkout_updateEndereco",
+  "method": "PUT",
+  "url": "http://localhost:4004/connect/checkout/sessoes/15/entrega/endereco",
+  "status": 200,
+  "ok": true,
+  "durationMs": 5,
+  "error": null
+}

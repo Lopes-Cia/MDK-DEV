@@ -1,0 +1,9 @@
+{
+  "id": "health",
+  "method": "GET",
+  "url": "http://localhost:4004/health",
+  "status": 200,
+  "ok": true,
+  "durationMs": 170,
+  "error": null
+}

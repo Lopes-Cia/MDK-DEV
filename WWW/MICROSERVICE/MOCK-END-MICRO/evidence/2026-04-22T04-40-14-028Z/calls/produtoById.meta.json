@@ -1,0 +1,9 @@
+{
+  "id": "produtoById",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/produtos/by-id/1001",
+  "status": 200,
+  "ok": true,
+  "durationMs": 3,
+  "error": null
+}

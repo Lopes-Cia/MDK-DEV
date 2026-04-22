@@ -1,0 +1,9 @@
+{
+  "id": "checkout_getSessao",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/checkout/sessoes/15",
+  "status": 200,
+  "ok": true,
+  "durationMs": 9,
+  "error": null
+}

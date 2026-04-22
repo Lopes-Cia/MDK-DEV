@@ -1,0 +1,9 @@
+{
+  "id": "categoriaBySlug",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/produtos/categorias/by-slug/categoria/bebidas",
+  "status": 200,
+  "ok": true,
+  "durationMs": 2,
+  "error": null
+}

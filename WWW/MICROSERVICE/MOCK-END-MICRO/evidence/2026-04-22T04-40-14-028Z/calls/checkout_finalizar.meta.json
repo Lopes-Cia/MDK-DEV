@@ -1,0 +1,9 @@
+{
+  "id": "checkout_finalizar",
+  "method": "POST",
+  "url": "http://localhost:4004/connect/checkout/sessoes/15/finalizar",
+  "status": 201,
+  "ok": true,
+  "durationMs": 17,
+  "error": null
+}

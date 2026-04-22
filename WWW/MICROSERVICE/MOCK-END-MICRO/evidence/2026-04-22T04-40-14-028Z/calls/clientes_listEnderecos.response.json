@@ -1,0 +1,16 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 15,
+      "clienteId": 1009,
+      "cep": "01001000",
+      "logradouro": "Rua Mock",
+      "numero": "123",
+      "bairro": "Centro",
+      "cidade": "Sao Paulo",
+      "uf": "SP",
+      "pais": "BR"
+    }
+  ]
+}

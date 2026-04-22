@@ -1,0 +1,9 @@
+{
+  "id": "produtoBySlug",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/produtos/by-slug/heineken-lata-269ml",
+  "status": 200,
+  "ok": true,
+  "durationMs": 2,
+  "error": null
+}

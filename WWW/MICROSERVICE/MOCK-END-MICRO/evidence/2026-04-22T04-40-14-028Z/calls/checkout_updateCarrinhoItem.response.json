@@ -1,0 +1,33 @@
+{
+  "success": true,
+  "data": {
+    "carrinhoId": 7,
+    "clienteId": 1009,
+    "status": "aberto",
+    "itens": [
+      {
+        "itemId": 16,
+        "produtoId": 1001,
+        "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+        "slug": "/produtos/heineken-lata-269ml",
+        "nome": "Heineken Lata 269ml",
+        "imagemUrl": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-ad93e1.jpg",
+        "precoUnitario": 4.19,
+        "quantidade": 2,
+        "subtotal": 8.38,
+        "addedAt": "2026-04-22T04:40:14.550Z"
+      }
+    ],
+    "cupom": null,
+    "resumo": {
+      "subtotal": 8.38,
+      "desconto": 0,
+      "frete": 0,
+      "total": 8.38,
+      "totalItens": 2,
+      "moeda": "BRL"
+    },
+    "createdAt": "2026-04-22T04:40:14.537Z",
+    "updatedAt": "2026-04-22T04:40:14.561Z"
+  }
+}

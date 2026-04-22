@@ -1,0 +1,9 @@
+{
+  "id": "checkout_updateCarrinhoItem",
+  "method": "PUT",
+  "url": "http://localhost:4004/connect/carrinho/itens/16",
+  "status": 200,
+  "ok": true,
+  "durationMs": 6,
+  "error": null
+}

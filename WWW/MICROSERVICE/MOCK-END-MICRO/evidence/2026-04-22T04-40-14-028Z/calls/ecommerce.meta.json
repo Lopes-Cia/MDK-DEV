@@ -1,0 +1,9 @@
+{
+  "id": "ecommerce",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/ecommerce",
+  "status": 200,
+  "ok": true,
+  "durationMs": 23,
+  "error": null
+}

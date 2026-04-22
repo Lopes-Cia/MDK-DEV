@@ -1,0 +1,9 @@
+{
+  "id": "clientes_createEndereco",
+  "method": "POST",
+  "url": "http://localhost:4004/connect/usuarios/enderecos",
+  "status": 201,
+  "ok": true,
+  "durationMs": 4,
+  "error": null
+}

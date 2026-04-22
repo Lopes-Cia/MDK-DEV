@@ -1,0 +1,9 @@
+{
+  "id": "checkout_updateContato",
+  "method": "PUT",
+  "url": "http://localhost:4004/connect/checkout/sessoes/15/contato",
+  "status": 200,
+  "ok": true,
+  "durationMs": 6,
+  "error": null
+}

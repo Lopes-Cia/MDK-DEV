@@ -1,0 +1,32 @@
+{
+  "meus_dados": {
+    "tipoPessoa": "PF",
+    "documento": "0000000000452",
+    "nome": "Cliente Mock 4f2029204940",
+    "email": "mock-4f2029204940@local.test",
+    "whatsapp": "5511999999999",
+    "senha": "Senha-4f2029204940",
+    "status": "ativo"
+  },
+  "enderecos": [
+    {
+      "cep": "01001000",
+      "logradouro": "Rua Mock",
+      "numero": "123",
+      "bairro": "Centro",
+      "cidade": "Sao Paulo",
+      "uf": "SP",
+      "pais": "BR"
+    }
+  ],
+  "privacidade": {
+    "aceitaMarketing": false,
+    "aceitaTermos": true,
+    "aceitaCookies": true,
+    "canalPreferido": "email",
+    "doisFatores": {
+      "habilitado": false,
+      "metodo": "email"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "id": "checkout_setFrete",
+  "method": "PUT",
+  "url": "http://localhost:4004/connect/checkout/sessoes/15/entrega/frete",
+  "status": 200,
+  "ok": true,
+  "durationMs": 5,
+  "error": null
+}

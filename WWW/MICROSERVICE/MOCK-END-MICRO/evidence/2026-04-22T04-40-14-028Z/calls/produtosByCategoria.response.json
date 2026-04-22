@@ -1,0 +1,229 @@
+{
+  "success": true,
+  "data": [
+    {
+      "id": 1001,
+      "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+      "name": "Heineken Lata 269ml",
+      "slug": "/produtos/heineken-lata-269ml",
+      "unitLabel": "lata",
+      "sizeLabel": "269ml",
+      "price": 4.19,
+      "compareAtPrice": null,
+      "badges": [
+        "gelada"
+      ],
+      "image": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-ad93e1.jpg",
+      "stock": 171,
+      "inStock": true,
+      "category": {
+        "id": 19,
+        "name": "Lager",
+        "slug": "/categoria/bebidas/cervejas/lager",
+        "familia": [
+          {
+            "id": 10,
+            "name": "Bebidas",
+            "slug": "/categoria/bebidas"
+          },
+          {
+            "id": 15,
+            "name": "Cervejas",
+            "slug": "/categoria/bebidas/cervejas"
+          },
+          {
+            "id": 19,
+            "name": "Lager",
+            "slug": "/categoria/bebidas/cervejas/lager"
+          }
+        ]
+      },
+      "brand": {
+        "id": 2028873282,
+        "name": "Heineken",
+        "slug": "/marca/heineken",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      }
+    },
+    {
+      "id": 1002,
+      "sku": "HEINEKEN-HEINEKEN-LATA-350ML-350ML",
+      "name": "Heineken Lata 350ml",
+      "slug": "/produtos/heineken-lata-350ml",
+      "unitLabel": "lata",
+      "sizeLabel": "350ml",
+      "price": 4.72,
+      "compareAtPrice": null,
+      "badges": [
+        "gelada"
+      ],
+      "image": "http://localhost:4000/assets/images/produtos/heineken-lata-350ml-4f3bf3.jpg",
+      "stock": 15,
+      "inStock": true,
+      "category": {
+        "id": 19,
+        "name": "Lager",
+        "slug": "/categoria/bebidas/cervejas/lager",
+        "familia": [
+          {
+            "id": 10,
+            "name": "Bebidas",
+            "slug": "/categoria/bebidas"
+          },
+          {
+            "id": 15,
+            "name": "Cervejas",
+            "slug": "/categoria/bebidas/cervejas"
+          },
+          {
+            "id": 19,
+            "name": "Lager",
+            "slug": "/categoria/bebidas/cervejas/lager"
+          }
+        ]
+      },
+      "brand": {
+        "id": 2028873282,
+        "name": "Heineken",
+        "slug": "/marca/heineken",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      }
+    },
+    {
+      "id": 1003,
+      "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+      "name": "Heineken Lata 269ml",
+      "slug": "/produtos/heineken-lata-269ml-heineken",
+      "unitLabel": "lata",
+      "sizeLabel": "269ml",
+      "price": 4.19,
+      "compareAtPrice": null,
+      "badges": [
+        "gelada"
+      ],
+      "image": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-heineken-ad93e1.jpg",
+      "stock": 171,
+      "inStock": true,
+      "category": {
+        "id": 20,
+        "name": "IPA",
+        "slug": "/categoria/bebidas/cervejas/ipa",
+        "familia": [
+          {
+            "id": 10,
+            "name": "Bebidas",
+            "slug": "/categoria/bebidas"
+          },
+          {
+            "id": 15,
+            "name": "Cervejas",
+            "slug": "/categoria/bebidas/cervejas"
+          },
+          {
+            "id": 20,
+            "name": "IPA",
+            "slug": "/categoria/bebidas/cervejas/ipa"
+          }
+        ]
+      },
+      "brand": {
+        "id": 2028873282,
+        "name": "Heineken",
+        "slug": "/marca/heineken",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      }
+    },
+    {
+      "id": 1004,
+      "sku": "HEINEKEN-HEINEKEN-LATA-350ML-350ML",
+      "name": "Heineken Lata 350ml",
+      "slug": "/produtos/heineken-lata-350ml-heineken",
+      "unitLabel": "lata",
+      "sizeLabel": "350ml",
+      "price": 4.72,
+      "compareAtPrice": null,
+      "badges": [
+        "gelada"
+      ],
+      "image": "http://localhost:4000/assets/images/produtos/heineken-lata-350ml-heineken-4f3bf3.jpg",
+      "stock": 15,
+      "inStock": true,
+      "category": {
+        "id": 20,
+        "name": "IPA",
+        "slug": "/categoria/bebidas/cervejas/ipa",
+        "familia": [
+          {
+            "id": 10,
+            "name": "Bebidas",
+            "slug": "/categoria/bebidas"
+          },
+          {
+            "id": 15,
+            "name": "Cervejas",
+            "slug": "/categoria/bebidas/cervejas"
+          },
+          {
+            "id": 20,
+            "name": "IPA",
+            "slug": "/categoria/bebidas/cervejas/ipa"
+          }
+        ]
+      },
+      "brand": {
+        "id": 2028873282,
+        "name": "Heineken",
+        "slug": "/marca/heineken",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      }
+    },
+    {
+      "id": 1005,
+      "sku": "HEINEKEN-HEINEKEN-LATA-269ML-269ML",
+      "name": "Heineken Lata 269ml",
+      "slug": "/produtos/heineken-lata-269ml-heineken-1005",
+      "unitLabel": "lata",
+      "sizeLabel": "269ml",
+      "price": 4.19,
+      "compareAtPrice": null,
+      "badges": [
+        "gelada"
+      ],
+      "image": "http://localhost:4000/assets/images/produtos/heineken-lata-269ml-heineken-1005-ad93e1.jpg",
+      "stock": 171,
+      "inStock": true,
+      "category": {
+        "id": 21,
+        "name": "Pilsen",
+        "slug": "/categoria/bebidas/cervejas/pilsen",
+        "familia": [
+          {
+            "id": 10,
+            "name": "Bebidas",
+            "slug": "/categoria/bebidas"
+          },
+          {
+            "id": 15,
+            "name": "Cervejas",
+            "slug": "/categoria/bebidas/cervejas"
+          },
+          {
+            "id": 21,
+            "name": "Pilsen",
+            "slug": "/categoria/bebidas/cervejas/pilsen"
+          }
+        ]
+      },
+      "brand": {
+        "id": 2028873282,
+        "name": "Heineken",
+        "slug": "/marca/heineken",
+        "image": "http://localhost:4000/assets/images/semImagem.png"
+      }
+    }
+  ],
+  "page": 1,
+  "pageSize": 5,
+  "total": 24,
+  "totalPages": 5
+}

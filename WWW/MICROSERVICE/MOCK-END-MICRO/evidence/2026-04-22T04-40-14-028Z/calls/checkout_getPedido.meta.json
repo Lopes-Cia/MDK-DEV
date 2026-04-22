@@ -1,0 +1,9 @@
+{
+  "id": "checkout_getPedido",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/pedidos/10",
+  "status": 200,
+  "ok": true,
+  "durationMs": 4,
+  "error": null
+}

@@ -1,0 +1,9 @@
+{
+  "id": "categoriaById",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/produtos/categorias/10",
+  "status": 200,
+  "ok": true,
+  "durationMs": 3,
+  "error": null
+}

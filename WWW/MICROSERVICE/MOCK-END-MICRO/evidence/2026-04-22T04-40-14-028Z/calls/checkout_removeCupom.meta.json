@@ -1,0 +1,9 @@
+{
+  "id": "checkout_removeCupom",
+  "method": "DELETE",
+  "url": "http://localhost:4004/connect/carrinho/cupom",
+  "status": 200,
+  "ok": true,
+  "durationMs": 6,
+  "error": null
+}

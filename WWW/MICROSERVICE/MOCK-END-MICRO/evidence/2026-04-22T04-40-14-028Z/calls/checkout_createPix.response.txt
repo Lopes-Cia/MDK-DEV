@@ -1,0 +1,1 @@
+{"success":true,"data":{"pagamento":{"pagamentoId":10,"metodo":"pix","pix":{"copiaECola":"000201checkout15pag10mockend","qrCodeBase64":"bW9jay1waXgtcXItY29kZQ==","expiresAt":"2026-04-22T04:45:14.655Z"},"status":"pendente"}}}

@@ -1,0 +1,12 @@
+{
+  "clienteId": 1009,
+  "endereco": {
+    "cep": "01001000",
+    "logradouro": "Rua Mock 2",
+    "numero": "456",
+    "bairro": "Centro",
+    "cidade": "Sao Paulo",
+    "uf": "SP",
+    "pais": "BR"
+  }
+}

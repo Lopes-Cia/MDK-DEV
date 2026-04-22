@@ -1,0 +1,9 @@
+{
+  "id": "checkout_createPix",
+  "method": "POST",
+  "url": "http://localhost:4004/connect/checkout/sessoes/15/pagamento/pix",
+  "status": 200,
+  "ok": true,
+  "durationMs": 8,
+  "error": null
+}

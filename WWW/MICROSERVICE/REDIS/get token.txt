@@ -1,0 +1,24 @@
+get token
+
+curl --location 'https://gp.lopesecia.com.br:9002/ApiLopes/webservice/api/tokenService' \
+--header 'Content-Type: application/json' \
+--data '{
+    "produto": "CONNECT",
+    "ean": "7890000002998",
+    "idIntegradora": 8,
+    "codCli": 1219
+}'
+
+
+
+get prodtuos
+
+curl --location 'https://gp.lopesecia.com.br:9004/Servidor/webservice/integration/getListProdutoLoja?idIntegradora=8&idCategoria=' \
+--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoiU2VydmljZSBDT05ORUNUIiwiZXhwIjoxNzc2ODUxMTc5fQ.UkDuw09PNhbIdAmx8mHkoSjdi_thKi7sOZkUFZygwSg'
+
+
+get categorias
+
+
+curl --location 'https://gp.lopesecia.com.br:9004/Servidor/webservice/integration/getListCategoria?idIntegradora=8' \
+--header 'Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJleUpoYkdjaU9pSkVSVlZUVUVGSklpd2lkSGx3SWpvaVRFOVZWa0ZFVDFORlNrRlBUazlOUlVSUFUwVk9TRTlTSW4wIiwic3ViIjoiU2VydmljZSBDT05ORUNUIiwiZXhwIjoxNzc2ODUxMTc5fQ.UkDuw09PNhbIdAmx8mHkoSjdi_thKi7sOZkUFZygwSg'

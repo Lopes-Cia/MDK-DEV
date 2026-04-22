@@ -1,0 +1,9 @@
+{
+  "id": "checkout_addCarrinhoItem",
+  "method": "POST",
+  "url": "http://localhost:4004/connect/carrinho/itens",
+  "status": 201,
+  "ok": true,
+  "durationMs": 11,
+  "error": null
+}

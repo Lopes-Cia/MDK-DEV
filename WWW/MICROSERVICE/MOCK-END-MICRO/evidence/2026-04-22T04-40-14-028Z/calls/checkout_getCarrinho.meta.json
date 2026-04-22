@@ -1,0 +1,9 @@
+{
+  "id": "checkout_getCarrinho",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/carrinho/1009",
+  "status": 200,
+  "ok": true,
+  "durationMs": 14,
+  "error": null
+}

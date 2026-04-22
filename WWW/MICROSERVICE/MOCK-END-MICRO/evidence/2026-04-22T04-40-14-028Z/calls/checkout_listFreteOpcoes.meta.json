@@ -1,0 +1,9 @@
+{
+  "id": "checkout_listFreteOpcoes",
+  "method": "GET",
+  "url": "http://localhost:4004/connect/checkout/sessoes/15/entrega/frete/opcoes?cep=01001000",
+  "status": 200,
+  "ok": true,
+  "durationMs": 3,
+  "error": null
+}

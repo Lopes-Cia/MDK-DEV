@@ -1,0 +1,9 @@
+{
+  "id": "clientes_updateMeusDados",
+  "method": "PUT",
+  "url": "http://localhost:4004/connect/usuarios/meus-dados",
+  "status": 200,
+  "ok": true,
+  "durationMs": 5,
+  "error": null
+}

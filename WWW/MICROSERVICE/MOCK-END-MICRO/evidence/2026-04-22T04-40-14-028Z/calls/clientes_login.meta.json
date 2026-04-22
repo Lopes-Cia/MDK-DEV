@@ -1,0 +1,9 @@
+{
+  "id": "clientes_login",
+  "method": "POST",
+  "url": "http://localhost:4004/connect/usuarios/login",
+  "status": 200,
+  "ok": true,
+  "durationMs": 2,
+  "error": null
+}

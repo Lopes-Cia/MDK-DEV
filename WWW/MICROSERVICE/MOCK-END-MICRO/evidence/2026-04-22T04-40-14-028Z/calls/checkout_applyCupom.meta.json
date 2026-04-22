@@ -1,0 +1,9 @@
+{
+  "id": "checkout_applyCupom",
+  "method": "POST",
+  "url": "http://localhost:4004/connect/carrinho/cupom",
+  "status": 200,
+  "ok": true,
+  "durationMs": 7,
+  "error": null
+}
