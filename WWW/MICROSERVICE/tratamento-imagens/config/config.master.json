@@ -5,12 +5,12 @@
     "modo_execucao": {
       "tipo_default": "teste",
       "teste": {
-        "source_json": "../../MOCK-END/PROJETOS/connect/handlers/mock/api/all_products.json",
+        "source_json": "produtos.json",
         "selecionar_produtos_aleatorios": 3,
         "seed_opcional": 42
       },
       "full": {
-        "source_json": "../../MOCK-END/PROJETOS/connect/handlers/mock/api/all_products.json",
+        "source_json": "produtos.json",
         "processar_todos_produtos": true
       }
     },
@@ -39,11 +39,11 @@
         }
       },
       "tamanhos": [
-        { "chave": "thumbnail", "largura": 120, "altura": 120, "badge_permitido": false },
-        { "chave": "small", "largura": 240, "altura": 240, "badge_permitido": false },
-        { "chave": "medium", "largura": 400, "altura": 400, "badge_permitido": true },
-        { "chave": "large", "largura": 700, "altura": 700, "badge_permitido": true },
-        { "chave": "full", "largura": 1000, "altura": 1000, "badge_permitido": true }
+        { "chave": "thumbnail", "largura": 80, "altura": 80, "badge_permitido": false },
+        { "chave": "small", "largura": 150, "altura": 150, "badge_permitido": false },
+        { "chave": "medium", "largura": 320, "altura": 320, "badge_permitido": true },
+        { "chave": "large", "largura": 500, "altura": 500, "badge_permitido": true },
+        { "chave": "full", "largura": 600, "altura": 600, "badge_permitido": true }
       ]
     },
     "trim_config": {
@@ -60,7 +60,7 @@
     },
     "badge_config": {
       "version": 1,
-      "ativo": true,
+      "ativo": false,
       "aplicar_em": {
         "somente_imagem_indice_zero": true,
         "tamanhos_permitidos": ["medium", "large", "full"]

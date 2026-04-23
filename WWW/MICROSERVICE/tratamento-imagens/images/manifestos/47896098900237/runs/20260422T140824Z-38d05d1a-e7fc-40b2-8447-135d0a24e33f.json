@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "produto": {
+    "id": "47896098900237",
+    "skuId": null,
+    "ean": "47896098900237",
+    "descricao": "Lava-louças lí­quido Ypê Coco, frasco 500 ml, caixa com 24 unidades"
+  },
+  "execucao": {
+    "correlation_id": "38d05d1a-e7fc-40b2-8447-135d0a24e33f",
+    "inicio_em": "2026-04-22T14:08:24.758Z",
+    "fim_em": "2026-04-22T14:08:24.961Z",
+    "duracao_ms": 203,
+    "status_geral": "ok"
+  },
+  "resumo": {
+    "total_imagens_entrada": 1,
+    "total_imagens_processadas": 1,
+    "total_sucesso": 1,
+    "total_falha": 0,
+    "falhas_criticas": 0
+  },
+  "config_aplicada": {
+    "ficha_tamanho_version": 1,
+    "trim_config_version": 1,
+    "badge_config_version": 1,
+    "output_naming_version": 1
+  },
+  "imagens": [
+    {
+      "indice": 0,
+      "tipo": "principal",
+      "source": {
+        "url": "https://cdn.leroymerlin.com.br/products/detergente_liquido_ype_lava_loucas_coco_500ml_embalagem_com_2_1570075209_e1bb_300x300.jpg",
+        "status_download": "ok",
+        "http_status": 200,
+        "content_type": "image/jpeg",
+        "bytes": 5141,
+        "hash_original_sha256": "6ce768603017e8b202d3ffdcaaef32f180cafa11dc235815705721e13c84e314"
+      },
+      "trim": {
+        "status": "ok",
+        "bbox": {
+          "x": -111,
+          "y": -12,
+          "w": 77,
+          "h": 276
+        },
+        "dimensao_saida": {
+          "w": 77,
+          "h": 276
+        }
+      },
+      "badge": {
+        "aplicado": false,
+        "variante": "nao_aplica",
+        "parametros": {}
+      },
+      "outputs": [
+        {
+          "size": "thumbnail",
+          "status": "ok",
+          "dimensao": {
+            "w": 80,
+            "h": 80
+          },
+          "path_relativo": "derived\\47896098900237\\thumbnail\\lava-loucas-li-quido-ype-coco-frasco-500-ml-caixa-com-24-uni-6ce768603017-thumbnail.webp",
+          "bytes": 330,
+          "hash_sha256": "87d7b2590b80fb92e4ae0a03a37c1d81c3de926496828bc76b42c8b728af85ab"
+        },
+        {
+          "size": "small",
+          "status": "ok",
+          "dimensao": {
+            "w": 150,
+            "h": 150
+          },
+          "path_relativo": "derived\\47896098900237\\small\\lava-loucas-li-quido-ype-coco-frasco-500-ml-caixa-com-24-uni-6ce768603017-small.webp",
+          "bytes": 736,
+          "hash_sha256": "6c5353f0543e67e4b7a88246d3f2cfb1810b0772ad69d7e9b0a4ab2f402d3b42"
+        },
+        {
+          "size": "medium",
+          "status": "ok",
+          "dimensao": {
+            "w": 320,
+            "h": 320
+          },
+          "path_relativo": "derived\\47896098900237\\medium\\lava-loucas-li-quido-ype-coco-frasco-500-ml-caixa-com-24-uni-6ce768603017-medium.webp",
+          "bytes": 2076,
+          "hash_sha256": "d8a57f8644ee80f74debffb68d3644ca63fc6820b3548ad352af147d0d8bd7c9"
+        },
+        {
+          "size": "large",
+          "status": "ok",
+          "dimensao": {
+            "w": 500,
+            "h": 500
+          },
+          "path_relativo": "derived\\47896098900237\\large\\lava-loucas-li-quido-ype-coco-frasco-500-ml-caixa-com-24-uni-6ce768603017-large.webp",
+          "bytes": 3740,
+          "hash_sha256": "f8d1cff4cd32e9f97f9054caf620b44cc791ac61dd6cd427eaefdf8afb31cee6"
+        },
+        {
+          "size": "full",
+          "status": "ok",
+          "dimensao": {
+            "w": 600,
+            "h": 600
+          },
+          "path_relativo": "derived\\47896098900237\\full\\lava-loucas-li-quido-ype-coco-frasco-500-ml-caixa-com-24-uni-6ce768603017-full.webp",
+          "bytes": 5380,
+          "hash_sha256": "5a7bc8022aa4192d3cbf0fdb9af7df044a76c4122f835ab44601055bf5144c42"
+        }
+      ],
+      "status_final": "ok"
+    }
+  ],
+  "erros": []
+}

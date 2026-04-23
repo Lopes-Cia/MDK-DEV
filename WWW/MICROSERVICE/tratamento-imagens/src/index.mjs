@@ -11,6 +11,11 @@ const CONFIG_PATH = path.join(ROOT, "config", "config.master.json");
 const CONFIG_DIR = path.dirname(CONFIG_PATH);
 const IMAGES_ROOT = path.join(ROOT, "images");
 
+function logStep(payload) {
+  const entry = { kind: "tratamento-imagens", ts: new Date().toISOString(), ...payload };
+  process.stdout.write(`${JSON.stringify(entry)}\n`);
+}
+
 const ERROR_CODES_V1 = {
   download: new Set([
     "download_timeout",
@@ -117,7 +122,7 @@ async function loadJson(filePath) {
 }
 
 function resolveProductId(product) {
-  return String(product.id_produto ?? product.skuId ?? product.ean ?? product.codProd ?? product.productId ?? "sem-id");
+  return String(product.id ?? product.skuId ?? product.ean ?? product.codProd ?? product.productId ?? "sem-id");
 }
 
 function resolveImagesFromProduct(product) {
@@ -166,10 +171,10 @@ async function fetchImage(url, timeoutMs) {
   return { buffer, contentType };
 }
 
-async function trimImage(buffer, trimConfig) {
-  const metadata = await sharp(buffer).metadata();
-  const originalWidth = metadata.width ?? 0;
-  const originalHeight = metadata.height ?? 0;
+async function trimImage(buffer, trimConfig, originalMetadata) {
+  const metadata = originalMetadata ?? await sharp(buffer).metadata();
+  const originalWidth = metadata?.width ?? 0;
+  const originalHeight = metadata?.height ?? 0;
   const originalArea = originalWidth * originalHeight;
 
   const threshold = Number(trimConfig?.alpha?.pixel_vazio_ate ?? 10);
@@ -333,7 +338,7 @@ function makeBadgeSvg({ width, height, orientation, badgeData }) {
 </svg>`;
 }
 
-async function renderFullFromTrim({ trimBuffer, trimInfo, masterSize, configMaster, applyBadge, badgeData, allowUpscale = false }) {
+async function renderFullFromTrim({ trimBuffer, trimInfo, masterSize, configMaster, applyBadge, badgeData, allowUpscale = true }) {
   const bleed = Number(configMaster.ficha_tamanho.acabamento.sangria.padrao_pct || 0.08);
   const orientation = trimInfo.width > trimInfo.height ? "horizontal_topo" : "vertical_esquerda";
 
@@ -369,14 +374,28 @@ async function renderFullFromTrim({ trimBuffer, trimInfo, masterSize, configMast
 
   const targetW = Math.round(availableW * (1 - bleed * 2));
   const targetH = Math.round(availableH * (1 - bleed * 2));
+  const withoutEnlargement = !allowUpscale;
   const productLayer = await sharp(trimBuffer)
-    .resize(targetW, targetH, { fit: "inside", withoutEnlargement: !allowUpscale })
+    .resize(targetW, targetH, { fit: "inside", withoutEnlargement })
     .toBuffer({ resolveWithObject: true });
   const left = availableX + Math.max(0, Math.round((availableW - productLayer.info.width) / 2));
   const top = availableY + Math.max(0, Math.round((availableH - productLayer.info.height) / 2));
   composites.push({ input: productLayer.data, left, top });
 
-  return canvas.composite(composites).webp({ quality: configMaster.format.quality }).toBuffer();
+  const out = await canvas.composite(composites).webp({ quality: configMaster.format.quality }).toBuffer({ resolveWithObject: true });
+  return {
+    buffer: out.data,
+    info: { width: out.info.width, height: out.info.height, format: out.info.format, size: out.info.size },
+    debug: {
+      bleed,
+      orientation,
+      badge: applyBadge ? { applied: true, available: { x: availableX, y: availableY, w: availableW, h: availableH } } : { applied: false },
+      target: { w: targetW, h: targetH },
+      resize: { fit: "inside", withoutEnlargement },
+      layer: { w: productLayer.info.width, h: productLayer.info.height, left, top },
+      master: { chave: masterSize.chave, w: masterSize.largura, h: masterSize.altura },
+    },
+  };
 }
 
 async function saveManifest(productId, manifest, correlation) {
@@ -387,7 +406,7 @@ async function saveManifest(productId, manifest, correlation) {
   await writeJson(runsPath, manifest);
 }
 
-async function applyFallback({ configMaster, imageIndex, reasonCode, onlyBadge, tempDir }) {
+async function applyFallback({ configMaster, imageIndex, reasonCode, onlyBadge, tempDir, productId, correlation }) {
   const fallbackPath = resolveConfigPath(configMaster.fallback_imagem.arquivo_fallback_local);
   let buffer;
   try {
@@ -395,6 +414,7 @@ async function applyFallback({ configMaster, imageIndex, reasonCode, onlyBadge, 
   } catch {
     throw new Error("fallback_source_not_found");
   }
+  logStep({ correlation, product_id: productId, image_indice: imageIndex, step: "fallback_source_ok", path: fallbackPath });
   const metadata = await sharp(buffer).metadata();
   const trimInfo = {
     buffer,
@@ -405,7 +425,7 @@ async function applyFallback({ configMaster, imageIndex, reasonCode, onlyBadge, 
   const masterSize =
     configMaster.ficha_tamanho.tamanhos.find((t) => t.chave === "full") ??
     pickMasterSize(trimInfo, configMaster.ficha_tamanho);
-  const fullBuffer = await renderFullFromTrim({
+  const fullRendered = await renderFullFromTrim({
     trimBuffer: trimInfo.buffer,
     trimInfo,
     masterSize,
@@ -414,13 +434,21 @@ async function applyFallback({ configMaster, imageIndex, reasonCode, onlyBadge, 
     badgeData: null,
     allowUpscale: true,
   });
+  logStep({
+    correlation,
+    product_id: productId,
+    image_indice: imageIndex,
+    step: "fallback_render_full_ok",
+    out: fullRendered.info,
+    debug: fullRendered.debug,
+  });
 
   const hash12 = hashHex(buffer).slice(0, 12);
   const fallbackRoot = path.join(IMAGES_ROOT, "fallback");
   let fallbackFullPath = null;
   const tempPath = onlyBadge && tempDir ? path.join(tempDir, `sem-imagem-${hash12}-full.webp`) : null;
   if (onlyBadge) {
-    if (tempPath) await fs.writeFile(tempPath, fullBuffer);
+    if (tempPath) await fs.writeFile(tempPath, fullRendered.buffer);
   } else {
     await ensureDir(path.join(fallbackRoot, "source"));
     await ensureDir(path.join(fallbackRoot, "trim"));
@@ -429,7 +457,7 @@ async function applyFallback({ configMaster, imageIndex, reasonCode, onlyBadge, 
     await fs.copyFile(fallbackPath, path.join(fallbackRoot, "source", "semImagem.png"));
     await fs.writeFile(path.join(fallbackRoot, "trim", `sem-imagem-${hash12}.webp`), trimInfo.buffer);
     fallbackFullPath = path.join(fallbackRoot, "full", `sem-imagem-${hash12}-full.webp`);
-    await fs.writeFile(fallbackFullPath, fullBuffer);
+    await fs.writeFile(fallbackFullPath, fullRendered.buffer);
   }
 
   const outputs = [];
@@ -444,7 +472,18 @@ async function applyFallback({ configMaster, imageIndex, reasonCode, onlyBadge, 
       const dir = path.join(fallbackRoot, "derived", size.chave);
       await ensureDir(dir);
       const outPath = path.join(dir, `sem-imagem-${hash12}-${size.chave}.webp`);
-      await sharp(fullBuffer).resize(size.largura, size.altura, { fit: "contain", withoutEnlargement: true }).webp({ quality: configMaster.format.quality }).toFile(outPath);
+      await sharp(fullRendered.buffer).resize(size.largura, size.altura, { fit: "contain", withoutEnlargement: true }).webp({ quality: configMaster.format.quality }).toFile(outPath);
+      const metaOut = await sharp(outPath).metadata();
+      logStep({
+        correlation,
+        product_id: productId,
+        image_indice: imageIndex,
+        step: "fallback_derived_ok",
+        size: size.chave,
+        expected: { w: size.largura, h: size.altura },
+        actual: { w: metaOut.width ?? null, h: metaOut.height ?? null, format: metaOut.format ?? null },
+        path: path.relative(IMAGES_ROOT, outPath),
+      });
       outputs.push({ size: size.chave, status: "ok", path_relativo: path.relative(IMAGES_ROOT, outPath) });
     }
   }
@@ -561,6 +600,7 @@ async function processProduct(product, configMaster, correlation, runtime) {
   const idProduto = resolveProductId(product);
   const dirs = resolveOutputDirs(idProduto);
   const tempDir = runtime?.onlyBadge && runtime?.tempRoot ? path.join(runtime.tempRoot, idProduto) : null;
+  logStep({ correlation, product_id: idProduto, step: "product_start", only_badge: Boolean(runtime?.onlyBadge) });
   if (runtime?.onlyBadge) {
     if (tempDir) await ensureDir(tempDir);
   } else {
@@ -570,10 +610,17 @@ async function processProduct(product, configMaster, correlation, runtime) {
   const startedAt = new Date();
   const imagesAll = resolveImagesFromProduct(product);
   const images = runtime?.onlyBadge ? imagesAll.slice(0, 1) : imagesAll;
+  logStep({
+    correlation,
+    product_id: idProduto,
+    step: "product_images_resolved",
+    total_entrada: imagesAll.length,
+    total_processar: images.length,
+  });
   const manifest = {
     version: 1,
     produto: {
-      id_produto: idProduto,
+      id: idProduto,
       skuId: product?.skuId ?? null,
       ean: product?.ean ?? null,
       descricao: product?.descricaoEcomerce ?? product?.descricaoErp ?? null,
@@ -606,18 +653,73 @@ async function processProduct(product, configMaster, correlation, runtime) {
     const imageUrl = images[i];
     try {
       if (!imageUrl) throw new Error("input_missing_imagem");
+      logStep({ correlation, product_id: idProduto, image_indice: i, step: "download_start", url: String(imageUrl).slice(0, 300) });
       const { buffer, contentType } = await fetchImage(imageUrl, configMaster.timeouts.download_ms);
       const ext = contentType.split("/")[1]?.split(";")[0] || "img";
       const fullHash = hashHex(buffer);
       const hash12 = fullHash.slice(0, 12);
       const slug = slugify(product.descricaoEcomerce ?? product.descricaoErp ?? idProduto);
+      const originalMeta = await sharp(buffer).metadata();
+      logStep({
+        correlation,
+        product_id: idProduto,
+        image_indice: i,
+        step: "download_ok",
+        content_type: contentType,
+        bytes: buffer.byteLength,
+        original: { w: originalMeta.width ?? null, h: originalMeta.height ?? null, format: originalMeta.format ?? null },
+        slug,
+        hash12,
+      });
 
-      const trimInfo = await trimImage(buffer, configMaster.trim_config);
+      logStep({
+        correlation,
+        product_id: idProduto,
+        image_indice: i,
+        step: "trim_start",
+        threshold: Number(configMaster.trim_config?.alpha?.pixel_vazio_ate ?? 10),
+      });
+      const trimInfo = await trimImage(buffer, configMaster.trim_config, originalMeta);
+      const ratio = (Number(originalMeta.width ?? 0) * Number(originalMeta.height ?? 0))
+        ? (trimInfo.width * trimInfo.height) / (Number(originalMeta.width ?? 0) * Number(originalMeta.height ?? 0))
+        : null;
+      const didTrim = Boolean(
+        (originalMeta.width && trimInfo.width && trimInfo.width !== originalMeta.width) ||
+        (originalMeta.height && trimInfo.height && trimInfo.height !== originalMeta.height) ||
+        (trimInfo.bbox?.x ?? 0) > 0 ||
+        (trimInfo.bbox?.y ?? 0) > 0
+      );
+      logStep({
+        correlation,
+        product_id: idProduto,
+        image_indice: i,
+        step: "trim_ok",
+        trim: { w: trimInfo.width, h: trimInfo.height, bbox: trimInfo.bbox },
+        ratio_area_vs_original: ratio,
+        did_trim: didTrim,
+      });
+      const masterFull = configMaster.ficha_tamanho.tamanhos.find((t) => t.chave === "full") ?? null;
       const masterSize = runtime?.onlyBadge
         ? (configMaster.ficha_tamanho.tamanhos.find((t) => t.chave === "medium") ?? pickMasterSize(trimInfo, configMaster.ficha_tamanho))
-        : pickMasterSize(trimInfo, configMaster.ficha_tamanho);
+        : (masterFull ?? pickMasterSize(trimInfo, configMaster.ficha_tamanho));
       const canBadge = i === 0 && configMaster.badge_config.ativo && (runtime?.onlyBadge ? true : masterSize.badge_permitido);
-      const fullBuffer = await renderFullFromTrim({
+      logStep({
+        correlation,
+        product_id: idProduto,
+        image_indice: i,
+        step: "master_selected",
+        master: { chave: masterSize.chave, w: masterSize.largura, h: masterSize.altura, badge_permitido: masterSize.badge_permitido ?? null },
+        only_badge: Boolean(runtime?.onlyBadge),
+        badge_will_apply: canBadge,
+      });
+      logStep({
+        correlation,
+        product_id: idProduto,
+        image_indice: i,
+        step: "render_full_start",
+        allow_upscale: Boolean(runtime?.onlyBadge),
+      });
+      const fullRendered = await renderFullFromTrim({
         trimBuffer: trimInfo.buffer,
         trimInfo,
         masterSize,
@@ -626,23 +728,71 @@ async function processProduct(product, configMaster, correlation, runtime) {
         badgeData: getBadgeData(product),
         allowUpscale: Boolean(runtime?.onlyBadge),
       });
+      logStep({
+        correlation,
+        product_id: idProduto,
+        image_indice: i,
+        step: "render_full_ok",
+        out: fullRendered.info,
+        debug: fullRendered.debug,
+      });
 
       const fullPath = runtime?.onlyBadge && tempDir
         ? path.join(tempDir, `${slug}-${hash12}.webp`)
         : path.join(dirs.full, `${slug}-${hash12}.webp`);
-      await fs.writeFile(fullPath, fullBuffer);
+      await fs.writeFile(fullPath, fullRendered.buffer);
+      logStep({
+        correlation,
+        product_id: idProduto,
+        image_indice: i,
+        step: "write_full_ok",
+        path: runtime?.onlyBadge ? path.relative(ROOT, fullPath) : path.relative(IMAGES_ROOT, fullPath),
+        bytes: (await fs.stat(fullPath)).size,
+      });
 
       const outputs = [];
       if (!runtime?.onlyBadge) {
         const originalPath = path.join(dirs.original, `${fullHash}.${ext}`);
         await fs.writeFile(originalPath, buffer);
+        logStep({ correlation, product_id: idProduto, image_indice: i, step: "write_original_ok", path: path.relative(IMAGES_ROOT, originalPath) });
         const trimPath = path.join(dirs.trim, `${hash12}.webp`);
         await sharp(trimInfo.buffer).webp({ quality: configMaster.format.quality }).toFile(trimPath);
+        const metaTrim = await sharp(trimPath).metadata();
+        logStep({
+          correlation,
+          product_id: idProduto,
+          image_indice: i,
+          step: "write_trim_ok",
+          expected: { w: trimInfo.width, h: trimInfo.height },
+          actual: { w: metaTrim.width ?? null, h: metaTrim.height ?? null, format: metaTrim.format ?? null },
+          path: path.relative(IMAGES_ROOT, trimPath),
+        });
         for (const size of configMaster.ficha_tamanho.tamanhos) {
           const sizeDir = path.join(dirs.derived, size.chave);
           await ensureDir(sizeDir);
           const outPath = path.join(sizeDir, `${slug}-${hash12}-${size.chave}.webp`);
-          await sharp(fullBuffer).resize(size.largura, size.altura, { fit: "contain", withoutEnlargement: true }).webp({ quality: configMaster.format.quality }).toFile(outPath);
+          logStep({
+            correlation,
+            product_id: idProduto,
+            image_indice: i,
+            step: "derived_start",
+            size: size.chave,
+            target: { w: size.largura, h: size.altura },
+            from_full: fullRendered.info,
+          });
+          await sharp(fullRendered.buffer).resize(size.largura, size.altura, { fit: "contain", withoutEnlargement: true }).webp({ quality: configMaster.format.quality }).toFile(outPath);
+          const metaOut = await sharp(outPath).metadata();
+          logStep({
+            correlation,
+            product_id: idProduto,
+            image_indice: i,
+            step: "derived_ok",
+            size: size.chave,
+            expected: { w: size.largura, h: size.altura },
+            actual: { w: metaOut.width ?? null, h: metaOut.height ?? null, format: metaOut.format ?? null },
+            path: path.relative(IMAGES_ROOT, outPath),
+            bytes: (await fs.stat(outPath)).size,
+          });
           outputs.push({
             size: size.chave,
             status: "ok",
@@ -691,7 +841,7 @@ async function processProduct(product, configMaster, correlation, runtime) {
       manifest.resumo.total_imagens_processadas += 1;
       if (runtime?.onlyBadge && runtime?.badgeReport) {
         runtime.badgeReport.push({
-          id_produto: idProduto,
+          id: idProduto,
           indice: i,
           url: imageUrl,
           badge_aplicado: canBadge,
@@ -703,14 +853,18 @@ async function processProduct(product, configMaster, correlation, runtime) {
     } catch (error) {
       const code = String(error?.message ?? "unexpected_error");
       const canFallback = configMaster.fallback_imagem.ativo && configMaster.fallback_imagem.aplicar_quando.includes(code);
+      logStep({ correlation, product_id: idProduto, image_indice: i, step: "error", code, can_fallback: canFallback });
       if (canFallback) {
         try {
+          logStep({ correlation, product_id: idProduto, image_indice: i, step: "fallback_start", motivo: code, only_badge: Boolean(runtime?.onlyBadge) });
           const fallbackResult = await applyFallback({
             configMaster,
             imageIndex: i,
             reasonCode: code,
             onlyBadge: Boolean(runtime?.onlyBadge),
             tempDir,
+            productId: idProduto,
+            correlation,
           });
           manifest.imagens.push(fallbackResult.imageResult);
           manifest.erros.push({
@@ -724,7 +878,7 @@ async function processProduct(product, configMaster, correlation, runtime) {
           manifest.resumo.total_imagens_processadas += 1;
           if (runtime?.onlyBadge && runtime?.badgeReport) {
             runtime.badgeReport.push({
-              id_produto: idProduto,
+              id: idProduto,
               indice: i,
               url: "fallback://semImagem.png",
               badge_aplicado: false,
@@ -734,9 +888,11 @@ async function processProduct(product, configMaster, correlation, runtime) {
               fallback_motivo: code,
             });
           }
+          logStep({ correlation, product_id: idProduto, image_indice: i, step: "fallback_ok", motivo: code });
           continue;
         } catch (fallbackError) {
           const fallbackCode = String(fallbackError?.message ?? "fallback_render_failed");
+          logStep({ correlation, product_id: idProduto, image_indice: i, step: "fallback_error", code: fallbackCode, motivo: code });
           manifest.erros.push({
             codigo: fallbackCode,
             mensagem: "Falha ao processar fallback",
@@ -783,8 +939,9 @@ async function processProduct(product, configMaster, correlation, runtime) {
   manifest.execucao.duracao_ms = endedAt.getTime() - startedAt.getTime();
 
   if (!runtime?.onlyBadge) await saveManifest(idProduto, manifest, correlation);
+  logStep({ correlation, product_id: idProduto, step: "product_end", status_geral: manifest.execucao.status_geral, resumo: manifest.resumo });
   return {
-    id_produto: idProduto,
+    id: idProduto,
     path_manifesto: runtime?.onlyBadge ? null : path.join("manifestos", idProduto, "latest.json"),
     status_geral: manifest.execucao.status_geral,
     fallback_usado: manifest.erros.some((e) => e.codigo === "fallback_applied"),
@@ -832,6 +989,23 @@ async function main() {
   const runtime = { onlyBadge: args["only-badge"] === true || args["only-badge"] === "1", tempRoot: null, badgeReport: null };
 
   const correlation = correlationId();
+  logStep({
+    correlation,
+    step: "run_start",
+    modo,
+    only_badge: Boolean(runtime.onlyBadge),
+    sizes: configMaster.ficha_tamanho?.tamanhos?.map((t) => ({ chave: t.chave, w: t.largura, h: t.altura, badge: t.badge_permitido })) ?? [],
+    trim: {
+      threshold: Number(configMaster.trim_config?.alpha?.pixel_vazio_ate ?? 10),
+      validacao: configMaster.trim_config?.validacao ?? {},
+    },
+    format: configMaster.format ?? {},
+    background: configMaster.background ?? {},
+    fallback: {
+      ativo: Boolean(configMaster.fallback_imagem?.ativo),
+      aplicar_quando: configMaster.fallback_imagem?.aplicar_quando ?? [],
+    },
+  });
   if (runtime.onlyBadge) {
     runtime.tempRoot = path.join(ROOT, "temp", correlation);
     runtime.badgeReport = [];

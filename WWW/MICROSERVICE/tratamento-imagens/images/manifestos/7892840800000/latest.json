@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "produto": {
+    "id": "7892840800000",
+    "skuId": null,
+    "ean": "7892840800000",
+    "descricao": "Refrigerante Pepsi Cola 2 L"
+  },
+  "execucao": {
+    "correlation_id": "38d05d1a-e7fc-40b2-8447-135d0a24e33f",
+    "inicio_em": "2026-04-22T14:08:24.965Z",
+    "fim_em": "2026-04-22T14:08:25.222Z",
+    "duracao_ms": 257,
+    "status_geral": "ok"
+  },
+  "resumo": {
+    "total_imagens_entrada": 1,
+    "total_imagens_processadas": 1,
+    "total_sucesso": 1,
+    "total_falha": 0,
+    "falhas_criticas": 0
+  },
+  "config_aplicada": {
+    "ficha_tamanho_version": 1,
+    "trim_config_version": 1,
+    "badge_config_version": 1,
+    "output_naming_version": 1
+  },
+  "imagens": [
+    {
+      "indice": 0,
+      "tipo": "principal",
+      "source": {
+        "url": "https://www.catalogoambev.com.br/images/uploads/artes-finais/2f94e2fd426f945f12e047d77dea2216.png",
+        "status_download": "ok",
+        "http_status": 200,
+        "content_type": "image/png",
+        "bytes": 86082,
+        "hash_original_sha256": "99bee109c996ad48a62392292e9860764317c98c2d7526178b381f62ebada169"
+      },
+      "trim": {
+        "status": "ok",
+        "bbox": {
+          "x": -44,
+          "y": -18,
+          "w": 112,
+          "h": 382
+        },
+        "dimensao_saida": {
+          "w": 112,
+          "h": 382
+        }
+      },
+      "badge": {
+        "aplicado": false,
+        "variante": "nao_aplica",
+        "parametros": {}
+      },
+      "outputs": [
+        {
+          "size": "thumbnail",
+          "status": "ok",
+          "dimensao": {
+            "w": 80,
+            "h": 80
+          },
+          "path_relativo": "derived\\7892840800000\\thumbnail\\refrigerante-pepsi-cola-2-l-99bee109c996-thumbnail.webp",
+          "bytes": 588,
+          "hash_sha256": "1cc32242cbe529b16387e132079720318780377635449d207bfb0c0622286972"
+        },
+        {
+          "size": "small",
+          "status": "ok",
+          "dimensao": {
+            "w": 150,
+            "h": 150
+          },
+          "path_relativo": "derived\\7892840800000\\small\\refrigerante-pepsi-cola-2-l-99bee109c996-small.webp",
+          "bytes": 1260,
+          "hash_sha256": "044bd0193f4f939257102a63e8a0cc81095f92e85d609595510624e6b5cdf8a9"
+        },
+        {
+          "size": "medium",
+          "status": "ok",
+          "dimensao": {
+            "w": 320,
+            "h": 320
+          },
+          "path_relativo": "derived\\7892840800000\\medium\\refrigerante-pepsi-cola-2-l-99bee109c996-medium.webp",
+          "bytes": 3352,
+          "hash_sha256": "8244106a341d28a259585c589e466ae914ad37f149161c52f77df568c01ad730"
+        },
+        {
+          "size": "large",
+          "status": "ok",
+          "dimensao": {
+            "w": 500,
+            "h": 500
+          },
+          "path_relativo": "derived\\7892840800000\\large\\refrigerante-pepsi-cola-2-l-99bee109c996-large.webp",
+          "bytes": 6410,
+          "hash_sha256": "ad029b2ef0b4a3913c530cd657ff0973eb40eebeefe3645e14356a0550ccd508"
+        },
+        {
+          "size": "full",
+          "status": "ok",
+          "dimensao": {
+            "w": 600,
+            "h": 600
+          },
+          "path_relativo": "derived\\7892840800000\\full\\refrigerante-pepsi-cola-2-l-99bee109c996-full.webp",
+          "bytes": 9382,
+          "hash_sha256": "93ac9ffaed624423558685a7bb7416f46e61e9b2c1432814c132329f0644c185"
+        }
+      ],
+      "status_final": "ok"
+    }
+  ],
+  "erros": []
+}

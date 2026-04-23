@@ -1,0 +1,33 @@
+{
+  "output_lote": {
+    "correlation_id": "38d05d1a-e7fc-40b2-8447-135d0a24e33f",
+    "modo_execucao": "teste",
+    "status": "ok",
+    "resumo": {
+      "produtos_total": 3,
+      "produtos_ok": 3,
+      "produtos_parcial": 0,
+      "produtos_erro": 0
+    },
+    "manifestos": [
+      {
+        "id": "7896045506040",
+        "path_manifesto": "manifestos\\7896045506040\\latest.json",
+        "status_geral": "ok",
+        "fallback_usado": false
+      },
+      {
+        "id": "47896098900237",
+        "path_manifesto": "manifestos\\47896098900237\\latest.json",
+        "status_geral": "ok",
+        "fallback_usado": false
+      },
+      {
+        "id": "7892840800000",
+        "path_manifesto": "manifestos\\7892840800000\\latest.json",
+        "status_geral": "ok",
+        "fallback_usado": false
+      }
+    ]
+  }
+}

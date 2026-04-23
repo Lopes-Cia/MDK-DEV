@@ -1,0 +1,120 @@
+{
+  "version": 1,
+  "produto": {
+    "id": "7896045506040",
+    "skuId": null,
+    "ean": "7896045506040",
+    "descricao": "Cerveja Heineken Zero Long Neck 330 ml"
+  },
+  "execucao": {
+    "correlation_id": "38d05d1a-e7fc-40b2-8447-135d0a24e33f",
+    "inicio_em": "2026-04-22T14:08:24.382Z",
+    "fim_em": "2026-04-22T14:08:24.754Z",
+    "duracao_ms": 372,
+    "status_geral": "ok"
+  },
+  "resumo": {
+    "total_imagens_entrada": 1,
+    "total_imagens_processadas": 1,
+    "total_sucesso": 1,
+    "total_falha": 0,
+    "falhas_criticas": 0
+  },
+  "config_aplicada": {
+    "ficha_tamanho_version": 1,
+    "trim_config_version": 1,
+    "badge_config_version": 1,
+    "output_naming_version": 1
+  },
+  "imagens": [
+    {
+      "indice": 0,
+      "tipo": "principal",
+      "source": {
+        "url": "https://cdn.awsli.com.br/600x700/2595/2595005/produto/331831884/cerveja-heineken-zero-330ml-cpedzm42hv.png",
+        "status_download": "ok",
+        "http_status": 200,
+        "content_type": "image/png",
+        "bytes": 187510,
+        "hash_original_sha256": "0b8ee22c24cef31aa115c07e2f09625d35f81fbf89bf95255e264efb5426282f"
+      },
+      "trim": {
+        "status": "ok",
+        "bbox": {
+          "x": -229,
+          "y": -23,
+          "w": 143,
+          "h": 554
+        },
+        "dimensao_saida": {
+          "w": 143,
+          "h": 554
+        }
+      },
+      "badge": {
+        "aplicado": false,
+        "variante": "nao_aplica",
+        "parametros": {}
+      },
+      "outputs": [
+        {
+          "size": "thumbnail",
+          "status": "ok",
+          "dimensao": {
+            "w": 80,
+            "h": 80
+          },
+          "path_relativo": "derived\\7896045506040\\thumbnail\\cerveja-heineken-zero-long-neck-330-ml-0b8ee22c24ce-thumbnail.webp",
+          "bytes": 868,
+          "hash_sha256": "e65a67c454e2daeb8fe6b1fc96c90c3b4071a6efa58227c13a0904ad03c08b83"
+        },
+        {
+          "size": "small",
+          "status": "ok",
+          "dimensao": {
+            "w": 150,
+            "h": 150
+          },
+          "path_relativo": "derived\\7896045506040\\small\\cerveja-heineken-zero-long-neck-330-ml-0b8ee22c24ce-small.webp",
+          "bytes": 2294,
+          "hash_sha256": "3415f904f71db3ee0c995c0da1cd1258242dc0a33032eb5e699419b52444298f"
+        },
+        {
+          "size": "medium",
+          "status": "ok",
+          "dimensao": {
+            "w": 320,
+            "h": 320
+          },
+          "path_relativo": "derived\\7896045506040\\medium\\cerveja-heineken-zero-long-neck-330-ml-0b8ee22c24ce-medium.webp",
+          "bytes": 7474,
+          "hash_sha256": "336fc617da42305761cac45d9afc1be41397264b5556730cb8cbc3c9bb98255f"
+        },
+        {
+          "size": "large",
+          "status": "ok",
+          "dimensao": {
+            "w": 500,
+            "h": 500
+          },
+          "path_relativo": "derived\\7896045506040\\large\\cerveja-heineken-zero-long-neck-330-ml-0b8ee22c24ce-large.webp",
+          "bytes": 15034,
+          "hash_sha256": "9475eceee5f277c5f9be2eccc9c481a719fd022743f36c518936fc03b3639002"
+        },
+        {
+          "size": "full",
+          "status": "ok",
+          "dimensao": {
+            "w": 600,
+            "h": 600
+          },
+          "path_relativo": "derived\\7896045506040\\full\\cerveja-heineken-zero-long-neck-330-ml-0b8ee22c24ce-full.webp",
+          "bytes": 23428,
+          "hash_sha256": "0a39a5147dba27efae6da9707a1b1cc5c0e00e29c1970287b5248e9b1d12a864"
+        }
+      ],
+      "status_final": "ok"
+    }
+  ],
+  "erros": []
+}
